@@ -1,0 +1,11 @@
+{% extends "dashboard/user/user-base.html.twig" %}
+
+{% block page %}
+    <p>
+        {{ esc_html__('
+        2FAS Classic plugin is installed but not configured by the administrator.
+        Please ask your administrator to configure 2FAS Classic plugin in order to
+        enable two-factor authentication for your account.', '2fas')
+        }}
+    </p>
+{% endblock %}

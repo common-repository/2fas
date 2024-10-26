@@ -1,0 +1,6607 @@
+.twofas-admin ul.twofas-list-inline,
+.twofas-user ul.twofas-list-inline
+{
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.twofas-admin ul.twofas-list-inline.twofas-list-spacer li,
+  .twofas-user ul.twofas-list-inline.twofas-list-spacer li
+{
+  padding: 0 30px;
+  border-right: 1px solid #c6c6c6;
+}
+
+.twofas-admin ul.twofas-list-inline.twofas-list-spacer li:first-of-type,
+    .twofas-user ul.twofas-list-inline.twofas-list-spacer li:first-of-type
+{
+  padding-left: 0;
+}
+
+.twofas-admin ul.twofas-list-inline.twofas-list-spacer li:last-of-type,
+    .twofas-user ul.twofas-list-inline.twofas-list-spacer li:last-of-type
+{
+  border-right: 0;
+}
+
+.twofas-admin ul.twofas-list-inline.twofas-list-spacer li .twofas-learn-more,
+    .twofas-user ul.twofas-list-inline.twofas-list-spacer li .twofas-learn-more
+{
+  font-size: 10px;
+}
+
+.twofas-admin ul.twofas-list-inline li,
+  .twofas-user ul.twofas-list-inline li
+{
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+.twofas-admin ul.twofas-list-inline li a,
+    .twofas-user ul.twofas-list-inline li a
+{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.twofas-admin .twofas-spinner-button,
+.twofas-user .twofas-spinner-button
+{
+  height: 10px;
+  width: 70px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.twofas-admin .twofas-spinner-button > span,
+  .twofas-user .twofas-spinner-button > span
+{
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: twofas-bounce-delay 1.4s infinite ease-in-out both;
+  animation: twofas-bounce-delay 1.4s infinite ease-in-out both;
+  vertical-align: top;
+}
+
+.twofas-admin .twofas-spinner-button .twofas-spinner-button-bounce-1,
+  .twofas-user .twofas-spinner-button .twofas-spinner-button-bounce-1
+{
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+
+.twofas-admin .twofas-spinner-button .twofas-spinner-button-bounce-2,
+  .twofas-user .twofas-spinner-button .twofas-spinner-button-bounce-2
+{
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+
+@-webkit-keyframes twofas-bounce-delay
+{
+  0%, 80%, 100%
+  {
+    -webkit-transform: scale(0);
+  }
+
+  40%
+  {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes twofas-bounce-delay
+{
+  0%, 80%, 100%
+  {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+
+  40%
+  {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.twofas-admin .twofas-spinner-circle,
+.twofas-user .twofas-spinner-circle
+{
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+
+.twofas-admin .twofas-spinner-circle .tf-dot,
+  .twofas-user .twofas-spinner-circle .tf-dot
+{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.twofas-admin .twofas-spinner-circle .tf-dot::before,
+    .twofas-user .twofas-spinner-circle .tf-dot::before
+{
+  content: '';
+  display: block;
+  margin: 0 auto;
+  width: 15%;
+  height: 15%;
+  background-color: #ec1c24;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -webkit-animation: tf-dot-fade-delay 1.2s infinite ease-in-out both;
+  animation: tf-dot-fade-delay 1.2s infinite ease-in-out both;
+}
+
+.twofas-admin .twofas-spinner-circle .tf-dot.tf-dot-2,
+    .twofas-user .twofas-spinner-circle .tf-dot.tf-dot-2
+{
+  -webkit-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+
+.twofas-admin .twofas-spinner-circle .tf-dot.tf-dot-2::before,
+      .twofas-user .twofas-spinner-circle .tf-dot.tf-dot-2::before
+{
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s;
+}
+
+.twofas-admin .twofas-spinner-circle .tf-dot.tf-dot-3,
+    .twofas-user .twofas-spinner-circle .tf-dot.tf-dot-3
+{
+  -webkit-transform: rotate(60deg);
+  -ms-transform: rotate(60deg);
+  transform: rotate(60deg);
+}
+
+.twofas-admin .twofas-spinner-circle .tf-dot.tf-dot-3::before,
+      .twofas-user .twofas-spinner-circle .tf-dot.tf-dot-3::before
+{
+  -webkit-animation-delay: -1s;
+  animation-delay: -1s;
+}
+
+.twofas-admin .twofas-spinner-circle .tf-dot.tf-dot-4,
+    .twofas-user .twofas-spinner-circle .tf-dot.tf-dot-4
+{
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.twofas-admin .twofas-spinner-circle .tf-dot.tf-dot-4::before,
+      .twofas-user .twofas-spinner-circle .tf-dot.tf-dot-4::before
+{
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+
+.twofas-admin .twofas-spinner-circle .tf-dot.tf-dot-5,
+    .twofas-user .twofas-spinner-circle .tf-dot.tf-dot-5
+{
+  -webkit-transform: rotate(120deg);
+  -ms-transform: rotate(120deg);
+  transform: rotate(120deg);
+}
+
+.twofas-admin .twofas-spinner-circle .tf-dot.tf-dot-5::before,
+      .twofas-user .twofas-spinner-circle .tf-dot.tf-dot-5::before
+{
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s;
+}
+
+.twofas-admin .twofas-spinner-circle .tf-dot.tf-dot-6,
+    .twofas-user .twofas-spinner-circle .tf-dot.tf-dot-6
+{
+  -webkit-transform: rotate(150deg);
+  -ms-transform: rotate(150deg);
+  transform: rotate(150deg);
+}
+
+.twofas-admin .twofas-spinner-circle .tf-dot.tf-dot-6::before,
+      .twofas-user .twofas-spinner-circle .tf-dot.tf-dot-6::before
+{
+  -webkit-animation-delay: -0.7s;
+  animation-delay: -0.7s;
+}
+
+.twofas-admin .twofas-spinner-circle .tf-dot.tf-dot-7,
+    .twofas-user .twofas-spinner-circle .tf-dot.tf-dot-7
+{
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.twofas-admin .twofas-spinner-circle .tf-dot.tf-dot-7::before,
+      .twofas-user .twofas-spinner-circle .tf-dot.tf-dot-7::before
+{
+  -webkit-animation-delay: -0.6s;
+  animation-delay: -0.6s;
+}
+
+.twofas-admin .twofas-spinner-circle .tf-dot.tf-dot-8,
+    .twofas-user .twofas-spinner-circle .tf-dot.tf-dot-8
+{
+  -webkit-transform: rotate(210deg);
+  -ms-transform: rotate(210deg);
+  transform: rotate(210deg);
+}
+
+.twofas-admin .twofas-spinner-circle .tf-dot.tf-dot-8::before,
+      .twofas-user .twofas-spinner-circle .tf-dot.tf-dot-8::before
+{
+  -webkit-animation-delay: -0.5s;
+  animation-delay: -0.5s;
+}
+
+.twofas-admin .twofas-spinner-circle .tf-dot.tf-dot-9,
+    .twofas-user .twofas-spinner-circle .tf-dot.tf-dot-9
+{
+  -webkit-transform: rotate(240deg);
+  -ms-transform: rotate(240deg);
+  transform: rotate(240deg);
+}
+
+.twofas-admin .twofas-spinner-circle .tf-dot.tf-dot-9::before,
+      .twofas-user .twofas-spinner-circle .tf-dot.tf-dot-9::before
+{
+  -webkit-animation-delay: -0.4s;
+  animation-delay: -0.4s;
+}
+
+.twofas-admin .twofas-spinner-circle .tf-dot.tf-dot-10,
+    .twofas-user .twofas-spinner-circle .tf-dot.tf-dot-10
+{
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+
+.twofas-admin .twofas-spinner-circle .tf-dot.tf-dot-10::before,
+      .twofas-user .twofas-spinner-circle .tf-dot.tf-dot-10::before
+{
+  -webkit-animation-delay: -0.3s;
+  animation-delay: -0.3s;
+}
+
+.twofas-admin .twofas-spinner-circle .tf-dot.tf-dot-11,
+    .twofas-user .twofas-spinner-circle .tf-dot.tf-dot-11
+{
+  -webkit-transform: rotate(300deg);
+  -ms-transform: rotate(300deg);
+  transform: rotate(300deg);
+}
+
+.twofas-admin .twofas-spinner-circle .tf-dot.tf-dot-11::before,
+      .twofas-user .twofas-spinner-circle .tf-dot.tf-dot-11::before
+{
+  -webkit-animation-delay: -0.2s;
+  animation-delay: -0.2s;
+}
+
+.twofas-admin .twofas-spinner-circle .tf-dot.tf-dot-12,
+    .twofas-user .twofas-spinner-circle .tf-dot.tf-dot-12
+{
+  -webkit-transform: rotate(330deg);
+  -ms-transform: rotate(330deg);
+  transform: rotate(330deg);
+}
+
+.twofas-admin .twofas-spinner-circle .tf-dot.tf-dot-12::before,
+      .twofas-user .twofas-spinner-circle .tf-dot.tf-dot-12::before
+{
+  -webkit-animation-delay: -0.1s;
+  animation-delay: -0.1s;
+}
+
+@-webkit-keyframes tf-dot-fade-delay
+{
+  0%, 39%, 100%
+  {
+    opacity: 0;
+  }
+
+  40%
+  {
+    opacity: 1;
+  }
+}
+
+@keyframes tf-dot-fade-delay
+{
+  0%, 39%, 100%
+  {
+    opacity: 0;
+  }
+
+  40%
+  {
+    opacity: 1;
+  }
+}
+
+.twofas-admin .twofas-spinner-container.twofas-qr-refresh,
+.twofas-user .twofas-spinner-container.twofas-qr-refresh
+{
+  display: none;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+@media all and (max-width: 767px)
+{
+  .twofas-admin .twofas-spinner-container.twofas-qr-refresh,
+    .twofas-user .twofas-spinner-container.twofas-qr-refresh
+  {
+    left: auto;
+    padding-bottom: 20px;
+    position: static;
+    top: auto;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    text-align: center;
+  }
+}
+
+.twofas-admin .twofas-spinner-container.twofas-qr-refresh .twofas-spinner-circle,
+  .twofas-user .twofas-spinner-container.twofas-qr-refresh .twofas-spinner-circle
+{
+  height: 100px;
+  width: 100px;
+}
+
+@media all and (max-width: 767px)
+{
+  .twofas-admin .twofas-spinner-container.twofas-qr-refresh .twofas-spinner-circle,
+      .twofas-user .twofas-spinner-container.twofas-qr-refresh .twofas-spinner-circle
+  {
+    display: inline-block;
+    height: 150px;
+    width: 150px;
+  }
+}
+
+.twofas-admin .twofas-spinner-container.twofas-visible,
+.twofas-user .twofas-spinner-container.twofas-visible
+{
+  display: block;
+}
+
+.twofas-admin .twofas-token-loading .twofas-loading-dot,
+.twofas-user .twofas-token-loading .twofas-loading-dot
+{
+  opacity: .3;
+  animation: twofas-token-loading-animation 1.2s ease-in-out normal infinite !important;
+  -webkit-animation: twofas-token-loading-animation 1.2s ease-in-out normal infinite !important;
+}
+
+.twofas-admin .twofas-token-setup .twofas-loading-dot,
+.twofas-user .twofas-token-setup .twofas-loading-dot
+{
+  animation: twofas-token-loading-setup 1.2s ease-in normal 1 both;
+  -webkit-animation: twofas-token-loading-setup 1.2s ease-in normal 1 both;
+}
+
+.twofas-admin .twofas-token-error .twofas-error-dot,
+.twofas-user .twofas-token-error .twofas-error-dot
+{
+  animation: twofas-token-loading-setup 1.2s ease-in normal 1 both;
+  -webkit-animation: twofas-token-loading-setup 1.2s ease-in normal 1 both;
+}
+
+.twofas-admin .twofas-sockets-error,
+.twofas-user .twofas-sockets-error
+{
+  display: none;
+  position: relative;
+}
+
+.twofas-admin .twofas-token-loading,
+.twofas-admin .twofas-token-setup,
+.twofas-admin .twofas-token-error,
+.twofas-user .twofas-token-loading,
+.twofas-user .twofas-token-setup,
+.twofas-user .twofas-token-error
+{
+  display: none;
+}
+
+.twofas-admin .twofas-token-loading.twofas-play,
+  .twofas-admin .twofas-token-setup.twofas-play,
+  .twofas-admin .twofas-token-error.twofas-play,
+  .twofas-user .twofas-token-loading.twofas-play,
+  .twofas-user .twofas-token-setup.twofas-play,
+  .twofas-user .twofas-token-error.twofas-play
+{
+  display: inline-block;
+}
+
+.twofas-admin .twofas-token-loading .twofas-loading-dot,
+  .twofas-admin .twofas-token-setup .twofas-loading-dot,
+  .twofas-admin .twofas-token-error .twofas-loading-dot,
+  .twofas-user .twofas-token-loading .twofas-loading-dot,
+  .twofas-user .twofas-token-setup .twofas-loading-dot,
+  .twofas-user .twofas-token-error .twofas-loading-dot
+{
+  display: block;
+  float: left;
+  margin-right: 7px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #8899a6;
+  opacity: 0;
+  will-change: background-color, opacity;
+}
+
+.twofas-admin .twofas-token-loading .twofas-loading-dot:last-of-type,
+    .twofas-admin .twofas-token-setup .twofas-loading-dot:last-of-type,
+    .twofas-admin .twofas-token-error .twofas-loading-dot:last-of-type,
+    .twofas-user .twofas-token-loading .twofas-loading-dot:last-of-type,
+    .twofas-user .twofas-token-setup .twofas-loading-dot:last-of-type,
+    .twofas-user .twofas-token-error .twofas-loading-dot:last-of-type
+{
+  margin-right: 0;
+}
+
+.twofas-admin .twofas-token-loading .twofas-loading-dot:nth-of-type(2),
+    .twofas-admin .twofas-token-setup .twofas-loading-dot:nth-of-type(2),
+    .twofas-admin .twofas-token-error .twofas-loading-dot:nth-of-type(2),
+    .twofas-user .twofas-token-loading .twofas-loading-dot:nth-of-type(2),
+    .twofas-user .twofas-token-setup .twofas-loading-dot:nth-of-type(2),
+    .twofas-user .twofas-token-error .twofas-loading-dot:nth-of-type(2)
+{
+  animation-delay: 0.2s !important;
+  -webkit-animation-delay: 0.2s !important;
+}
+
+.twofas-admin .twofas-token-loading .twofas-loading-dot:nth-of-type(3),
+    .twofas-admin .twofas-token-setup .twofas-loading-dot:nth-of-type(3),
+    .twofas-admin .twofas-token-error .twofas-loading-dot:nth-of-type(3),
+    .twofas-user .twofas-token-loading .twofas-loading-dot:nth-of-type(3),
+    .twofas-user .twofas-token-setup .twofas-loading-dot:nth-of-type(3),
+    .twofas-user .twofas-token-error .twofas-loading-dot:nth-of-type(3)
+{
+  animation-delay: 0.4s !important;
+  -webkit-animation-delay: 0.4s !important;
+}
+
+.twofas-admin .twofas-token-loading .twofas-loading-dot:nth-of-type(4),
+    .twofas-admin .twofas-token-setup .twofas-loading-dot:nth-of-type(4),
+    .twofas-admin .twofas-token-error .twofas-loading-dot:nth-of-type(4),
+    .twofas-user .twofas-token-loading .twofas-loading-dot:nth-of-type(4),
+    .twofas-user .twofas-token-setup .twofas-loading-dot:nth-of-type(4),
+    .twofas-user .twofas-token-error .twofas-loading-dot:nth-of-type(4)
+{
+  animation-delay: 0.6s !important;
+  -webkit-animation-delay: 0.6s !important;
+}
+
+.twofas-admin .twofas-token-loading .twofas-loading-dot:nth-of-type(5),
+    .twofas-admin .twofas-token-setup .twofas-loading-dot:nth-of-type(5),
+    .twofas-admin .twofas-token-error .twofas-loading-dot:nth-of-type(5),
+    .twofas-user .twofas-token-loading .twofas-loading-dot:nth-of-type(5),
+    .twofas-user .twofas-token-setup .twofas-loading-dot:nth-of-type(5),
+    .twofas-user .twofas-token-error .twofas-loading-dot:nth-of-type(5)
+{
+  animation-delay: 0.8s !important;
+  -webkit-animation-delay: 0.8s !important;
+}
+
+.twofas-admin .twofas-token-loading .twofas-loading-dot:nth-of-type(6),
+    .twofas-admin .twofas-token-setup .twofas-loading-dot:nth-of-type(6),
+    .twofas-admin .twofas-token-error .twofas-loading-dot:nth-of-type(6),
+    .twofas-user .twofas-token-loading .twofas-loading-dot:nth-of-type(6),
+    .twofas-user .twofas-token-setup .twofas-loading-dot:nth-of-type(6),
+    .twofas-user .twofas-token-error .twofas-loading-dot:nth-of-type(6)
+{
+  animation-delay: 1s !important;
+  -webkit-animation-delay: 1s !important;
+}
+
+.twofas-admin .twofas-token-loading .twofas-error-dot,
+  .twofas-admin .twofas-token-setup .twofas-error-dot,
+  .twofas-admin .twofas-token-error .twofas-error-dot,
+  .twofas-user .twofas-token-loading .twofas-error-dot,
+  .twofas-user .twofas-token-setup .twofas-error-dot,
+  .twofas-user .twofas-token-error .twofas-error-dot
+{
+  display: block;
+  float: left;
+  margin-right: 7px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #ec4445;
+  opacity: 0;
+  will-change: background-color, opacity;
+}
+
+.twofas-admin .twofas-token-loading .twofas-error-dot:last-of-type,
+    .twofas-admin .twofas-token-setup .twofas-error-dot:last-of-type,
+    .twofas-admin .twofas-token-error .twofas-error-dot:last-of-type,
+    .twofas-user .twofas-token-loading .twofas-error-dot:last-of-type,
+    .twofas-user .twofas-token-setup .twofas-error-dot:last-of-type,
+    .twofas-user .twofas-token-error .twofas-error-dot:last-of-type
+{
+  margin-right: 0;
+}
+
+.twofas-admin .twofas-token-loading .twofas-error-dot:nth-of-type(2),
+    .twofas-admin .twofas-token-setup .twofas-error-dot:nth-of-type(2),
+    .twofas-admin .twofas-token-error .twofas-error-dot:nth-of-type(2),
+    .twofas-user .twofas-token-loading .twofas-error-dot:nth-of-type(2),
+    .twofas-user .twofas-token-setup .twofas-error-dot:nth-of-type(2),
+    .twofas-user .twofas-token-error .twofas-error-dot:nth-of-type(2)
+{
+  animation-delay: 0.2s !important;
+  -webkit-animation-delay: 0.2s !important;
+}
+
+.twofas-admin .twofas-token-loading .twofas-error-dot:nth-of-type(3),
+    .twofas-admin .twofas-token-setup .twofas-error-dot:nth-of-type(3),
+    .twofas-admin .twofas-token-error .twofas-error-dot:nth-of-type(3),
+    .twofas-user .twofas-token-loading .twofas-error-dot:nth-of-type(3),
+    .twofas-user .twofas-token-setup .twofas-error-dot:nth-of-type(3),
+    .twofas-user .twofas-token-error .twofas-error-dot:nth-of-type(3)
+{
+  animation-delay: 0.4s !important;
+  -webkit-animation-delay: 0.4s !important;
+}
+
+.twofas-admin .twofas-token-loading .twofas-error-dot:nth-of-type(4),
+    .twofas-admin .twofas-token-setup .twofas-error-dot:nth-of-type(4),
+    .twofas-admin .twofas-token-error .twofas-error-dot:nth-of-type(4),
+    .twofas-user .twofas-token-loading .twofas-error-dot:nth-of-type(4),
+    .twofas-user .twofas-token-setup .twofas-error-dot:nth-of-type(4),
+    .twofas-user .twofas-token-error .twofas-error-dot:nth-of-type(4)
+{
+  animation-delay: 0.6s !important;
+  -webkit-animation-delay: 0.6s !important;
+}
+
+.twofas-admin .twofas-token-loading .twofas-error-dot:nth-of-type(5),
+    .twofas-admin .twofas-token-setup .twofas-error-dot:nth-of-type(5),
+    .twofas-admin .twofas-token-error .twofas-error-dot:nth-of-type(5),
+    .twofas-user .twofas-token-loading .twofas-error-dot:nth-of-type(5),
+    .twofas-user .twofas-token-setup .twofas-error-dot:nth-of-type(5),
+    .twofas-user .twofas-token-error .twofas-error-dot:nth-of-type(5)
+{
+  animation-delay: 0.8s !important;
+  -webkit-animation-delay: 0.8s !important;
+}
+
+.twofas-admin .twofas-token-loading .twofas-error-dot:nth-of-type(6),
+    .twofas-admin .twofas-token-setup .twofas-error-dot:nth-of-type(6),
+    .twofas-admin .twofas-token-error .twofas-error-dot:nth-of-type(6),
+    .twofas-user .twofas-token-loading .twofas-error-dot:nth-of-type(6),
+    .twofas-user .twofas-token-setup .twofas-error-dot:nth-of-type(6),
+    .twofas-user .twofas-token-error .twofas-error-dot:nth-of-type(6)
+{
+  animation-delay: 1s !important;
+  -webkit-animation-delay: 1s !important;
+}
+
+@keyframes twofas-token-loading-setup
+{
+  0%
+  {
+    opacity: 0;
+  }
+
+  100%
+  {
+    opacity: .3;
+  }
+}
+
+@-webkit-keyframes twofas-token-loading-setup
+{
+  0%
+  {
+    opacity: 0;
+  }
+
+  100%
+  {
+    opacity: .3;
+  }
+}
+
+@keyframes twofas-token-loading-animation
+{
+  0%, 100%
+  {
+    opacity: .3;
+    background-color: #8899a6;
+  }
+
+  16.67%, 83.33%
+  {
+    opacity: .5;
+    background-color: #8899a6;
+  }
+
+  33.33%, 66.67%
+  {
+    opacity: .8;
+    background-color: #363b41;
+  }
+
+  50%
+  {
+    opacity: 1;
+    background-color: #32a2d6;
+  }
+}
+
+@-webkit-keyframes twofas-token-loading-animation
+{
+  0%, 100%
+  {
+    opacity: .3;
+    background-color: #8899a6;
+  }
+
+  16.67%, 83.33%
+  {
+    opacity: .5;
+    background-color: #8899a6;
+  }
+
+  33.33%, 66.67%
+  {
+    opacity: .8;
+    background-color: #363b41;
+  }
+
+  50%
+  {
+    opacity: 1;
+    background-color: #32a2d6;
+  }
+}
+
+.twofas-admin .twofas-modal-backdrop,
+.twofas-user .twofas-modal-backdrop
+{
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  background: rgba(0, 0, 0, 0.75);
+  opacity: 0;
+}
+
+.twofas-admin .twofas-modal-backdrop.twofas-deactivation-modal,
+  .twofas-user .twofas-modal-backdrop.twofas-deactivation-modal
+{
+  overflow-x: hidden;
+}
+
+.twofas-admin .twofas-modal-container,
+.twofas-user .twofas-modal-container
+{
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.twofas-admin .twofas-modal-cell,
+.twofas-user .twofas-modal-cell
+{
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.twofas-admin .twofas-modal,
+.twofas-user .twofas-modal
+{
+  display: inline-block;
+  max-width: 60%;
+  max-height: 80%;
+  background: #fff;
+}
+
+.twofas-admin .twofas-modal.twofas-deactivation-modal,
+  .twofas-user .twofas-modal.twofas-deactivation-modal
+{
+  background-color: white;
+  border: 1px solid #979797;
+  border-radius: 0;
+  max-width: 500px;
+  overflow-y: auto;
+  padding: 12px;
+  text-align: left;
+  width: 95%;
+  z-index: 9999;
+}
+
+@media all and (max-width: 600px)
+{
+  .twofas-admin .twofas-modal.twofas-deactivation-modal,
+      .twofas-user .twofas-modal.twofas-deactivation-modal
+  {
+    padding: 0;
+  }
+}
+
+.twofas-admin .twofas-modal.twofas-deactivation-modal .twofas-modal-header,
+    .twofas-user .twofas-modal.twofas-deactivation-modal .twofas-modal-header
+{
+  background: none;
+  border-bottom: 0;
+  font-size: 14px;
+  margin-top: 0;
+  padding-bottom: 0;
+}
+
+.twofas-admin .twofas-modal.twofas-deactivation-modal .twofas-modal-header fieldset label,
+      .twofas-user .twofas-modal.twofas-deactivation-modal .twofas-modal-header fieldset label
+{
+  height: 16px;
+  margin-bottom: 3px;
+}
+
+.twofas-admin .twofas-modal.twofas-deactivation-modal .twofas-modal-header fieldset label:last-of-type,
+        .twofas-user .twofas-modal.twofas-deactivation-modal .twofas-modal-header fieldset label:last-of-type
+{
+  margin-bottom: 0;
+}
+
+.twofas-admin .twofas-modal.twofas-deactivation-modal .twofas-modal-header i,
+      .twofas-admin .twofas-modal.twofas-deactivation-modal .twofas-modal-header h6,
+      .twofas-user .twofas-modal.twofas-deactivation-modal .twofas-modal-header i,
+      .twofas-user .twofas-modal.twofas-deactivation-modal .twofas-modal-header h6
+{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.twofas-admin .twofas-modal.twofas-deactivation-modal .twofas-modal-header i,
+      .twofas-user .twofas-modal.twofas-deactivation-modal .twofas-modal-header i
+{
+  left: 0;
+  margin-left: 0;
+  margin-right: 2px;
+  position: static;
+  top: 0;
+}
+
+.twofas-admin .twofas-modal.twofas-deactivation-modal .twofas-modal-header h6,
+      .twofas-user .twofas-modal.twofas-deactivation-modal .twofas-modal-header h6
+{
+  border-bottom: 1px solid #979797;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+@media all and (max-width: 480px)
+{
+  .twofas-admin .twofas-modal.twofas-deactivation-modal .twofas-modal-header h6,
+          .twofas-user .twofas-modal.twofas-deactivation-modal .twofas-modal-header h6
+  {
+    font-size: 12px;
+  }
+}
+
+.twofas-admin .twofas-modal.twofas-deactivation-modal .twofas-confirm-buttons,
+    .twofas-user .twofas-modal.twofas-deactivation-modal .twofas-confirm-buttons
+{
+  margin-top: 10px;
+  text-align: right;
+}
+
+.twofas-admin .twofas-modal.twofas-deactivation-modal .twofas-modal-body fieldset label,
+    .twofas-user .twofas-modal.twofas-deactivation-modal .twofas-modal-body fieldset label
+{
+  display: block;
+  height: 16px;
+  margin-bottom: 2px;
+}
+
+@media all and (max-width: 782px)
+{
+  .twofas-admin .twofas-modal.twofas-deactivation-modal .twofas-modal-body fieldset label,
+        .twofas-user .twofas-modal.twofas-deactivation-modal .twofas-modal-body fieldset label
+  {
+    height: 25px;
+    margin-bottom: 5px;
+  }
+}
+
+@media all and (max-width: 480px)
+{
+  .twofas-admin .twofas-modal.twofas-deactivation-modal .twofas-modal-body fieldset label span,
+        .twofas-user .twofas-modal.twofas-deactivation-modal .twofas-modal-body fieldset label span
+  {
+    font-size: 12px;
+  }
+}
+
+.twofas-admin .twofas-modal.twofas-deactivation-modal .twofas-modal-body p,
+    .twofas-user .twofas-modal.twofas-deactivation-modal .twofas-modal-body p
+{
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+@media all and (max-width: 782px)
+{
+  .twofas-admin .twofas-modal.twofas-deactivation-modal .twofas-modal-body p,
+        .twofas-user .twofas-modal.twofas-deactivation-modal .twofas-modal-body p
+  {
+    margin-bottom: 10px;
+  }
+}
+
+.twofas-admin .twofas-modal.twofas-deactivation-modal textarea,
+    .twofas-user .twofas-modal.twofas-deactivation-modal textarea
+{
+  font-size: 14px;
+  margin-top: 15px;
+  min-height: 100px;
+  max-height: 300px;
+  resize: vertical;
+  width: 100%;
+}
+
+@media all and (max-width: 480px)
+{
+  .twofas-admin .twofas-modal.twofas-deactivation-modal textarea,
+        .twofas-user .twofas-modal.twofas-deactivation-modal textarea
+  {
+    font-size: 12px;
+  }
+}
+
+.twofas-admin .twofas-modal.twofas-deactivation-modal .twofas-content-container,
+    .twofas-user .twofas-modal.twofas-deactivation-modal .twofas-content-container
+{
+  width: 100%;
+}
+
+@media all and (max-width: 600px)
+{
+  .twofas-admin .twofas-modal.twofas-deactivation-modal .twofas-content-container,
+        .twofas-user .twofas-modal.twofas-deactivation-modal .twofas-content-container
+  {
+    padding-left: 0;
+  }
+}
+
+.twofas-admin .twofas-modal.twofas-info-text,
+  .twofas-user .twofas-modal.twofas-info-text
+{
+  max-width: 40%;
+}
+
+@media all and (max-width: 991px)
+{
+  .twofas-admin .twofas-modal.twofas-info-text,
+      .twofas-user .twofas-modal.twofas-info-text
+  {
+    max-width: 60%;
+    max-height: none;
+  }
+}
+
+.twofas-admin .twofas-modal.twofas-without-spinner .twofas-modal-body .twofas-content-container,
+  .twofas-user .twofas-modal.twofas-without-spinner .twofas-modal-body .twofas-content-container
+{
+  padding-left: 0;
+}
+
+@media all and (max-width: 991px)
+{
+  .twofas-admin .twofas-modal,
+    .twofas-user .twofas-modal
+  {
+    max-width: 75%;
+    max-height: none;
+  }
+}
+
+@media all and (max-width: 660px)
+{
+  .twofas-admin .twofas-modal,
+    .twofas-user .twofas-modal
+  {
+    max-width: 90%;
+  }
+}
+
+.twofas-admin .twofas-modal-header,
+  .twofas-user .twofas-modal-header
+{
+  background: #f6f6f6;
+  color: #363b41;
+  border-bottom: 1px solid #e5e5e5;
+  height: 40px;
+  line-height: 40px;
+  width: 100%;
+  padding: 0 20px;
+  text-align: left;
+}
+
+.twofas-admin .twofas-modal-header h6,
+    .twofas-user .twofas-modal-header h6
+{
+  line-height: 40px;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+.twofas-admin .twofas-modal-body,
+  .twofas-user .twofas-modal-body
+{
+  background: #fff;
+  color: #363b41;
+  padding: 20px;
+}
+
+.twofas-admin .twofas-modal-body.twofas-hidden,
+    .twofas-user .twofas-modal-body.twofas-hidden
+{
+  display: none;
+}
+
+.twofas-admin .twofas-modal-body .twofas-spinner-container,
+    .twofas-user .twofas-modal-body .twofas-spinner-container
+{
+  display: inline-block;
+  padding-right: 30px;
+  vertical-align: top;
+}
+
+@media all and (max-width: 600px)
+{
+  .twofas-admin .twofas-modal-body .twofas-spinner-container,
+        .twofas-user .twofas-modal-body .twofas-spinner-container
+  {
+    display: block;
+    float: left;
+    margin-right: -70px;
+  }
+}
+
+@media all and (max-width: 480px)
+{
+  .twofas-admin .twofas-modal-body .twofas-spinner-container,
+        .twofas-user .twofas-modal-body .twofas-spinner-container
+  {
+    padding-right: 0;
+    float: none;
+    margin-right: 0;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .twofas-admin .twofas-modal-body .twofas-spinner-container .twofas-spinner-circle,
+          .twofas-user .twofas-modal-body .twofas-spinner-container .twofas-spinner-circle
+  {
+    display: inline-block;
+  }
+}
+
+.twofas-admin .twofas-modal-body .twofas-content-container,
+    .twofas-user .twofas-modal-body .twofas-content-container
+{
+  display: inline-block;
+  padding: 0;
+  text-align: left;
+  width: auto;
+}
+
+@media all and (max-width: 600px)
+{
+  .twofas-admin .twofas-modal-body .twofas-content-container,
+        .twofas-user .twofas-modal-body .twofas-content-container
+  {
+    display: block;
+    float: left;
+    padding-left: 70px;
+  }
+
+  .twofas-admin .twofas-modal-body .twofas-content-container.twofas-qr-code-container, .twofas-admin .twofas-modal-body .twofas-content-container.twofas-without-spinner,
+          .twofas-user .twofas-modal-body .twofas-content-container.twofas-qr-code-container,
+          .twofas-user .twofas-modal-body .twofas-content-container.twofas-without-spinner
+  {
+    padding-left: 0;
+  }
+}
+
+@media all and (max-width: 480px)
+{
+  .twofas-admin .twofas-modal-body .twofas-content-container,
+        .twofas-user .twofas-modal-body .twofas-content-container
+  {
+    padding-left: 0;
+  }
+}
+
+.twofas-admin .twofas-modal-body .twofas-content-container .twofas-text-content.twofas-remember-me,
+      .twofas-user .twofas-modal-body .twofas-content-container .twofas-text-content.twofas-remember-me
+{
+  margin-top: 20px;
+}
+
+.twofas-admin .twofas-modal-body .twofas-content-container .twofas-text-content p,
+      .twofas-user .twofas-modal-body .twofas-content-container .twofas-text-content p
+{
+  display: inline-block;
+  font-size: 14px;
+  line-height: 18px;
+  color: #363b41;
+  vertical-align: top;
+}
+
+@media all and (max-width: 600px)
+{
+  .twofas-admin .twofas-modal-body .twofas-content-container .twofas-text-content p .twofas-line,
+          .twofas-user .twofas-modal-body .twofas-content-container .twofas-text-content p .twofas-line
+  {
+    display: inline;
+  }
+}
+
+@media all and (max-width: 480px)
+{
+  .twofas-admin .twofas-modal-body .twofas-content-container .twofas-text-content p,
+          .twofas-user .twofas-modal-body .twofas-content-container .twofas-text-content p
+  {
+    text-align: center;
+  }
+}
+
+.twofas-admin .twofas-modal-body .twofas-content-container .twofas-text-content .twofas-modal-logo,
+      .twofas-user .twofas-modal-body .twofas-content-container .twofas-text-content .twofas-modal-logo
+{
+  display: inline-block;
+  padding-left: 30px;
+  vertical-align: top;
+}
+
+@media all and (max-width: 600px)
+{
+  .twofas-admin .twofas-modal-body .twofas-content-container .twofas-text-content .twofas-modal-logo,
+          .twofas-user .twofas-modal-body .twofas-content-container .twofas-text-content .twofas-modal-logo
+  {
+    display: none;
+  }
+}
+
+.twofas-admin .twofas-modal-body .twofas-content-container .twofas-text-content .twofas-qr-code,
+      .twofas-user .twofas-modal-body .twofas-content-container .twofas-text-content .twofas-qr-code
+{
+  -ms-interpolation-mode: nearest-neighbor;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -o-pixelated;
+  image-rendering: pixelated;
+}
+
+.twofas-admin .twofas-modal-body .twofas-content-container .twofas-text-content img,
+      .twofas-user .twofas-modal-body .twofas-content-container .twofas-text-content img
+{
+  max-width: 100%;
+}
+
+.twofas-admin .twofas-modal-body .twofas-content-container .twofas-buttons,
+      .twofas-user .twofas-modal-body .twofas-content-container .twofas-buttons
+{
+  margin-top: 20px;
+  text-align: right;
+}
+
+@media all and (max-width: 520px)
+{
+  .twofas-admin .twofas-modal-body .twofas-content-container .twofas-buttons .twofas-btn,
+          .twofas-user .twofas-modal-body .twofas-content-container .twofas-buttons .twofas-btn
+  {
+    display: block;
+    margin: 0 auto 10px;
+    padding: 0 15px;
+  }
+
+  .twofas-admin .twofas-modal-body .twofas-content-container .twofas-buttons .twofas-btn:last-of-type,
+            .twofas-user .twofas-modal-body .twofas-content-container .twofas-buttons .twofas-btn:last-of-type
+  {
+    margin-bottom: 0;
+  }
+
+  .twofas-admin .twofas-modal-body .twofas-content-container .twofas-buttons .twofas-btn.cancel-btn,
+            .twofas-user .twofas-modal-body .twofas-content-container .twofas-buttons .twofas-btn.cancel-btn
+  {
+    border: 1px solid #e3e3e3;
+  }
+}
+
+.twofas-admin .twofas-modal-body .twofas-content-container .twofas-buttons.twofas-buttons-center,
+        .twofas-user .twofas-modal-body .twofas-content-container .twofas-buttons.twofas-buttons-center
+{
+  text-align: center;
+}
+
+.twofas-admin .twofas-badge,
+.twofas-user .twofas-badge
+{
+  display: block;
+  width: 26px;
+  height: 26px;
+  line-height: 26px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.twofas-admin .twofas-welcome-box .twofas-badge,
+.twofas-user .twofas-welcome-box .twofas-badge
+{
+  background: #000000;
+  color: #fff;
+}
+
+.twofas-admin .twofas-bar .twofas-badge,
+.twofas-user .twofas-bar .twofas-badge
+{
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+  line-height: 23px;
+  font-size: 12px;
+  margin-left: 5px;
+  background: #2a75e6;
+  color: #fff;
+}
+
+@media all and (max-width: 400px)
+{
+  .twofas-admin .twofas-bar .twofas-badge,
+    .twofas-user .twofas-bar .twofas-badge
+  {
+    display: none;
+  }
+}
+
+.twofas-admin .twofas-bar,
+.twofas-user .twofas-bar
+{
+  width: 100%;
+  height: 46px;
+  line-height: 46px;
+  background: #3f444a;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+@media all and (max-width: 640px)
+{
+  .twofas-admin .twofas-bar,
+    .twofas-user .twofas-bar
+  {
+    height: auto;
+    overflow: hidden;
+  }
+}
+
+.twofas-admin .twofas-bar .twofas-list-inline li,
+  .twofas-user .twofas-bar .twofas-list-inline li
+{
+  width: 200px;
+  height: 46px;
+  line-height: 46px;
+  text-align: center;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 1px solid transparent;
+  border-bottom: 0;
+}
+
+@media all and (max-width: 1100px)
+{
+  .twofas-admin .twofas-bar .twofas-list-inline li,
+      .twofas-user .twofas-bar .twofas-list-inline li
+  {
+    width: 180px;
+  }
+}
+
+@media all and (max-width: 991px)
+{
+  .twofas-admin .twofas-bar .twofas-list-inline li,
+      .twofas-user .twofas-bar .twofas-list-inline li
+  {
+    width: auto;
+    padding: 0 15px;
+  }
+}
+
+@media all and (max-width: 640px)
+{
+  .twofas-admin .twofas-bar .twofas-list-inline li,
+      .twofas-user .twofas-bar .twofas-list-inline li
+  {
+    width: 50%;
+  }
+}
+
+.twofas-admin .twofas-bar .twofas-list-inline li:not(.twofas-disabled):not(.twofas-active):hover,
+    .twofas-user .twofas-bar .twofas-list-inline li:not(.twofas-disabled):not(.twofas-active):hover
+{
+  background: #4e5258;
+}
+
+.twofas-admin .twofas-bar .twofas-list-inline li.twofas-disabled,
+    .twofas-user .twofas-bar .twofas-list-inline li.twofas-disabled
+{
+  cursor: not-allowed;
+  opacity: .75;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.twofas-admin .twofas-bar .twofas-list-inline li.twofas-disabled a,
+      .twofas-user .twofas-bar .twofas-list-inline li.twofas-disabled a
+{
+  pointer-events: none;
+}
+
+.twofas-admin .twofas-bar .twofas-list-inline li.twofas-disabled a .twofas-badge,
+        .twofas-user .twofas-bar .twofas-list-inline li.twofas-disabled a .twofas-badge
+{
+  background: #7e7e7e;
+}
+
+.twofas-admin .twofas-bar .twofas-list-inline li.twofas-active,
+    .twofas-user .twofas-bar .twofas-list-inline li.twofas-active
+{
+  color: #202225;
+  background: #f1f1f1;
+  border-color: #e3e3e3;
+}
+
+.twofas-admin .twofas-bar .twofas-list-inline li .twofas-line,
+    .twofas-user .twofas-bar .twofas-list-inline li .twofas-line
+{
+  display: inline;
+}
+
+@media all and (max-width: 400px)
+{
+  .twofas-admin .twofas-bar .twofas-list-inline li .twofas-line,
+        .twofas-user .twofas-bar .twofas-list-inline li .twofas-line
+  {
+    display: block;
+    line-height: 13px;
+  }
+}
+
+.twofas-admin .twofas-bar .twofas-list-inline li .twofas-hyphen,
+    .twofas-user .twofas-bar .twofas-list-inline li .twofas-hyphen
+{
+  display: inline;
+}
+
+@media all and (max-width: 400px)
+{
+  .twofas-admin .twofas-bar .twofas-list-inline li .twofas-hyphen,
+        .twofas-user .twofas-bar .twofas-list-inline li .twofas-hyphen
+  {
+    display: none;
+  }
+}
+
+.twofas-admin .twofas-bar .twofas-list-inline li a,
+    .twofas-user .twofas-bar .twofas-list-inline li a
+{
+  color: inherit;
+  text-decoration: none;
+}
+
+.twofas-admin .twofas-bar .twofas-list-inline li a:hover, .twofas-admin .twofas-bar .twofas-list-inline li a:focus, .twofas-admin .twofas-bar .twofas-list-inline li a:active,
+      .twofas-user .twofas-bar .twofas-list-inline li a:hover,
+      .twofas-user .twofas-bar .twofas-list-inline li a:focus,
+      .twofas-user .twofas-bar .twofas-list-inline li a:active
+{
+  text-decoration: none;
+}
+
+@media all and (max-width: 400px)
+{
+  .twofas-admin .twofas-bar .twofas-list-inline li a > span:not(.twofas-badge),
+        .twofas-user .twofas-bar .twofas-list-inline li a > span:not(.twofas-badge)
+  {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+.twofas-admin .twofas-content,
+.twofas-user .twofas-content
+{
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  background: #fff;
+  color: #202225;
+  border: 1px solid #e3e3e3;
+  border-top: 0;
+}
+
+.twofas-admin .twofas-content.twofas-configured,
+  .twofas-user .twofas-content.twofas-configured
+{
+  height: auto;
+  overflow: hidden;
+}
+
+.twofas-admin .twofas-content.twofas-configured .twofas-configured-collapse,
+    .twofas-user .twofas-content.twofas-configured .twofas-configured-collapse
+{
+  display: table;
+}
+
+.twofas-admin .twofas-content.twofas-configured .twofas-content-items-container,
+    .twofas-user .twofas-content.twofas-configured .twofas-content-items-container
+{
+  height: 300px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin-top: 30px;
+}
+
+.twofas-admin .twofas-content-container,
+  .twofas-user .twofas-content-container
+{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  padding: 30px;
+}
+
+.twofas-admin .twofas-content .twofas-content-mobile,
+  .twofas-user .twofas-content .twofas-content-mobile
+{
+  display: none;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  text-align: center;
+}
+
+@media all and (max-width: 767px)
+{
+  .twofas-admin .twofas-content .twofas-content-mobile,
+      .twofas-user .twofas-content .twofas-content-mobile
+  {
+    display: block;
+  }
+}
+
+.twofas-admin .twofas-content .twofas-content-mobile + p,
+    .twofas-user .twofas-content .twofas-content-mobile + p
+{
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.twofas-admin .twofas-content .twofas-content-mobile img,
+    .twofas-user .twofas-content .twofas-content-mobile img
+{
+  max-width: 100%;
+}
+
+.twofas-admin .twofas-content .twofas-configured-collapse,
+  .twofas-user .twofas-content .twofas-configured-collapse
+{
+  background: rgba(56, 76, 84, 0.75);
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+}
+
+.twofas-admin .twofas-content .twofas-configured-collapse-box-container,
+    .twofas-user .twofas-content .twofas-configured-collapse-box-container
+{
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.twofas-admin .twofas-content .twofas-configured-collapse-box,
+    .twofas-user .twofas-content .twofas-configured-collapse-box
+{
+  display: inline-block;
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #384c54;
+  -webkit-box-shadow: 0 0 20px 2px #435e59;
+  box-shadow: 0 0 20px 2px #435e59;
+  max-width: 95%;
+}
+
+.twofas-admin .twofas-content .twofas-configured-collapse-box .twofas-phone-number,
+      .twofas-user .twofas-content .twofas-configured-collapse-box .twofas-phone-number
+{
+  margin-bottom: 10px;
+}
+
+.twofas-admin .twofas-content-header,
+  .twofas-user .twofas-content-header
+{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  padding-top: 5px;
+  font-size: 11px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.twofas-admin .twofas-content-header .twofas-status,
+    .twofas-user .twofas-content-header .twofas-status
+{
+  text-transform: uppercase;
+  font-size: 10px;
+}
+
+.twofas-admin .twofas-content-header a,
+    .twofas-user .twofas-content-header a
+{
+  display: inline-block;
+  vertical-align: middle;
+  color: inherit;
+}
+
+.twofas-admin .twofas-content-header i,
+    .twofas-user .twofas-content-header i
+{
+  vertical-align: middle;
+  margin-left: 2px;
+  margin-top: -2px;
+}
+
+@media all and (max-width: 767px)
+{
+  .twofas-admin .twofas-content-header ul.twofas-list-spacer,
+      .twofas-user .twofas-content-header ul.twofas-list-spacer
+  {
+    display: table;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media all and (max-width: 440px)
+{
+  .twofas-admin .twofas-content-header ul.twofas-list-spacer,
+      .twofas-user .twofas-content-header ul.twofas-list-spacer
+  {
+    display: block;
+  }
+}
+
+.twofas-admin .twofas-content-header ul.twofas-list-spacer li form,
+    .twofas-user .twofas-content-header ul.twofas-list-spacer li form
+{
+  margin-top: -2px;
+}
+
+@media all and (max-width: 767px)
+{
+  .twofas-admin .twofas-content-header ul.twofas-list-spacer li,
+      .twofas-user .twofas-content-header ul.twofas-list-spacer li
+  {
+    display: table-cell;
+    border: 0;
+    float: none;
+    height: 40px !important;
+    padding: 0;
+    min-width: 20%;
+  }
+
+  .twofas-admin .twofas-content-header ul.twofas-list-spacer li:first-of-type a, .twofas-admin .twofas-content-header ul.twofas-list-spacer li:nth-of-type(2) a,
+        .twofas-user .twofas-content-header ul.twofas-list-spacer li:first-of-type a,
+        .twofas-user .twofas-content-header ul.twofas-list-spacer li:nth-of-type(2) a
+  {
+    border-right-width: 0;
+  }
+}
+
+@media all and (max-width: 767px) and (max-width: 440px)
+{
+  .twofas-admin .twofas-content-header ul.twofas-list-spacer li:first-of-type a, .twofas-admin .twofas-content-header ul.twofas-list-spacer li:nth-of-type(2) a,
+      .twofas-user .twofas-content-header ul.twofas-list-spacer li:first-of-type a,
+      .twofas-user .twofas-content-header ul.twofas-list-spacer li:nth-of-type(2) a
+  {
+    border-right-width: 1px;
+    border-bottom-width: 0;
+  }
+}
+
+@media all and (max-width: 767px)
+{
+  .twofas-admin .twofas-content-header ul.twofas-list-spacer li:last-of-type a,
+        .twofas-user .twofas-content-header ul.twofas-list-spacer li:last-of-type a
+  {
+    border-right-width: 1px !important;
+    border-bottom-width: 1px !important;
+  }
+
+  .twofas-admin .twofas-content-header ul.twofas-list-spacer li a,
+        .twofas-user .twofas-content-header ul.twofas-list-spacer li a
+  {
+    background: #fff;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #e3e3e3;
+  }
+
+  .twofas-admin .twofas-content-header ul.twofas-list-spacer li a:hover,
+          .twofas-user .twofas-content-header ul.twofas-list-spacer li a:hover
+  {
+    background: #f2f2f2;
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .twofas-admin .twofas-content-header ul.twofas-list-spacer li .twofas-learn-more,
+        .twofas-user .twofas-content-header ul.twofas-list-spacer li .twofas-learn-more
+  {
+    font-size: 11px;
+  }
+}
+
+@media all and (max-width: 600px)
+{
+  .twofas-admin .twofas-content-header ul.twofas-list-spacer li,
+      .twofas-user .twofas-content-header ul.twofas-list-spacer li
+  {
+    min-width: 15%;
+  }
+
+  .twofas-admin .twofas-content-header ul.twofas-list-spacer li a,
+        .twofas-user .twofas-content-header ul.twofas-list-spacer li a
+  {
+    padding: 0 5px;
+  }
+
+  .twofas-admin .twofas-content-header ul.twofas-list-spacer li a .twofas-icon,
+          .twofas-user .twofas-content-header ul.twofas-list-spacer li a .twofas-icon
+  {
+    display: none;
+  }
+}
+
+@media all and (max-width: 440px)
+{
+  .twofas-admin .twofas-content-header ul.twofas-list-spacer li,
+      .twofas-user .twofas-content-header ul.twofas-list-spacer li
+  {
+    display: block;
+    width: 100%;
+  }
+}
+
+.twofas-admin .twofas-content-description p,
+  .twofas-user .twofas-content-description p
+{
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: .5px;
+}
+
+@media all and (max-width: 991px)
+{
+  .twofas-admin .twofas-content-description p,
+      .twofas-user .twofas-content-description p
+  {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0;
+  }
+}
+
+.twofas-admin .twofas-content-item,
+  .twofas-user .twofas-content-item
+{
+  width: 100%;
+  height: 300px;
+  padding: 40px 0;
+  border-bottom: 1px solid #e5e5e6;
+}
+
+@media all and (max-width: 1199px)
+{
+  .twofas-admin .twofas-content-item,
+      .twofas-user .twofas-content-item
+  {
+    height: 250px;
+    padding: 20px 0;
+  }
+}
+
+@media all and (max-width: 767px)
+{
+  .twofas-admin .twofas-content-item,
+      .twofas-user .twofas-content-item
+  {
+    height: auto;
+  }
+}
+
+.twofas-admin .twofas-content-item:nth-last-of-type(2),
+    .twofas-user .twofas-content-item:nth-last-of-type(2)
+{
+  border-bottom: 0;
+}
+
+.twofas-admin .twofas-content-item-left, .twofas-admin .twofas-content-item-right,
+    .twofas-user .twofas-content-item-left,
+    .twofas-user .twofas-content-item-right
+{
+  height: 100%;
+  float: left;
+}
+
+.twofas-admin .twofas-content-item-left,
+    .twofas-user .twofas-content-item-left
+{
+  width: 20%;
+  margin-right: 2.5%;
+  line-height: 220px;
+}
+
+@media all and (max-width: 1199px)
+{
+  .twofas-admin .twofas-content-item-left,
+        .twofas-user .twofas-content-item-left
+  {
+    width: 25%;
+  }
+}
+
+@media all and (max-width: 991px)
+{
+  .twofas-admin .twofas-content-item-left,
+        .twofas-user .twofas-content-item-left
+  {
+    width: 30%;
+  }
+}
+
+@media all and (max-width: 767px)
+{
+  .twofas-admin .twofas-content-item-left,
+        .twofas-user .twofas-content-item-left
+  {
+    display: none;
+  }
+}
+
+.twofas-admin .twofas-content-item-left i,
+      .twofas-user .twofas-content-item-left i
+{
+  vertical-align: middle;
+}
+
+.twofas-admin .twofas-content-item-right,
+    .twofas-user .twofas-content-item-right
+{
+  position: relative;
+  width: 77.5%;
+  display: table;
+  vertical-align: middle;
+}
+
+@media all and (max-width: 1199px)
+{
+  .twofas-admin .twofas-content-item-right,
+        .twofas-user .twofas-content-item-right
+  {
+    width: 72.5%;
+  }
+}
+
+@media all and (max-width: 991px)
+{
+  .twofas-admin .twofas-content-item-right,
+        .twofas-user .twofas-content-item-right
+  {
+    width: 67.5%;
+  }
+}
+
+@media all and (max-width: 767px)
+{
+  .twofas-admin .twofas-content-item-right,
+        .twofas-user .twofas-content-item-right
+  {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.twofas-admin .twofas-content-item-right.twofas-phone-container,
+      .twofas-user .twofas-content-item-right.twofas-phone-container
+{
+  z-index: 2;
+}
+
+.twofas-admin .twofas-content-item-right-content,
+      .twofas-user .twofas-content-item-right-content
+{
+  display: table-cell;
+  vertical-align: middle;
+}
+
+@media all and (max-width: 767px)
+{
+  .twofas-admin .twofas-content-item-right-content,
+          .twofas-user .twofas-content-item-right-content
+  {
+    display: block;
+  }
+}
+
+.twofas-admin .twofas-content-item-right-bottom,
+      .twofas-user .twofas-content-item-right-bottom
+{
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+@media all and (max-width: 767px)
+{
+  .twofas-admin .twofas-content-item-right-bottom,
+          .twofas-user .twofas-content-item-right-bottom
+  {
+    position: static;
+    bottom: auto;
+    left: auto;
+    margin-top: 15px;
+  }
+}
+
+@media all and (max-width: 400px)
+{
+  .twofas-admin .twofas-content-item-right-bottom > .twofas-btn,
+          .twofas-user .twofas-content-item-right-bottom > .twofas-btn
+  {
+    margin: 0 auto;
+  }
+
+  .twofas-admin .twofas-content-item-right-bottom .twofas-btn,
+          .twofas-user .twofas-content-item-right-bottom .twofas-btn
+  {
+    display: block;
+  }
+
+  .twofas-admin .twofas-content-item-right-bottom .twofas-buttons-bottom,
+          .twofas-user .twofas-content-item-right-bottom .twofas-buttons-bottom
+  {
+    margin-top: 10px;
+  }
+
+  .twofas-admin .twofas-content-item-right-bottom .twofas-buttons-bottom button,
+            .twofas-user .twofas-content-item-right-bottom .twofas-buttons-bottom button
+  {
+    margin-left: 0;
+  }
+}
+
+.twofas-admin .twofas-content-item-right .intl-tel-input,
+      .twofas-user .twofas-content-item-right .intl-tel-input
+{
+  display: inline-block;
+}
+
+.twofas-admin .twofas-content-item-right .intl-tel-input .flag-container,
+        .twofas-user .twofas-content-item-right .intl-tel-input .flag-container
+{
+  max-width: 100%;
+}
+
+@media all and (max-width: 640px)
+{
+  .twofas-admin .twofas-content-item-right .intl-tel-input .flag-container .country-list,
+            .twofas-user .twofas-content-item-right .intl-tel-input .flag-container .country-list
+  {
+    position: relative;
+    max-width: 100%;
+  }
+}
+
+.twofas-admin .twofas-content-item-right h6,
+      .twofas-user .twofas-content-item-right h6
+{
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.twofas-admin .twofas-content-item-right p,
+      .twofas-user .twofas-content-item-right p
+{
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.twofas-admin .twofas-content-item-right p.twofas-step,
+        .twofas-user .twofas-content-item-right p.twofas-step
+{
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.twofas-admin .twofas-content-item-right p.twofas-small,
+        .twofas-user .twofas-content-item-right p.twofas-small
+{
+  font-size: 12px;
+  line-height: 14px;
+  margin-top: 5px;
+}
+
+@media all and (max-width: 767px)
+{
+  .twofas-admin .twofas-content-item-right p.twofas-small,
+            .twofas-user .twofas-content-item-right p.twofas-small
+  {
+    margin-top: 0;
+    line-height: 16px;
+  }
+}
+
+.twofas-admin .twofas-content-item-right p a,
+        .twofas-user .twofas-content-item-right p a
+{
+  color: #2a75e6;
+}
+
+@media all and (max-width: 767px)
+{
+  .twofas-admin .twofas-content-item-right h6,
+        .twofas-admin .twofas-content-item-right p.twofas-step,
+        .twofas-user .twofas-content-item-right h6,
+        .twofas-user .twofas-content-item-right p.twofas-step
+  {
+    text-align: left;
+  }
+}
+
+.twofas-admin .twofas-content .twofas-offline-stats,
+  .twofas-user .twofas-content .twofas-offline-stats
+{
+  position: relative;
+  width: 365px;
+  height: auto;
+  padding: 35px 0 57.5px;
+  margin: 80px auto 62.5px auto;
+  border: 1px solid #d5d7db;
+  text-align: center;
+}
+
+.twofas-admin .twofas-content .twofas-offline-stats-active-codes,
+    .twofas-user .twofas-content .twofas-offline-stats-active-codes
+{
+  color: #2a75e6;
+  margin-left: 7px;
+}
+
+.twofas-admin .twofas-content .twofas-offline-stats-active-codes h2,
+      .twofas-admin .twofas-content .twofas-offline-stats-active-codes p,
+      .twofas-user .twofas-content .twofas-offline-stats-active-codes h2,
+      .twofas-user .twofas-content .twofas-offline-stats-active-codes p
+{
+  color: inherit;
+}
+
+.twofas-admin .twofas-content .twofas-offline-stats-of,
+    .twofas-user .twofas-content .twofas-offline-stats-of
+{
+  vertical-align: top;
+  padding: 0 25px;
+}
+
+.twofas-admin .twofas-content .twofas-offline-stats-of p,
+      .twofas-user .twofas-content .twofas-offline-stats-of p
+{
+  line-height: 88px !important;
+}
+
+.twofas-admin .twofas-content .twofas-offline-stats-container p.twofas-last-generate,
+    .twofas-user .twofas-content .twofas-offline-stats-container p.twofas-last-generate
+{
+  font-size: 12px;
+  line-height: 22px;
+  color: #6f7072;
+}
+
+.twofas-admin .twofas-content .twofas-offline-stats .twofas-offline-stats-generated > div,
+    .twofas-user .twofas-content .twofas-offline-stats .twofas-offline-stats-generated > div
+{
+  display: inline-block;
+}
+
+.twofas-admin .twofas-content .twofas-offline-stats .twofas-offline-codes-data p,
+    .twofas-user .twofas-content .twofas-offline-stats .twofas-offline-codes-data p
+{
+  margin-top: 0;
+}
+
+.twofas-admin .twofas-content .twofas-offline-stats .twofas-offline-codes-data ul,
+    .twofas-user .twofas-content .twofas-offline-stats .twofas-offline-codes-data ul
+{
+  list-style: square;
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+.twofas-admin .twofas-content .twofas-offline-stats .twofas-offline-codes-data li,
+    .twofas-user .twofas-content .twofas-offline-stats .twofas-offline-codes-data li
+{
+  padding: 5px 0;
+}
+
+.twofas-admin .twofas-content .twofas-offline-stats .twofas-offline-codes-data .twofas-offline-codes-list,
+    .twofas-user .twofas-content .twofas-offline-stats .twofas-offline-codes-data .twofas-offline-codes-list
+{
+  display: none;
+}
+
+.twofas-admin .twofas-content .twofas-offline-stats .twofas-offline-codes-data code,
+    .twofas-user .twofas-content .twofas-offline-stats .twofas-offline-codes-data code
+{
+  margin: 0;
+  padding: 0;
+}
+
+.twofas-admin .twofas-content .twofas-offline-stats .twofas-offline-codes-data pre,
+    .twofas-user .twofas-content .twofas-offline-stats .twofas-offline-codes-data pre
+{
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  line-height: 150%;
+  padding: 10px;
+}
+
+.twofas-admin .twofas-content .twofas-offline-stats .twofas-offline-codes-list,
+    .twofas-user .twofas-content .twofas-offline-stats .twofas-offline-codes-list
+{
+  display: none;
+}
+
+.twofas-admin .twofas-content .twofas-offline-stats h2,
+    .twofas-user .twofas-content .twofas-offline-stats h2
+{
+  font-size: 75px;
+  font-weight: 700;
+}
+
+.twofas-admin .twofas-content .twofas-offline-stats p,
+    .twofas-user .twofas-content .twofas-offline-stats p
+{
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.twofas-admin .twofas-content .twofas-stores-download,
+  .twofas-user .twofas-content .twofas-stores-download
+{
+  height: auto;
+  overflow: hidden;
+  margin-top: 25px;
+}
+
+@media all and (max-width: 767px)
+{
+  .twofas-admin .twofas-content .twofas-stores-download,
+      .twofas-user .twofas-content .twofas-stores-download
+  {
+    display: inline-block;
+    margin-top: 15px;
+  }
+}
+
+.twofas-admin .twofas-content .twofas-stores-download a,
+    .twofas-user .twofas-content .twofas-stores-download a
+{
+  display: block;
+  float: left;
+  margin-right: 20px;
+}
+
+@media all and (max-width: 400px)
+{
+  .twofas-admin .twofas-content .twofas-stores-download a,
+        .twofas-user .twofas-content .twofas-stores-download a
+  {
+    display: inline-block;
+    float: none;
+    margin: 10px 0 0 0;
+  }
+
+  .twofas-admin .twofas-content .twofas-stores-download a:first-of-type,
+          .twofas-user .twofas-content .twofas-stores-download a:first-of-type
+  {
+    margin-top: 0;
+  }
+}
+
+.twofas-admin .twofas-content .twofas-stores-download a:last-of-type,
+      .twofas-user .twofas-content .twofas-stores-download a:last-of-type
+{
+  margin-right: 0;
+}
+
+.twofas-admin .twofas-content .twofas-content-item-qr,
+  .twofas-user .twofas-content .twofas-content-item-qr
+{
+  position: relative;
+  height: 100%;
+}
+
+.twofas-admin .twofas-content .twofas-content-item-qr:before,
+    .twofas-user .twofas-content .twofas-content-item-qr:before
+{
+  content: '';
+  display: block;
+  padding-top: 100%;
+}
+
+.twofas-admin .twofas-content .twofas-content-item-qr img,
+    .twofas-user .twofas-content .twofas-content-item-qr img
+{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  bottom: 0;
+  right: 0;
+  display: inline-block;
+  border: 1px solid #e5e5e6;
+  padding: 6px;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  max-height: 100%;
+  -ms-interpolation-mode: nearest-neighbor;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -o-pixelated;
+  image-rendering: pixelated;
+}
+
+.twofas-admin .twofas-content .twofas-content-item .twofas-buttons-bottom,
+  .twofas-user .twofas-content .twofas-content-item .twofas-buttons-bottom
+{
+  display: inline-block;
+}
+
+.twofas-admin .twofas-content .twofas-icon,
+  .twofas-user .twofas-content .twofas-icon
+{
+  background-image: url("../images/spritesheet.png");
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+
+.twofas-admin .twofas-content .twofas-icon-app-store,
+  .twofas-user .twofas-content .twofas-icon-app-store
+{
+  background-position: 0 -133px;
+  height: 40px;
+  width: 135px;
+}
+
+.twofas-admin .twofas-content .twofas-icon-backup-codes,
+  .twofas-user .twofas-content .twofas-icon-backup-codes
+{
+  background-position: -276px -110px;
+  height: 24px;
+  width: 21px;
+}
+
+.twofas-admin .twofas-content .twofas-icon-download,
+  .twofas-user .twofas-content .twofas-icon-download
+{
+  background-position: -194px 0;
+  height: 87px;
+  width: 48px;
+}
+
+.twofas-admin .twofas-content .twofas-icon-google-play,
+  .twofas-user .twofas-content .twofas-icon-google-play
+{
+  background-position: 0 -89px;
+  height: 42px;
+  width: 136px;
+}
+
+.twofas-admin .twofas-content .twofas-icon-info-ok,
+  .twofas-user .twofas-content .twofas-icon-info-ok
+{
+  background-position: -222px -89px;
+  height: 16px;
+  width: 16px;
+}
+
+.twofas-admin .twofas-content .twofas-icon-info-x,
+  .twofas-user .twofas-content .twofas-icon-info-x
+{
+  background-position: -170px -89px;
+  height: 16px;
+  width: 16px;
+}
+
+.twofas-admin .twofas-content .twofas-icon-info,
+  .twofas-user .twofas-content .twofas-icon-info
+{
+  background-position: -138px -111px;
+  height: 16px;
+  width: 16px;
+}
+
+.twofas-admin .twofas-content .twofas-icon-numpad,
+  .twofas-user .twofas-content .twofas-icon-numpad
+{
+  background-position: -244px 0;
+  height: 73px;
+  width: 56px;
+}
+
+.twofas-admin .twofas-content .twofas-icon-offline-codes,
+  .twofas-user .twofas-content .twofas-icon-offline-codes
+{
+  background-position: -244px -75px;
+  height: 33px;
+  width: 33px;
+}
+
+.twofas-admin .twofas-content .twofas-icon-padlock,
+  .twofas-user .twofas-content .twofas-icon-padlock
+{
+  background-position: -216px -123px;
+  height: 32px;
+  width: 22px;
+}
+
+.twofas-admin .twofas-content .twofas-icon-refresh,
+  .twofas-user .twofas-content .twofas-icon-refresh
+{
+  background-position: -213px -161px;
+  height: 12px;
+  width: 12px;
+}
+
+.twofas-admin .twofas-content .twofas-icon-remove-hover,
+  .twofas-user .twofas-content .twofas-icon-remove-hover
+{
+  background-position: -227px -161px;
+  height: 10px;
+  width: 10px;
+}
+
+.twofas-admin .twofas-content .twofas-icon-remove,
+  .twofas-user .twofas-content .twofas-icon-remove
+{
+  background-position: -156px -111px;
+  height: 10px;
+  width: 10px;
+}
+
+.twofas-admin .twofas-content .twofas-icon-sms,
+  .twofas-user .twofas-content .twofas-icon-sms
+{
+  background-position: -98px 0;
+  height: 87px;
+  width: 94px;
+}
+
+.twofas-admin .twofas-content .twofas-icon-support,
+  .twofas-user .twofas-content .twofas-icon-support
+{
+  background-position: -194px -89px;
+  height: 32px;
+  width: 26px;
+}
+
+.twofas-admin .twofas-content .twofas-icon-tick-admin,
+  .twofas-user .twofas-content .twofas-icon-tick-admin
+{
+  background-position: -138px -89px;
+  height: 20px;
+  width: 30px;
+}
+
+.twofas-admin .twofas-content .twofas-icon-tick-enabled,
+  .twofas-user .twofas-content .twofas-icon-tick-enabled
+{
+  background-position: -222px -107px;
+  height: 12px;
+  width: 17px;
+}
+
+.twofas-admin .twofas-content .twofas-icon-tick,
+  .twofas-user .twofas-content .twofas-icon-tick
+{
+  background-position: -194px -161px;
+  height: 12px;
+  width: 17px;
+}
+
+.twofas-admin .twofas-content .twofas-icon-token,
+  .twofas-user .twofas-content .twofas-icon-token
+{
+  background-position: 0 0;
+  height: 87px;
+  width: 96px;
+}
+
+.twofas-admin .twofas-content .twofas-icon-tokens,
+  .twofas-user .twofas-content .twofas-icon-tokens
+{
+  background-position: -279px -75px;
+  height: 30px;
+  width: 18px;
+}
+
+.twofas-admin .twofas-content .twofas-icon-trusted,
+  .twofas-user .twofas-content .twofas-icon-trusted
+{
+  background-position: -244px -142px;
+  height: 22px;
+  width: 30px;
+}
+
+.twofas-admin .twofas-content .twofas-icon-turn-on-off,
+  .twofas-user .twofas-content .twofas-icon-turn-on-off
+{
+  background-position: -276px -142px;
+  height: 17px;
+  width: 16px;
+}
+
+.twofas-admin .twofas-content .twofas-icon-twofas-auth,
+  .twofas-user .twofas-content .twofas-icon-twofas-auth
+{
+  background-position: -194px -123px;
+  height: 36px;
+  width: 20px;
+}
+
+.twofas-admin .twofas-content .twofas-icon-vms,
+  .twofas-user .twofas-content .twofas-icon-vms
+{
+  background-position: -244px -110px;
+  height: 30px;
+  width: 30px;
+}
+
+.twofas-admin .twofas-content .twofas-content-table,
+  .twofas-user .twofas-content .twofas-content-table
+{
+  height: auto;
+  overflow: hidden;
+  width: 100%;
+}
+
+.twofas-admin .twofas-content .twofas-content-table table,
+    .twofas-user .twofas-content .twofas-content-table table
+{
+  border-collapse: collapse;
+  margin-top: 95px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+@media all and (max-width: 1199px)
+{
+  .twofas-admin .twofas-content .twofas-content-table table,
+        .twofas-user .twofas-content .twofas-content-table table
+  {
+    margin-top: 50px;
+  }
+}
+
+.twofas-admin .twofas-content .twofas-content-table table thead,
+      .twofas-user .twofas-content .twofas-content-table table thead
+{
+  background: #e3e4e6;
+  text-align: left;
+}
+
+@media all and (max-width: 991px)
+{
+  .twofas-admin .twofas-content .twofas-content-table table thead,
+          .twofas-user .twofas-content .twofas-content-table table thead
+  {
+    display: none;
+  }
+}
+
+.twofas-admin .twofas-content .twofas-content-table table thead th,
+        .twofas-user .twofas-content .twofas-content-table table thead th
+{
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.twofas-admin .twofas-content .twofas-content-table table td,
+      .twofas-admin .twofas-content .twofas-content-table table th,
+      .twofas-user .twofas-content .twofas-content-table table td,
+      .twofas-user .twofas-content .twofas-content-table table th
+{
+  height: 38px;
+  line-height: 38px;
+}
+
+@media all and (max-width: 991px)
+{
+  .twofas-admin .twofas-content .twofas-content-table table td,
+          .twofas-admin .twofas-content .twofas-content-table table th,
+          .twofas-user .twofas-content .twofas-content-table table td,
+          .twofas-user .twofas-content .twofas-content-table table th
+  {
+    height: auto;
+    overflow: hidden;
+    line-height: 22px;
+  }
+}
+
+.twofas-admin .twofas-content .twofas-content-table table th,
+      .twofas-user .twofas-content .twofas-content-table table th
+{
+  padding: 0 25px;
+}
+
+@media all and (max-width: 1100px)
+{
+  .twofas-admin .twofas-content .twofas-content-table table th,
+          .twofas-user .twofas-content .twofas-content-table table th
+  {
+    padding: 0 10px;
+  }
+}
+
+@media all and (max-width: 991px)
+{
+  .twofas-admin .twofas-content .twofas-content-table table tr,
+        .twofas-user .twofas-content .twofas-content-table table tr
+  {
+    float: left;
+    width: 49%;
+    padding: 15px 0;
+    margin-right: 2%;
+  }
+
+  .twofas-admin .twofas-content .twofas-content-table table tr:nth-of-type(2n),
+          .twofas-user .twofas-content .twofas-content-table table tr:nth-of-type(2n)
+  {
+    margin-right: 0;
+  }
+}
+
+@media all and (max-width: 767px)
+{
+  .twofas-admin .twofas-content .twofas-content-table table tr,
+        .twofas-user .twofas-content .twofas-content-table table tr
+  {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .twofas-admin .twofas-content .twofas-content-table table tr:last-of-type,
+          .twofas-user .twofas-content .twofas-content-table table tr:last-of-type
+  {
+    margin-bottom: 0;
+  }
+}
+
+.twofas-admin .twofas-content .twofas-content-table table td,
+      .twofas-user .twofas-content .twofas-content-table table td
+{
+  font-size: 15px;
+}
+
+@media all and (max-width: 991px)
+{
+  .twofas-admin .twofas-content .twofas-content-table table td,
+          .twofas-user .twofas-content .twofas-content-table table td
+  {
+    padding: 0 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+  }
+
+  .twofas-admin .twofas-content .twofas-content-table table td::before,
+            .twofas-user .twofas-content .twofas-content-table table td::before
+  {
+    font-weight: 700;
+    font-size: 13px;
+    margin-right: 5px;
+  }
+
+  .twofas-admin .twofas-content .twofas-content-table table td:nth-of-type(1)::before,
+            .twofas-user .twofas-content .twofas-content-table table td:nth-of-type(1)::before
+  {
+    content: 'Browser and device: ';
+  }
+
+  .twofas-admin .twofas-content .twofas-content-table table td:nth-of-type(2)::before,
+            .twofas-user .twofas-content .twofas-content-table table td:nth-of-type(2)::before
+  {
+    content: 'Added: ';
+  }
+
+  .twofas-admin .twofas-content .twofas-content-table table td:nth-of-type(3)::before,
+            .twofas-user .twofas-content .twofas-content-table table td:nth-of-type(3)::before
+  {
+    content: 'Last logged in: ';
+  }
+
+  .twofas-admin .twofas-content .twofas-content-table table td:nth-of-type(4)::before,
+            .twofas-user .twofas-content .twofas-content-table table td:nth-of-type(4)::before
+  {
+    content: 'IP Address: ';
+  }
+
+  .twofas-admin .twofas-content .twofas-content-table table td:nth-of-type(5)::before,
+            .twofas-user .twofas-content .twofas-content-table table td:nth-of-type(5)::before
+  {
+    content: 'Action: ';
+  }
+}
+
+.twofas-admin .twofas-content .twofas-content-table table td:first-of-type .twofas-td-content,
+        .twofas-user .twofas-content .twofas-content-table table td:first-of-type .twofas-td-content
+{
+  border-left: none;
+}
+
+.twofas-admin .twofas-content .twofas-content-table table td .twofas-td-content,
+        .twofas-user .twofas-content .twofas-content-table table td .twofas-td-content
+{
+  border-left: 1px solid #e3e4e6;
+  display: inline;
+  height: 18px;
+  padding: 0 25px;
+}
+
+@media all and (max-width: 1100px)
+{
+  .twofas-admin .twofas-content .twofas-content-table table td .twofas-td-content,
+            .twofas-user .twofas-content .twofas-content-table table td .twofas-td-content
+  {
+    padding: 0 10px;
+  }
+}
+
+@media all and (max-width: 991px)
+{
+  .twofas-admin .twofas-content .twofas-content-table table td .twofas-td-content,
+            .twofas-user .twofas-content .twofas-content-table table td .twofas-td-content
+  {
+    border-left: 0;
+    padding: 0;
+    font-size: 13px;
+  }
+}
+
+.twofas-admin .twofas-content .twofas-content-table table td .twofas-hour,
+        .twofas-user .twofas-content .twofas-content-table table td .twofas-hour
+{
+  color: #9fa3ab;
+  margin-left: 15px;
+  font-size: 13px;
+  display: none;
+}
+
+@media all and (max-width: 991px)
+{
+  .twofas-admin .twofas-content .twofas-content-table table td .twofas-hour,
+            .twofas-user .twofas-content .twofas-content-table table td .twofas-hour
+  {
+    margin-left: 5px;
+  }
+}
+
+.twofas-admin .twofas-content .twofas-content-table table td .twofas-trusted-device-country,
+        .twofas-user .twofas-content .twofas-content-table table td .twofas-trusted-device-country
+{
+  color: #9fa3ab;
+  font-size: 13px;
+  display: none;
+  margin-right: 4px;
+}
+
+.twofas-admin .twofas-content .twofas-content-table table td .twofas-trusted-device-country:empty,
+          .twofas-user .twofas-content .twofas-content-table table td .twofas-trusted-device-country:empty
+{
+  margin-right: 0;
+}
+
+.twofas-admin .twofas-content .twofas-content-table table td .twofas-ip,
+        .twofas-user .twofas-content .twofas-content-table table td .twofas-ip
+{
+  margin-left: -4px;
+}
+
+.twofas-admin .twofas-content .twofas-content-table table td .twofas-visible,
+        .twofas-user .twofas-content .twofas-content-table table td .twofas-visible
+{
+  display: inline-block;
+}
+
+.twofas-admin .twofas-content .twofas-content-table table td .twofas-remove,
+        .twofas-user .twofas-content .twofas-content-table table td .twofas-remove
+{
+  color: #eb1c1c;
+  font-size: 11px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.twofas-admin .twofas-content .twofas-content-table table td .twofas-remove:hover,
+          .twofas-user .twofas-content .twofas-content-table table td .twofas-remove:hover
+{
+  color: #a50000;
+  text-decoration: none;
+}
+
+.twofas-admin .twofas-content .twofas-content-table table td .twofas-remove:hover .twofas-icon,
+            .twofas-user .twofas-content .twofas-content-table table td .twofas-remove:hover .twofas-icon
+{
+  background-position: -227px -161px !important;
+}
+
+.twofas-admin .twofas-content .twofas-content-table table td .twofas-remove .twofas-icon,
+          .twofas-user .twofas-content .twofas-content-table table td .twofas-remove .twofas-icon
+{
+  vertical-align: middle;
+  margin-top: -2px;
+}
+
+.twofas-admin .twofas-content .twofas-content-table table tr,
+      .twofas-user .twofas-content .twofas-content-table table tr
+{
+  border: 1px solid #e3e4e6;
+}
+
+@media all and (max-width: 991px)
+{
+  .twofas-admin .twofas-content .twofas-content-table table,
+      .twofas-admin .twofas-content .twofas-content-table thead,
+      .twofas-admin .twofas-content .twofas-content-table tbody,
+      .twofas-admin .twofas-content .twofas-content-table th,
+      .twofas-admin .twofas-content .twofas-content-table td,
+      .twofas-admin .twofas-content .twofas-content-table tr,
+      .twofas-user .twofas-content .twofas-content-table table,
+      .twofas-user .twofas-content .twofas-content-table thead,
+      .twofas-user .twofas-content .twofas-content-table tbody,
+      .twofas-user .twofas-content .twofas-content-table th,
+      .twofas-user .twofas-content .twofas-content-table td,
+      .twofas-user .twofas-content .twofas-content-table tr
+  {
+    display: block;
+  }
+}
+
+.twofas-admin .twofas-content .twofas-content-table h5,
+    .twofas-user .twofas-content .twofas-content-table h5
+{
+  font-size: 22px;
+  line-height: 60px;
+  font-weight: 700;
+  margin: 20px 0;
+  text-align: center;
+}
+
+@media all and (max-width: 991px)
+{
+  .twofas-admin .twofas-content .twofas-content-table .twofas-trusted-devices,
+      .twofas-user .twofas-content .twofas-content-table .twofas-trusted-devices
+  {
+    height: auto;
+    overflow: hidden;
+  }
+}
+
+.twofas-admin .twofas-content .twofas-content-table .twofas-add-trusted-device,
+    .twofas-user .twofas-content .twofas-content-table .twofas-add-trusted-device
+{
+  width: 100%;
+  float: none;
+  height: auto;
+  overflow: hidden;
+  clear: both;
+  margin-top: 20px;
+}
+
+.twofas-admin .twofas-switch,
+.twofas-user .twofas-switch
+{
+  display: block;
+  height: 25px;
+  width: 69px;
+  line-height: 25px;
+  position: relative;
+  border: 0;
+  background: none;
+  color: #FFF;
+  border-radius: 12.5px;
+  padding: 0 3px;
+}
+
+.twofas-admin .twofas-switch.twofas-enabled,
+  .twofas-user .twofas-switch.twofas-enabled
+{
+  background: #08772e;
+}
+
+.twofas-admin .twofas-switch.twofas-enabled .twofas-on,
+    .twofas-user .twofas-switch.twofas-enabled .twofas-on
+{
+  background: #10b74a;
+}
+
+.twofas-admin .twofas-switch.twofas-disabled,
+  .twofas-user .twofas-switch.twofas-disabled
+{
+  background: #ec4445;
+  color: #fff !important;
+}
+
+.twofas-admin .twofas-switch.twofas-disabled .twofas-off,
+    .twofas-user .twofas-switch.twofas-disabled .twofas-off
+{
+  background: #a01011;
+}
+
+.twofas-admin .twofas-switch span,
+  .twofas-user .twofas-switch span
+{
+  display: inline-block;
+  float: left;
+  font-weight: 700;
+  font-size: 10px;
+  text-transform: uppercase;
+  width: 31px;
+  height: 18.5px;
+  line-height: 18.5px;
+  border-radius: 9.25px;
+  padding-top: 1px;
+}
+
+.twofas-admin .twofas-switch span.twofas-on,
+    .twofas-user .twofas-switch span.twofas-on
+{
+  text-align: center;
+}
+
+.twofas-admin .twofas-switch span.twofas-off,
+    .twofas-user .twofas-switch span.twofas-off
+{
+  text-align: center;
+}
+
+.twofas-admin .twofas-totp-secret,
+.twofas-user .twofas-totp-secret
+{
+  display: none;
+}
+
+.twofas-admin .twofas-tooltip::before,
+.twofas-user .twofas-tooltip::before
+{
+  display: none;
+  content: '';
+  position: absolute;
+  left: 105%;
+  top: 50%;
+  -webkit-transform: translate(-5px, -50%);
+  -ms-transform: translate(-5px, -50%);
+  transform: translate(-5px, -50%);
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 5px 5px 0;
+  border-color: transparent #1a232e transparent transparent;
+}
+
+.twofas-admin .twofas-tooltip::after,
+.twofas-user .twofas-tooltip::after
+{
+  display: none;
+  position: absolute;
+  left: 105%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  border-radius: 3px;
+  font-size: 12px;
+  line-height: 15px;
+  padding: 10px;
+  min-width: 115px;
+  color: #f7f6f6;
+  background: #1a232e;
+  z-index: 9999;
+}
+
+.twofas-admin .twofas-tooltip:hover:before,
+.twofas-user .twofas-tooltip:hover:before
+{
+  display: block;
+}
+
+.twofas-admin .twofas-tooltip:hover:after,
+.twofas-user .twofas-tooltip:hover:after
+{
+  display: block;
+  content: attr(data-tooltip);
+}
+
+.twofas-admin .twofas-welcome-box,
+.twofas-user .twofas-welcome-box
+{
+  background: #fff;
+  border: 1px solid #b8b8b8;
+  border-radius: 4px;
+  text-align: center;
+  margin-bottom: 75px;
+}
+
+@media all and (max-width: 991px)
+{
+  .twofas-admin .twofas-welcome-box,
+    .twofas-user .twofas-welcome-box
+  {
+    margin-bottom: 40px;
+    background: none;
+    border: 0;
+  }
+}
+
+@media all and (max-width: 767px)
+{
+  .twofas-admin .twofas-welcome-box .row,
+    .twofas-user .twofas-welcome-box .row
+  {
+    margin: 0;
+  }
+}
+
+.twofas-admin .twofas-welcome-box-section,
+  .twofas-user .twofas-welcome-box-section
+{
+  padding: 25px 0;
+  position: relative;
+}
+
+.twofas-admin .twofas-welcome-box-section.twofas-decoration,
+    .twofas-user .twofas-welcome-box-section.twofas-decoration
+{
+  background: #f9f9f9;
+  border-left: 1px solid #e3e3e3;
+  border-right: 1px solid #e3e3e3;
+}
+
+@media all and (max-width: 991px)
+{
+  .twofas-admin .twofas-welcome-box-section.twofas-decoration,
+        .twofas-user .twofas-welcome-box-section.twofas-decoration
+  {
+    border-left: 0;
+    border-right: 0;
+  }
+}
+
+.twofas-admin .twofas-welcome-box-section .twofas-badge,
+    .twofas-user .twofas-welcome-box-section .twofas-badge
+{
+  position: absolute;
+  left: 50%;
+  top: -13px;
+  margin-left: -13px;
+}
+
+@media all and (max-width: 991px)
+{
+  .twofas-admin .twofas-welcome-box-section .twofas-badge,
+        .twofas-user .twofas-welcome-box-section .twofas-badge
+  {
+    display: none;
+  }
+}
+
+.twofas-admin .twofas-welcome-box-section .twofas-login-form,
+    .twofas-user .twofas-welcome-box-section .twofas-login-form
+{
+  display: inline-block;
+  position: relative;
+}
+
+.twofas-admin .twofas-welcome-box-section .twofas-login-form > img,
+      .twofas-user .twofas-welcome-box-section .twofas-login-form > img
+{
+  margin-top: 58px;
+}
+
+.twofas-admin .twofas-welcome-box-section .twofas-arrow,
+    .twofas-user .twofas-welcome-box-section .twofas-arrow
+{
+  position: absolute;
+  left: 100%;
+}
+
+.twofas-admin .twofas-welcome-box-section h2,
+    .twofas-user .twofas-welcome-box-section h2
+{
+  font-size: 20px;
+  font-weight: 400;
+  color: #202225;
+  margin-bottom: 5px;
+}
+
+.twofas-admin .twofas-welcome-box-section p,
+    .twofas-user .twofas-welcome-box-section p
+{
+  font-size: 14px;
+  font-weight: 400;
+  color: #777a7e;
+}
+
+.twofas-admin .twofas-welcome-box-block,
+  .twofas-user .twofas-welcome-box-block
+{
+  width: 65%;
+  height: 58px;
+  line-height: 58px;
+  background: #fff;
+  border: 1px solid #aaaaaa;
+  border-radius: 2px;
+  margin: 0 auto;
+}
+
+@media all and (max-width: 1300px)
+{
+  .twofas-admin .twofas-welcome-box-block,
+      .twofas-user .twofas-welcome-box-block
+  {
+    width: 75%;
+  }
+}
+
+@media all and (max-width: 1199px)
+{
+  .twofas-admin .twofas-welcome-box-block,
+      .twofas-user .twofas-welcome-box-block
+  {
+    width: 80%;
+  }
+}
+
+@media all and (max-width: 991px)
+{
+  .twofas-admin .twofas-welcome-box-block,
+      .twofas-user .twofas-welcome-box-block
+  {
+    width: 60%;
+    height: 50px;
+    line-height: 50px;
+  }
+}
+
+@media all and (max-width: 500px)
+{
+  .twofas-admin .twofas-welcome-box-block,
+      .twofas-user .twofas-welcome-box-block
+  {
+    width: 80%;
+  }
+}
+
+@media all and (max-width: 400px)
+{
+  .twofas-admin .twofas-welcome-box-block,
+      .twofas-user .twofas-welcome-box-block
+  {
+    width: 90%;
+  }
+}
+
+.twofas-admin .twofas-welcome-box-block.twofas-big,
+    .twofas-user .twofas-welcome-box-block.twofas-big
+{
+  width: 105%;
+  margin: 15px 0 0 -2.5%;
+}
+
+@media all and (max-width: 991px)
+{
+  .twofas-admin .twofas-welcome-box-block.twofas-big,
+        .twofas-user .twofas-welcome-box-block.twofas-big
+  {
+    width: 60%;
+    margin: 15px auto 0;
+  }
+}
+
+@media all and (max-width: 500px)
+{
+  .twofas-admin .twofas-welcome-box-block.twofas-big,
+        .twofas-user .twofas-welcome-box-block.twofas-big
+  {
+    width: 80%;
+  }
+}
+
+@media all and (max-width: 400px)
+{
+  .twofas-admin .twofas-welcome-box-block.twofas-big,
+        .twofas-user .twofas-welcome-box-block.twofas-big
+  {
+    width: 90%;
+  }
+}
+
+.twofas-admin .twofas-welcome-box-block:nth-of-type(1):nth-last-of-type(2),
+    .twofas-user .twofas-welcome-box-block:nth-of-type(1):nth-last-of-type(2)
+{
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom: 1px solid #ededed;
+}
+
+.twofas-admin .twofas-welcome-box-block:nth-of-type(2):nth-last-of-type(1),
+    .twofas-user .twofas-welcome-box-block:nth-of-type(2):nth-last-of-type(1)
+{
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-top: 0;
+}
+
+.twofas-admin .twofas-welcome-box-block-content,
+    .twofas-user .twofas-welcome-box-block-content
+{
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.twofas-admin .twofas-welcome-box-block-content p,
+      .twofas-user .twofas-welcome-box-block-content p
+{
+  display: inline-block;
+  margin-top: -6px;
+  vertical-align: middle;
+}
+
+.twofas-admin .twofas-welcome-box-block .twofas-icon-container,
+    .twofas-user .twofas-welcome-box-block .twofas-icon-container
+{
+  display: inline-block;
+  width: 35px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+@media all and (max-width: 1199px)
+{
+  .twofas-admin .twofas-welcome-box-block .twofas-icon-container,
+        .twofas-user .twofas-welcome-box-block .twofas-icon-container
+  {
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+}
+
+@media all and (max-width: 1050px)
+{
+  .twofas-admin .twofas-welcome-box-block .twofas-icon-container,
+        .twofas-user .twofas-welcome-box-block .twofas-icon-container
+  {
+    margin-right: 3px;
+  }
+}
+
+.twofas-admin .twofas-welcome-box-block .twofas-icon-container i,
+      .twofas-user .twofas-welcome-box-block .twofas-icon-container i
+{
+  vertical-align: middle;
+}
+
+.twofas-admin .twofas-welcome-box-block p,
+    .twofas-user .twofas-welcome-box-block p
+{
+  display: inline-block;
+  font-weight: 500;
+  font-size: 16px;
+  color: #202225;
+  width: 130px;
+  cursor: default;
+}
+
+@media all and (max-width: 1199px)
+{
+  .twofas-admin .twofas-welcome-box-block p,
+        .twofas-user .twofas-welcome-box-block p
+  {
+    width: 120px;
+  }
+}
+
+@media all and (max-width: 1050px)
+{
+  .twofas-admin .twofas-welcome-box-block p,
+        .twofas-user .twofas-welcome-box-block p
+  {
+    width: 115px;
+  }
+}
+
+@media all and (max-width: 991px)
+{
+  .twofas-admin .twofas-welcome-box-block p,
+        .twofas-user .twofas-welcome-box-block p
+  {
+    font-size: 15px;
+  }
+}
+
+@media all and (max-width: 767px)
+{
+  .twofas-admin .twofas-welcome-box-block p,
+        .twofas-user .twofas-welcome-box-block p
+  {
+    font-size: 14px;
+  }
+}
+
+.twofas-admin .twofas-welcome-box-block i,
+    .twofas-user .twofas-welcome-box-block i
+{
+  vertical-align: baseline;
+}
+
+.twofas-admin .twofas-welcome-box-col:first-of-type,
+  .twofas-user .twofas-welcome-box-col:first-of-type
+{
+  padding-right: 0;
+}
+
+@media all and (max-width: 991px)
+{
+  .twofas-admin .twofas-welcome-box-col:first-of-type,
+      .twofas-user .twofas-welcome-box-col:first-of-type
+  {
+    display: none;
+  }
+}
+
+.twofas-admin .twofas-welcome-box-col:last-of-type,
+  .twofas-user .twofas-welcome-box-col:last-of-type
+{
+  padding-left: 0;
+}
+
+@media all and (max-width: 991px)
+{
+  .twofas-admin .twofas-welcome-box-col:last-of-type,
+      .twofas-user .twofas-welcome-box-col:last-of-type
+  {
+    display: none;
+  }
+}
+
+@media all and (max-width: 991px)
+{
+  .twofas-admin .twofas-welcome-box-col,
+    .twofas-user .twofas-welcome-box-col
+  {
+    background: #f9f9f9;
+    border: 1px solid #b8b8b8;
+    border-radius: 4px;
+  }
+}
+
+.twofas-admin .twofas-welcome-box .twofas-switch,
+  .twofas-user .twofas-welcome-box .twofas-switch
+{
+  margin: 18px auto 15px auto;
+}
+
+.twofas-admin .twofas-clear-fix,
+.twofas-user .twofas-clear-fix,
+.twofas-login-box .twofas-clear-fix,
+.twofas-totp-confirmation-box .twofas-clear-fix
+{
+  *zoom: 1;
+}
+
+.twofas-admin .twofas-clear-fix::before, .twofas-admin .twofas-clear-fix::after,
+  .twofas-user .twofas-clear-fix::before,
+  .twofas-user .twofas-clear-fix::after,
+  .twofas-login-box .twofas-clear-fix::before,
+  .twofas-login-box .twofas-clear-fix::after,
+  .twofas-totp-confirmation-box .twofas-clear-fix::before,
+  .twofas-totp-confirmation-box .twofas-clear-fix::after
+{
+  content: ' ';
+  display: table;
+}
+
+.twofas-admin .twofas-clear-fix::after,
+  .twofas-user .twofas-clear-fix::after,
+  .twofas-login-box .twofas-clear-fix::after,
+  .twofas-totp-confirmation-box .twofas-clear-fix::after
+{
+  clear: both;
+}
+
+.twofas-admin *,
+.twofas-user *,
+.twofas-login-box *,
+.twofas-totp-confirmation-box *
+{
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.twofas-admin .twofas-anim-off,
+.twofas-admin .twofas-anim-off *,
+.twofas-user .twofas-anim-off,
+.twofas-user .twofas-anim-off *,
+.twofas-login-box .twofas-anim-off,
+.twofas-login-box .twofas-anim-off *,
+.twofas-totp-confirmation-box .twofas-anim-off,
+.twofas-totp-confirmation-box .twofas-anim-off *
+{
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+  -webkit-transition: none !important;
+  transition: none !important;
+}
+
+.twofas-admin input,
+.twofas-admin textarea,
+.twofas-admin button,
+.twofas-user input,
+.twofas-user textarea,
+.twofas-user button,
+.twofas-login-box input,
+.twofas-login-box textarea,
+.twofas-login-box button,
+.twofas-totp-confirmation-box input,
+.twofas-totp-confirmation-box textarea,
+.twofas-totp-confirmation-box button
+{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.twofas-admin a,
+.twofas-user a,
+.twofas-login-box a,
+.twofas-totp-confirmation-box a
+{
+  color: inherit;
+  outline: none;
+  text-decoration: none;
+}
+
+.twofas-admin a:hover, .twofas-admin a:active, .twofas-admin a:focus,
+  .twofas-user a:hover,
+  .twofas-user a:active,
+  .twofas-user a:focus,
+  .twofas-login-box a:hover,
+  .twofas-login-box a:active,
+  .twofas-login-box a:focus,
+  .twofas-totp-confirmation-box a:hover,
+  .twofas-totp-confirmation-box a:active,
+  .twofas-totp-confirmation-box a:focus
+{
+  color: inherit;
+  text-decoration: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline: 0;
+}
+
+.twofas-admin .twofas-muted,
+.twofas-user .twofas-muted,
+.twofas-login-box .twofas-muted,
+.twofas-totp-confirmation-box .twofas-muted
+{
+  color: #9fa1a4 !important;
+}
+
+.twofas-admin .twofas-success,
+.twofas-user .twofas-success,
+.twofas-login-box .twofas-success,
+.twofas-totp-confirmation-box .twofas-success
+{
+  color: #10b74a !important;
+}
+
+.twofas-admin .twofas-disabled,
+.twofas-user .twofas-disabled,
+.twofas-login-box .twofas-disabled,
+.twofas-totp-confirmation-box .twofas-disabled
+{
+  color: #c9cdd3 !important;
+}
+
+.twofas-admin .twofas-danger,
+.twofas-user .twofas-danger,
+.twofas-login-box .twofas-danger,
+.twofas-totp-confirmation-box .twofas-danger
+{
+  color: #ec4445 !important;
+}
+
+.twofas-admin .text-center,
+.twofas-user .text-center,
+.twofas-login-box .text-center,
+.twofas-totp-confirmation-box .text-center
+{
+  text-align: center;
+}
+
+.twofas-admin .twofas-pull-right,
+.twofas-user .twofas-pull-right,
+.twofas-login-box .twofas-pull-right,
+.twofas-totp-confirmation-box .twofas-pull-right
+{
+  float: right;
+}
+
+.twofas-admin .twofas-pull-left,
+.twofas-user .twofas-pull-left,
+.twofas-login-box .twofas-pull-left,
+.twofas-totp-confirmation-box .twofas-pull-left
+{
+  float: left;
+}
+
+.twofas-admin .twofas-line,
+.twofas-user .twofas-line,
+.twofas-login-box .twofas-line,
+.twofas-totp-confirmation-box .twofas-line
+{
+  display: block;
+}
+
+.twofas-admin .iti-flag,
+.twofas-user .iti-flag,
+.twofas-login-box .iti-flag,
+.twofas-totp-confirmation-box .iti-flag
+{
+  background-image: url("../images/flags.png");
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx)
+{
+  .twofas-admin .iti-flag,
+  .twofas-user .iti-flag,
+  .twofas-login-box .iti-flag,
+  .twofas-totp-confirmation-box .iti-flag
+  {
+    background-image: url("../images/flags@2x.png");
+  }
+}
+
+.twofas-admin .intl-tel-input,
+.twofas-user .intl-tel-input,
+.twofas-login-box .intl-tel-input,
+.twofas-totp-confirmation-box .intl-tel-input
+{
+  position: relative;
+  display: block;
+  margin: 30px 0 10px 0;
+}
+
+.twofas-admin,
+.twofas-user,
+.twofas-login-box,
+.twofas-totp-confirmation-box
+{
+  font-family: "Roboto", sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1;
+  text-rendering: optimizeSpeed;
+}
+
+.twofas-admin p,
+  .twofas-admin h1,
+  .twofas-admin h2,
+  .twofas-admin h3,
+  .twofas-admin h4,
+  .twofas-admin h5,
+  .twofas-admin h6,
+  .twofas-user p,
+  .twofas-user h1,
+  .twofas-user h2,
+  .twofas-user h3,
+  .twofas-user h4,
+  .twofas-user h5,
+  .twofas-user h6,
+  .twofas-login-box p,
+  .twofas-login-box h1,
+  .twofas-login-box h2,
+  .twofas-login-box h3,
+  .twofas-login-box h4,
+  .twofas-login-box h5,
+  .twofas-login-box h6,
+  .twofas-totp-confirmation-box p,
+  .twofas-totp-confirmation-box h1,
+  .twofas-totp-confirmation-box h2,
+  .twofas-totp-confirmation-box h3,
+  .twofas-totp-confirmation-box h4,
+  .twofas-totp-confirmation-box h5,
+  .twofas-totp-confirmation-box h6
+{
+  line-height: normal;
+  margin: 0;
+  padding: 0;
+}
+
+.twofas-admin .wrap h1,
+  .twofas-user .wrap h1,
+  .twofas-login-box .wrap h1,
+  .twofas-totp-confirmation-box .wrap h1
+{
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 38px;
+  margin-bottom: 20px;
+}
+
+@media all and (max-width: 991px)
+{
+  .twofas-admin .wrap h1,
+      .twofas-user .wrap h1,
+      .twofas-login-box .wrap h1,
+      .twofas-totp-confirmation-box .wrap h1
+  {
+    margin-bottom: 10px;
+  }
+}
+
+@media all and (max-width: 767px)
+{
+  .twofas-admin .wrap h1,
+      .twofas-user .wrap h1,
+      .twofas-login-box .wrap h1,
+      .twofas-totp-confirmation-box .wrap h1
+  {
+    font-size: 18px;
+  }
+}
+
+@media all and (max-width: 480px)
+{
+  .twofas-admin .wrap h1,
+      .twofas-user .wrap h1,
+      .twofas-login-box .wrap h1,
+      .twofas-totp-confirmation-box .wrap h1
+  {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+  }
+}
+
+.twofas-admin .wrap h1 span,
+    .twofas-user .wrap h1 span,
+    .twofas-login-box .wrap h1 span,
+    .twofas-totp-confirmation-box .wrap h1 span
+{
+  line-height: 38px;
+}
+
+.twofas-admin .wrap h1 img,
+    .twofas-user .wrap h1 img,
+    .twofas-login-box .wrap h1 img,
+    .twofas-totp-confirmation-box .wrap h1 img
+{
+  margin-right: 15px;
+  vertical-align: middle;
+}
+
+.twofas-admin .wrap h2,
+  .twofas-user .wrap h2,
+  .twofas-login-box .wrap h2,
+  .twofas-totp-confirmation-box .wrap h2
+{
+  margin-bottom: 20px;
+  height: auto;
+  overflow: hidden;
+  width: 100%;
+}
+
+@media all and (max-width: 991px)
+{
+  .twofas-admin .wrap h2,
+      .twofas-user .wrap h2,
+      .twofas-login-box .wrap h2,
+      .twofas-totp-confirmation-box .wrap h2
+  {
+    margin-bottom: 10px;
+  }
+}
+
+.twofas-admin .twofas-clear-fix,
+.twofas-user .twofas-clear-fix,
+.twofas-login-box .twofas-clear-fix,
+.twofas-totp-confirmation-box .twofas-clear-fix
+{
+  *zoom: 1;
+}
+
+.twofas-admin .twofas-clear-fix::before, .twofas-admin .twofas-clear-fix::after,
+  .twofas-user .twofas-clear-fix::before,
+  .twofas-user .twofas-clear-fix::after,
+  .twofas-login-box .twofas-clear-fix::before,
+  .twofas-login-box .twofas-clear-fix::after,
+  .twofas-totp-confirmation-box .twofas-clear-fix::before,
+  .twofas-totp-confirmation-box .twofas-clear-fix::after
+{
+  content: ' ';
+  display: table;
+}
+
+.twofas-admin .twofas-clear-fix::after,
+  .twofas-user .twofas-clear-fix::after,
+  .twofas-login-box .twofas-clear-fix::after,
+  .twofas-totp-confirmation-box .twofas-clear-fix::after
+{
+  clear: both;
+}
+
+.twofas-admin *,
+.twofas-user *,
+.twofas-login-box *,
+.twofas-totp-confirmation-box *
+{
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.twofas-admin .twofas-anim-off,
+.twofas-admin .twofas-anim-off *,
+.twofas-user .twofas-anim-off,
+.twofas-user .twofas-anim-off *,
+.twofas-login-box .twofas-anim-off,
+.twofas-login-box .twofas-anim-off *,
+.twofas-totp-confirmation-box .twofas-anim-off,
+.twofas-totp-confirmation-box .twofas-anim-off *
+{
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+  -webkit-transition: none !important;
+  transition: none !important;
+}
+
+.twofas-admin input,
+.twofas-admin textarea,
+.twofas-admin button,
+.twofas-user input,
+.twofas-user textarea,
+.twofas-user button,
+.twofas-login-box input,
+.twofas-login-box textarea,
+.twofas-login-box button,
+.twofas-totp-confirmation-box input,
+.twofas-totp-confirmation-box textarea,
+.twofas-totp-confirmation-box button
+{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.twofas-admin a,
+.twofas-user a,
+.twofas-login-box a,
+.twofas-totp-confirmation-box a
+{
+  color: inherit;
+  outline: none;
+  text-decoration: none;
+}
+
+.twofas-admin a:hover, .twofas-admin a:active, .twofas-admin a:focus,
+  .twofas-user a:hover,
+  .twofas-user a:active,
+  .twofas-user a:focus,
+  .twofas-login-box a:hover,
+  .twofas-login-box a:active,
+  .twofas-login-box a:focus,
+  .twofas-totp-confirmation-box a:hover,
+  .twofas-totp-confirmation-box a:active,
+  .twofas-totp-confirmation-box a:focus
+{
+  color: inherit;
+  text-decoration: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline: 0;
+}
+
+.twofas-admin .twofas-muted,
+.twofas-user .twofas-muted,
+.twofas-login-box .twofas-muted,
+.twofas-totp-confirmation-box .twofas-muted
+{
+  color: #9fa1a4 !important;
+}
+
+.twofas-admin .twofas-success,
+.twofas-user .twofas-success,
+.twofas-login-box .twofas-success,
+.twofas-totp-confirmation-box .twofas-success
+{
+  color: #10b74a !important;
+}
+
+.twofas-admin .twofas-disabled,
+.twofas-user .twofas-disabled,
+.twofas-login-box .twofas-disabled,
+.twofas-totp-confirmation-box .twofas-disabled
+{
+  color: #c9cdd3 !important;
+}
+
+.twofas-admin .twofas-danger,
+.twofas-user .twofas-danger,
+.twofas-login-box .twofas-danger,
+.twofas-totp-confirmation-box .twofas-danger
+{
+  color: #ec4445 !important;
+}
+
+.twofas-admin .text-center,
+.twofas-user .text-center,
+.twofas-login-box .text-center,
+.twofas-totp-confirmation-box .text-center
+{
+  text-align: center;
+}
+
+.twofas-admin .twofas-pull-right,
+.twofas-user .twofas-pull-right,
+.twofas-login-box .twofas-pull-right,
+.twofas-totp-confirmation-box .twofas-pull-right
+{
+  float: right;
+}
+
+.twofas-admin .twofas-pull-left,
+.twofas-user .twofas-pull-left,
+.twofas-login-box .twofas-pull-left,
+.twofas-totp-confirmation-box .twofas-pull-left
+{
+  float: left;
+}
+
+.twofas-admin .twofas-line,
+.twofas-user .twofas-line,
+.twofas-login-box .twofas-line,
+.twofas-totp-confirmation-box .twofas-line
+{
+  display: block;
+}
+
+.twofas-admin .iti-flag,
+.twofas-user .iti-flag,
+.twofas-login-box .iti-flag,
+.twofas-totp-confirmation-box .iti-flag
+{
+  background-image: url("../images/flags.png");
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx)
+{
+  .twofas-admin .iti-flag,
+  .twofas-user .iti-flag,
+  .twofas-login-box .iti-flag,
+  .twofas-totp-confirmation-box .iti-flag
+  {
+    background-image: url("../images/flags@2x.png");
+  }
+}
+
+.twofas-admin .intl-tel-input,
+.twofas-user .intl-tel-input,
+.twofas-login-box .intl-tel-input,
+.twofas-totp-confirmation-box .intl-tel-input
+{
+  position: relative;
+  display: block;
+  margin: 30px 0 10px 0;
+}
+
+.twofas-admin .twofas-btn,
+.twofas-user .twofas-btn,
+.twofas-login-box .twofas-btn,
+.twofas-totp-confirmation-box .twofas-btn
+{
+  -moz-transition: background-color, color .2s ease-in-out;
+  -ms-transition: background-color, color .2s ease-in-out;
+  -o-transition: background-color, color .2s ease-in-out;
+  -webkit-transition: background-color, color .2s ease-in-out;
+  transition: background-color, color .2s ease-in-out;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  height: 30px;
+  line-height: 30px;
+  width: auto;
+  text-align: center;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .5px;
+  padding: 0 28px;
+}
+
+.twofas-admin .twofas-btn *,
+  .twofas-user .twofas-btn *,
+  .twofas-login-box .twofas-btn *,
+  .twofas-totp-confirmation-box .twofas-btn *
+{
+  -moz-transition: background-color, color .2s ease-in-out;
+  -ms-transition: background-color, color .2s ease-in-out;
+  -o-transition: background-color, color .2s ease-in-out;
+  -webkit-transition: background-color, color .2s ease-in-out;
+  transition: background-color, color .2s ease-in-out;
+}
+
+.twofas-admin .twofas-btn:hover, .twofas-admin .twofas-btn:focus, .twofas-admin .twofas-btn:active, .twofas-admin .twofas-btn:visited,
+  .twofas-user .twofas-btn:hover,
+  .twofas-user .twofas-btn:focus,
+  .twofas-user .twofas-btn:active,
+  .twofas-user .twofas-btn:visited,
+  .twofas-login-box .twofas-btn:hover,
+  .twofas-login-box .twofas-btn:focus,
+  .twofas-login-box .twofas-btn:active,
+  .twofas-login-box .twofas-btn:visited,
+  .twofas-totp-confirmation-box .twofas-btn:hover,
+  .twofas-totp-confirmation-box .twofas-btn:focus,
+  .twofas-totp-confirmation-box .twofas-btn:active,
+  .twofas-totp-confirmation-box .twofas-btn:visited
+{
+  text-decoration: none;
+}
+
+.twofas-admin .twofas-btn[disabled],
+  .twofas-user .twofas-btn[disabled],
+  .twofas-login-box .twofas-btn[disabled],
+  .twofas-totp-confirmation-box .twofas-btn[disabled]
+{
+  cursor: not-allowed;
+  -webkit-filter: saturate(0.5);
+  filter: saturate(0.5);
+}
+
+.twofas-admin .twofas-btn.twofas-wait,
+  .twofas-user .twofas-btn.twofas-wait,
+  .twofas-login-box .twofas-btn.twofas-wait,
+  .twofas-totp-confirmation-box .twofas-btn.twofas-wait
+{
+  cursor: wait !important;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.twofas-admin .twofas-btn.twofas-wait > *:not(.twofas-spinner-button),
+    .twofas-user .twofas-btn.twofas-wait > *:not(.twofas-spinner-button),
+    .twofas-login-box .twofas-btn.twofas-wait > *:not(.twofas-spinner-button),
+    .twofas-totp-confirmation-box .twofas-btn.twofas-wait > *:not(.twofas-spinner-button)
+{
+  visibility: hidden;
+}
+
+.twofas-admin .twofas-btn.twofas-wait .twofas-spinner-button,
+    .twofas-user .twofas-btn.twofas-wait .twofas-spinner-button,
+    .twofas-login-box .twofas-btn.twofas-wait .twofas-spinner-button,
+    .twofas-totp-confirmation-box .twofas-btn.twofas-wait .twofas-spinner-button
+{
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  top: 50%;
+}
+
+.twofas-admin .twofas-btn .twofas-spinner-button,
+  .twofas-user .twofas-btn .twofas-spinner-button,
+  .twofas-login-box .twofas-btn .twofas-spinner-button,
+  .twofas-totp-confirmation-box .twofas-btn .twofas-spinner-button
+{
+  display: none;
+}
+
+.twofas-admin .twofas-btn.twofas-block-btn,
+  .twofas-user .twofas-btn.twofas-block-btn,
+  .twofas-login-box .twofas-btn.twofas-block-btn,
+  .twofas-totp-confirmation-box .twofas-btn.twofas-block-btn
+{
+  display: block;
+}
+
+.twofas-admin .twofas-btn.twofas-action-btn,
+  .twofas-user .twofas-btn.twofas-action-btn,
+  .twofas-login-box .twofas-btn.twofas-action-btn,
+  .twofas-totp-confirmation-box .twofas-btn.twofas-action-btn
+{
+  background: #202225;
+  color: #fff;
+}
+
+.twofas-admin .twofas-btn.twofas-action-btn:hover,
+    .twofas-user .twofas-btn.twofas-action-btn:hover,
+    .twofas-login-box .twofas-btn.twofas-action-btn:hover,
+    .twofas-totp-confirmation-box .twofas-btn.twofas-action-btn:hover
+{
+  background: #2c2f33;
+}
+
+.twofas-admin .twofas-btn.twofas-action-btn[disabled],
+    .twofas-user .twofas-btn.twofas-action-btn[disabled],
+    .twofas-login-box .twofas-btn.twofas-action-btn[disabled],
+    .twofas-totp-confirmation-box .twofas-btn.twofas-action-btn[disabled]
+{
+  background: #676d77;
+}
+
+.twofas-admin .twofas-btn.twofas-action-btn .twofas-sms-sent-message,
+    .twofas-user .twofas-btn.twofas-action-btn .twofas-sms-sent-message,
+    .twofas-login-box .twofas-btn.twofas-action-btn .twofas-sms-sent-message,
+    .twofas-totp-confirmation-box .twofas-btn.twofas-action-btn .twofas-sms-sent-message
+{
+  display: none;
+}
+
+.twofas-admin .twofas-btn.twofas-action-btn.twofas-send-sms-button,
+    .twofas-user .twofas-btn.twofas-action-btn.twofas-send-sms-button,
+    .twofas-login-box .twofas-btn.twofas-action-btn.twofas-send-sms-button,
+    .twofas-totp-confirmation-box .twofas-btn.twofas-action-btn.twofas-send-sms-button
+{
+  padding: 0 37.5px;
+}
+
+@media all and (max-width: 767px)
+{
+  .twofas-admin .twofas-btn.twofas-action-btn.twofas-send-sms-button,
+        .twofas-user .twofas-btn.twofas-action-btn.twofas-send-sms-button,
+        .twofas-login-box .twofas-btn.twofas-action-btn.twofas-send-sms-button,
+        .twofas-totp-confirmation-box .twofas-btn.twofas-action-btn.twofas-send-sms-button
+  {
+    margin: 0 auto;
+  }
+}
+
+.twofas-admin .twofas-btn.twofas-submit-btn,
+  .twofas-user .twofas-btn.twofas-submit-btn,
+  .twofas-login-box .twofas-btn.twofas-submit-btn,
+  .twofas-totp-confirmation-box .twofas-btn.twofas-submit-btn
+{
+  background: #1665dd;
+  color: #fff;
+}
+
+.twofas-admin .twofas-btn.twofas-submit-btn:hover,
+    .twofas-user .twofas-btn.twofas-submit-btn:hover,
+    .twofas-login-box .twofas-btn.twofas-submit-btn:hover,
+    .twofas-totp-confirmation-box .twofas-btn.twofas-submit-btn:hover
+{
+  background: #2372e9;
+}
+
+.twofas-admin .twofas-btn.twofas-refresh-btn,
+  .twofas-user .twofas-btn.twofas-refresh-btn,
+  .twofas-login-box .twofas-btn.twofas-refresh-btn,
+  .twofas-totp-confirmation-box .twofas-btn.twofas-refresh-btn
+{
+  background: transparent;
+  color: #666666;
+  text-align: left;
+  padding: 0;
+  margin-left: 15px;
+}
+
+.twofas-admin .twofas-btn.twofas-refresh-btn:hover,
+    .twofas-user .twofas-btn.twofas-refresh-btn:hover,
+    .twofas-login-box .twofas-btn.twofas-refresh-btn:hover,
+    .twofas-totp-confirmation-box .twofas-btn.twofas-refresh-btn:hover
+{
+  color: #595959;
+}
+
+.twofas-admin .twofas-btn.twofas-refresh-btn i,
+    .twofas-user .twofas-btn.twofas-refresh-btn i,
+    .twofas-login-box .twofas-btn.twofas-refresh-btn i,
+    .twofas-totp-confirmation-box .twofas-btn.twofas-refresh-btn i
+{
+  vertical-align: middle;
+  margin-right: 2px;
+}
+
+.twofas-admin .twofas-btn.twofas-enable-token-btn,
+  .twofas-user .twofas-btn.twofas-enable-token-btn,
+  .twofas-login-box .twofas-btn.twofas-enable-token-btn,
+  .twofas-totp-confirmation-box .twofas-btn.twofas-enable-token-btn
+{
+  width: 133px;
+}
+
+.twofas-admin .twofas-btn.twofas-generate-backup-btn,
+  .twofas-user .twofas-btn.twofas-generate-backup-btn,
+  .twofas-login-box .twofas-btn.twofas-generate-backup-btn,
+  .twofas-totp-confirmation-box .twofas-btn.twofas-generate-backup-btn
+{
+  background: #1a232e;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .5px;
+  height: 45px;
+  line-height: 45px;
+  text-transform: uppercase;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  bottom: -22.5px;
+  width: 65%;
+}
+
+.twofas-admin .twofas-btn.twofas-generate-backup-btn:hover,
+    .twofas-user .twofas-btn.twofas-generate-backup-btn:hover,
+    .twofas-login-box .twofas-btn.twofas-generate-backup-btn:hover,
+    .twofas-totp-confirmation-box .twofas-btn.twofas-generate-backup-btn:hover
+{
+  background: #232f3e;
+}
+
+.twofas-admin .twofas-btn.twofas-generate-backup-btn[disabled],
+    .twofas-user .twofas-btn.twofas-generate-backup-btn[disabled],
+    .twofas-login-box .twofas-btn.twofas-generate-backup-btn[disabled],
+    .twofas-totp-confirmation-box .twofas-btn.twofas-generate-backup-btn[disabled]
+{
+  background: #516d90;
+}
+
+.twofas-admin .twofas-btn.twofas-backup-action-btn,
+  .twofas-user .twofas-btn.twofas-backup-action-btn,
+  .twofas-login-box .twofas-btn.twofas-backup-action-btn,
+  .twofas-totp-confirmation-box .twofas-btn.twofas-backup-action-btn
+{
+  background: #1a232e;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .5px;
+  height: 45px;
+  line-height: 45px;
+  margin-bottom: -20px;
+  text-transform: uppercase;
+  width: 65%;
+}
+
+.twofas-admin .twofas-btn.twofas-backup-action-btn:hover,
+    .twofas-user .twofas-btn.twofas-backup-action-btn:hover,
+    .twofas-login-box .twofas-btn.twofas-backup-action-btn:hover,
+    .twofas-totp-confirmation-box .twofas-btn.twofas-backup-action-btn:hover
+{
+  background: #232f3e;
+}
+
+.twofas-admin .twofas-btn.twofas-backup-action-btn[disabled],
+    .twofas-user .twofas-btn.twofas-backup-action-btn[disabled],
+    .twofas-login-box .twofas-btn.twofas-backup-action-btn[disabled],
+    .twofas-totp-confirmation-box .twofas-btn.twofas-backup-action-btn[disabled]
+{
+  background: #516d90;
+}
+
+.twofas-admin .twofas-btn.twofas-upgrade-btn,
+  .twofas-user .twofas-btn.twofas-upgrade-btn,
+  .twofas-login-box .twofas-btn.twofas-upgrade-btn,
+  .twofas-totp-confirmation-box .twofas-btn.twofas-upgrade-btn
+{
+  background: #ffffff;
+  color: #363b41;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  height: 22px;
+  line-height: 22px;
+  margin-left: 15px;
+  padding: 0 10px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+@media all and (max-width: 480px)
+{
+  .twofas-admin .twofas-btn.twofas-upgrade-btn,
+      .twofas-user .twofas-btn.twofas-upgrade-btn,
+      .twofas-login-box .twofas-btn.twofas-upgrade-btn,
+      .twofas-totp-confirmation-box .twofas-btn.twofas-upgrade-btn
+  {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.twofas-admin .twofas-btn.twofas-upgrade-btn:hover,
+    .twofas-user .twofas-btn.twofas-upgrade-btn:hover,
+    .twofas-login-box .twofas-btn.twofas-upgrade-btn:hover,
+    .twofas-totp-confirmation-box .twofas-btn.twofas-upgrade-btn:hover
+{
+  background: white;
+}
+
+.twofas-admin .twofas-btn.twofas-disable-btn,
+  .twofas-user .twofas-btn.twofas-disable-btn,
+  .twofas-login-box .twofas-btn.twofas-disable-btn,
+  .twofas-totp-confirmation-box .twofas-btn.twofas-disable-btn
+{
+  background: #ec1c24;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  height: 31px;
+  line-height: 31px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  padding: 0 15px;
+}
+
+.twofas-admin .twofas-btn.twofas-disable-btn:hover,
+    .twofas-user .twofas-btn.twofas-disable-btn:hover,
+    .twofas-login-box .twofas-btn.twofas-disable-btn:hover,
+    .twofas-totp-confirmation-box .twofas-btn.twofas-disable-btn:hover
+{
+  background: #ee343b;
+}
+
+.twofas-admin .twofas-btn.twofas-disable-btn .twofas-icon,
+    .twofas-user .twofas-btn.twofas-disable-btn .twofas-icon,
+    .twofas-login-box .twofas-btn.twofas-disable-btn .twofas-icon,
+    .twofas-totp-confirmation-box .twofas-btn.twofas-disable-btn .twofas-icon
+{
+  vertical-align: middle;
+  margin-top: -1px;
+  margin-right: 10px;
+}
+
+.twofas-admin .twofas-btn.twofas-enable-btn,
+  .twofas-user .twofas-btn.twofas-enable-btn,
+  .twofas-login-box .twofas-btn.twofas-enable-btn,
+  .twofas-totp-confirmation-box .twofas-btn.twofas-enable-btn
+{
+  background: #10b74a;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  height: 31px;
+  line-height: 31px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  padding: 0 15px;
+}
+
+.twofas-admin .twofas-btn.twofas-enable-btn:hover,
+    .twofas-user .twofas-btn.twofas-enable-btn:hover,
+    .twofas-login-box .twofas-btn.twofas-enable-btn:hover,
+    .twofas-totp-confirmation-box .twofas-btn.twofas-enable-btn:hover
+{
+  background: #12ce53;
+}
+
+.twofas-admin .twofas-btn.twofas-enable-btn .twofas-icon,
+    .twofas-user .twofas-btn.twofas-enable-btn .twofas-icon,
+    .twofas-login-box .twofas-btn.twofas-enable-btn .twofas-icon,
+    .twofas-totp-confirmation-box .twofas-btn.twofas-enable-btn .twofas-icon
+{
+  vertical-align: middle;
+  margin-top: -1px;
+  margin-right: 10px;
+}
+
+.twofas-admin .twofas-btn.twofas-admin-table-btn,
+  .twofas-user .twofas-btn.twofas-admin-table-btn,
+  .twofas-login-box .twofas-btn.twofas-admin-table-btn,
+  .twofas-totp-confirmation-box .twofas-btn.twofas-admin-table-btn
+{
+  background: #202225;
+  color: #fff;
+  display: block;
+  height: 31px;
+  line-height: 31px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+@media all and (max-width: 1199px)
+{
+  .twofas-admin .twofas-btn.twofas-admin-table-btn,
+      .twofas-user .twofas-btn.twofas-admin-table-btn,
+      .twofas-login-box .twofas-btn.twofas-admin-table-btn,
+      .twofas-totp-confirmation-box .twofas-btn.twofas-admin-table-btn
+  {
+    padding: 0 15px;
+    letter-spacing: -.3px;
+  }
+}
+
+.twofas-admin .twofas-btn.twofas-admin-table-btn:hover,
+    .twofas-user .twofas-btn.twofas-admin-table-btn:hover,
+    .twofas-login-box .twofas-btn.twofas-admin-table-btn:hover,
+    .twofas-totp-confirmation-box .twofas-btn.twofas-admin-table-btn:hover
+{
+  background: #2c2f33;
+}
+
+.twofas-admin .twofas-btn.twofas-account-box-btn,
+  .twofas-user .twofas-btn.twofas-account-box-btn,
+  .twofas-login-box .twofas-btn.twofas-account-box-btn,
+  .twofas-totp-confirmation-box .twofas-btn.twofas-account-box-btn
+{
+  background: #202225;
+  color: #fff;
+  display: inline-block;
+  height: 27px;
+  line-height: 27px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 0 20px;
+  letter-spacing: -.05px;
+}
+
+.twofas-admin .twofas-btn.twofas-account-box-btn:hover,
+    .twofas-user .twofas-btn.twofas-account-box-btn:hover,
+    .twofas-login-box .twofas-btn.twofas-account-box-btn:hover,
+    .twofas-totp-confirmation-box .twofas-btn.twofas-account-box-btn:hover
+{
+  background: #2c2f33;
+}
+
+.twofas-admin .twofas-btn.twofas-cancel-btn,
+  .twofas-user .twofas-btn.twofas-cancel-btn,
+  .twofas-login-box .twofas-btn.twofas-cancel-btn,
+  .twofas-totp-confirmation-box .twofas-btn.twofas-cancel-btn
+{
+  color: #363b41;
+}
+
+.twofas-admin .twofas-btn.twofas-cancel-btn:hover,
+    .twofas-user .twofas-btn.twofas-cancel-btn:hover,
+    .twofas-login-box .twofas-btn.twofas-cancel-btn:hover,
+    .twofas-totp-confirmation-box .twofas-btn.twofas-cancel-btn:hover
+{
+  color: #646e79;
+}
+
+.twofas-admin .twofas-btn.twofas-mobile-config,
+  .twofas-user .twofas-btn.twofas-mobile-config,
+  .twofas-login-box .twofas-btn.twofas-mobile-config,
+  .twofas-totp-confirmation-box .twofas-btn.twofas-mobile-config
+{
+  margin: 0 auto 20px;
+  max-width: 250px;
+  padding: 0 15px;
+}
+
+.twofas-admin .twofas-btn.twofas-collapse-btn,
+  .twofas-user .twofas-btn.twofas-collapse-btn,
+  .twofas-login-box .twofas-btn.twofas-collapse-btn,
+  .twofas-totp-confirmation-box .twofas-btn.twofas-collapse-btn
+{
+  background: #fff;
+  color: #23282d;
+  border: 1px solid #384c54;
+  margin-top: 20px;
+}
+
+.twofas-admin .twofas-btn.twofas-collapse-btn:hover,
+    .twofas-user .twofas-btn.twofas-collapse-btn:hover,
+    .twofas-login-box .twofas-btn.twofas-collapse-btn:hover,
+    .twofas-totp-confirmation-box .twofas-btn.twofas-collapse-btn:hover
+{
+  background: rgba(200, 206, 212, 0.2);
+}
+
+.twofas-admin .twofas-btn-as-link,
+.twofas-user .twofas-btn-as-link,
+.twofas-login-box .twofas-btn-as-link,
+.twofas-totp-confirmation-box .twofas-btn-as-link
+{
+  border: 0;
+  display: inline;
+  background: none;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  text-decoration: underline;
+}
+
+.twofas-admin .twofas-status-btn-as-link,
+.twofas-user .twofas-status-btn-as-link,
+.twofas-login-box .twofas-status-btn-as-link,
+.twofas-totp-confirmation-box .twofas-status-btn-as-link
+{
+  border: 0;
+  display: inline-block;
+  background: none;
+  color: inherit;
+  margin: 0;
+  padding: 2px 0 0 0;
+  vertical-align: middle;
+}
+
+.twofas-admin input[type="text"],
+.twofas-admin input[type="password"],
+.twofas-admin input[type="tel"],
+.twofas-admin input[type="email"],
+.twofas-user input[type="text"],
+.twofas-user input[type="password"],
+.twofas-user input[type="tel"],
+.twofas-user input[type="email"],
+.twofas-login-box input[type="text"],
+.twofas-login-box input[type="password"],
+.twofas-login-box input[type="tel"],
+.twofas-login-box input[type="email"],
+.twofas-totp-confirmation-box input[type="text"],
+.twofas-totp-confirmation-box input[type="password"],
+.twofas-totp-confirmation-box input[type="tel"],
+.twofas-totp-confirmation-box input[type="email"]
+{
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #d9d9d9;
+}
+
+@media all and (max-width: 767px)
+{
+  .twofas-admin input[type="text"],
+    .twofas-admin input[type="password"],
+    .twofas-admin input[type="tel"],
+    .twofas-admin input[type="email"],
+    .twofas-user input[type="text"],
+    .twofas-user input[type="password"],
+    .twofas-user input[type="tel"],
+    .twofas-user input[type="email"],
+    .twofas-login-box input[type="text"],
+    .twofas-login-box input[type="password"],
+    .twofas-login-box input[type="tel"],
+    .twofas-login-box input[type="email"],
+    .twofas-totp-confirmation-box input[type="text"],
+    .twofas-totp-confirmation-box input[type="password"],
+    .twofas-totp-confirmation-box input[type="tel"],
+    .twofas-totp-confirmation-box input[type="email"]
+  {
+    height: 35px;
+    line-height: 35px;
+  }
+}
+
+.twofas-admin input[type="text"]:focus,
+  .twofas-admin input[type="password"]:focus,
+  .twofas-admin input[type="tel"]:focus,
+  .twofas-admin input[type="email"]:focus,
+  .twofas-user input[type="text"]:focus,
+  .twofas-user input[type="password"]:focus,
+  .twofas-user input[type="tel"]:focus,
+  .twofas-user input[type="email"]:focus,
+  .twofas-login-box input[type="text"]:focus,
+  .twofas-login-box input[type="password"]:focus,
+  .twofas-login-box input[type="tel"]:focus,
+  .twofas-login-box input[type="email"]:focus,
+  .twofas-totp-confirmation-box input[type="text"]:focus,
+  .twofas-totp-confirmation-box input[type="password"]:focus,
+  .twofas-totp-confirmation-box input[type="tel"]:focus,
+  .twofas-totp-confirmation-box input[type="email"]:focus
+{
+  border-color: #999999;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline: 0;
+}
+
+.twofas-admin input[type="text"].twofas-token-input,
+  .twofas-admin input[type="password"].twofas-token-input,
+  .twofas-admin input[type="tel"].twofas-token-input,
+  .twofas-admin input[type="email"].twofas-token-input,
+  .twofas-user input[type="text"].twofas-token-input,
+  .twofas-user input[type="password"].twofas-token-input,
+  .twofas-user input[type="tel"].twofas-token-input,
+  .twofas-user input[type="email"].twofas-token-input,
+  .twofas-login-box input[type="text"].twofas-token-input,
+  .twofas-login-box input[type="password"].twofas-token-input,
+  .twofas-login-box input[type="tel"].twofas-token-input,
+  .twofas-login-box input[type="email"].twofas-token-input,
+  .twofas-totp-confirmation-box input[type="text"].twofas-token-input,
+  .twofas-totp-confirmation-box input[type="password"].twofas-token-input,
+  .twofas-totp-confirmation-box input[type="tel"].twofas-token-input,
+  .twofas-totp-confirmation-box input[type="email"].twofas-token-input
+{
+  width: 133px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 25px 0 10px 0;
+}
+
+.twofas-admin input[type="text"].twofas-token-input.twofas-big,
+    .twofas-admin input[type="password"].twofas-token-input.twofas-big,
+    .twofas-admin input[type="tel"].twofas-token-input.twofas-big,
+    .twofas-admin input[type="email"].twofas-token-input.twofas-big,
+    .twofas-user input[type="text"].twofas-token-input.twofas-big,
+    .twofas-user input[type="password"].twofas-token-input.twofas-big,
+    .twofas-user input[type="tel"].twofas-token-input.twofas-big,
+    .twofas-user input[type="email"].twofas-token-input.twofas-big,
+    .twofas-login-box input[type="text"].twofas-token-input.twofas-big,
+    .twofas-login-box input[type="password"].twofas-token-input.twofas-big,
+    .twofas-login-box input[type="tel"].twofas-token-input.twofas-big,
+    .twofas-login-box input[type="email"].twofas-token-input.twofas-big,
+    .twofas-totp-confirmation-box input[type="text"].twofas-token-input.twofas-big,
+    .twofas-totp-confirmation-box input[type="password"].twofas-token-input.twofas-big,
+    .twofas-totp-confirmation-box input[type="tel"].twofas-token-input.twofas-big,
+    .twofas-totp-confirmation-box input[type="email"].twofas-token-input.twofas-big
+{
+  width: 100%;
+  height: 35px;
+  line-height: 35px;
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+@media all and (max-width: 767px)
+{
+  .twofas-admin input[type="text"].twofas-token-input.twofas-big,
+        .twofas-admin input[type="password"].twofas-token-input.twofas-big,
+        .twofas-admin input[type="tel"].twofas-token-input.twofas-big,
+        .twofas-admin input[type="email"].twofas-token-input.twofas-big,
+        .twofas-user input[type="text"].twofas-token-input.twofas-big,
+        .twofas-user input[type="password"].twofas-token-input.twofas-big,
+        .twofas-user input[type="tel"].twofas-token-input.twofas-big,
+        .twofas-user input[type="email"].twofas-token-input.twofas-big,
+        .twofas-login-box input[type="text"].twofas-token-input.twofas-big,
+        .twofas-login-box input[type="password"].twofas-token-input.twofas-big,
+        .twofas-login-box input[type="tel"].twofas-token-input.twofas-big,
+        .twofas-login-box input[type="email"].twofas-token-input.twofas-big,
+        .twofas-totp-confirmation-box input[type="text"].twofas-token-input.twofas-big,
+        .twofas-totp-confirmation-box input[type="password"].twofas-token-input.twofas-big,
+        .twofas-totp-confirmation-box input[type="tel"].twofas-token-input.twofas-big,
+        .twofas-totp-confirmation-box input[type="email"].twofas-token-input.twofas-big
+  {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+}
+
+.twofas-admin input[type="text"].twofas-token-input.twofas-white-bg,
+    .twofas-admin input[type="password"].twofas-token-input.twofas-white-bg,
+    .twofas-admin input[type="tel"].twofas-token-input.twofas-white-bg,
+    .twofas-admin input[type="email"].twofas-token-input.twofas-white-bg,
+    .twofas-user input[type="text"].twofas-token-input.twofas-white-bg,
+    .twofas-user input[type="password"].twofas-token-input.twofas-white-bg,
+    .twofas-user input[type="tel"].twofas-token-input.twofas-white-bg,
+    .twofas-user input[type="email"].twofas-token-input.twofas-white-bg,
+    .twofas-login-box input[type="text"].twofas-token-input.twofas-white-bg,
+    .twofas-login-box input[type="password"].twofas-token-input.twofas-white-bg,
+    .twofas-login-box input[type="tel"].twofas-token-input.twofas-white-bg,
+    .twofas-login-box input[type="email"].twofas-token-input.twofas-white-bg,
+    .twofas-totp-confirmation-box input[type="text"].twofas-token-input.twofas-white-bg,
+    .twofas-totp-confirmation-box input[type="password"].twofas-token-input.twofas-white-bg,
+    .twofas-totp-confirmation-box input[type="tel"].twofas-token-input.twofas-white-bg,
+    .twofas-totp-confirmation-box input[type="email"].twofas-token-input.twofas-white-bg
+{
+  background-color: #fff;
+}
+
+.twofas-admin input[type="text"].twofas-token-input.twofas-text-placeholder::-webkit-input-placeholder,
+    .twofas-admin input[type="password"].twofas-token-input.twofas-text-placeholder::-webkit-input-placeholder,
+    .twofas-admin input[type="tel"].twofas-token-input.twofas-text-placeholder::-webkit-input-placeholder,
+    .twofas-admin input[type="email"].twofas-token-input.twofas-text-placeholder::-webkit-input-placeholder,
+    .twofas-user input[type="text"].twofas-token-input.twofas-text-placeholder::-webkit-input-placeholder,
+    .twofas-user input[type="password"].twofas-token-input.twofas-text-placeholder::-webkit-input-placeholder,
+    .twofas-user input[type="tel"].twofas-token-input.twofas-text-placeholder::-webkit-input-placeholder,
+    .twofas-user input[type="email"].twofas-token-input.twofas-text-placeholder::-webkit-input-placeholder,
+    .twofas-login-box input[type="text"].twofas-token-input.twofas-text-placeholder::-webkit-input-placeholder,
+    .twofas-login-box input[type="password"].twofas-token-input.twofas-text-placeholder::-webkit-input-placeholder,
+    .twofas-login-box input[type="tel"].twofas-token-input.twofas-text-placeholder::-webkit-input-placeholder,
+    .twofas-login-box input[type="email"].twofas-token-input.twofas-text-placeholder::-webkit-input-placeholder,
+    .twofas-totp-confirmation-box input[type="text"].twofas-token-input.twofas-text-placeholder::-webkit-input-placeholder,
+    .twofas-totp-confirmation-box input[type="password"].twofas-token-input.twofas-text-placeholder::-webkit-input-placeholder,
+    .twofas-totp-confirmation-box input[type="tel"].twofas-token-input.twofas-text-placeholder::-webkit-input-placeholder,
+    .twofas-totp-confirmation-box input[type="email"].twofas-token-input.twofas-text-placeholder::-webkit-input-placeholder
+{
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.twofas-admin input[type="text"].twofas-token-input.twofas-text-placeholder::-moz-placeholder,
+    .twofas-admin input[type="password"].twofas-token-input.twofas-text-placeholder::-moz-placeholder,
+    .twofas-admin input[type="tel"].twofas-token-input.twofas-text-placeholder::-moz-placeholder,
+    .twofas-admin input[type="email"].twofas-token-input.twofas-text-placeholder::-moz-placeholder,
+    .twofas-user input[type="text"].twofas-token-input.twofas-text-placeholder::-moz-placeholder,
+    .twofas-user input[type="password"].twofas-token-input.twofas-text-placeholder::-moz-placeholder,
+    .twofas-user input[type="tel"].twofas-token-input.twofas-text-placeholder::-moz-placeholder,
+    .twofas-user input[type="email"].twofas-token-input.twofas-text-placeholder::-moz-placeholder,
+    .twofas-login-box input[type="text"].twofas-token-input.twofas-text-placeholder::-moz-placeholder,
+    .twofas-login-box input[type="password"].twofas-token-input.twofas-text-placeholder::-moz-placeholder,
+    .twofas-login-box input[type="tel"].twofas-token-input.twofas-text-placeholder::-moz-placeholder,
+    .twofas-login-box input[type="email"].twofas-token-input.twofas-text-placeholder::-moz-placeholder,
+    .twofas-totp-confirmation-box input[type="text"].twofas-token-input.twofas-text-placeholder::-moz-placeholder,
+    .twofas-totp-confirmation-box input[type="password"].twofas-token-input.twofas-text-placeholder::-moz-placeholder,
+    .twofas-totp-confirmation-box input[type="tel"].twofas-token-input.twofas-text-placeholder::-moz-placeholder,
+    .twofas-totp-confirmation-box input[type="email"].twofas-token-input.twofas-text-placeholder::-moz-placeholder
+{
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.twofas-admin input[type="text"].twofas-token-input.twofas-text-placeholder:-ms-input-placeholder,
+    .twofas-admin input[type="password"].twofas-token-input.twofas-text-placeholder:-ms-input-placeholder,
+    .twofas-admin input[type="tel"].twofas-token-input.twofas-text-placeholder:-ms-input-placeholder,
+    .twofas-admin input[type="email"].twofas-token-input.twofas-text-placeholder:-ms-input-placeholder,
+    .twofas-user input[type="text"].twofas-token-input.twofas-text-placeholder:-ms-input-placeholder,
+    .twofas-user input[type="password"].twofas-token-input.twofas-text-placeholder:-ms-input-placeholder,
+    .twofas-user input[type="tel"].twofas-token-input.twofas-text-placeholder:-ms-input-placeholder,
+    .twofas-user input[type="email"].twofas-token-input.twofas-text-placeholder:-ms-input-placeholder,
+    .twofas-login-box input[type="text"].twofas-token-input.twofas-text-placeholder:-ms-input-placeholder,
+    .twofas-login-box input[type="password"].twofas-token-input.twofas-text-placeholder:-ms-input-placeholder,
+    .twofas-login-box input[type="tel"].twofas-token-input.twofas-text-placeholder:-ms-input-placeholder,
+    .twofas-login-box input[type="email"].twofas-token-input.twofas-text-placeholder:-ms-input-placeholder,
+    .twofas-totp-confirmation-box input[type="text"].twofas-token-input.twofas-text-placeholder:-ms-input-placeholder,
+    .twofas-totp-confirmation-box input[type="password"].twofas-token-input.twofas-text-placeholder:-ms-input-placeholder,
+    .twofas-totp-confirmation-box input[type="tel"].twofas-token-input.twofas-text-placeholder:-ms-input-placeholder,
+    .twofas-totp-confirmation-box input[type="email"].twofas-token-input.twofas-text-placeholder:-ms-input-placeholder
+{
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.twofas-admin input[type="text"].twofas-token-input.twofas-text-placeholder:-moz-placeholder,
+    .twofas-admin input[type="password"].twofas-token-input.twofas-text-placeholder:-moz-placeholder,
+    .twofas-admin input[type="tel"].twofas-token-input.twofas-text-placeholder:-moz-placeholder,
+    .twofas-admin input[type="email"].twofas-token-input.twofas-text-placeholder:-moz-placeholder,
+    .twofas-user input[type="text"].twofas-token-input.twofas-text-placeholder:-moz-placeholder,
+    .twofas-user input[type="password"].twofas-token-input.twofas-text-placeholder:-moz-placeholder,
+    .twofas-user input[type="tel"].twofas-token-input.twofas-text-placeholder:-moz-placeholder,
+    .twofas-user input[type="email"].twofas-token-input.twofas-text-placeholder:-moz-placeholder,
+    .twofas-login-box input[type="text"].twofas-token-input.twofas-text-placeholder:-moz-placeholder,
+    .twofas-login-box input[type="password"].twofas-token-input.twofas-text-placeholder:-moz-placeholder,
+    .twofas-login-box input[type="tel"].twofas-token-input.twofas-text-placeholder:-moz-placeholder,
+    .twofas-login-box input[type="email"].twofas-token-input.twofas-text-placeholder:-moz-placeholder,
+    .twofas-totp-confirmation-box input[type="text"].twofas-token-input.twofas-text-placeholder:-moz-placeholder,
+    .twofas-totp-confirmation-box input[type="password"].twofas-token-input.twofas-text-placeholder:-moz-placeholder,
+    .twofas-totp-confirmation-box input[type="tel"].twofas-token-input.twofas-text-placeholder:-moz-placeholder,
+    .twofas-totp-confirmation-box input[type="email"].twofas-token-input.twofas-text-placeholder:-moz-placeholder
+{
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+@media all and (max-width: 767px)
+{
+  .twofas-admin input[type="text"].twofas-token-input,
+      .twofas-admin input[type="password"].twofas-token-input,
+      .twofas-admin input[type="tel"].twofas-token-input,
+      .twofas-admin input[type="email"].twofas-token-input,
+      .twofas-user input[type="text"].twofas-token-input,
+      .twofas-user input[type="password"].twofas-token-input,
+      .twofas-user input[type="tel"].twofas-token-input,
+      .twofas-user input[type="email"].twofas-token-input,
+      .twofas-login-box input[type="text"].twofas-token-input,
+      .twofas-login-box input[type="password"].twofas-token-input,
+      .twofas-login-box input[type="tel"].twofas-token-input,
+      .twofas-login-box input[type="email"].twofas-token-input,
+      .twofas-totp-confirmation-box input[type="text"].twofas-token-input,
+      .twofas-totp-confirmation-box input[type="password"].twofas-token-input,
+      .twofas-totp-confirmation-box input[type="tel"].twofas-token-input,
+      .twofas-totp-confirmation-box input[type="email"].twofas-token-input
+  {
+    font-size: 15px;
+    margin: 10px auto;
+  }
+}
+
+.twofas-admin input[type="text"].twofas-login-box-token-input,
+  .twofas-admin input[type="password"].twofas-login-box-token-input,
+  .twofas-admin input[type="tel"].twofas-login-box-token-input,
+  .twofas-admin input[type="email"].twofas-login-box-token-input,
+  .twofas-user input[type="text"].twofas-login-box-token-input,
+  .twofas-user input[type="password"].twofas-login-box-token-input,
+  .twofas-user input[type="tel"].twofas-login-box-token-input,
+  .twofas-user input[type="email"].twofas-login-box-token-input,
+  .twofas-login-box input[type="text"].twofas-login-box-token-input,
+  .twofas-login-box input[type="password"].twofas-login-box-token-input,
+  .twofas-login-box input[type="tel"].twofas-login-box-token-input,
+  .twofas-login-box input[type="email"].twofas-login-box-token-input,
+  .twofas-totp-confirmation-box input[type="text"].twofas-login-box-token-input,
+  .twofas-totp-confirmation-box input[type="password"].twofas-login-box-token-input,
+  .twofas-totp-confirmation-box input[type="tel"].twofas-login-box-token-input,
+  .twofas-totp-confirmation-box input[type="email"].twofas-login-box-token-input
+{
+  background-color: #fff;
+  display: inline-block;
+  width: 133px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 5px auto 10px auto;
+  height: 34px;
+  line-height: 34px;
+}
+
+.twofas-admin input[type="text"].twofas-login-box-token-input::-webkit-input-placeholder,
+    .twofas-admin input[type="password"].twofas-login-box-token-input::-webkit-input-placeholder,
+    .twofas-admin input[type="tel"].twofas-login-box-token-input::-webkit-input-placeholder,
+    .twofas-admin input[type="email"].twofas-login-box-token-input::-webkit-input-placeholder,
+    .twofas-user input[type="text"].twofas-login-box-token-input::-webkit-input-placeholder,
+    .twofas-user input[type="password"].twofas-login-box-token-input::-webkit-input-placeholder,
+    .twofas-user input[type="tel"].twofas-login-box-token-input::-webkit-input-placeholder,
+    .twofas-user input[type="email"].twofas-login-box-token-input::-webkit-input-placeholder,
+    .twofas-login-box input[type="text"].twofas-login-box-token-input::-webkit-input-placeholder,
+    .twofas-login-box input[type="password"].twofas-login-box-token-input::-webkit-input-placeholder,
+    .twofas-login-box input[type="tel"].twofas-login-box-token-input::-webkit-input-placeholder,
+    .twofas-login-box input[type="email"].twofas-login-box-token-input::-webkit-input-placeholder,
+    .twofas-totp-confirmation-box input[type="text"].twofas-login-box-token-input::-webkit-input-placeholder,
+    .twofas-totp-confirmation-box input[type="password"].twofas-login-box-token-input::-webkit-input-placeholder,
+    .twofas-totp-confirmation-box input[type="tel"].twofas-login-box-token-input::-webkit-input-placeholder,
+    .twofas-totp-confirmation-box input[type="email"].twofas-login-box-token-input::-webkit-input-placeholder
+{
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.twofas-admin input[type="text"].twofas-login-box-token-input::-moz-placeholder,
+    .twofas-admin input[type="password"].twofas-login-box-token-input::-moz-placeholder,
+    .twofas-admin input[type="tel"].twofas-login-box-token-input::-moz-placeholder,
+    .twofas-admin input[type="email"].twofas-login-box-token-input::-moz-placeholder,
+    .twofas-user input[type="text"].twofas-login-box-token-input::-moz-placeholder,
+    .twofas-user input[type="password"].twofas-login-box-token-input::-moz-placeholder,
+    .twofas-user input[type="tel"].twofas-login-box-token-input::-moz-placeholder,
+    .twofas-user input[type="email"].twofas-login-box-token-input::-moz-placeholder,
+    .twofas-login-box input[type="text"].twofas-login-box-token-input::-moz-placeholder,
+    .twofas-login-box input[type="password"].twofas-login-box-token-input::-moz-placeholder,
+    .twofas-login-box input[type="tel"].twofas-login-box-token-input::-moz-placeholder,
+    .twofas-login-box input[type="email"].twofas-login-box-token-input::-moz-placeholder,
+    .twofas-totp-confirmation-box input[type="text"].twofas-login-box-token-input::-moz-placeholder,
+    .twofas-totp-confirmation-box input[type="password"].twofas-login-box-token-input::-moz-placeholder,
+    .twofas-totp-confirmation-box input[type="tel"].twofas-login-box-token-input::-moz-placeholder,
+    .twofas-totp-confirmation-box input[type="email"].twofas-login-box-token-input::-moz-placeholder
+{
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.twofas-admin input[type="text"].twofas-login-box-token-input:-ms-input-placeholder,
+    .twofas-admin input[type="password"].twofas-login-box-token-input:-ms-input-placeholder,
+    .twofas-admin input[type="tel"].twofas-login-box-token-input:-ms-input-placeholder,
+    .twofas-admin input[type="email"].twofas-login-box-token-input:-ms-input-placeholder,
+    .twofas-user input[type="text"].twofas-login-box-token-input:-ms-input-placeholder,
+    .twofas-user input[type="password"].twofas-login-box-token-input:-ms-input-placeholder,
+    .twofas-user input[type="tel"].twofas-login-box-token-input:-ms-input-placeholder,
+    .twofas-user input[type="email"].twofas-login-box-token-input:-ms-input-placeholder,
+    .twofas-login-box input[type="text"].twofas-login-box-token-input:-ms-input-placeholder,
+    .twofas-login-box input[type="password"].twofas-login-box-token-input:-ms-input-placeholder,
+    .twofas-login-box input[type="tel"].twofas-login-box-token-input:-ms-input-placeholder,
+    .twofas-login-box input[type="email"].twofas-login-box-token-input:-ms-input-placeholder,
+    .twofas-totp-confirmation-box input[type="text"].twofas-login-box-token-input:-ms-input-placeholder,
+    .twofas-totp-confirmation-box input[type="password"].twofas-login-box-token-input:-ms-input-placeholder,
+    .twofas-totp-confirmation-box input[type="tel"].twofas-login-box-token-input:-ms-input-placeholder,
+    .twofas-totp-confirmation-box input[type="email"].twofas-login-box-token-input:-ms-input-placeholder
+{
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.twofas-admin input[type="text"].twofas-login-box-token-input:-moz-placeholder,
+    .twofas-admin input[type="password"].twofas-login-box-token-input:-moz-placeholder,
+    .twofas-admin input[type="tel"].twofas-login-box-token-input:-moz-placeholder,
+    .twofas-admin input[type="email"].twofas-login-box-token-input:-moz-placeholder,
+    .twofas-user input[type="text"].twofas-login-box-token-input:-moz-placeholder,
+    .twofas-user input[type="password"].twofas-login-box-token-input:-moz-placeholder,
+    .twofas-user input[type="tel"].twofas-login-box-token-input:-moz-placeholder,
+    .twofas-user input[type="email"].twofas-login-box-token-input:-moz-placeholder,
+    .twofas-login-box input[type="text"].twofas-login-box-token-input:-moz-placeholder,
+    .twofas-login-box input[type="password"].twofas-login-box-token-input:-moz-placeholder,
+    .twofas-login-box input[type="tel"].twofas-login-box-token-input:-moz-placeholder,
+    .twofas-login-box input[type="email"].twofas-login-box-token-input:-moz-placeholder,
+    .twofas-totp-confirmation-box input[type="text"].twofas-login-box-token-input:-moz-placeholder,
+    .twofas-totp-confirmation-box input[type="password"].twofas-login-box-token-input:-moz-placeholder,
+    .twofas-totp-confirmation-box input[type="tel"].twofas-login-box-token-input:-moz-placeholder,
+    .twofas-totp-confirmation-box input[type="email"].twofas-login-box-token-input:-moz-placeholder
+{
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.twofas-admin input[type="checkbox"],
+.twofas-admin input[type="radio"],
+.twofas-user input[type="checkbox"],
+.twofas-user input[type="radio"],
+.twofas-login-box input[type="checkbox"],
+.twofas-login-box input[type="radio"],
+.twofas-totp-confirmation-box input[type="checkbox"],
+.twofas-totp-confirmation-box input[type="radio"]
+{
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+.twofas-admin input[type="checkbox"]:focus,
+  .twofas-admin input[type="radio"]:focus,
+  .twofas-user input[type="checkbox"]:focus,
+  .twofas-user input[type="radio"]:focus,
+  .twofas-login-box input[type="checkbox"]:focus,
+  .twofas-login-box input[type="radio"]:focus,
+  .twofas-totp-confirmation-box input[type="checkbox"]:focus,
+  .twofas-totp-confirmation-box input[type="radio"]:focus
+{
+  border-color: #999999;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline: 0;
+}
+
+.twofas-admin .twofas-checkbox-input-box,
+.twofas-user .twofas-checkbox-input-box,
+.twofas-login-box .twofas-checkbox-input-box,
+.twofas-totp-confirmation-box .twofas-checkbox-input-box
+{
+  margin-bottom: 8px;
+}
+
+.twofas-admin .twofas-checkbox-input-box:last-of-type,
+  .twofas-user .twofas-checkbox-input-box:last-of-type,
+  .twofas-login-box .twofas-checkbox-input-box:last-of-type,
+  .twofas-totp-confirmation-box .twofas-checkbox-input-box:last-of-type
+{
+  margin-bottom: 0;
+}
+
+.twofas-admin .twofas-checkbox-input-box input[type="checkbox"],
+  .twofas-user .twofas-checkbox-input-box input[type="checkbox"],
+  .twofas-login-box .twofas-checkbox-input-box input[type="checkbox"],
+  .twofas-totp-confirmation-box .twofas-checkbox-input-box input[type="checkbox"]
+{
+  display: none;
+}
+
+.twofas-admin .twofas-checkbox-input-box input[type="checkbox"]:checked + label .twofas-checkbox-icon .twofas-checked,
+    .twofas-user .twofas-checkbox-input-box input[type="checkbox"]:checked + label .twofas-checkbox-icon .twofas-checked,
+    .twofas-login-box .twofas-checkbox-input-box input[type="checkbox"]:checked + label .twofas-checkbox-icon .twofas-checked,
+    .twofas-totp-confirmation-box .twofas-checkbox-input-box input[type="checkbox"]:checked + label .twofas-checkbox-icon .twofas-checked
+{
+  opacity: 1;
+}
+
+.twofas-admin .twofas-checkbox-input-box input[type="checkbox"]:checked + label .twofas-checkbox-desc,
+    .twofas-user .twofas-checkbox-input-box input[type="checkbox"]:checked + label .twofas-checkbox-desc,
+    .twofas-login-box .twofas-checkbox-input-box input[type="checkbox"]:checked + label .twofas-checkbox-desc,
+    .twofas-totp-confirmation-box .twofas-checkbox-input-box input[type="checkbox"]:checked + label .twofas-checkbox-desc
+{
+  font-weight: 700;
+}
+
+.twofas-admin .twofas-checkbox-input-box label,
+  .twofas-user .twofas-checkbox-input-box label,
+  .twofas-login-box .twofas-checkbox-input-box label,
+  .twofas-totp-confirmation-box .twofas-checkbox-input-box label
+{
+  display: inline-block;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.twofas-admin .twofas-checkbox-input-box label .twofas-checkbox-icon,
+    .twofas-user .twofas-checkbox-input-box label .twofas-checkbox-icon,
+    .twofas-login-box .twofas-checkbox-input-box label .twofas-checkbox-icon,
+    .twofas-totp-confirmation-box .twofas-checkbox-input-box label .twofas-checkbox-icon
+{
+  background-color: #fff;
+  border: 1px solid #333;
+  display: inline-block;
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
+  width: 28px;
+}
+
+.twofas-admin .twofas-checkbox-input-box label .twofas-checkbox-icon .twofas-checked,
+      .twofas-user .twofas-checkbox-input-box label .twofas-checkbox-icon .twofas-checked,
+      .twofas-login-box .twofas-checkbox-input-box label .twofas-checkbox-icon .twofas-checked,
+      .twofas-totp-confirmation-box .twofas-checkbox-input-box label .twofas-checkbox-icon .twofas-checked
+{
+  opacity: 0;
+  -webkit-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.twofas-admin .twofas-checkbox-input-box label .twofas-checkbox-desc,
+    .twofas-user .twofas-checkbox-input-box label .twofas-checkbox-desc,
+    .twofas-login-box .twofas-checkbox-input-box label .twofas-checkbox-desc,
+    .twofas-totp-confirmation-box .twofas-checkbox-input-box label .twofas-checkbox-desc
+{
+  margin-left: 5px;
+  -webkit-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.twofas-admin .twofas-radio-input-box,
+.twofas-user .twofas-radio-input-box,
+.twofas-login-box .twofas-radio-input-box,
+.twofas-totp-confirmation-box .twofas-radio-input-box
+{
+  margin-bottom: 8px;
+}
+
+.twofas-admin .twofas-radio-input-box:last-of-type,
+  .twofas-user .twofas-radio-input-box:last-of-type,
+  .twofas-login-box .twofas-radio-input-box:last-of-type,
+  .twofas-totp-confirmation-box .twofas-radio-input-box:last-of-type
+{
+  margin-bottom: 0;
+}
+
+.twofas-admin .twofas-radio-input-box input[type="radio"],
+  .twofas-user .twofas-radio-input-box input[type="radio"],
+  .twofas-login-box .twofas-radio-input-box input[type="radio"],
+  .twofas-totp-confirmation-box .twofas-radio-input-box input[type="radio"]
+{
+  display: none;
+}
+
+.twofas-admin .twofas-radio-input-box input[type="radio"]:checked + label .twofas-radio-icon .twofas-checked,
+    .twofas-user .twofas-radio-input-box input[type="radio"]:checked + label .twofas-radio-icon .twofas-checked,
+    .twofas-login-box .twofas-radio-input-box input[type="radio"]:checked + label .twofas-radio-icon .twofas-checked,
+    .twofas-totp-confirmation-box .twofas-radio-input-box input[type="radio"]:checked + label .twofas-radio-icon .twofas-checked
+{
+  opacity: 1;
+}
+
+.twofas-admin .twofas-radio-input-box input[type="radio"]:checked + label .twofas-radio-desc,
+    .twofas-user .twofas-radio-input-box input[type="radio"]:checked + label .twofas-radio-desc,
+    .twofas-login-box .twofas-radio-input-box input[type="radio"]:checked + label .twofas-radio-desc,
+    .twofas-totp-confirmation-box .twofas-radio-input-box input[type="radio"]:checked + label .twofas-radio-desc
+{
+  font-weight: 700;
+}
+
+.twofas-admin .twofas-radio-input-box label,
+  .twofas-user .twofas-radio-input-box label,
+  .twofas-login-box .twofas-radio-input-box label,
+  .twofas-totp-confirmation-box .twofas-radio-input-box label
+{
+  display: block;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 100%;
+}
+
+.twofas-admin .twofas-radio-input-box label .twofas-radio-icon,
+    .twofas-user .twofas-radio-input-box label .twofas-radio-icon,
+    .twofas-login-box .twofas-radio-input-box label .twofas-radio-icon,
+    .twofas-totp-confirmation-box .twofas-radio-input-box label .twofas-radio-icon
+{
+  background-color: #fff;
+  border: 1px solid #333;
+  border-radius: 50%;
+  display: inline-block;
+  height: 28px;
+  left: 0;
+  line-height: 28px;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 28px;
+}
+
+.twofas-admin .twofas-radio-input-box label .twofas-radio-icon .twofas-checked,
+      .twofas-user .twofas-radio-input-box label .twofas-radio-icon .twofas-checked,
+      .twofas-login-box .twofas-radio-input-box label .twofas-radio-icon .twofas-checked,
+      .twofas-totp-confirmation-box .twofas-radio-input-box label .twofas-radio-icon .twofas-checked
+{
+  opacity: 0;
+  -webkit-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.twofas-admin .twofas-radio-input-box label .twofas-radio-desc,
+    .twofas-user .twofas-radio-input-box label .twofas-radio-desc,
+    .twofas-login-box .twofas-radio-input-box label .twofas-radio-desc,
+    .twofas-totp-confirmation-box .twofas-radio-input-box label .twofas-radio-desc
+{
+  display: inline-block;
+  line-height: 1.4;
+  margin-left: 7px;
+  padding-left: 28px;
+  position: relative;
+  top: 0;
+  -webkit-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  vertical-align: middle;
+}
+
+.twofas-admin .twofas-radio-input-box label .twofas-radio-desc-title,
+      .twofas-user .twofas-radio-input-box label .twofas-radio-desc-title,
+      .twofas-login-box .twofas-radio-input-box label .twofas-radio-desc-title,
+      .twofas-totp-confirmation-box .twofas-radio-input-box label .twofas-radio-desc-title
+{
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.twofas-admin .twofas-radio-input-box label .twofas-radio-desc span,
+      .twofas-user .twofas-radio-input-box label .twofas-radio-desc span,
+      .twofas-login-box .twofas-radio-input-box label .twofas-radio-desc span,
+      .twofas-totp-confirmation-box .twofas-radio-input-box label .twofas-radio-desc span
+{
+  display: block;
+}
+
+.twofas-admin .twofas-form-inline,
+.twofas-user .twofas-form-inline,
+.twofas-login-box .twofas-form-inline,
+.twofas-totp-confirmation-box .twofas-form-inline
+{
+  display: inline;
+}
+
+.twofas-admin .twofas-icon,
+.twofas-user .twofas-icon,
+.twofas-login-box .twofas-icon,
+.twofas-totp-confirmation-box .twofas-icon
+{
+  background-image: url("../images/spritesheet.png");
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+
+.twofas-admin .twofas-icon-app-store,
+.twofas-user .twofas-icon-app-store,
+.twofas-login-box .twofas-icon-app-store,
+.twofas-totp-confirmation-box .twofas-icon-app-store
+{
+  background-position: 0 -133px;
+  height: 40px;
+  width: 135px;
+}
+
+.twofas-admin .twofas-icon-backup-codes,
+.twofas-user .twofas-icon-backup-codes,
+.twofas-login-box .twofas-icon-backup-codes,
+.twofas-totp-confirmation-box .twofas-icon-backup-codes
+{
+  background-position: -276px -110px;
+  height: 24px;
+  width: 21px;
+}
+
+.twofas-admin .twofas-icon-download,
+.twofas-user .twofas-icon-download,
+.twofas-login-box .twofas-icon-download,
+.twofas-totp-confirmation-box .twofas-icon-download
+{
+  background-position: -194px 0;
+  height: 87px;
+  width: 48px;
+}
+
+.twofas-admin .twofas-icon-google-play,
+.twofas-user .twofas-icon-google-play,
+.twofas-login-box .twofas-icon-google-play,
+.twofas-totp-confirmation-box .twofas-icon-google-play
+{
+  background-position: 0 -89px;
+  height: 42px;
+  width: 136px;
+}
+
+.twofas-admin .twofas-icon-info-ok,
+.twofas-user .twofas-icon-info-ok,
+.twofas-login-box .twofas-icon-info-ok,
+.twofas-totp-confirmation-box .twofas-icon-info-ok
+{
+  background-position: -222px -89px;
+  height: 16px;
+  width: 16px;
+}
+
+.twofas-admin .twofas-icon-info-x,
+.twofas-user .twofas-icon-info-x,
+.twofas-login-box .twofas-icon-info-x,
+.twofas-totp-confirmation-box .twofas-icon-info-x
+{
+  background-position: -170px -89px;
+  height: 16px;
+  width: 16px;
+}
+
+.twofas-admin .twofas-icon-info,
+.twofas-user .twofas-icon-info,
+.twofas-login-box .twofas-icon-info,
+.twofas-totp-confirmation-box .twofas-icon-info
+{
+  background-position: -138px -111px;
+  height: 16px;
+  width: 16px;
+}
+
+.twofas-admin .twofas-icon-numpad,
+.twofas-user .twofas-icon-numpad,
+.twofas-login-box .twofas-icon-numpad,
+.twofas-totp-confirmation-box .twofas-icon-numpad
+{
+  background-position: -244px 0;
+  height: 73px;
+  width: 56px;
+}
+
+.twofas-admin .twofas-icon-offline-codes,
+.twofas-user .twofas-icon-offline-codes,
+.twofas-login-box .twofas-icon-offline-codes,
+.twofas-totp-confirmation-box .twofas-icon-offline-codes
+{
+  background-position: -244px -75px;
+  height: 33px;
+  width: 33px;
+}
+
+.twofas-admin .twofas-icon-padlock,
+.twofas-user .twofas-icon-padlock,
+.twofas-login-box .twofas-icon-padlock,
+.twofas-totp-confirmation-box .twofas-icon-padlock
+{
+  background-position: -216px -123px;
+  height: 32px;
+  width: 22px;
+}
+
+.twofas-admin .twofas-icon-refresh,
+.twofas-user .twofas-icon-refresh,
+.twofas-login-box .twofas-icon-refresh,
+.twofas-totp-confirmation-box .twofas-icon-refresh
+{
+  background-position: -213px -161px;
+  height: 12px;
+  width: 12px;
+}
+
+.twofas-admin .twofas-icon-remove-hover,
+.twofas-user .twofas-icon-remove-hover,
+.twofas-login-box .twofas-icon-remove-hover,
+.twofas-totp-confirmation-box .twofas-icon-remove-hover
+{
+  background-position: -227px -161px;
+  height: 10px;
+  width: 10px;
+}
+
+.twofas-admin .twofas-icon-remove,
+.twofas-user .twofas-icon-remove,
+.twofas-login-box .twofas-icon-remove,
+.twofas-totp-confirmation-box .twofas-icon-remove
+{
+  background-position: -156px -111px;
+  height: 10px;
+  width: 10px;
+}
+
+.twofas-admin .twofas-icon-sms,
+.twofas-user .twofas-icon-sms,
+.twofas-login-box .twofas-icon-sms,
+.twofas-totp-confirmation-box .twofas-icon-sms
+{
+  background-position: -98px 0;
+  height: 87px;
+  width: 94px;
+}
+
+.twofas-admin .twofas-icon-support,
+.twofas-user .twofas-icon-support,
+.twofas-login-box .twofas-icon-support,
+.twofas-totp-confirmation-box .twofas-icon-support
+{
+  background-position: -194px -89px;
+  height: 32px;
+  width: 26px;
+}
+
+.twofas-admin .twofas-icon-tick-admin,
+.twofas-user .twofas-icon-tick-admin,
+.twofas-login-box .twofas-icon-tick-admin,
+.twofas-totp-confirmation-box .twofas-icon-tick-admin
+{
+  background-position: -138px -89px;
+  height: 20px;
+  width: 30px;
+}
+
+.twofas-admin .twofas-icon-tick-enabled,
+.twofas-user .twofas-icon-tick-enabled,
+.twofas-login-box .twofas-icon-tick-enabled,
+.twofas-totp-confirmation-box .twofas-icon-tick-enabled
+{
+  background-position: -222px -107px;
+  height: 12px;
+  width: 17px;
+}
+
+.twofas-admin .twofas-icon-tick,
+.twofas-user .twofas-icon-tick,
+.twofas-login-box .twofas-icon-tick,
+.twofas-totp-confirmation-box .twofas-icon-tick
+{
+  background-position: -194px -161px;
+  height: 12px;
+  width: 17px;
+}
+
+.twofas-admin .twofas-icon-token,
+.twofas-user .twofas-icon-token,
+.twofas-login-box .twofas-icon-token,
+.twofas-totp-confirmation-box .twofas-icon-token
+{
+  background-position: 0 0;
+  height: 87px;
+  width: 96px;
+}
+
+.twofas-admin .twofas-icon-tokens,
+.twofas-user .twofas-icon-tokens,
+.twofas-login-box .twofas-icon-tokens,
+.twofas-totp-confirmation-box .twofas-icon-tokens
+{
+  background-position: -279px -75px;
+  height: 30px;
+  width: 18px;
+}
+
+.twofas-admin .twofas-icon-trusted,
+.twofas-user .twofas-icon-trusted,
+.twofas-login-box .twofas-icon-trusted,
+.twofas-totp-confirmation-box .twofas-icon-trusted
+{
+  background-position: -244px -142px;
+  height: 22px;
+  width: 30px;
+}
+
+.twofas-admin .twofas-icon-turn-on-off,
+.twofas-user .twofas-icon-turn-on-off,
+.twofas-login-box .twofas-icon-turn-on-off,
+.twofas-totp-confirmation-box .twofas-icon-turn-on-off
+{
+  background-position: -276px -142px;
+  height: 17px;
+  width: 16px;
+}
+
+.twofas-admin .twofas-icon-twofas-auth,
+.twofas-user .twofas-icon-twofas-auth,
+.twofas-login-box .twofas-icon-twofas-auth,
+.twofas-totp-confirmation-box .twofas-icon-twofas-auth
+{
+  background-position: -194px -123px;
+  height: 36px;
+  width: 20px;
+}
+
+.twofas-admin .twofas-icon-vms,
+.twofas-user .twofas-icon-vms,
+.twofas-login-box .twofas-icon-vms,
+.twofas-totp-confirmation-box .twofas-icon-vms
+{
+  background-position: -244px -110px;
+  height: 30px;
+  width: 30px;
+}
+
+.twofas-admin h2
+{
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.twofas-admin-account-wrapper .twofas-account
+{
+  background: #363b41;
+  color: #ffffff;
+  font-size: 0;
+  padding: 20px 15px;
+  margin-bottom: 30px;
+}
+
+.twofas-admin-account-wrapper .twofas-account-col
+{
+  display: inline-block;
+}
+
+@media all and (max-width: 600px)
+{
+  .twofas-admin-account-wrapper .twofas-account-col
+  {
+    display: block;
+    text-align: center;
+  }
+}
+
+.twofas-admin-account-wrapper .twofas-account-col.twofas-disable-container
+{
+  margin-top: 9px;
+}
+
+@media all and (max-width: 600px)
+{
+  .twofas-admin-account-wrapper .twofas-account-col.twofas-disable-container
+  {
+    float: none !important;
+    margin-top: 15px;
+  }
+}
+
+@media all and (max-width: 380px)
+{
+  .twofas-admin-account-wrapper .twofas-account-col .twofas-email,
+      .twofas-admin-account-wrapper .twofas-account-col .twofas-plan
+  {
+    display: block;
+  }
+}
+
+@media all and (max-width: 480px)
+{
+  .twofas-admin-account-wrapper .twofas-account-col .twofas-plan-modal
+  {
+    display: block;
+  }
+}
+
+.twofas-admin-account-wrapper .twofas-account-col p
+{
+  display: inline-block;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.twofas-admin-account-wrapper .twofas-account-col form
+{
+  display: inline-block;
+}
+
+@media all and (max-width: 380px)
+{
+  .twofas-admin-account-wrapper .twofas-account-row:not(:first-of-type)
+  {
+    margin-top: 10px;
+  }
+}
+
+.twofas-admin-delete-bar-wrapper
+{
+  margin: 30px -15px 0 -15px;
+}
+
+.twofas-admin-delete-bar-wrapper .twofas-delete-bar
+{
+  background: #363b41;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 25px;
+  width: 100%;
+}
+
+@media all and (max-width: 480px)
+{
+  .twofas-admin-delete-bar-wrapper .twofas-delete-bar
+  {
+    height: auto;
+    line-height: 1;
+    padding: 15px;
+  }
+}
+
+.twofas-admin-delete-bar-wrapper .twofas-delete-bar p
+{
+  display: inline-block;
+}
+
+.twofas-admin-delete-bar-wrapper .twofas-delete-bar a
+{
+  text-decoration: underline;
+  color: inherit;
+}
+
+.twofas-admin-plans-wrapper
+{
+  margin: 50px -15px 0 -15px;
+}
+
+@media all and (max-width: 991px)
+{
+  .twofas-admin-plans-wrapper
+  {
+    margin-top: 30px;
+  }
+}
+
+.twofas-admin-plans-wrapper .twofas-plans
+{
+  background: #ffffff;
+}
+
+.twofas-admin-plans-wrapper .twofas-plans table
+{
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.twofas-admin-plans-wrapper .twofas-plans table.twofas-active-free tbody tr td:nth-of-type(2)
+{
+  background: rgba(16, 183, 74, 0.05);
+}
+
+.twofas-admin-plans-wrapper .twofas-plans table.twofas-active-premium tbody tr td:nth-of-type(3)
+{
+  background: rgba(16, 183, 74, 0.05);
+}
+
+.twofas-admin-plans-wrapper .twofas-plans table thead th
+{
+  height: 50px;
+  line-height: 50px;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.twofas-admin-plans-wrapper .twofas-plans table thead th:first-of-type
+{
+  text-align: left;
+}
+
+.twofas-admin-plans-wrapper .twofas-plans table thead th.twofas-basic
+{
+  background: #363b41;
+  color: #fff;
+  border-right: 0;
+  width: 15%;
+}
+
+.twofas-admin-plans-wrapper .twofas-plans table thead th.twofas-premium
+{
+  background: #eb1c23;
+  color: #fff;
+  border-left: 0;
+  width: 15%;
+}
+
+.twofas-admin-plans-wrapper .twofas-plans table tbody .twofas-premium
+{
+  display: none;
+}
+
+.twofas-admin-plans-wrapper .twofas-plans table tbody td
+{
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  min-width: 235px;
+}
+
+@media all and (max-width: 1199px)
+{
+  .twofas-admin-plans-wrapper .twofas-plans table tbody td
+  {
+    min-width: 195px;
+  }
+}
+
+.twofas-admin-plans-wrapper .twofas-plans table tbody td:first-of-type
+{
+  text-align: left;
+}
+
+.twofas-admin-plans-wrapper .twofas-plans table tbody td .twofas-cell-icon
+{
+  display: block;
+  float: left;
+  width: 7%;
+  text-align: center;
+}
+
+@media all and (max-width: 1400px)
+{
+  .twofas-admin-plans-wrapper .twofas-plans table tbody td .twofas-cell-icon
+  {
+    width: 14%;
+  }
+}
+
+@media all and (max-width: 991px)
+{
+  .twofas-admin-plans-wrapper .twofas-plans table tbody td .twofas-cell-icon
+  {
+    width: 10%;
+  }
+}
+
+@media all and (max-width: 480px)
+{
+  .twofas-admin-plans-wrapper .twofas-plans table tbody td .twofas-cell-icon
+  {
+    width: 20%;
+  }
+}
+
+.twofas-admin-plans-wrapper .twofas-plans table tbody td .twofas-cell-icon i
+{
+  vertical-align: middle;
+}
+
+.twofas-admin-plans-wrapper .twofas-plans table tbody td .twofas-cell-content
+{
+  display: inline-block;
+  width: 93%;
+  vertical-align: middle;
+  padding-right: 20px !important;
+}
+
+@media all and (max-width: 1400px)
+{
+  .twofas-admin-plans-wrapper .twofas-plans table tbody td .twofas-cell-content
+  {
+    width: 86%;
+  }
+}
+
+@media all and (max-width: 991px)
+{
+  .twofas-admin-plans-wrapper .twofas-plans table tbody td .twofas-cell-content
+  {
+    width: 90%;
+  }
+}
+
+@media all and (max-width: 480px)
+{
+  .twofas-admin-plans-wrapper .twofas-plans table tbody td .twofas-cell-content
+  {
+    width: 80%;
+  }
+}
+
+.twofas-admin-plans-wrapper .twofas-plans table tbody td .twofas-cell-content h6
+{
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+
+.twofas-admin-plans-wrapper .twofas-plans table tbody td .twofas-cell-content p
+{
+  font-size: 12px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+.twofas-admin-plans-wrapper .twofas-plans table tbody td .twofas-tick-content
+{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.twofas-admin-plans-wrapper .twofas-plans table tbody td .twofas-tick-content i,
+          .twofas-admin-plans-wrapper .twofas-plans table tbody td .twofas-tick-content p
+{
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.twofas-admin-plans-wrapper .twofas-plans table tbody td .twofas-tick-content p
+{
+  margin-top: 10px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.twofas-admin-plans-wrapper .twofas-plans table tbody td .twofas-tick-content p a
+{
+  text-decoration: underline;
+}
+
+.twofas-admin-plans-wrapper .twofas-plans table tbody td .twofas-tick-content h5
+{
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.twofas-admin-plans-wrapper .twofas-plans table th,
+      .twofas-admin-plans-wrapper .twofas-plans table td
+{
+  padding: 0 20px;
+  border: 1px solid #e5e5e5;
+}
+
+.twofas-admin-plans-wrapper .twofas-plans table .twofas-icon
+{
+  vertical-align: middle;
+}
+
+@media all and (max-width: 991px)
+{
+  .twofas-admin-plans-wrapper .twofas-plans table,
+      .twofas-admin-plans-wrapper .twofas-plans thead,
+      .twofas-admin-plans-wrapper .twofas-plans tbody,
+      .twofas-admin-plans-wrapper .twofas-plans th,
+      .twofas-admin-plans-wrapper .twofas-plans td,
+      .twofas-admin-plans-wrapper .twofas-plans tr
+  {
+    display: block;
+  }
+
+  .twofas-admin-plans-wrapper .twofas-plans thead th:not(:first-of-type)
+  {
+    display: none;
+  }
+
+  .twofas-admin-plans-wrapper .twofas-plans tbody .twofas-premium
+  {
+    display: block !important;
+  }
+
+  .twofas-admin-plans-wrapper .twofas-plans tbody .twofas-downgrade td
+  {
+    padding: 10px 0;
+    text-align: center !important;
+  }
+
+  .twofas-admin-plans-wrapper .twofas-plans tbody tr:first-of-type td:before
+  {
+    content: "BASIC";
+    background: #363b41;
+    color: #fff;
+  }
+
+  .twofas-admin-plans-wrapper .twofas-plans tbody tr:nth-of-type(4) td:before
+  {
+    content: "PREMIUM";
+    background: #eb1c23;
+    color: #fff;
+  }
+
+  .twofas-admin-plans-wrapper .twofas-plans tbody tr:last-of-type td
+  {
+    padding: 10px 0;
+  }
+
+  .twofas-admin-plans-wrapper .twofas-plans tbody tr:last-of-type td:not(:last-of-type)
+  {
+    display: none;
+  }
+
+  .twofas-admin-plans-wrapper .twofas-plans tbody tr td
+  {
+    height: auto;
+    line-height: 1;
+    padding: 0;
+    border-top: 0;
+    clear: both;
+  }
+
+  .twofas-admin-plans-wrapper .twofas-plans tbody tr td:before
+  {
+    display: block;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .twofas-admin-plans-wrapper .twofas-plans tbody tr td .twofas-cell-icon,
+        .twofas-admin-plans-wrapper .twofas-plans tbody tr td .twofas-cell-content
+  {
+    padding: 20px 0;
+  }
+
+  .twofas-admin-plans-wrapper .twofas-plans tr:not(:last-of-type) td:nth-of-type(2), .twofas-admin-plans-wrapper .twofas-plans tr:not(:last-of-type) td:nth-of-type(3)
+  {
+    display: none;
+  }
+}
+
+.twofas-admin-users-wrapper
+{
+  margin: 0 0 0 -15px;
+}
+
+@media all and (max-width: 991px)
+{
+  .twofas-admin-users-wrapper
+  {
+    margin: 0px -15px 0 -15px;
+  }
+}
+
+.twofas-admin-users-wrapper h2
+{
+  height: 31px !important;
+}
+
+.twofas-admin-users-wrapper .twofas-migrate-users-box
+{
+  float: right;
+}
+
+.twofas-admin-users-wrapper .twofas-users
+{
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  height: 365px;
+  padding: 15px;
+}
+
+@media all and (max-width: 640px)
+{
+  .twofas-admin-users-wrapper .twofas-users
+  {
+    height: 200px;
+  }
+}
+
+@media all and (max-width: 480px)
+{
+  .twofas-admin-users-wrapper .twofas-users
+  {
+    height: auto;
+  }
+}
+
+.twofas-admin-users-wrapper .twofas-users .twofas-chart-container
+{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 15px 0;
+}
+
+@media all and (max-width: 1199px)
+{
+  .twofas-admin-users-wrapper .twofas-users .twofas-chart-container
+  {
+    padding: 30px 0;
+  }
+}
+
+@media all and (max-width: 991px)
+{
+  .twofas-admin-users-wrapper .twofas-users .twofas-chart-container
+  {
+    padding: 15px 0;
+  }
+}
+
+@media all and (max-width: 480px)
+{
+  .twofas-admin-users-wrapper .twofas-users .twofas-chart-container
+  {
+    padding: 10px 0 0 0;
+  }
+}
+
+.twofas-admin-users-wrapper .twofas-users canvas,
+    .twofas-admin-users-wrapper .twofas-users iframe
+{
+  max-height: 100%;
+  max-width: 70%;
+  float: left;
+  margin-left: -15%;
+}
+
+@media all and (min-width: 992px) and (max-width: 1199px)
+{
+  .twofas-admin-users-wrapper .twofas-users canvas,
+        .twofas-admin-users-wrapper .twofas-users iframe
+  {
+    width: 64%;
+  }
+}
+
+@media all and (max-width: 480px)
+{
+  .twofas-admin-users-wrapper .twofas-users canvas,
+        .twofas-admin-users-wrapper .twofas-users iframe
+  {
+    max-width: 100%;
+    margin-left: 0;
+    float: none;
+  }
+}
+
+.twofas-admin-users-wrapper .twofas-users #js-legend
+{
+  width: 35%;
+  float: left;
+  font-size: 12px;
+}
+
+@media all and (min-width: 992px) and (max-width: 1199px)
+{
+  .twofas-admin-users-wrapper .twofas-users #js-legend
+  {
+    width: 36%;
+  }
+}
+
+@media all and (max-width: 480px)
+{
+  .twofas-admin-users-wrapper .twofas-users #js-legend
+  {
+    float: none;
+    width: 100%;
+  }
+}
+
+.twofas-admin-users-wrapper .twofas-users #js-legend ul
+{
+  display: block;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@media all and (max-width: 480px)
+{
+  .twofas-admin-users-wrapper .twofas-users #js-legend ul
+  {
+    text-align: center;
+  }
+}
+
+.twofas-admin-users-wrapper .twofas-users #js-legend ul li
+{
+  padding: 5px;
+  margin: 0;
+}
+
+@media all and (max-width: 480px)
+{
+  .twofas-admin-users-wrapper .twofas-users #js-legend ul li
+  {
+    display: inline-block;
+  }
+}
+
+.twofas-admin-users-wrapper .twofas-users #js-legend ul li span
+{
+  display: inline-block;
+  height: 10px;
+  width: 30px;
+  margin-right: 10px;
+}
+
+.twofas-admin-video-wrapper
+{
+  margin: 0 -15px 0 0;
+}
+
+@media all and (max-width: 991px)
+{
+  .twofas-admin-video-wrapper
+  {
+    margin: 0px -15px 0 -15px;
+  }
+}
+
+.twofas-admin-video-wrapper h2
+{
+  height: 31px !important;
+}
+
+.twofas-admin-video-wrapper .twofas-video
+{
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  height: 365px;
+  padding: 15px;
+}
+
+@media all and (max-width: 640px)
+{
+  .twofas-admin-video-wrapper .twofas-video
+  {
+    height: 225px;
+  }
+}
+
+.twofas-admin-video-wrapper .twofas-video-player
+{
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center;
+  max-height: 100%;
+}
+
+.twofas-admin-video-wrapper .twofas-video-player:before
+{
+  display: block;
+  content: "";
+  width: 100%;
+  padding-top: 56.25%;
+}
+
+.twofas-admin-video-wrapper .twofas-video-player > .content
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.twofas-admin-video-wrapper .twofas-video-player img
+{
+  display: inline-block;
+  height: 100%;
+  width: auto;
+}
+
+.twofas-admin-video-wrapper .twofas-video-player-content > div
+{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.twofas-admin-video-wrapper .twofas-video-player-content video
+{
+  display: none;
+}
+
+.twofas-admin-video-wrapper .twofas-video-player-content .video-js
+{
+  display: none !important;
+}
+
+.twofas-admin-video-wrapper .twofas-video-player-content .video-js.my-player-dimensions
+{
+  display: block !important;
+}
+
+.twofas-admin-video-wrapper .twofas-video-player-content .video-js.my-player-dimensions video
+{
+  display: block;
+}
+
+.twofas-admin-video-wrapper .twofas-video-player-content .vjs-poster
+{
+  background-size: cover;
+}
+
+.twofas-admin-video-wrapper .twofas-video-player-content .vjs-big-play-button
+{
+  border: 2px solid #f1f1f1;
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+  line-height: 75px;
+  left: 50%;
+  top: 50%;
+  margin: -37.5px 0 0 -37.5px;
+}
+
+.twofas-admin-video-wrapper .twofas-video-player-content .vjs-big-play-button .vjs-icon-placeholder
+{
+  font-size: 48px;
+}
+
+.twofas-admin-video-wrapper .twofas-video-player-content .vjs-control-bar
+{
+  background: #000;
+}
+
+.twofas-admin-video-wrapper .twofas-video-player-content .vjs-play-progress::before
+{
+  color: #ec1c24;
+}
+
+.twofas-admin .twofas-account-box-wrapper
+{
+  text-align: center;
+}
+
+.twofas-admin .twofas-account-box-wrapper .twofas-account-box
+{
+  display: inline-block;
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  max-width: 350px;
+  width: 100%;
+  height: auto;
+}
+
+.twofas-admin .twofas-account-box-wrapper .twofas-account-box-header
+{
+  height: 35px;
+  text-align: center;
+  background: #363b41;
+}
+
+.twofas-admin .twofas-account-box-wrapper .twofas-account-box-header h3
+{
+  color: #ffffff;
+  line-height: 35px;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+}
+
+.twofas-admin .twofas-account-box-wrapper .twofas-account-box-content
+{
+  padding: 15px;
+  text-align: left;
+  width: 100%;
+}
+
+.twofas-admin .twofas-account-box-wrapper .twofas-account-box-content .twofas-submit-container
+{
+  text-align: right;
+}
+
+.twofas-admin .twofas-account-box-wrapper .twofas-account-box-content label
+{
+  font-weight: 700;
+}
+
+.twofas-admin .twofas-account-box-wrapper .twofas-account-box-content input[type="email"],
+      .twofas-admin .twofas-account-box-wrapper .twofas-account-box-content input[type="password"]
+{
+  width: 100%;
+  margin: 10px 0;
+}
+
+.twofas-admin .twofas-account-box-wrapper .twofas-account-box-content hr
+{
+  margin-bottom: 15px;
+}
+
+.twofas-admin .twofas-account-box-wrapper .twofas-account-box-content a
+{
+  display: block;
+  line-height: 20px;
+}
+
+.twofas-admin .twofas-account-box-wrapper .twofas-account-box-content a:focus
+{
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline: 0;
+}
+
+.twofas-admin .twofas-account-box-wrapper .twofas-account-box .twofas-privacy-policy-label
+{
+  font-weight: normal;
+}
+
+.twofas-admin .twofas-account-box-wrapper .twofas-account-box .twofas-privacy-policy-label a
+{
+  text-decoration: underline;
+}
+
+.twofas-admin .twofas-admin-configuration
+{
+  text-align: center;
+}
+
+.twofas-admin .twofas-admin-configuration-box
+{
+  background-color: #fff;
+  margin: 10px auto 35px;
+  max-width: 800px;
+  width: 95%;
+}
+
+.twofas-admin .twofas-admin-configuration-box.twofas-admin-configuration-box-last
+{
+  margin-bottom: 0;
+}
+
+.twofas-admin .twofas-admin-configuration-box-header
+{
+  background: #363b41;
+  height: 45px;
+  line-height: 45px;
+  padding: 0 10px;
+}
+
+.twofas-admin .twofas-admin-configuration-box-header h3
+{
+  color: #fff;
+  display: inline-block;
+  font-size: 16px;
+  vertical-align: middle;
+}
+
+@media all and (max-width: 550px)
+{
+  .twofas-admin .twofas-admin-configuration-box-header h3
+  {
+    font-size: 14px;
+  }
+}
+
+.twofas-admin .twofas-admin-configuration-box-bottom
+{
+  text-align: center;
+}
+
+.twofas-admin .twofas-admin-configuration-box-desc
+{
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+
+.twofas-admin .twofas-admin-configuration-box .twofas-action-btn
+{
+  cursor: pointer;
+  font-size: 12px;
+  margin: 10px 0 0;
+  padding: 0 30px;
+}
+
+.twofas-admin .twofas-admin-configuration-box form
+{
+  padding: 25px;
+  text-align: left;
+}
+
+.twofas-admin .twofas-admin-configuration-paragraph
+{
+  margin: 10px 0 30px;
+}
+
+.twofas-login-error-wide
+{
+  background-color: #fff;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  left: 50%;
+  overflow: hidden;
+  position: relative;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 750px;
+}
+
+.twofas-login-box
+{
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  left: 50%;
+  margin-bottom: 15px;
+  overflow: hidden;
+  position: relative;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 750px;
+}
+
+@media all and (max-width: 767px)
+{
+  .twofas-login-box
+  {
+    width: 100%;
+  }
+}
+
+.twofas-login-box::after
+{
+  clear: both;
+  content: '';
+  display: table;
+}
+
+.twofas-login-box + #backtoblog
+{
+  display: none;
+}
+
+.twofas-login-box *
+{
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.twofas-login-box-col
+{
+  background-color: #fff;
+  display: block;
+  float: left;
+  height: 100%;
+  min-height: 413px;
+  padding: 30px;
+  width: 50%;
+}
+
+@media all and (max-width: 767px)
+{
+  .twofas-login-box-col
+  {
+    float: none;
+    padding: 20px;
+    min-height: 0;
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 767px)
+{
+  .twofas-login-box-col.twofas-login-box-col-left
+  {
+    padding-top: 0;
+  }
+}
+
+.twofas-login-box-col.twofas-login-box-col-left img
+{
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+
+@media all and (max-width: 767px)
+{
+  .twofas-login-box-col.twofas-login-box-col-left img
+  {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+}
+
+.twofas-login-box-col.twofas-login-box-col-left h3
+{
+  margin-bottom: 60px;
+}
+
+@media all and (max-width: 767px)
+{
+  .twofas-login-box-col.twofas-login-box-col-left h3
+  {
+    margin-bottom: 15px;
+  }
+}
+
+.twofas-login-box-col.twofas-login-box-col-right img
+{
+  -ms-interpolation-mode: nearest-neighbor;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -o-pixelated;
+  image-rendering: pixelated;
+  width: 85%;
+}
+
+.twofas-login-box-stores
+{
+  display: block;
+  text-align: center;
+}
+
+.twofas-login-box-stores a
+{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+@media all and (max-width: 767px)
+{
+  .twofas-login-box-stores a
+  {
+    display: block;
+  }
+}
+
+.twofas-login-box-stores a:first-of-type
+{
+  margin-right: 10px;
+}
+
+@media all and (max-width: 767px)
+{
+  .twofas-login-box-stores a:first-of-type
+  {
+    margin-bottom: 5px;
+    margin-right: 0;
+  }
+}
+
+.twofas-login-box .twofas-img-wrapper
+{
+  position: relative;
+}
+
+.twofas-login-box .twofas-img-wrapper .twofas-btn-wrapper
+{
+  background: #fff;
+  left: 50%;
+  padding: 3px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.twofas-login-box .twofas-img-wrapper a
+{
+  font-size: 13px;
+  height: 34px;
+  line-height: 34px;
+  padding: 0 25px;
+  width: 150px;
+}
+
+.twofas-login-box h3
+{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+}
+
+.twofas-login-box img
+{
+  display: block;
+  margin: 0 auto;
+}
+
+.twofas-login-box form
+{
+  background: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  border: none;
+}
+
+.twofas-login-box form .twofas-action-btn
+{
+  font-size: 12px;
+  height: 34px;
+  line-height: 34px;
+  margin: 0 auto;
+}
+
+.twofas-login-box .twofas-totp-secret
+{
+  display: none;
+  margin: 7px 0;
+}
+
+.twofas-login-box .twofas-totp-secret-link
+{
+  color: #2a75e6;
+}
+
+.twofas-login-box .twofas-totp-secret-link:hover
+{
+  color: #2a75e6;
+  text-decoration: underline;
+}
+
+.twofas-login-another-account
+{
+  background: none;
+  clear: both;
+  float: none;
+  width: 100%;
+}
+
+.twofas-login-another-account > form
+{
+  background: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: none;
+  margin: 0 !important;
+  padding-bottom: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  padding-top: 10px !important;
+  text-align: left !important;
+}
+
+.twofas-login-another-account > form input[type="submit"]
+{
+  color: #72777c;
+  font-size: 11px;
+  line-height: 19px;
+  text-decoration: underline;
+}
+
+.twofas-login-another-account > form input[type="submit"]:hover, .twofas-login-another-account > form input[type="submit"]:active, .twofas-login-another-account > form input[type="submit"]:focus
+{
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline: 0;
+}
+
+.twofas-totp-confirmation-box form
+{
+  padding-top: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px !important;
+  text-align: center;
+  border: none;
+}
+
+.twofas-totp-confirmation-box form label
+{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.twofas-totp-confirmation-box form .twofas-action-btn
+{
+  display: block;
+  font-size: 12px;
+  height: 34px;
+  line-height: 34px;
+  width: 100%;
+}
+
+.twofas-totp-confirmation-box img
+{
+  display: inline-block;
+}
+
+.twofas-totp-confirmation-box a
+{
+  color: #72777c;
+  display: block;
+  font-size: 11px;
+  line-height: 19px;
+  text-align: left;
+  text-decoration: underline;
+}
+
+.twofas-totp-confirmation-box a:hover
+{
+  text-decoration: underline;
+}
+
+.twofas-totp-confirmation-box .twofas-modal form
+{
+  background: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  padding: 0;
+}
+
+.twofas-totp-confirmation-box .twofas-modal form .twofas-action-btn
+{
+  display: inline-block;
+  width: auto;
+}
+
+@media all and (max-width: 520px)
+{
+  .twofas-totp-confirmation-box .twofas-modal .twofas-content-container .twofas-buttons .twofas-cancel-btn
+  {
+    margin-bottom: 10px !important;
+  }
+
+  .twofas-totp-confirmation-box .twofas-modal .twofas-content-container .twofas-buttons .twofas-action-btn
+  {
+    display: block;
+    width: 100%;
+  }
+}
+
+.twofas-totp-confirmation-box .twofas-login-another-account form
+{
+  padding-bottom: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  padding-top: 10px !important;
+}
+
+#login_error
+{
+  margin-bottom: 20px;
+}
+
+.twofas-login-form-container
+{
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-top: 0;
+}
+
+.twofas-login-form-container .twofas-resend-code-form
+{
+  padding: 16px 0 0 0 !important;
+}
+
+.twofas-login-form-container .twofas-resend-code-form .twofas-resend-code-container
+{
+  text-align: center;
+}
+
+.twofas-login-form-container .twofas-resend-code-form .twofas-resend-code-container input[type="submit"].twofas-resend-code
+{
+  color: #72777c;
+  font-size: 11px;
+  cursor: pointer;
+  border: 0 none;
+  background: none;
+  text-decoration: underline !important;
+}
+
+.twofas-login-form-container .twofas-login-form
+{
+  position: relative !important;
+  padding-bottom: 10px;
+  -webkit-box-sizing: content-box !important;
+  box-sizing: content-box !important;
+  margin-top: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.twofas-login-form-container .twofas-login-form *
+{
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.twofas-login-form-container .twofas-login-form .twofas-remember-container
+{
+  width: 100%;
+  display: table;
+  margin-top: 15px;
+}
+
+.twofas-login-form-container .twofas-login-form .twofas-remember-container .twofas-column
+{
+  display: table-cell;
+  vertical-align: top;
+}
+
+.twofas-login-form-container .twofas-login-form .twofas-remember-container .twofas-column input[type="checkbox"]
+{
+  margin-top: -6px;
+}
+
+.twofas-login-form-container .twofas-login-form .twofas-remember-container .twofas-column .twofas-remember-device-label
+{
+  font-size: 11px !important;
+  position: relative !important;
+  bottom: 6px !important;
+  left: 3px !important;
+}
+
+.twofas-login-form-container .twofas-login-form .twofas-submit
+{
+  display: inline-block;
+  float: right;
+  text-align: right;
+  margin: 15px 0;
+  height: 30px;
+}
+
+.twofas-login-form-container .twofas-login-form .twofas-submit.twofas-disabled:not(.twofas-pusher)::before
+{
+  margin-top: 7px;
+  margin-right: 4px;
+  content: ' ';
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background: url("../images/loading.gif") no-repeat;
+}
+
+.twofas-login-form-container .twofas-login-form .twofas-submit.twofas-disabled .button-primary
+{
+  color: #66c6e4 !important;
+  background: #008ec2 !important;
+  border-color: #007cb2 !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.1) !important;
+  cursor: default;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events: none;
+}
+
+.twofas-login-form-container .twofas-login-nav
+{
+  margin-top: 10px;
+}
+
+.twofas-login-form-container .twofas-login-nav .twofas-login-nav-wrapper
+{
+  padding: 10px 0;
+}
+
+.twofas-login-form-container .twofas-login-nav .twofas-login-nav-wrapper .twofas-table-wrapper
+{
+  width: 100%;
+  display: table;
+}
+
+.twofas-login-form-container .twofas-login-nav .twofas-login-nav-wrapper .twofas-table-wrapper .twofas-login-nav-message
+{
+  display: table-cell;
+  vertical-align: middle;
+  text-align: left;
+  font-size: 11px;
+  line-height: 19px;
+  color: #72777c;
+}
+
+.twofas-login-form-container .twofas-login-nav .twofas-login-nav-wrapper .twofas-table-wrapper .twofas-login-nav-message a
+{
+  font-size: 11px;
+  line-height: 19px;
+  color: #72777c;
+}
+
+.twofas-login-form-container .twofas-login-nav .twofas-login-nav-wrapper .twofas-table-wrapper .twofas-login-nav-message .twofas-login-nav-form
+{
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+  border: none;
+}
+
+.twofas-login-form-container .twofas-login-nav .twofas-login-nav-wrapper .twofas-table-wrapper .twofas-login-nav-message .twofas-login-nav-form input
+{
+  font-size: 11px;
+  line-height: 19px;
+  text-decoration: underline;
+  color: #72777c;
+}
+
+.twofas-login-form-container .twofas-sockets
+{
+  display: inline-block;
+  margin: 15px 0;
+}
+
+.twofas-login-form-container .twofas-sockets .twofas-icon
+{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.twofas-login-form-container .twofas-sockets .twofas-token-loading,
+    .twofas-login-form-container .twofas-sockets .twofas-token-setup
+{
+  margin: 0 10px;
+  vertical-align: middle;
+}
+
+.twofas-login-footer
+{
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+}
+
+.twofas-login-footer:hover .twofas-login-footer-tooltip
+{
+  display: inline;
+}
+
+.twofas-login-footer .twofas-login-footer-tooltip
+{
+  display: none;
+  width: 200px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  margin-top: 3px;
+  margin-right: 4px;
+  float: left;
+}
+
+.twofas-login-footer .twofas-login-footer-logo
+{
+  display: inline-block;
+}
+
+.twofas-error-notice
+{
+  background: #ffffff;
+  border-left: 4px solid #dc3232;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+  padding: 5px 12px;
+  margin: 5px 0 15px;
+}
+
+.twofas-info-notice
+{
+  background: #ffffff;
+  border-left: 4px solid #72aee6;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+  padding: 5px 12px;
+  margin: 5px 0 15px;
+}
+
+li#toplevel_page_twofas-submenu-channel.toplevel_page_twofas-submenu-channel > a .wp-menu-image
+{
+  -webkit-background-size: 16px 27px;
+  background-size: 16px 27px;
+}
+
+.update-message .twofas-upgrade-notice + p
+{
+  display: none;
+}
+
+.update-message .twofas-upgrade-notice p::before
+{
+  content: '';
+  margin-right: 0;
+}
+
+body.twofas-desktop .twofas-btn-wrapper,
+body.twofas-desktop .twofas-mobile-config
+{
+  display: none;
+}
+
+body.twofas-mobile .twofas-btn-wrapper,
+body.twofas-mobile .twofas-mobile-config
+{
+  display: block;
+}
+
+/*# sourceMappingURL=twofas.css.map */

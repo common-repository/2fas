@@ -1,0 +1,390 @@
+.twofas-icon {
+	background-image: url('../images/spritesheet.png');
+	background-repeat: no-repeat;
+	display: inline-block;
+}
+
+// ICON app-store
+@mixin twofas-icon-app-store() {
+	background-position: 0 -133px !important;
+}
+
+@mixin twofas-icon-app-store-mixin() {
+	background-position: 0 -133px;
+	height: 40px;
+	width: 135px;
+}
+
+.twofas-icon-app-store {
+	background-position: 0 -133px;
+	height: 40px;
+	width: 135px;
+}
+// ICON backup-codes
+@mixin twofas-icon-backup-codes() {
+	background-position: -276px -110px !important;
+}
+
+@mixin twofas-icon-backup-codes-mixin() {
+	background-position: -276px -110px;
+	height: 24px;
+	width: 21px;
+}
+
+.twofas-icon-backup-codes {
+	background-position: -276px -110px;
+	height: 24px;
+	width: 21px;
+}
+// ICON download
+@mixin twofas-icon-download() {
+	background-position: -194px 0 !important;
+}
+
+@mixin twofas-icon-download-mixin() {
+	background-position: -194px 0;
+	height: 87px;
+	width: 48px;
+}
+
+.twofas-icon-download {
+	background-position: -194px 0;
+	height: 87px;
+	width: 48px;
+}
+// ICON google-play
+@mixin twofas-icon-google-play() {
+	background-position: 0 -89px !important;
+}
+
+@mixin twofas-icon-google-play-mixin() {
+	background-position: 0 -89px;
+	height: 42px;
+	width: 136px;
+}
+
+.twofas-icon-google-play {
+	background-position: 0 -89px;
+	height: 42px;
+	width: 136px;
+}
+// ICON info-ok
+@mixin twofas-icon-info-ok() {
+	background-position: -222px -89px !important;
+}
+
+@mixin twofas-icon-info-ok-mixin() {
+	background-position: -222px -89px;
+	height: 16px;
+	width: 16px;
+}
+
+.twofas-icon-info-ok {
+	background-position: -222px -89px;
+	height: 16px;
+	width: 16px;
+}
+// ICON info-x
+@mixin twofas-icon-info-x() {
+	background-position: -170px -89px !important;
+}
+
+@mixin twofas-icon-info-x-mixin() {
+	background-position: -170px -89px;
+	height: 16px;
+	width: 16px;
+}
+
+.twofas-icon-info-x {
+	background-position: -170px -89px;
+	height: 16px;
+	width: 16px;
+}
+// ICON info
+@mixin twofas-icon-info() {
+	background-position: -138px -111px !important;
+}
+
+@mixin twofas-icon-info-mixin() {
+	background-position: -138px -111px;
+	height: 16px;
+	width: 16px;
+}
+
+.twofas-icon-info {
+	background-position: -138px -111px;
+	height: 16px;
+	width: 16px;
+}
+// ICON numpad
+@mixin twofas-icon-numpad() {
+	background-position: -244px 0 !important;
+}
+
+@mixin twofas-icon-numpad-mixin() {
+	background-position: -244px 0;
+	height: 73px;
+	width: 56px;
+}
+
+.twofas-icon-numpad {
+	background-position: -244px 0;
+	height: 73px;
+	width: 56px;
+}
+// ICON offline-codes
+@mixin twofas-icon-offline-codes() {
+	background-position: -244px -75px !important;
+}
+
+@mixin twofas-icon-offline-codes-mixin() {
+	background-position: -244px -75px;
+	height: 33px;
+	width: 33px;
+}
+
+.twofas-icon-offline-codes {
+	background-position: -244px -75px;
+	height: 33px;
+	width: 33px;
+}
+// ICON padlock
+@mixin twofas-icon-padlock() {
+	background-position: -216px -123px !important;
+}
+
+@mixin twofas-icon-padlock-mixin() {
+	background-position: -216px -123px;
+	height: 32px;
+	width: 22px;
+}
+
+.twofas-icon-padlock {
+	background-position: -216px -123px;
+	height: 32px;
+	width: 22px;
+}
+// ICON refresh
+@mixin twofas-icon-refresh() {
+	background-position: -213px -161px !important;
+}
+
+@mixin twofas-icon-refresh-mixin() {
+	background-position: -213px -161px;
+	height: 12px;
+	width: 12px;
+}
+
+.twofas-icon-refresh {
+	background-position: -213px -161px;
+	height: 12px;
+	width: 12px;
+}
+// ICON remove-hover
+@mixin twofas-icon-remove-hover() {
+	background-position: -227px -161px !important;
+}
+
+@mixin twofas-icon-remove-hover-mixin() {
+	background-position: -227px -161px;
+	height: 10px;
+	width: 10px;
+}
+
+.twofas-icon-remove-hover {
+	background-position: -227px -161px;
+	height: 10px;
+	width: 10px;
+}
+// ICON remove
+@mixin twofas-icon-remove() {
+	background-position: -156px -111px !important;
+}
+
+@mixin twofas-icon-remove-mixin() {
+	background-position: -156px -111px;
+	height: 10px;
+	width: 10px;
+}
+
+.twofas-icon-remove {
+	background-position: -156px -111px;
+	height: 10px;
+	width: 10px;
+}
+// ICON sms
+@mixin twofas-icon-sms() {
+	background-position: -98px 0 !important;
+}
+
+@mixin twofas-icon-sms-mixin() {
+	background-position: -98px 0;
+	height: 87px;
+	width: 94px;
+}
+
+.twofas-icon-sms {
+	background-position: -98px 0;
+	height: 87px;
+	width: 94px;
+}
+// ICON support
+@mixin twofas-icon-support() {
+	background-position: -194px -89px !important;
+}
+
+@mixin twofas-icon-support-mixin() {
+	background-position: -194px -89px;
+	height: 32px;
+	width: 26px;
+}
+
+.twofas-icon-support {
+	background-position: -194px -89px;
+	height: 32px;
+	width: 26px;
+}
+// ICON tick-admin
+@mixin twofas-icon-tick-admin() {
+	background-position: -138px -89px !important;
+}
+
+@mixin twofas-icon-tick-admin-mixin() {
+	background-position: -138px -89px;
+	height: 20px;
+	width: 30px;
+}
+
+.twofas-icon-tick-admin {
+	background-position: -138px -89px;
+	height: 20px;
+	width: 30px;
+}
+// ICON tick-enabled
+@mixin twofas-icon-tick-enabled() {
+	background-position: -222px -107px !important;
+}
+
+@mixin twofas-icon-tick-enabled-mixin() {
+	background-position: -222px -107px;
+	height: 12px;
+	width: 17px;
+}
+
+.twofas-icon-tick-enabled {
+	background-position: -222px -107px;
+	height: 12px;
+	width: 17px;
+}
+// ICON tick
+@mixin twofas-icon-tick() {
+	background-position: -194px -161px !important;
+}
+
+@mixin twofas-icon-tick-mixin() {
+	background-position: -194px -161px;
+	height: 12px;
+	width: 17px;
+}
+
+.twofas-icon-tick {
+	background-position: -194px -161px;
+	height: 12px;
+	width: 17px;
+}
+// ICON token
+@mixin twofas-icon-token() {
+	background-position: 0 0 !important;
+}
+
+@mixin twofas-icon-token-mixin() {
+	background-position: 0 0;
+	height: 87px;
+	width: 96px;
+}
+
+.twofas-icon-token {
+	background-position: 0 0;
+	height: 87px;
+	width: 96px;
+}
+// ICON tokens
+@mixin twofas-icon-tokens() {
+	background-position: -279px -75px !important;
+}
+
+@mixin twofas-icon-tokens-mixin() {
+	background-position: -279px -75px;
+	height: 30px;
+	width: 18px;
+}
+
+.twofas-icon-tokens {
+	background-position: -279px -75px;
+	height: 30px;
+	width: 18px;
+}
+// ICON trusted
+@mixin twofas-icon-trusted() {
+	background-position: -244px -142px !important;
+}
+
+@mixin twofas-icon-trusted-mixin() {
+	background-position: -244px -142px;
+	height: 22px;
+	width: 30px;
+}
+
+.twofas-icon-trusted {
+	background-position: -244px -142px;
+	height: 22px;
+	width: 30px;
+}
+// ICON turn-on-off
+@mixin twofas-icon-turn-on-off() {
+	background-position: -276px -142px !important;
+}
+
+@mixin twofas-icon-turn-on-off-mixin() {
+	background-position: -276px -142px;
+	height: 17px;
+	width: 16px;
+}
+
+.twofas-icon-turn-on-off {
+	background-position: -276px -142px;
+	height: 17px;
+	width: 16px;
+}
+// ICON twofas-auth
+@mixin twofas-icon-twofas-auth() {
+	background-position: -194px -123px !important;
+}
+
+@mixin twofas-icon-twofas-auth-mixin() {
+	background-position: -194px -123px;
+	height: 36px;
+	width: 20px;
+}
+
+.twofas-icon-twofas-auth {
+	background-position: -194px -123px;
+	height: 36px;
+	width: 20px;
+}
+// ICON vms
+@mixin twofas-icon-vms() {
+	background-position: -244px -110px !important;
+}
+
+@mixin twofas-icon-vms-mixin() {
+	background-position: -244px -110px;
+	height: 30px;
+	width: 30px;
+}
+
+.twofas-icon-vms {
+	background-position: -244px -110px;
+	height: 30px;
+	width: 30px;
+}

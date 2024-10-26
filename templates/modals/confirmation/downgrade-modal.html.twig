@@ -1,0 +1,11 @@
+{% extends 'modals/confirmation/confirmation-base.html.twig' %}
+
+{% block modal_name %}twofas-downgrade-modal{% endblock %}
+{% block message %}
+    {{
+        esc_html__(
+            'You are going to downgrade your plan. There are users with enabled SMS backup method. If you downgrade plan, they lose ability to log in with this method.',
+            '2fas'
+        )
+    }}
+{% endblock %}

@@ -1,0 +1,1 @@
+!function(e){var a=jQuery("#2fas-update .update-message");a.empty(),a.append("There is a new version of 2FAS available, but it doesn't work with your version of PHP. <a href='https://wordpress.org/support/update-php/' target='_blank'>Learn more about updating PHP</a>."),a.addClass("notice-error"),a.removeClass("notice-warning")}();

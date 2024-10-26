@@ -1,0 +1,13 @@
+{% extends 'modals/modal-base.html.twig' %}
+
+{% block modal_classes %}twofas-anim-off twofas-credit-card-modal{% endblock %}
+{% block modal_extra_classes %}twofas-info-text{% endblock %}
+{% block modal_title %}{{ esc_html__('Info', '2fas') }}{% endblock %}
+{% block modal_content %}
+    <div class="twofas-text-content">
+        <p>{{ esc_html__('In order to upgrade plan credit card must be added. Please add credit card by clicking the button at the top of this page.', '2fas') }}</p>
+    </div>
+    <div class="twofas-buttons">
+        <a href="#" class="twofas-btn twofas-action-btn js-close-modal">OK</a>
+    </div>
+{% endblock %}

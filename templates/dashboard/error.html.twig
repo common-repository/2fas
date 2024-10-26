@@ -1,0 +1,8 @@
+{% extends "dashboard/base.html.twig" %}
+
+{% block class %}twofas-user{% endblock %}
+
+{% block page %}
+    <h2>{{ esc_html__('Error', '2fas') }}</h2>
+    <p>{{ description }}</p>
+{% endblock %}

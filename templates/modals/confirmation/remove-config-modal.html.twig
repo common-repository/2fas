@@ -1,0 +1,22 @@
+{% extends 'modals/confirmation/confirmation-base.html.twig' %}
+
+{% block modal_name %}twofas-remove-config-modal{% endblock %}
+{% block modal_extra_classes %}twofas-without-spinner{% endblock %}
+{% block confirmation_content %}
+    <div class="twofas-text-content">
+        <p>
+            {{ esc_html__('You are going to reset your two-factor authentication configuration. Are you sure to proceed?', '2fas') }}
+        </p>
+    </div>
+    <div class="twofas-buttons">
+        <a href="#" class="twofas-btn twofas-cancel-btn js-close-modal">{{ esc_html__('Cancel', '2fas')|upper }}</a>
+
+        <form action="{{ login_url }}" method="post" class="twofas-buttons-bottom js-reload-qr-code-and-set-modal-status twofas-form-inline">
+            {% include "login/authentication_hidden_inputs.html.twig" %}
+            <input type="hidden" name="twofas_action" value="{{ actions['reset_totp'] }}" />
+            <button class="twofas-btn twofas-action-btn">
+                <span>{{ esc_html__('Confirm', '2fas')|upper }}</span>
+            </button>
+        </form>
+    </div>
+{% endblock %}

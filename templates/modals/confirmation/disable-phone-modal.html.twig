@@ -1,0 +1,7 @@
+{% extends 'modals/confirmation/confirmation-base.html.twig' %}
+
+{% block modal_name %}twofas-disable-phone-modal{% endblock %}
+{% block message %}
+    {{ esc_html__('You are going to disable your two-factor authentication through SMS/VMS message. Are you sure to proceed?', '2fas') }}
+{% endblock %}
+

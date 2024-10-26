@@ -1,0 +1,24 @@
+<div class="{% block class %}{% endblock %}">
+    <noscript>
+        <style>
+            .twofas-admin > .wrap,
+            .twofas-user > .wrap {
+                display: none;
+            }
+        </style>
+        <div class="wrap">
+            <div class="notice notice-error error">
+                <p>We have noticed, that JavaScript is disabled by your browser. Please turn on JavaScript in order to use the 2FAS Classic plugin.</p>
+            </div>
+        </div>
+    </noscript>
+
+    <div class="wrap">
+        <h1>
+            <img src="{{ assets_url }}images/logo.png" alt="2fas">
+            <span>{{ esc_html__('2FAS Classic — Two Factor Authentication', '2fas') }}</span>
+        </h1>
+
+        {% block page %}{% endblock %}
+    </div>
+</div>

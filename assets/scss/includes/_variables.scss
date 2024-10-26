@@ -1,0 +1,198 @@
+// WordPress
+$WP_BackgroundColor: #f1f1f1;
+
+$WP_SubmitButton_BackgroundColor: #0084b9;
+$WP_SubmitButton_FontColor: #fff;
+
+$WP_Notification_BackgroundColor: #ffffff;
+$WP_Notification_BorderColor: #dc3232;
+$WP_Notification_Info_BorderColor: #72aee6;
+$WP_Notification_ShadowColor: rgba(0, 0, 0, .1);
+
+// 2FAS
+$TF_FontFamily: 'Roboto', sans-serif;
+$TF_Box_BackgroundColor: #fff;
+
+$TF_Color_Success: #10b74a;
+$TF_Color_SuccessDark: #08772e;
+
+$TF_Color_Danger: #ec4445;
+
+$TF_Color_Disabled: #c9cdd3;
+$TF_Color_Submit_Disabled: #7e7e7e;
+$TF_Color_Submit_DisabledDark: #323232;
+
+$TF_Color_Info: #1665dd;
+
+$TF_Color_FontNormal: #202225;
+$TF_Color_FontMuted: #9fa1a4;
+
+$TF_Color_Link: #2a75e6;
+
+$TF_List_Inline_Spacer_Border: #c6c6c6;
+
+$TF_Button_Action_BackgroundColor: #202225;
+$TF_Button_Action_Color: #fff;
+$TF_Button_Submit_BackgroundColor: #1665dd;
+$TF_Button_Submit_Color: #fff;
+$TF_Button_Refresh_Color: #666666;
+
+$TF_Switch_Color: #fff;
+
+$TF_Input_Border_Color: #d9d9d9;
+$TF_Input_Background_Color: #fff;
+$TF_Checkbox_Icon_Background_Color: #fff;
+
+$TF_WelcomeBox_BackgroundColor: $TF_Box_BackgroundColor;
+$TF_WelcomeBox_Decoration_BackgroundColor: #f9f9f9;
+$TF_WelcomeBox_Decoration_BorderColor: #e3e3e3;
+$TF_WelcomeBox_Badge_BackgroundColor: #000000;
+$TF_WelcomeBox_Badge_Color: #fff;
+$TF_WelcomeBox_BorderColor: #b8b8b8;
+$TF_WelcomeBox_Decoration_Color: #777a7e;
+$TF_WelcomeBox_Block_BackgroundColor: #fff;
+$TF_WelcomeBox_Block_Border: #aaaaaa;
+$TF_WelcomeBox_Block_BorderLight: #ededed;
+$TF_WelcomeBox_Block_Color: #202225;
+
+$TF_Tooltip_BackgroundColor: #1a232e;
+$TF_Tooltip_Color: #f7f6f6;
+
+$TF_BarTab_Color: #fff;
+$TF_BarTab_BackgroundColor: #3f444a;
+$TF_BarTab_Hover_BackgroundColor: #4e5258;
+$TF_BarTab_Active_BackgroundColor: #f1f1f1;
+$TF_BarTab_Active_Color: $TF_Color_FontNormal;
+$TF_BarTab_Active_Border: #e3e3e3;
+$TF_BarTab_Badge_BackgroundColor: #2a75e6;
+$TF_BarTab_Badge_BackgroundColor_Disabled: #7e7e7e;
+$TF_BarTab_Badge_Color: #fff;
+
+$TF_Content_BackgroundColor: #fff;
+$TF_Content_Color: $TF_Color_FontNormal;
+$TF_Content_Border: #e3e3e3;
+$TF_Content_Item_Border: #e5e5e6;
+
+$TF_Content_Collapse_Background_Color: #384c54;
+$TF_Content_Collapse_Box_Background_Color: #fff;
+$TF_Content_Collapse_Button_Background_Color: #fff;
+$TF_Content_Collapse_Button_Color: #23282d;
+$TF_Content_Collapse_Button_Border: $TF_Content_Collapse_Background_Color;
+
+$TF_Content_Status_RWD_Background_Color: #fff;
+$TF_Content_Status_RWD_Border: #e3e3e3;
+
+$TF_Offline_Stats_Border_Color: #d5d7db;
+$TF_Offline_Stats_Active_Color: #2a75e6;
+$TF_Offline_Stats_Button_Background_Color: #1a232e;
+$TF_Offline_Stats_Button_Color: #fff;
+$TF_Offline_Stats_Color: #6f7072;
+
+$TF_Trusted_Table_Color: #e3e4e6;
+$TF_Trusted_Hour_Color: #9fa3ab;
+$TF_Trusted_Link_Color: #2a75e6;
+$TF_Trusted_Remove_Color: #eb1c1c;
+$TF_Trusted_Remove_Hover_Color: #a50000;
+
+// Admin
+$TF_Admin_Action_Bar_Background_Color: #363b41;
+$TF_Admin_Action_Bar_Color: #ffffff;
+
+$TF_Admin_Upgrade_Button_Background_Color: #ffffff;
+$TF_Admin_Upgrade_Button_Color: #363b41;
+
+$TF_Admin_Highlight_Color: #ec1c24;
+$TF_Admin_Box_Background_Color: #ffffff;
+$TF_Admin_Box_Border_Color: #e5e5e5;
+
+$TF_Admin_Disable_Button_Color: #fff;
+
+$TF_Admin_Enable_Button_Background_Color: #10b74a;
+$TF_Admin_Enable_Button_Color: #fff;
+
+$TF_Admin_Table_Basic_Background_Color: #363b41;
+$TF_Admin_Table_Basic_Color: #fff;
+$TF_Admin_Table_Premium_Background_Color: #eb1c23;
+$TF_Admin_Table_Premium_Color: #fff;
+$TF_Admin_Table_Active_Column_Background_Color: rgba(#10b74a, .05);
+
+$TF_Admin_Delete_Bar_Background_Color: #363b41;
+$TF_Admin_Delete_Bar_Color: #ffffff;
+
+$TF_Account_Box_Header_Background_Color: #363b41;
+$TF_Account_Box_Header_Color: #ffffff;
+
+$TF_Video_Control_Bar_Background_Color: #000;
+$TF_Video_Play_Button_Border: #f1f1f1;
+
+// Admin Configuration
+$TF_Configuration_Box_Background_Color: #fff;
+$TF_Configuration_Header_Background_Color: #363b41;
+$TF_Configuration_Header_Color: #fff;
+
+// Modal
+$TF_Modal_Header_Background_Color: #f6f6f6;
+$TF_Modal_Header_Border_Color: #e5e5e5;
+$TF_Modal_Header_Color: #363b41;
+
+$TF_Modal_Body_Background_Color: #fff;
+$TF_Modal_Body_Color: #363b41;
+
+$TF_Modal_Cancel_Btn_Border: #e3e3e3;
+
+// Loading Animation
+$TF_Dot_Near_Background_Color: #363b41;
+$TF_Dot_Far_Background_Color: #8899a6;
+$TF_Dot_Active_Background_Color: #32a2d6;
+$TF_Dot_Error_Background_Color: #ec4445;
+
+$TF_Dot_Animation_Base_Time: 1.2;
+$TF_Dot_Animation_Base_Time_In_Seconds: unquote($TF_Dot_Animation_Base_Time + 's');
+
+$TF_Dot_Animation_Items_Count: 6;
+
+$TF_Dot_Animation_Delay_Time: 1.5;
+$TF_Dot_Animation_Delay_Time_In_Seconds: unquote($TF_Dot_Animation_Delay_Time + 's');
+
+// Login Box
+$TF_Login_Box_Background_Color: #fff;
+$TF_Login_Box_Input_Background_Color: #fff;
+
+// Bootstrap
+$screen-xs:         480px;
+$screen-xs-min:     $screen-xs;
+$screen-phone:      $screen-xs-min;
+
+$screen-sm:         768px;
+$screen-sm-min:     $screen-sm;
+$screen-tablet:     $screen-sm-min;
+
+$screen-md:         992px;
+$screen-md-min:     $screen-md;
+$screen-desktop:    $screen-md-min;
+
+$screen-lg:         1200px;
+$screen-lg-min:     $screen-lg;
+$screen-lg-desktop: $screen-lg-min;
+
+$screen-xs-max:     ($screen-sm-min - 1);
+$screen-sm-max:     ($screen-md-min - 1);
+$screen-md-max:     ($screen-lg-min - 1);
+
+// Mobile 360
+$screen-360:        360px;
+
+// OLD
+// Login page
+$login-nav-message-color: #72777c;
+$login-circle-url: '../images/loading.gif';
+$twofas-second-step-login-button-shadow-color: rgba(0,0,0,.1);
+
+// Buttons
+$button-primary-disabled-color: #66c6e4;
+$button-primary-disabled-background-color: #008ec2;
+$button-primary-disabled-border-color: #007cb2;
+
+// Printable offline codes
+$backup-codes-list-bullet-color: #ff0000;
+$backup-codes-list-text-color: #000;

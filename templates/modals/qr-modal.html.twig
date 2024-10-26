@@ -1,0 +1,16 @@
+{% extends 'modals/modal-base.html.twig' %}
+
+{% block modal_classes %}twofas-anim-off twofas-qr-modal{% endblock %}
+{% block modal_title %}{{ esc_html__('QR Code', '2fas') }}{% endblock %}
+{% block modal_body %}
+    <div class="twofas-modal-body">
+        <div class="twofas-content-container twofas-qr-code-container">
+            <div class="twofas-text-content">
+                <img src="{{ qr_code }}" alt="QR code" class="twofas-qr-code">
+            </div>
+            <div class="twofas-buttons twofas-buttons-center">
+                <a href="#" class="twofas-btn twofas-action-btn js-close-modal">{{ esc_html__('Close', '2fas')|upper }}</a>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,102 @@
+@import "../includes/variables";
+
+.twofas-bar {
+  width: 100%;
+  height: 46px;
+  line-height: 46px;
+  background: $TF_BarTab_BackgroundColor;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+
+  @media all and (max-width: 640px) {
+    height: auto;
+    overflow: hidden;
+  }
+
+  .twofas-list-inline {
+    li {
+      width: 200px;
+      height: 46px;
+      line-height: 46px;
+      text-align: center;
+      color: $TF_BarTab_Color;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      border: 1px solid transparent;
+      border-bottom: 0;
+
+      @media all and (max-width: 1100px) {
+        width: 180px;
+      }
+
+      @media all and (max-width: $screen-sm-max) {
+        width: auto;
+        padding: 0 15px;
+      }
+
+      @media all and (max-width: 640px) {
+        width: 50%;
+      }
+
+      &:not(.twofas-disabled):not(.twofas-active):hover {
+        background: $TF_BarTab_Hover_BackgroundColor;
+      }
+
+      &.twofas-disabled {
+        cursor: not-allowed;
+        opacity: .75;
+        user-select: none;
+
+        a {
+          pointer-events: none;
+
+          .twofas-badge {
+            background: $TF_BarTab_Badge_BackgroundColor_Disabled;
+          }
+        }
+      }
+
+      &.twofas-active {
+        color: $TF_BarTab_Active_Color;
+        background: $TF_BarTab_Active_BackgroundColor;
+        border-color: $TF_BarTab_Active_Border;
+      }
+
+      .twofas-line {
+        display: inline;
+
+        @media all and (max-width: 400px) {
+          display: block;
+          line-height: 13px;
+        }
+      }
+
+      .twofas-hyphen {
+        display: inline;
+
+        @media all and (max-width: 400px) {
+          display: none;
+        }
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+
+        &:hover,
+        &:focus,
+        &:active {
+          text-decoration: none;
+        }
+
+        > span:not(.twofas-badge) {
+          @media all and (max-width: 400px) {
+            display: inline-block;
+            vertical-align: middle;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{% extends "dashboard/admin/admin-base.html.twig" %}
+
+{% block page %}
+    <div class="twofas-account-box-wrapper">
+        <div class="twofas-account-box">
+            <div class="twofas-account-box-header">
+                <h3>{{ esc_html__('Log In', '2fas') }}</h3>
+            </div>
+            <div class="twofas-account-box-content">
+                <form action="{{ create_url(constant('TwoFAS\\TwoFAS\\Http\\Action_Index::SUBMENU_DASHBOARD'), constant('TwoFAS\\TwoFAS\\Http\\Action_Index::ACTION_LOGIN')) }}" method="post">
+                    {{ create_form_nonce(constant('TwoFAS\\TwoFAS\\Http\\Action_Index::ACTION_LOGIN')) | raw }}
+                    <label for="twofas-email">{{ esc_html__('Your 2FAS e-mail', '2fas') }}:</label>
+                    <input type="email" class="js-autofocus" id="twofas-email" name="twofas[email]" value="{{ email }}" required="required" {% if email is empty %}autofocus="autofocus"{% endif %} />
+                    <label for="twofas-password">{{ esc_html__('Your 2FAS password', '2fas') }}:</label>
+                    <input type="password" class="js-autofocus" id="twofas-password" name="twofas[password]" required="required" {% if email is not empty %}autofocus="autofocus"{% endif %} />
+                    <div class="twofas-submit-container">
+                        <input type="submit" class="twofas-btn twofas-account-box-btn" value="{{ esc_attr__('Log In', '2fas') }}" />
+                    </div>
+                </form>
+                <hr />
+                <a href="{{ create_url(constant('TwoFAS\\TwoFAS\\Http\\Action_Index::SUBMENU_DASHBOARD'),
+                    constant('TwoFAS\\TwoFAS\\Http\\Action_Index::ACTION_RESET_PASSWORD')) }}">{{ esc_html__('Reset your password', '2fas') }}</a>
+
+                <a href="{{ create_url(constant('TwoFAS\\TwoFAS\\Http\\Action_Index::SUBMENU_DASHBOARD'),
+                    constant('TwoFAS\\TwoFAS\\Http\\Action_Index::ACTION_CREATE_ACCOUNT')) }}">{{ esc_html__('Create an account', '2fas') }}</a>
+            </div>
+        </div>
+    </div>
+{% endblock %}

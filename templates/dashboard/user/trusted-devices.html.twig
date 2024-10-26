@@ -1,0 +1,101 @@
+{% extends "dashboard/user/user-base.html.twig" %}
+
+{% block tab %}
+    <div class="twofas-content">
+        <div class="twofas-content-container">
+            <div class="twofas-content-header">
+                <ul class="twofas-list-inline twofas-list-spacer">
+                    <li>
+                        <a href="https://2fas.com/learn-more#trusted-devices" class="twofas-learn-more" target="_blank" rel="noreferrer noopener">
+                            {{ esc_html__('Learn more', '2fas')|upper }}
+                            <i class="twofas-icon twofas-icon-info"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="twofas-content-description">
+                <p>{{ esc_html__('The following list contains all of your trusted devices. When you are using a trusted device you don’t need to enter a verification code each time you log in. Ensure that this list is up to date and remove unnecessary devices.', '2fas') }}</p>
+            </div>
+
+            <div class="twofas-content-table">
+                {% if trusted_devices is empty %}
+                    <h5>{{ esc_html__('No trusted devices', '2fas') }}</h5>
+                {% else %}
+                    <table class="twofas-trusted-devices">
+                        <thead>
+                        <tr>
+                            <th>{{ esc_html__('Browser and device', '2fas') }}</th>
+                            <th>{{ esc_html__('Added', '2fas') }}</th>
+                            <th>{{ esc_html__('Last logged in', '2fas') }}</th>
+                            <th>{{ esc_html__('IP Address', '2fas') }}</th>
+                            <th>{{ esc_html__('Action', '2fas') }}</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {% for id, device in trusted_devices %}
+                            <tr class="twofas-trusted-device">
+                                <td>
+                                    <div class="twofas-td-content">
+                                        {{ device['browser'] }}
+                                    </div>
+                                </td>
+                                <td class="twofas-trusted-device-added-on">
+                                    <div class="twofas-td-content">
+                                        <span class="twofas-date">{{ device['added_on'] }}</span>
+                                        <span class="twofas-hour">{{ device['added_on'] }}</span>
+                                    </div>
+                                </td>
+                                <td class="twofas-trusted-device-last-logged-in">
+                                    <div class="twofas-td-content">
+                                        <span class="twofas-date">{{ device['last_logged_in'] is empty ? esc_html__('No information', '2fas') :  device['last_logged_in'] }}</span>
+                                        <span class="twofas-hour">{{ device['last_logged_in'] is empty ? esc_html__('No information', '2fas') :  device['last_logged_in']}}</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="twofas-td-content">
+                                        <span class="twofas-trusted-device-country">{{ device['ip'] }}</span>
+                                        <span class="twofas-ip">{{ device['ip'] }}</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="twofas-td-content">
+                                        {% set params = {'id': id} %}
+                                        <form action="{{ create_url(constant('TwoFAS\\TwoFAS\\Http\\Action_Index::SUBMENU_CHANNEL'), constant('TwoFAS\\TwoFAS\\Http\\Action_Index::ACTION_REMOVE_TRUSTED_DEVICE')) }}" method="post" class="js-open-deletion-confirmation-modal twofas-form-inline twofas-remove">
+                                            {{ create_form_nonce(constant('TwoFAS\\TwoFAS\\Http\\Action_Index::ACTION_REMOVE_TRUSTED_DEVICE')) | raw }}
+                                            <input type="hidden" name="device_id" value="{{ id }}"/>
+                                            <button type="submit" class="twofas-status-btn-as-link">
+                                                {{ esc_html__('Remove', '2fas') }}
+                                                <i class="twofas-icon twofas-icon-remove"></i>
+                                            </button>
+                                        </form>
+                                    </div>
+                                </td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                {% endif %}
+
+                {% if not is_current_device_trusted %}
+                    <div class="twofas-add-trusted-device{% if trusted_devices is empty %} text-center{% endif %}">
+                        <form action="{{ create_url(constant('TwoFAS\\TwoFAS\\Http\\Action_Index::SUBMENU_CHANNEL'), constant('TwoFAS\\TwoFAS\\Http\\Action_Index::ACTION_ADD_TRUSTED_DEVICE')) }}" method="post" class="js-waiting-button">
+                            {{ create_form_nonce(constant('TwoFAS\\TwoFAS\\Http\\Action_Index::ACTION_ADD_TRUSTED_DEVICE')) | raw }}
+                            <button type="submit" class="twofas-btn twofas-submit-btn">
+                                <span>{{ esc_html__('Add this device', '2fas')|upper }}</span>
+
+                                <span class="twofas-spinner-button">
+                                    <span class="twofas-spinner-button-bounce-1"></span>
+                                    <span class="twofas-spinner-button-bounce-2"></span>
+                                    <span class="twofas-spinner-button-bounce-3"></span>
+                                </span>
+                            </button>
+                        </form>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+    {% include 'modals/confirmation/deletion-confirmation-modal.html.twig' %}
+{% endblock %}

@@ -1,0 +1,11 @@
+{% extends 'modals/confirmation/confirmation-base.html.twig' %}
+
+{% block modal_name %}twofas-logout-modal{% endblock %}
+{% block message %}
+    {{
+        esc_html__(
+            "If you log out, you lose plugin configuration. It can't be undone.",
+            '2fas'
+        )|raw
+    }}
+{% endblock %}

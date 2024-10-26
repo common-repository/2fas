@@ -1,0 +1,110 @@
+{{ login_header( esc_html__('Enter your token', '2fas'), '', error) }}
+
+<div class="twofas-login-form-container twofas-admin">
+    <form method="post" action="{{ login_url }}" id="loginform" class="twofas-login-form">
+        <label for="twofas-code">
+            {{ esc_html__('Enter your 2FAS token', '2fas') }}:
+        </label>
+
+        <input type="text"
+               name="twofas_code"
+               id="twofas-code"
+               class="twofas-token-input twofas-big"
+               minlength="6"
+               maxlength="6"
+               pattern="[0-9]{6}"
+               autocomplete="off"
+               autofocus="autofocus"
+               required="required"/>
+
+        {% if trusted_devices_enabled %}
+            <div class="twofas-remember-container">
+                <div class="twofas-column">
+                    <input type="checkbox" name="twofas_remember_device"
+                           id="twofas_remember_device" {{ remember_device ? 'checked' : '' }} />
+                </div>
+                <div class="twofas-column">
+                    <label class="twofas-remember-device-label" for="twofas_remember_device">
+                        {{ sprintf(esc_html__("Next time don't ask me for the token%son this device.", '2fas'), '<br />')|raw }}
+                    </label>
+                </div>
+            </div>
+        {% endif %}
+
+        <div>
+            {% include "login/authentication_hidden_inputs.html.twig" %}
+
+            <input type="hidden" name="twofas_action" value="{{ actions['verify_totp_code'] }}"/>
+        </div>
+
+        <div class="twofas-submit">
+            <input type="submit" name="wp-submit" id="wp-submit" class="button button-primary button-large"
+                   value="{{ esc_attr__('Log In', '2fas') }}"/>
+        </div>
+    </form>
+
+    <div class="twofas-login-nav">
+        {% if (offline_codes_count > 0 and are_offline_codes_enabled) or is_sms_enabled %}
+            <p>{{ esc_html__("Can't use your 2FAS token?", '2fas')|raw }}</p>
+        {% endif %}
+
+        <div class="twofas-login-nav-wrapper">
+            <div class="twofas-table-wrapper">
+                <div class="twofas-login-nav-message">
+                    {% if offline_codes_count > 0 and are_offline_codes_enabled %}
+                        <form method="post" action="{{ login_url }}" class="twofas-login-nav-form">
+                            <div>
+                                {% include "login/authentication_hidden_inputs.html.twig" %}
+                                <input type="hidden" name="twofas_action"
+                                       value="{{ actions['log_in_with_backup_code'] }}"/>
+                            </div>
+
+                            <input type="submit" class="button-link"
+                                   value="{{ esc_attr__('Insert your one-time backup code', '2fas') }}"/>
+                        </form>
+                    {% endif %}
+
+                    {% if is_sms_enabled %}
+                        <form method="post" action="{{ login_url }}" class="twofas-login-nav-form">
+                            <div>
+                                {% include "login/authentication_hidden_inputs.html.twig" %}
+
+                                <input type="hidden" name="twofas_action" value="{{ actions['open_sms_auth'] }}"/>
+                            </div>
+
+                            <input type="submit" class="button-link"
+                                   value="{{ esc_attr__('Request backup code via SMS', '2fas') }}"/>
+                        </form>
+                        <form method="post" action="{{ login_url }}" class="twofas-login-nav-form">
+                            <div>
+                                {% include "login/authentication_hidden_inputs.html.twig" %}
+
+                                <input type="hidden" name="twofas_action" value="{{ actions['open_call_auth'] }}"/>
+                            </div>
+
+                            <input type="submit" class="button-link"
+                                   value="{{ esc_attr__('Request backup code via CALL', '2fas') }}"/>
+                        </form>
+                    {% endif %}
+
+                    <section class="twofas-login-another-account">
+                        <form action="{{ login_url }}" method="post" class="twofas-login-nav-form">
+                            <div>
+                                {% if interim_login %}
+                                    <input type="hidden" name="interim-login" value="{{ interim_login }}"/>
+                                {% endif %}
+                                <input type="hidden" name="twofas_action" value="{{ actions['stop_login_process'] }}"/>
+                            </div>
+                            <input type="submit" class="button-link"
+                                   value="{{ esc_attr__('Log in to another account', '2fas') }}"/>
+                        </form>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% include 'modals/error-modal.html.twig' %}
+</div>
+
+{{ login_footer() }}

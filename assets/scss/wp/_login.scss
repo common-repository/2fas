@@ -1,0 +1,210 @@
+@import '../includes/variables';
+
+#login_error {
+  margin-bottom: 20px;
+}
+
+.twofas-login-form-container {
+  box-sizing: border-box;
+  margin-top: 0;
+
+  .twofas-resend-code-form {
+    padding: 16px 0 0 0 !important;
+
+    .twofas-resend-code-container {
+      text-align: center;
+
+      input {
+        &[type="submit"] {
+          &.twofas-resend-code {
+            color: $login-nav-message-color;
+            font-size: 11px;
+            cursor: pointer;
+            border: 0 none;
+            background: none;
+            text-decoration: underline !important;
+          }
+        }
+      }
+    }
+  }
+
+  .twofas-login-form {
+    position: relative !important;
+    padding-bottom: 10px;
+    box-sizing: content-box !important;
+    margin-top: 0;
+    box-shadow: none;
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .twofas-remember-container {
+      width: 100%;
+      display: table;
+      margin-top: 15px;
+
+      .twofas-column {
+        display: table-cell;
+        vertical-align: top;
+
+        input {
+          &[type="checkbox"] {
+            margin-top: -6px;
+          }
+        }
+
+        .twofas-remember-device-label {
+          font-size: 11px !important;
+          position: relative !important;
+          bottom: 6px !important;
+          left: 3px !important;
+        }
+      }
+    }
+
+    .twofas-submit {
+      display: inline-block;
+      float: right;
+      text-align: right;
+      margin: 15px 0;
+      height: 30px;
+
+      &.twofas-disabled:not(.twofas-pusher) {
+        &::before {
+          margin-top: 7px;
+          margin-right: 4px;
+          content: ' ';
+          display: inline-block;
+          width: 16px;
+          height: 16px;
+          vertical-align: middle;
+          -webkit-background-size: cover;
+          background-size: cover;
+          background: url($login-circle-url) no-repeat;
+        }
+      }
+
+      &.twofas-disabled {
+        .button-primary {
+          color: $button-primary-disabled-color !important;
+          background: $button-primary-disabled-background-color !important;
+          border-color: $button-primary-disabled-border-color !important;
+          -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+          text-shadow: 0 -1px 0 $twofas-second-step-login-button-shadow-color !important;
+          cursor: default;
+          user-select: none;
+          pointer-events: none;
+        }
+      }
+    }
+  }
+
+  .twofas-login-nav {
+    margin-top: 10px;
+
+    .twofas-login-nav-wrapper {
+      padding: 10px 0;
+
+      .twofas-table-wrapper {
+        width: 100%;
+        display: table;
+
+        .twofas-login-nav-message {
+          display: table-cell;
+          vertical-align: middle;
+          text-align: left;
+          font-size: 11px;
+          line-height: 19px;
+          color: $login-nav-message-color;
+
+          a {
+            font-size: 11px;
+            line-height: 19px;
+            color: $login-nav-message-color;
+          }
+
+          .twofas-login-nav-form {
+            box-shadow: none;
+            padding: 0;
+            margin: 0;
+            background: transparent;
+            border: none;
+
+            input {
+              font-size: 11px;
+              line-height: 19px;
+              text-decoration: underline;
+              color: $login-nav-message-color;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .twofas-sockets {
+    display: inline-block;
+    margin: 15px 0;
+
+    .twofas-icon {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    .twofas-token-loading,
+    .twofas-token-setup {
+      margin: 0 10px;
+      vertical-align: middle;
+    }
+  }
+}
+
+.twofas-login-footer {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+
+  &:hover {
+    .twofas-login-footer-tooltip {
+      display: inline;
+    }
+  }
+
+  .twofas-login-footer-tooltip {
+    display: none;
+    width: 200px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    margin-top: 3px;
+    margin-right: 4px;
+    float: left;
+  }
+
+  .twofas-login-footer-logo {
+    display: inline-block;
+  }
+}
+
+.twofas-error-notice {
+  background: $WP_Notification_BackgroundColor;
+  border-left: 4px solid $WP_Notification_BorderColor;
+  box-shadow: 0 1px 1px 0 $WP_Notification_ShadowColor;
+  -webkit-box-shadow: 0 1px 1px 0 $WP_Notification_ShadowColor;
+  padding: 5px 12px;
+  margin: 5px 0 15px;
+}
+
+.twofas-info-notice {
+  background: $WP_Notification_BackgroundColor;
+  border-left: 4px solid $WP_Notification_Info_BorderColor;
+  box-shadow: 0 1px 1px 0 $WP_Notification_ShadowColor;
+  -webkit-box-shadow: 0 1px 1px 0 $WP_Notification_ShadowColor;
+  padding: 5px 12px;
+  margin: 5px 0 15px;
+}

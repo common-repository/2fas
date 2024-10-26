@@ -1,0 +1,65 @@
+@import 'variables';
+
+& {
+  font-family: $TF_FontFamily;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1;
+  text-rendering: optimizeSpeed;
+
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    line-height: normal;
+    margin: 0;
+    padding: 0;
+  }
+
+  .wrap {
+    h1 {
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 38px;
+      margin-bottom: 20px;
+
+      @media all and (max-width: $screen-sm-max) {
+        margin-bottom: 10px;
+      }
+
+      @media all and (max-width: $screen-xs-max) {
+        font-size: 18px;
+      }
+
+      @media all and (max-width: 480px) {
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      span {
+        line-height: 38px;
+      }
+
+      img {
+        margin-right: 15px;
+        vertical-align: middle;
+      }
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      height: auto;
+      overflow: hidden;
+      width: 100%;
+
+      @media all and (max-width: $screen-sm-max) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

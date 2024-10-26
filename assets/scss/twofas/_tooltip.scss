@@ -1,0 +1,44 @@
+@import '../includes/variables';
+
+.twofas-tooltip {
+  &::before {
+    display: none;
+    content: '';
+    position: absolute;
+    left: 105%;
+    top: 50%;
+    transform: translate(-5px, -50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 5px 5px 0;
+    border-color: transparent $TF_Tooltip_BackgroundColor transparent transparent;
+  }
+
+  &::after {
+    display: none;
+    position: absolute;
+    left: 105%;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 3px;
+    font-size: 12px;
+    line-height: 15px;
+    padding: 10px;
+    min-width: 115px;
+    color: $TF_Tooltip_Color;
+    background: $TF_Tooltip_BackgroundColor;
+    z-index: 9999;
+  }
+
+  &:hover {
+    &:before {
+      display: block;
+    }
+
+    &:after {
+      display: block;
+      content: attr(data-tooltip);
+    }
+  }
+}

@@ -1,0 +1,43 @@
+@mixin vertical-center() {
+  position: relative;
+  top: 50%;
+  -webkit-transition: perspective(1px) translateY(-50%);
+  -moz-transition: perspective(1px) translateY(-50%);
+  -ms-transition: perspective(1px) translateY(-50%);
+  -o-transition: perspective(1px) translateY(-50%);
+  transition: perspective(1px) translateY(-50%);
+}
+
+@mixin gpu-acceleration() {
+  &,
+  & * {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    perspective: 1000px;
+    -webkit-perspective: 1000px;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+}
+
+@mixin aspect-ratio($width, $height) {
+  position: relative;
+
+  &:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: ($height / $width) * 100%;
+  }
+
+  > .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}

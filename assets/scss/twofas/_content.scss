@@ -1,0 +1,383 @@
+@import '../includes/variables';
+@import '../includes/mixins';
+
+.twofas-content {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  background: $TF_Content_BackgroundColor;
+  color: $TF_Content_Color;
+  border: 1px solid $TF_Content_Border;
+  border-top: 0;
+
+  &.twofas-configured {
+    height: auto;
+    overflow: hidden;
+
+    .twofas-configured-collapse {
+      display: table;
+    }
+
+    .twofas-content-items-container {
+      height: 300px;
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+      margin-top: 30px;
+    }
+  }
+
+  &-container {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding: 30px;
+  }
+
+  .twofas-content-mobile {
+    display: none;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    text-align: center;
+
+    @media all and (max-width: $screen-xs-max) {
+      display: block;
+    }
+
+    & + p {
+      font-size: 16px;
+      margin-top: 5px;
+    }
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  .twofas-configured-collapse {
+    background: rgba($TF_Content_Collapse_Background_Color, .75);
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+
+    &-box-container {
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+    }
+
+    &-box {
+      display: inline-block;
+      padding: 20px;
+      background: $TF_Content_Collapse_Box_Background_Color;
+      border: 1px solid $TF_Content_Collapse_Background_Color;
+      -webkit-box-shadow: 0 0 20px 2px #435e59;
+      box-shadow: 0 0 20px 2px #435e59;
+      max-width: 95%;
+
+      .twofas-phone-number {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  &-header {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding-top: 5px;
+    font-size: 11px;
+    font-weight: 700;
+    margin-bottom: 30px;
+
+    .twofas-status {
+      text-transform: uppercase;
+      font-size: 10px;
+    }
+
+    a {
+      display: inline-block;
+      vertical-align: middle;
+      color: inherit;
+    }
+
+    i {
+      vertical-align: middle;
+      margin-left: 2px;
+      margin-top: -2px;
+    }
+
+    ul.twofas-list-spacer {
+      @media all and (max-width: $screen-xs-max) {
+        display: table;
+        width: 100%;
+        text-align: center;
+      }
+
+      @media all and (max-width: 440px) {
+        display: block;
+      }
+
+      li {
+        form {
+          margin-top: -2px;
+        }
+
+        @media all and (max-width: $screen-xs-max) {
+          display: table-cell;
+          border: 0;
+          float: none;
+          height: 40px !important;
+          padding: 0;
+          min-width: 20%;
+
+          &:first-of-type,
+          &:nth-of-type(2) {
+            a {
+              border-right-width: 0;
+
+              @media all and (max-width: 440px) {
+                border-right-width: 1px;
+                border-bottom-width: 0;
+              }
+            }
+          }
+
+          &:last-of-type {
+            a {
+              border-right-width: 1px !important;
+              border-bottom-width: 1px !important;
+            }
+          }
+
+          a {
+            background: $TF_Content_Status_RWD_Background_Color;
+            display: block;
+            height: 40px;
+            line-height: 40px;
+            border: 1px solid $TF_Content_Status_RWD_Border;
+
+            &:hover {
+              background: darken($TF_Content_Status_RWD_Background_Color, 5%);
+              color: inherit;
+              text-decoration: none;
+            }
+          }
+
+          .twofas-learn-more {
+            font-size: 11px;
+          }
+        }
+
+        @media all and (max-width: 600px) {
+          min-width: 15%;
+
+          a {
+            padding: 0 5px;
+
+            .twofas-icon {
+              display: none;
+            }
+          }
+        }
+
+        @media all and (max-width: 440px) {
+          display: block;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  &-description {
+    p {
+      font-size: 18px;
+      line-height: 28px;
+      letter-spacing: .5px;
+
+      @media all and (max-width: $screen-sm-max) {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0;
+      }
+    }
+  }
+
+  &-item {
+    width: 100%;
+    height: 300px;
+    padding: 40px 0;
+    border-bottom: 1px solid $TF_Content_Item_Border;
+
+    @media all and (max-width: $screen-md-max) {
+      height: 250px;
+      padding: 20px 0;
+    }
+
+    @media all and (max-width: $screen-xs-max) {
+      height: auto;
+    }
+
+    &:nth-last-of-type(2) {
+      border-bottom: 0;
+    }
+
+    &-left,
+    &-right {
+      height: 100%;
+      float: left;
+    }
+
+    &-left {
+      width: 20%;
+      margin-right: 2.5%;
+      line-height: 220px;
+
+      @media all and (max-width: $screen-md-max) {
+        width: 25%;
+      }
+
+      @media all and (max-width: $screen-sm-max) {
+        width: 30%;
+      }
+
+      @media all and (max-width: $screen-xs-max) {
+        display: none;
+      }
+
+      i {
+        vertical-align: middle;
+      }
+    }
+
+    &-right {
+      position: relative;
+      width: 77.5%;
+      display: table;
+      vertical-align: middle;
+
+      @media all and (max-width: $screen-md-max) {
+        width: 72.5%;
+      }
+
+      @media all and (max-width: $screen-sm-max) {
+        width: 67.5%;
+      }
+
+      @media all and (max-width: $screen-xs-max) {
+        display: block;
+        width: 100%;
+        text-align: center;
+      }
+
+      &.twofas-phone-container {
+        z-index: 2;
+      }
+
+      &-content {
+        display: table-cell;
+        vertical-align: middle;
+
+        @media all and (max-width: $screen-xs-max) {
+          display: block;
+        }
+      }
+
+      &-bottom {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+
+        @media all and (max-width: $screen-xs-max) {
+          position: static;
+          bottom: auto;
+          left: auto;
+          margin-top: 15px;
+        }
+
+        @media all and (max-width: 400px) {
+          > .twofas-btn {
+            margin: 0 auto;
+          }
+
+          .twofas-btn {
+            display: block;
+          }
+
+          .twofas-buttons-bottom {
+            margin-top: 10px;
+
+            button {
+              margin-left: 0;
+            }
+          }
+        }
+      }
+
+      .intl-tel-input {
+        display: inline-block;
+
+        .flag-container {
+          max-width: 100%;
+
+          .country-list {
+            @media all and (max-width: 640px) {
+              position: relative;
+              max-width: 100%;
+            }
+          }
+        }
+      }
+
+      h6 {
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 500;
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-size: 18px;
+        line-height: 24px;
+
+        &.twofas-step {
+          font-size: 14px;
+          line-height: 20px;
+          font-weight: 700;
+        }
+
+        &.twofas-small {
+          font-size: 12px;
+          line-height: 14px;
+          margin-top: 5px;
+
+          @media all and (max-width: $screen-xs-max) {
+            margin-top: 0;
+            line-height: 16px;
+          }
+        }
+
+        a {
+          color: $TF_Color_Link;
+        }
+      }
+
+      h6,
+      p.twofas-step {
+        @media all and (max-width: $screen-xs-max) {
+          text-align: left;
+        }
+      }
+    }
+  }
+
+  @import 'content/offline';
+  @import 'content/tokens';
+  @import 'content/trusted_devices';
+}

@@ -1,0 +1,92 @@
+@import '../../includes/variables';
+
+.twofas-offline-stats {
+  position: relative;
+  width: 365px;
+  height: auto;
+  padding: 35px 0 57.5px;
+  margin: 80px auto 62.5px auto;
+  border: 1px solid $TF_Offline_Stats_Border_Color;
+  text-align: center;
+
+  &-active-codes {
+    color: $TF_Offline_Stats_Active_Color;
+    margin-left: 7px;
+
+    h2,
+    p {
+      color: inherit;
+    }
+  }
+
+  &-of {
+    vertical-align: top;
+    padding: 0 25px;
+
+    p {
+      line-height: 88px !important;
+    }
+  }
+
+  &-container {
+    p {
+      &.twofas-last-generate {
+        font-size: 12px;
+        line-height: 22px;
+        color: $TF_Offline_Stats_Color;
+      }
+    }
+  }
+
+  .twofas-offline-stats-generated {
+    > div {
+      display: inline-block;
+    }
+  }
+
+  .twofas-offline-codes-data {
+      p {
+        margin-top: 0;
+      }
+
+      ul {
+        list-style: square;
+        font-size: 20px;
+        margin-left: 20px;
+      }
+
+      li {
+        padding: 5px 0;
+      }
+
+      .twofas-offline-codes-list {
+        display: none;
+      }
+
+      code {
+        margin: 0;
+        padding: 0;
+      }
+
+      pre {
+        font-family: Arial, sans-serif;
+        font-size: 18px;
+        line-height: 150%;
+        padding: 10px;
+      }
+  }
+
+  .twofas-offline-codes-list {
+    display: none;
+  }
+
+  h2 {
+    font-size: 75px;
+    font-weight: 700;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 20px;
+  }
+}

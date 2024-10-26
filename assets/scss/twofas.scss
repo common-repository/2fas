@@ -1,0 +1,49 @@
+.twofas-admin,
+.twofas-user {
+  @import 'includes/list-inline';
+  @import 'includes/spinners';
+  @import 'includes/modal';
+
+  @import 'twofas/badge';
+  @import 'twofas/bar';
+  @import 'twofas/content';
+  @import 'twofas/switch';
+  @import 'twofas/tokens';
+  @import 'twofas/tooltip';
+  @import 'twofas/welcome-box';
+}
+
+.twofas-admin,
+.twofas-user,
+.twofas-login-box,
+.twofas-totp-confirmation-box {
+  @import 'includes/global';
+  @import 'includes/typography';
+  @import 'includes/buttons';
+  @import 'includes/inputs';
+  @import 'includes/sprites';
+}
+
+// 2FAS
+@import 'twofas/admin';
+@import 'twofas/login_box';
+@import 'twofas/totp_confirmation';
+
+// WP
+@import 'wp/login';
+@import 'wp/menu-icon';
+@import 'wp/upgrade-notice';
+
+body.twofas-desktop {
+  .twofas-btn-wrapper,
+  .twofas-mobile-config {
+    display: none;
+  }
+}
+
+body.twofas-mobile {
+  .twofas-btn-wrapper,
+  .twofas-mobile-config {
+    display: block;
+  }
+}

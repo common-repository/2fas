@@ -1,0 +1,10 @@
+{% extends 'modals/modal-base.html.twig' %}
+
+{% block modal_classes %}twofas-anim-off twofas-success-modal{% endblock %}
+{% block modal_title %}{{ esc_html__('Success', '2fas') }}{% endblock %}
+{% block modal_content %}
+    <p id="success-modal-message">{{ esc_html__('Success.', '2fas') }}</p>
+    <div class="twofas-buttons">
+        <a href="#" class="twofas-btn twofas-action-btn js-close-modal">OK</a>
+    </div>
+{% endblock %}

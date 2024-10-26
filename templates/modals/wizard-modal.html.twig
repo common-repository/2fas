@@ -1,0 +1,14 @@
+{% extends 'modals/modal-base.html.twig' %}
+
+{% block modal_classes %}twofas-anim-off twofas-wizard-modal{% endblock %}
+{% block modal_extra_classes %}twofas-info-text{% endblock %}
+{% block modal_title %}{{ esc_html__('Your 2FAS.com account has been created.', '2fas') }}{% endblock %}
+{% block modal_content %}
+    <div class="twofas-text-content">
+        <p>{{ esc_html__('Your two-factor authentication is inactive. In order to activate it, please click Continue to configure 2FAS Tokens or click Cancel to skip.', '2fas') }}</p>
+    </div>
+    <div class="twofas-buttons">
+        <a href="#" class="twofas-btn twofas-cancel-btn js-close-modal">{{ esc_html__('Cancel', '2fas')|upper }}</a>
+        <a href="{{ create_url(constant('TwoFAS\\TwoFAS\\Http\\Action_Index::SUBMENU_CHANNEL')) }}" class="twofas-btn twofas-action-btn">{{ esc_html__('Continue', '2fas')|upper }}</a>
+    </div>
+{% endblock %}

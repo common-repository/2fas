@@ -1,0 +1,30 @@
+{% extends "login/phone_authentication_page.html.twig" %}
+
+{% block flash_message %}{{ esc_html__('Code has been sent', '2fas') }}{% endblock %}
+{% block open_authentication_action %}{{ actions['open_sms_auth'] }}{% endblock %}
+{% block message %}{{ esc_html__('Your code has been sent to', '2fas') }}: {% endblock %}
+{% block open_authentication_button_value %}{{ esc_html__('Resend my code', '2fas') }}{% endblock %}
+{% block verify_code_action %}{{ actions['verify_sms_code'] }}{% endblock %}
+{% block back_to_previous_page_form %}
+    {% if is_totp_enabled %}
+        <form method="post" action="{{ login_url }}" class="twofas-login-nav-form">
+            <div>
+                {% include "login/authentication_hidden_inputs.html.twig" %}
+
+                <input type="hidden" name="twofas_action" value="{{ actions['log_in_with_totp_code'] }}"/>
+            </div>
+
+            <input type="submit" class="button-link" value="{{ esc_attr__('Back to previous page', '2fas') }}"/>
+        </form>
+    {% else %}
+        <form action="{{ login_url }}" method="post" class="twofas-login-nav-form">
+            <div>
+                {% if interim_login %}
+                    <input type="hidden" name="interim-login" value="{{ interim_login }}"/>
+                {% endif %}
+                <input type="hidden" name="twofas_action" value="{{ actions['stop_login_process'] }}"/>
+            </div>
+            <input type="submit" class="button-link" value="{{ esc_attr__('Log in to another account', '2fas') }}"/>
+        </form>
+    {% endif %}
+{% endblock %}

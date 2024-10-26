@@ -1,0 +1,8 @@
+machine:
+  php:
+    version: 5.3.25
+
+test:
+  override:
+    - mkdir -p $CIRCLE_TEST_REPORTS/phpunit
+    - ./vendor/bin/phpunit --log-junit $CIRCLE_TEST_REPORTS/phpunit.xml

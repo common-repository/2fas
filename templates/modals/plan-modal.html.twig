@@ -1,0 +1,74 @@
+{% extends 'modals/modal-base.html.twig' %}
+
+{% block modal_classes %}twofas-plan-modal{% endblock %}
+{% block modal_title %}2FAS PREMIUM{% endblock %}
+{% block modal_body %}
+    <div class="twofas-modal-body twofas-update-card-before">
+        <div class="twofas-spinner-container">
+            <div class="twofas-spinner-circle">
+                <div class="tf-dot-1 tf-dot"></div>
+                <div class="tf-dot-2 tf-dot"></div>
+                <div class="tf-dot-3 tf-dot"></div>
+                <div class="tf-dot-4 tf-dot"></div>
+                <div class="tf-dot-5 tf-dot"></div>
+                <div class="tf-dot-6 tf-dot"></div>
+                <div class="tf-dot-7 tf-dot"></div>
+                <div class="tf-dot-8 tf-dot"></div>
+                <div class="tf-dot-9 tf-dot"></div>
+                <div class="tf-dot-10 tf-dot"></div>
+                <div class="tf-dot-11 tf-dot"></div>
+                <div class="tf-dot-12 tf-dot"></div>
+            </div>
+        </div>
+        <div class="twofas-content-container">
+            <div class="twofas-text-content">
+                <p>
+                    <span class="twofas-line">
+                        {{
+                            sprintf(
+                                esc_html__(
+                                    'After clicking %1$scontinue%2$s button you will be redirected to',
+                                    '2fas'
+                                ),
+                                '<strong>',
+                                '</strong>'
+                            )|raw
+                        }}
+                    </span>
+                    <span class="twofas-line">
+                        {{ esc_html__('2FAS website to change your credit card data.', '2fas') }}
+                    </span>
+                </p>
+                <img src="{{ assets_url }}images/logo.png" class="twofas-modal-logo" alt="2FAS Logo">
+            </div>
+            <div class="twofas-buttons">
+                <a href="#" class="twofas-btn twofas-cancel-btn js-close-modal js-close-plan-modal">{{ esc_html__('Cancel', '2fas')|upper }}</a>
+                <a href="https://dashboard.2fas.com/#/login" class="twofas-btn twofas-action-btn js-plan-redirect" target="_blank" rel="noreferrer noopener">{{ esc_html__('continue to 2fas.com', '2fas')|upper }}</a>
+            </div>
+        </div>
+        <div class="twofas-clear-fix"></div>
+    </div>
+    <div class="twofas-modal-body twofas-update-card-after twofas-hidden">
+        <div class="twofas-content-container twofas-without-spinner">
+            <div class="twofas-text-content">
+                <p>
+                    <span class="twofas-line">
+                        {{ esc_html__('Click OK button when you complete changing credit card data', '2fas') }}
+                    </span>
+                </p>
+            </div>
+            <div class="twofas-buttons">
+                <a href="#" class="twofas-btn twofas-action-btn js-close-cc-complete js-waiting-link">
+                    <span>OK</span>
+
+                    <span class="twofas-spinner-button">
+                        <span class="twofas-spinner-button-bounce-1"></span>
+                        <span class="twofas-spinner-button-bounce-2"></span>
+                        <span class="twofas-spinner-button-bounce-3"></span>
+                    </span>
+                </a>
+            </div>
+        </div>
+        <div class="twofas-clear-fix"></div>
+    </div>
+{% endblock %}

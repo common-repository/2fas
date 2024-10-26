@@ -1,0 +1,52 @@
+@import '../includes/variables';
+
+.twofas-switch {
+  display: block;
+  height: 25px;
+  width: 69px;
+  line-height: 25px;
+  position: relative;
+  border: 0;
+  background: none;
+  color: #FFF;
+  border-radius: 12.5px;
+  padding: 0 3px;
+
+  &.twofas-enabled {
+    background: $TF_Color_SuccessDark;
+
+    .twofas-on {
+      background: $TF_Color_Success;
+    }
+  }
+
+  &.twofas-disabled {
+    background: $TF_Color_Danger;
+    color: $TF_Switch_Color !important;
+
+    .twofas-off {
+      background: darken($TF_Color_Danger, 25%);
+    }
+  }
+
+  span {
+    display: inline-block;
+    float: left;
+    font-weight: 700;
+    font-size: 10px;
+    text-transform: uppercase;
+    width: 31px;
+    height: 18.5px;
+    line-height: 18.5px;
+    border-radius: 9.25px;
+    padding-top: 1px;
+
+    &.twofas-on {
+      text-align: center;
+    }
+
+    &.twofas-off {
+      text-align: center;
+    }
+  }
+}

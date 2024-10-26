@@ -1,0 +1,59 @@
+@import '../../includes/variables';
+
+.twofas-admin-configuration {
+  text-align: center;
+
+  &-box {
+    background-color: $TF_Configuration_Box_Background_Color;
+    margin: 10px auto 35px;
+    max-width: 800px;
+    width: 95%;
+
+    &.twofas-admin-configuration-box-last {
+      margin-bottom: 0;
+    }
+
+    &-header {
+      background: $TF_Configuration_Header_Background_Color;
+      height: 45px;
+      line-height: 45px;
+      padding: 0 10px;
+
+      h3 {
+        color: $TF_Configuration_Header_Color;
+        display: inline-block;
+        font-size: 16px;
+        vertical-align: middle;
+
+        @media all and (max-width: 550px) {
+          font-size: 14px;
+        }
+      }
+    }
+
+    &-bottom {
+      text-align: center;
+    }
+
+    &-desc {
+      line-height: 1.4;
+      margin-bottom: 10px;
+    }
+
+    .twofas-action-btn {
+      cursor: pointer;
+      font-size: 12px;
+      margin: 10px 0 0;
+      padding: 0 30px;
+    }
+
+    form {
+      padding: 25px;
+      text-align: left;
+    }
+  }
+
+  &-paragraph {
+    margin: 10px 0 30px;
+  }
+}

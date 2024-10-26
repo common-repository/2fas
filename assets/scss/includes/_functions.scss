@@ -1,0 +1,9 @@
+@import 'variables';
+
+@function getAnimationOffset($index) {
+  @return $TF_Dot_Animation_Base_Time - ((($TF_Dot_Animation_Items_Count - $index) / $TF_Dot_Animation_Items_Count) *  $TF_Dot_Animation_Base_Time);
+}
+
+@function timeToSeconds($time) {
+  @return unquote($time + 's');
+}

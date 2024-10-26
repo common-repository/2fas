@@ -1,0 +1,19 @@
+{% if redirect_to %}
+    <input type="hidden" name="redirect_to" value="{{ redirect_to }}" />
+{% endif %}
+
+{% if remember_me %}
+    <input type="hidden" name="rememberme" value="{{ remember_me }}" />
+{% endif %}
+
+{% if test_cookie %}
+    <input type="hidden" name="testcookie" value="{{ test_cookie }}" />
+{% endif %}
+
+{% if interim_login %}
+    <input type="hidden" name="interim-login" value="{{ interim_login }}" />
+{% endif %}
+
+{% if customize_login %}
+    <input type="hidden" name="customize-login" value="{{ customize_login }}" />
+{% endif %}

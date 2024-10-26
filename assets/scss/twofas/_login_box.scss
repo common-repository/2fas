@@ -1,0 +1,208 @@
+@import '../includes/variables';
+
+.twofas-login-error-wide {
+  background-color: $TF_Login_Box_Background_Color;
+  box-sizing: border-box;
+  left: 50%;
+  overflow: hidden;
+  position: relative;
+  transform: translateX(-50%);
+  width: 750px;
+}
+
+.twofas-login-box {
+  box-sizing: border-box;
+  left: 50%;
+  margin-bottom: 15px;
+  overflow: hidden;
+  position: relative;
+  transform: translateX(-50%);
+  width: 750px;
+
+  @media all and (max-width: $screen-xs-max) {
+    width: 100%;
+  }
+
+  &::after {
+    clear: both;
+    content: '';
+    display: table;
+  }
+
+  + #backtoblog {
+    display: none;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  &-col {
+    background-color: $TF_Login_Box_Background_Color;
+    display: block;
+    float: left;
+    height: 100%;
+    min-height: 413px;
+    padding: 30px;
+    width: 50%;
+
+    @media all and (max-width: $screen-xs-max) {
+      float: none;
+      padding: 20px;
+      min-height: 0;
+      width: 100%;
+    }
+
+    &.twofas-login-box-col-left {
+      @media all and (max-width: $screen-xs-max) {
+        padding-top: 0;
+      }
+
+      img {
+        margin-bottom: 20px;
+        margin-top: 5px;
+
+        @media all and (max-width: $screen-xs-max) {
+          margin-bottom: 0;
+          margin-top: 0;
+        }
+      }
+
+      h3 {
+        margin-bottom: 60px;
+
+        @media all and (max-width: $screen-xs-max) {
+          margin-bottom: 15px;
+        }
+      }
+    }
+
+    &.twofas-login-box-col-right {
+      img {
+        image-rendering: pixelated;
+        width: 85%;
+      }
+    }
+  }
+
+  &-stores {
+    display: block;
+    text-align: center;
+
+    a {
+      display: inline-block;
+      vertical-align: middle;
+
+      @media all and (max-width: $screen-xs-max) {
+        display: block;
+      }
+
+      &:first-of-type {
+        margin-right: 10px;
+
+        @media all and (max-width: $screen-xs-max) {
+          margin-bottom: 5px;
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  .twofas-img-wrapper {
+    position: relative;
+
+    .twofas-btn-wrapper {
+      background: #fff;
+      left: 50%;
+      padding: 3px;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    a {
+      font-size: 13px;
+      height: 34px;
+      line-height: 34px;
+      padding: 0 25px;
+      width: 150px;
+    }
+  }
+
+  h3 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  form {
+    background: none;
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    border: none;
+
+    .twofas-action-btn {
+      font-size: 12px;
+      height: 34px;
+      line-height: 34px;
+      margin: 0 auto;
+    }
+  }
+
+  .twofas-totp-secret {
+    display: none;
+    margin: 7px 0;
+  }
+
+  .twofas-totp-secret-link {
+    color: $TF_Color_Link;
+
+    &:hover {
+      color: $TF_Color_Link;
+      text-decoration: underline;
+    }
+  }
+}
+
+.twofas-login-another-account {
+  background: none;
+  clear: both;
+  float: none;
+  width: 100%;
+
+  > form {
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    margin: 0 !important;
+    padding-bottom: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    padding-top: 10px !important;
+    text-align: left !important;
+
+    input {
+      &[type="submit"] {
+        color: $login-nav-message-color;
+        font-size: 11px;
+        line-height: 19px;
+        text-decoration: underline;
+
+        &:hover,
+        &:active,
+        &:focus {
+          box-shadow: none;
+          outline: 0;
+        }
+      }
+    }
+  }
+}

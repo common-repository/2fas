@@ -1,0 +1,80 @@
+@import '../includes/variables';
+
+.twofas-totp-confirmation-box {
+  form {
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px !important;
+    text-align: center;
+    border: none;
+
+    label {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 22px;
+    }
+
+    .twofas-action-btn {
+      display: block;
+      font-size: 12px;
+      height: 34px;
+      line-height: 34px;
+      width: 100%;
+    }
+  }
+
+  img {
+    display: inline-block;
+  }
+
+  a {
+    color: $login-nav-message-color;
+    display: block;
+    font-size: 11px;
+    line-height: 19px;
+    text-align: left;
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .twofas-modal {
+    form {
+      background: none;
+      box-shadow: none;
+      padding: 0;
+
+      .twofas-action-btn {
+        display: inline-block;
+        width: auto;
+      }
+    }
+
+    .twofas-content-container {
+      .twofas-buttons {
+        @media all and (max-width: 520px) {
+          .twofas-cancel-btn {
+            margin-bottom: 10px !important;
+          }
+
+          .twofas-action-btn {
+            display: block;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  .twofas-login-another-account {
+    form {
+      padding-bottom: 0 !important;
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+      padding-top: 10px !important;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{% extends 'modals/modal-base.html.twig' %}
+
+{% block modal_classes %}twofas-anim-off {% block modal_name %}{% endblock %}{% endblock %}
+{% block modal_title %}{{ esc_html__('Confirmation', '2fas') }}{% endblock %}
+{% block modal_content %}
+    {% block confirmation_content %}
+        <div class="twofas-text-content">
+            <p>{% block message %}{% endblock %}</p>
+        </div>
+        <div class="twofas-buttons">
+            <a href="#" class="twofas-btn twofas-cancel-btn js-close-modal">{{ esc_html__('Cancel', '2fas')|upper }}</a>
+            <a href="#" class="twofas-btn twofas-action-btn js-confirm js-waiting-link">
+                <span>{{ esc_html__('Confirm', '2fas') }}</span>
+
+                <span class="twofas-spinner-button">
+                    <span class="twofas-spinner-button-bounce-1"></span>
+                    <span class="twofas-spinner-button-bounce-2"></span>
+                    <span class="twofas-spinner-button-bounce-3"></span>
+                </span>
+            </a>
+        </div>
+    {% endblock %}
+{% endblock %}

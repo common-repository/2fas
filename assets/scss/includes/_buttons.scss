@@ -1,0 +1,341 @@
+@import 'variables';
+@import 'global';
+
+@mixin twofas-btn-anim {
+  -moz-transition: background-color, color .2s ease-in-out;
+  -ms-transition: background-color, color .2s ease-in-out;
+  -o-transition: background-color, color .2s ease-in-out;
+  -webkit-transition: background-color, color .2s ease-in-out;
+  transition: background-color, color .2s ease-in-out;
+}
+
+.twofas-btn {
+  @include twofas-btn-anim;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  height: 30px;
+  line-height: 30px;
+  width: auto;
+  text-align: center;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .5px;
+  padding: 0 28px;
+
+  * {
+    @include twofas-btn-anim;
+  }
+
+  &:hover,
+  &:focus,
+  &:active,
+  &:visited {
+    text-decoration: none;
+  }
+
+  &[disabled] {
+    cursor: not-allowed;
+    -webkit-filter: saturate(0.5);
+    filter: saturate(0.5);
+  }
+
+  &.twofas-wait {
+    cursor: wait !important;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    > *:not(.twofas-spinner-button) {
+      visibility: hidden;
+    }
+
+    .twofas-spinner-button {
+      display: inline-block;
+      position: absolute;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      top: 50%;
+    }
+  }
+
+  .twofas-spinner-button {
+    display: none;
+  }
+
+  &.twofas-block-btn {
+    display: block;
+  }
+
+  &.twofas-action-btn {
+    background: $TF_Button_Action_BackgroundColor;
+    color: $TF_Button_Action_Color;
+
+    &:hover {
+      background: lighten($TF_Button_Action_BackgroundColor, 5%);
+    }
+
+    &[disabled] {
+      background: lighten($TF_Button_Action_BackgroundColor, 30%);
+    }
+
+    .twofas-sms-sent-message {
+      display: none;
+    }
+
+    &.twofas-send-sms-button {
+      padding: 0 37.5px;
+
+      @media all and (max-width: $screen-xs-max) {
+        margin: 0 auto;
+      }
+    }
+  }
+
+  &.twofas-submit-btn {
+    background: $TF_Button_Submit_BackgroundColor;
+    color: $TF_Button_Submit_Color;
+
+    &:hover {
+      background: lighten($TF_Button_Submit_BackgroundColor, 5%);
+    }
+  }
+
+  &.twofas-refresh-btn {
+    background: transparent;
+    color: $TF_Button_Refresh_Color;
+    text-align: left;
+    padding: 0;
+    margin-left: 15px;
+
+    &:hover {
+      color: darken($TF_Button_Refresh_Color, 5%);
+    }
+
+    i {
+      vertical-align: middle;
+      margin-right: 2px;
+    }
+  }
+
+  &.twofas-enable-token-btn {
+    width: 133px;
+  }
+
+  &.twofas-generate-backup-btn {
+    background: $TF_Offline_Stats_Button_Background_Color;
+    color: $TF_Offline_Stats_Button_Color;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .5px;
+    height: 45px;
+    line-height: 45px;
+    text-transform: uppercase;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    bottom: -22.5px;
+    width: 65%;
+
+    &:hover {
+      background: lighten($TF_Offline_Stats_Button_Background_Color, 5%);
+    }
+
+    &[disabled] {
+      background: lighten($TF_Offline_Stats_Button_Background_Color, 30%);
+    }
+  }
+
+  &.twofas-backup-action-btn {
+    background: $TF_Offline_Stats_Button_Background_Color;
+    color: $TF_Offline_Stats_Button_Color;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .5px;
+    height: 45px;
+    line-height: 45px;
+    margin-bottom: -20px;
+    text-transform: uppercase;
+    width: 65%;
+
+    &:hover {
+      background: lighten($TF_Offline_Stats_Button_Background_Color, 5%);
+    }
+
+    &[disabled] {
+      background: lighten($TF_Offline_Stats_Button_Background_Color, 30%);
+    }
+  }
+
+  &.twofas-upgrade-btn {
+    background: $TF_Admin_Upgrade_Button_Background_Color;
+    color: $TF_Admin_Upgrade_Button_Color;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    height: 22px;
+    line-height: 22px;
+    margin-left: 15px;
+    padding: 0 10px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+
+    @media all and (max-width: 480px) {
+      display: block;
+      margin: 0 auto;
+    }
+
+    &:hover {
+      background: lighten($TF_Admin_Upgrade_Button_Background_Color, 5%);
+    }
+  }
+
+  &.twofas-disable-btn {
+    background: $TF_Admin_Highlight_Color;
+    color: $TF_Admin_Disable_Button_Color;
+    font-size: 12px;
+    font-weight: 700;
+    height: 31px;
+    line-height: 31px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    padding: 0 15px;
+
+    &:hover {
+      background: lighten($TF_Admin_Highlight_Color, 5%);
+    }
+
+    .twofas-icon {
+      vertical-align: middle;
+      margin-top: -1px;
+      margin-right: 10px;
+    }
+  }
+
+  &.twofas-enable-btn {
+    background: $TF_Admin_Enable_Button_Background_Color;
+    color: $TF_Admin_Enable_Button_Color;
+    font-size: 12px;
+    font-weight: 700;
+    height: 31px;
+    line-height: 31px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    padding: 0 15px;
+
+    &:hover {
+      background: lighten($TF_Admin_Enable_Button_Background_Color, 5%);
+    }
+
+    .twofas-icon {
+      vertical-align: middle;
+      margin-top: -1px;
+      margin-right: 10px;
+    }
+  }
+
+  &.twofas-admin-table-btn {
+    background: $TF_Button_Action_BackgroundColor;
+    color: $TF_Button_Action_Color;
+    display: block;
+    height: 31px;
+    line-height: 31px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 700;
+
+    @media all and (max-width: $screen-md-max) {
+      padding: 0 15px;
+      letter-spacing: -.3px;
+    }
+
+    &:hover {
+      background: lighten($TF_Button_Action_BackgroundColor, 5%);
+    }
+  }
+
+  &.twofas-account-box-btn {
+    background: $TF_Button_Action_BackgroundColor;
+    color: $TF_Button_Action_Color;
+    display: inline-block;
+    height: 27px;
+    line-height: 27px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 0 20px;
+    letter-spacing: -.05px;
+
+    &:hover {
+      background: lighten($TF_Button_Action_BackgroundColor, 5%);
+    }
+  }
+
+  &.twofas-cancel-btn {
+    color: $TF_Modal_Body_Color;
+
+    &:hover {
+      color: lighten($TF_Modal_Body_Color, 20%);
+    }
+  }
+
+  &.twofas-mobile-config {
+    margin: 0 auto 20px;
+    max-width: 250px;
+    padding: 0 15px;
+  }
+
+  &.twofas-collapse-btn {
+    background: $TF_Content_Collapse_Button_Background_Color;
+    color: $TF_Content_Collapse_Button_Color;
+    border: 1px solid $TF_Content_Collapse_Button_Border;
+    margin-top: 20px;
+
+    &:hover {
+      background: rgba(lighten($TF_Content_Collapse_Button_Color, 65%), .2);
+    }
+  }
+}
+
+.twofas-btn-as-link {
+  border: 0;
+  display: inline;
+  background: none;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  text-decoration: underline;
+}
+
+.twofas-status-btn-as-link {
+  border: 0;
+  display: inline-block;
+  background: none;
+  color: inherit;
+  margin: 0;
+  padding: 2px 0 0 0;
+  vertical-align: middle;
+}

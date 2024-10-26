@@ -1,0 +1,255 @@
+@import 'variables';
+
+input[type="text"],
+input[type="password"],
+input[type="tel"],
+input[type="email"] {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid $TF_Input_Border_Color;
+
+  @media all and (max-width: $screen-xs-max) {
+    height: 35px;
+    line-height: 35px;
+  }
+
+  &:focus {
+    border-color: darken($TF_Input_Border_Color, 25%);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: 0;
+  }
+
+  &.twofas-token-input {
+    width: 133px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 25px 0 10px 0;
+
+    &.twofas-big {
+      width: 100%;
+      height: 35px;
+      line-height: 35px;
+      font-size: 16px;
+      margin: 10px 0;
+
+      @media all and (max-width: $screen-xs-max) {
+        font-size: 16px;
+        margin: 10px 0;
+      }
+    }
+
+    &.twofas-white-bg {
+      background-color: $TF_Input_Background_Color;
+    }
+
+    &.twofas-text-placeholder {
+      &::-webkit-input-placeholder {
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: 0;
+      }
+
+      &::-moz-placeholder {
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: 0;
+      }
+
+      &:-ms-input-placeholder {
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: 0;
+      }
+
+      &:-moz-placeholder {
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: 0;
+      }
+    }
+
+    @media all and (max-width: $screen-xs-max) {
+      font-size: 15px;
+      margin: 10px auto;
+    }
+  }
+
+  &.twofas-login-box-token-input {
+    background-color: $TF_Login_Box_Input_Background_Color;
+    display: inline-block;
+    width: 133px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 5px auto 10px auto;
+    height: 34px;
+    line-height: 34px;
+
+    &::-webkit-input-placeholder {
+      font-weight: 400;
+      letter-spacing: 0;
+    }
+
+    &::-moz-placeholder {
+      font-weight: 400;
+      letter-spacing: 0;
+    }
+
+    &:-ms-input-placeholder {
+      font-weight: 400;
+      letter-spacing: 0;
+    }
+
+    &:-moz-placeholder {
+      font-weight: 400;
+      letter-spacing: 0;
+    }
+  }
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+
+  &:focus {
+    border-color: darken($TF_Input_Border_Color, 25%);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: 0;
+  }
+}
+
+.twofas-checkbox-input-box {
+  margin-bottom: 8px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  input[type="checkbox"] {
+    display: none;
+
+    &:checked {
+      + label {
+        .twofas-checkbox-icon {
+          .twofas-checked {
+            opacity: 1;
+          }
+        }
+
+        .twofas-checkbox-desc {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
+  label {
+    display: inline-block;
+    user-select: none;
+
+    .twofas-checkbox-icon {
+      background-color: $TF_Checkbox_Icon_Background_Color;
+      border: 1px solid #333;
+      display: inline-block;
+      height: 28px;
+      line-height: 28px;
+      text-align: center;
+      width: 28px;
+
+      .twofas-checked {
+        opacity: 0;
+        transition: all .2s ease-in-out;
+      }
+    }
+
+    .twofas-checkbox-desc {
+      margin-left: 5px;
+      transition: all .2s ease-in-out;
+    }
+  }
+}
+
+.twofas-radio-input-box {
+  margin-bottom: 8px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  input[type="radio"] {
+    display: none;
+
+    &:checked {
+      + label {
+        .twofas-radio-icon {
+          .twofas-checked {
+            opacity: 1;
+          }
+        }
+
+        .twofas-radio-desc {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
+  label {
+    display: block;
+    position: relative;
+    user-select: none;
+    width: 100%;
+
+    .twofas-radio-icon {
+      background-color: $TF_Checkbox_Icon_Background_Color;
+      border: 1px solid #333;
+      border-radius: 50%;
+      display: inline-block;
+      height: 28px;
+      left: 0;
+      line-height: 28px;
+      position: absolute;
+      text-align: center;
+      top: 0;
+      width: 28px;
+
+      .twofas-checked {
+        opacity: 0;
+        transition: all .2s ease-in-out;
+      }
+    }
+
+    .twofas-radio-desc {
+      display: inline-block;
+      line-height: 1.4;
+      margin-left: 7px;
+      padding-left: 28px;
+      position: relative;
+      top: 0;
+      transition: all .2s ease-in-out;
+      vertical-align: middle;
+
+      &-title {
+        font-size: 14px;
+        font-weight: 700;
+      }
+
+      span {
+        display: block;
+      }
+    }
+  }
+}
+
+.twofas-form-inline {
+  display: inline;
+}

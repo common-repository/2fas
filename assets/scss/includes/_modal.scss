@@ -1,0 +1,320 @@
+@import 'variables';
+
+.twofas-modal-backdrop {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  background: rgba(0, 0, 0,.75);
+  opacity: 0;
+
+  &.twofas-deactivation-modal {
+    overflow-x: hidden;
+  }
+}
+
+.twofas-modal-container {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.twofas-modal-cell {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.twofas-modal {
+  display: inline-block;
+  max-width: 60%;
+  max-height: 80%;
+  background: $TF_Modal_Body_Background_Color;
+
+  &.twofas-deactivation-modal {
+    background-color: white;
+    border: 1px solid #979797;
+    border-radius: 0;
+    max-width: 500px;
+    overflow-y: auto;
+    padding: 12px;
+    text-align: left;
+    width: 95%;
+    z-index: 9999;
+
+    @media all and (max-width: 600px) {
+      padding: 0;
+    }
+
+    .twofas-modal-header {
+      background: none;
+      border-bottom: 0;
+      font-size: 14px;
+      margin-top: 0;
+      padding-bottom: 0;
+
+      fieldset {
+        label {
+          height: 16px;
+          margin-bottom: 3px;
+
+          &:last-of-type {
+            margin-bottom: 0;
+          }
+        }
+      }
+
+      i,
+      h6 {
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      i {
+        left: 0;
+        margin-left: 0;
+        margin-right: 2px;
+        position: static;
+        top: 0;
+      }
+
+      h6 {
+        border-bottom: 1px solid #979797;
+        font-size: 14px;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+
+        @media all and (max-width: $screen-xs) {
+          font-size: 12px;
+        }
+      }
+    }
+
+    .twofas-confirm-buttons {
+      margin-top: 10px;
+      text-align: right;
+    }
+
+    .twofas-modal-body {
+      fieldset {
+        label {
+          display: block;
+          height: 16px;
+          margin-bottom: 2px;
+
+          @media all and (max-width: 782px) {
+            height: 25px;
+            margin-bottom: 5px;
+          }
+
+          @media all and (max-width: $screen-xs) {
+            span {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+
+      p {
+        font-weight: 700;
+        margin-bottom: 5px;
+
+        @media all and (max-width: 782px) {
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+    textarea {
+      font-size: 14px;
+      margin-top: 15px;
+      min-height: 100px;
+      max-height: 300px;
+      resize: vertical;
+      width: 100%;
+
+      @media all and (max-width: $screen-xs) {
+        font-size: 12px;
+      }
+    }
+
+    .twofas-content-container {
+      width: 100%;
+
+      @media all and (max-width: 600px) {
+        padding-left: 0;
+      }
+    }
+  }
+
+  &.twofas-info-text {
+    max-width: 40%;
+
+    @media all and (max-width: $screen-sm-max) {
+      max-width: 60%;
+      max-height: none;
+    }
+  }
+
+  &.twofas-without-spinner {
+    .twofas-modal-body {
+      .twofas-content-container {
+        padding-left: 0;
+      }
+    }
+  }
+
+  @media all and (max-width: $screen-sm-max) {
+    max-width: 75%;
+    max-height: none;
+  }
+
+  @media all and (max-width: 660px) {
+    max-width: 90%;
+  }
+
+  &-header {
+    background: $TF_Modal_Header_Background_Color;
+    color: $TF_Modal_Header_Color;
+    border-bottom: 1px solid $TF_Modal_Header_Border_Color;
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+    padding: 0 20px;
+    text-align: left;
+
+    h6 {
+      line-height: 40px;
+      margin: 0;
+      padding: 0;
+      font-size: 14px;
+    }
+  }
+
+  &-body {
+    background: $TF_Modal_Body_Background_Color;
+    color: $TF_Modal_Body_Color;
+    padding: 20px;
+
+    &.twofas-hidden {
+      display: none;
+    }
+
+    .twofas-spinner-container {
+      display: inline-block;
+      padding-right: 30px;
+      vertical-align: top;
+
+      @media all and (max-width: 600px) {
+        display: block;
+        float: left;
+        margin-right: -70px;
+      }
+
+      @media all and (max-width: 480px) {
+        padding-right: 0;
+        float: none;
+        margin-right: 0;
+        margin-bottom: 20px;
+        text-align: center;
+
+        .twofas-spinner-circle {
+          display: inline-block;
+        }
+      }
+    }
+
+    .twofas-content-container {
+      display: inline-block;
+      padding: 0;
+      text-align: left;
+      width: auto;
+
+      @media all and (max-width: 600px) {
+        display: block;
+        float: left;
+        padding-left: 70px;
+
+        &.twofas-qr-code-container,
+        &.twofas-without-spinner {
+          padding-left: 0;
+        }
+      }
+
+      @media all and (max-width: 480px) {
+        padding-left: 0;
+      }
+
+      .twofas-text-content {
+        &.twofas-remember-me {
+          margin-top: 20px;
+        }
+
+        p {
+          display: inline-block;
+          font-size: 14px;
+          line-height: 18px;
+          color: $TF_Modal_Body_Color;
+          vertical-align: top;
+
+          @media all and (max-width: 600px) {
+            .twofas-line {
+              display: inline;
+            }
+          }
+
+          @media all and (max-width: 480px) {
+            text-align: center;
+          }
+        }
+
+        .twofas-modal-logo {
+          display: inline-block;
+          padding-left: 30px;
+          vertical-align: top;
+
+          @media all and (max-width: 600px) {
+            display: none;
+          }
+        }
+
+        .twofas-qr-code {
+          image-rendering: pixelated;
+        }
+
+        img {
+          max-width: 100%;
+        }
+      }
+
+      .twofas-buttons {
+        margin-top: 20px;
+        text-align: right;
+
+        @media all and (max-width: 520px) {
+          .twofas-btn {
+            display: block;
+            margin: 0 auto 10px;
+            padding: 0 15px;
+
+            &:last-of-type {
+              margin-bottom: 0;
+            }
+
+            &.cancel-btn {
+              border: 1px solid $TF_Modal_Cancel_Btn_Border;
+            }
+          }
+        }
+
+        &.twofas-buttons-center {
+          text-align: center;
+        }
+      }
+    }
+  }
+}

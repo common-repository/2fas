@@ -1,0 +1,19 @@
+<div class="twofas-modal-backdrop {% block modal_classes %}{% endblock %}">
+    <div class="twofas-modal-container">
+        <div class="twofas-modal-cell">
+            <div class="twofas-modal {% block modal_extra_classes %}{% endblock %}">
+                <div class="twofas-modal-header">
+                    <h6>{% block modal_title %}{% endblock %}</h6>
+                </div>
+                {% block modal_body %}
+                    <div class="twofas-modal-body">
+                        <div class="twofas-content-container">
+                            {% block modal_content %}{% endblock %}
+                        </div>
+                        <div class="twofas-clear-fix"></div>
+                    </div>
+                {% endblock %}
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,32 @@
+@import '../includes/variables';
+
+.twofas-badge {
+  display: block;
+  width: 26px;
+  height: 26px;
+  line-height: 26px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.twofas-welcome-box .twofas-badge {
+  background: $TF_WelcomeBox_Badge_BackgroundColor;
+  color: $TF_WelcomeBox_Badge_Color;
+}
+
+.twofas-bar .twofas-badge {
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+  line-height: 23px;
+  font-size: 12px;
+  margin-left: 5px;
+  background: $TF_BarTab_Badge_BackgroundColor;
+  color: $TF_BarTab_Badge_Color;
+
+  @media all and (max-width: 400px) {
+    display: none;
+  }
+}

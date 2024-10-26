@@ -1,0 +1,227 @@
+@import '../includes/variables';
+
+.twofas-welcome-box {
+  background: $TF_WelcomeBox_BackgroundColor;
+  border: 1px solid $TF_WelcomeBox_BorderColor;
+  border-radius: 4px;
+  text-align: center;
+  margin-bottom: 75px;
+
+  @media all and (max-width: $screen-sm-max) {
+    margin-bottom: 40px;
+    background: none;
+    border: 0;
+  }
+
+  .row {
+    @media all and (max-width: $screen-xs-max) {
+      margin: 0;
+    }
+  }
+
+  &-section {
+    padding: 25px 0;
+    position: relative;
+
+    &.twofas-decoration {
+      background: $TF_WelcomeBox_Decoration_BackgroundColor;
+      border-left: 1px solid $TF_WelcomeBox_Decoration_BorderColor;
+      border-right: 1px solid $TF_WelcomeBox_Decoration_BorderColor;
+
+      @media all and (max-width: $screen-sm-max) {
+        border-left: 0;
+        border-right: 0;
+      }
+    }
+
+    .twofas-badge {
+      position: absolute;
+      left: 50%;
+      top: -13px;
+      margin-left: -13px;
+
+      @media all and (max-width: $screen-sm-max) {
+        display: none;
+      }
+    }
+
+    .twofas-login-form {
+      display: inline-block;
+      position: relative;
+
+      > img {
+        margin-top: 58px;
+      }
+    }
+
+    .twofas-arrow {
+      position: absolute;
+      left: 100%;
+    }
+
+    h2 {
+      font-size: 20px;
+      font-weight: 400;
+      color: $TF_Color_FontNormal;
+      margin-bottom: 5px;
+    }
+
+    p {
+      font-size: 14px;
+      font-weight: 400;
+      color: $TF_WelcomeBox_Decoration_Color;
+    }
+  }
+
+  &-block {
+    width: 65%;
+    height: 58px;
+    line-height: 58px;
+    background: $TF_WelcomeBox_Block_BackgroundColor;
+    border: 1px solid $TF_WelcomeBox_Block_Border;
+    border-radius: 2px;
+    margin: 0 auto;
+
+    @media all and (max-width: 1300px) {
+      width: 75%;
+    }
+
+    @media all and (max-width: $screen-md-max) {
+      width: 80%;
+    }
+
+    @media all and (max-width: $screen-sm-max) {
+      width: 60%;
+      height: 50px;
+      line-height: 50px;
+    }
+
+    @media all and (max-width: 500px) {
+      width: 80%;
+    }
+
+    @media all and (max-width: 400px) {
+      width: 90%;
+    }
+
+    &.twofas-big {
+      width: 105%;
+      margin: 15px 0 0 -2.5%;
+
+      @media all and (max-width: $screen-sm-max) {
+        width: 60%;
+        margin: 15px auto 0;
+      }
+
+      @media all and (max-width: 500px) {
+        width: 80%;
+      }
+
+      @media all and (max-width: 400px) {
+        width: 90%;
+      }
+    }
+
+    &:nth-of-type(1):nth-last-of-type(2) {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+      border-bottom: 1px solid $TF_WelcomeBox_Block_BorderLight;
+    }
+
+    &:nth-of-type(2):nth-last-of-type(1) {
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      border-top: 0;
+    }
+
+    &-content {
+      position: relative;
+      width: 100%;
+      margin: 0 auto;
+      text-align: center;
+
+      p {
+        display: inline-block;
+        margin-top: -6px;
+        vertical-align: middle;
+      }
+    }
+
+    .twofas-icon-container {
+      display: inline-block;
+      width: 35px;
+      margin-right: 10px;
+      text-align: center;
+
+      @media all and (max-width: $screen-md-max) {
+        margin-right: 5px;
+        margin-left: 5px;
+      }
+
+      @media all and (max-width: 1050px) {
+        margin-right: 3px;
+      }
+
+      i {
+        vertical-align: middle;
+      }
+    }
+
+    p {
+      display: inline-block;
+      font-weight: 500;
+      font-size: 16px;
+      color: $TF_WelcomeBox_Block_Color;
+      width: 130px;
+      cursor: default;
+
+      @media all and (max-width: $screen-md-max) {
+        width: 120px;
+      }
+
+      @media all and (max-width: 1050px) {
+        width: 115px;
+      }
+
+      @media all and (max-width: $screen-sm-max) {
+        font-size: 15px;
+      }
+
+      @media all and (max-width: $screen-xs-max) {
+        font-size: 14px;
+      }
+    }
+
+    i {
+      vertical-align: baseline;
+    }
+  }
+
+  &-col {
+    &:first-of-type {
+      padding-right: 0;
+
+      @media all and (max-width: $screen-sm-max) {
+        display: none;
+      }
+    }
+
+    &:last-of-type {
+      padding-left: 0;
+
+      @media all and (max-width: $screen-sm-max) {
+        display: none;
+      }
+    }
+
+    @media all and (max-width: $screen-sm-max) {
+      background: $TF_WelcomeBox_Decoration_BackgroundColor;
+      border: 1px solid $TF_WelcomeBox_BorderColor;
+      border-radius: 4px;
+    }
+  }
+
+  .twofas-switch {
+    margin: 18px auto 15px auto;
+  }
+}

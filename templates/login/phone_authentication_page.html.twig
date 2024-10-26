@@ -1,0 +1,54 @@
+{{ login_header(esc_html__('Enter your code', '2fas'), '', error) }}
+
+{% if open_new_auth_action %}
+    <p class="message twofas-hide-after-time">{% block flash_message %}{% endblock %}</p>
+{% endif %}
+
+<div class="twofas-login-form-container twofas-admin">
+    <form method="post" action="{{ login_url }}" class="twofas-resend-code-form">
+        <div>
+            {% include "login/authentication_hidden_inputs.html.twig" %}
+
+            <input type="hidden" name="twofas_action" value="{% block open_authentication_action %}{% endblock %}" />
+        </div>
+
+        <div class="twofas-resend-code-container">
+            <p>{% block message %}{% endblock %}...{{ phone_number_ending }}</p>
+            <input type="submit" class="twofas-resend-code button-link" value="{% block open_authentication_button_value %}{% endblock %}" />
+        </div>
+    </form>
+    <form method="post" action="{{ login_url }}" id="loginform" class="twofas-login-form">
+        <label for="twofas-code">{{ esc_html__('Enter your code', '2fas') }}:</label>
+
+        <input type="text"
+               name="twofas_code"
+               id="twofas-code"
+               class="twofas-token-input twofas-big"
+               minlength="6"
+               maxlength="6"
+               pattern="[0-9]{6}"
+               autocomplete="off"
+               autofocus="autofocus"
+               required="required" />
+        <div>
+            {% include "login/authentication_hidden_inputs.html.twig" %}
+
+            <input type="hidden" name="twofas_action" value="{% block verify_code_action %}{% endblock %}" />
+        </div>
+
+        <div class="twofas-submit">
+            <input type="submit" name="wp-submit" id="wp-submit" class="button button-primary button-large" value="{{ esc_attr__('Log In', '2fas') }}" />
+        </div>
+    </form>
+    <div class="twofas-login-nav">
+        <div class="twofas-login-nav-wrapper">
+            <div class="twofas-table-wrapper">
+                <div class="twofas-login-nav-message">
+                    {% block back_to_previous_page_form %}{% endblock %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{{ login_footer() }}

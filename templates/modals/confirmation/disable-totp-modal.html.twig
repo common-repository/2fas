@@ -1,0 +1,15 @@
+{% extends 'modals/confirmation/confirmation-base.html.twig' %}
+
+{% block modal_name %}twofas-disable-totp-modal{% endblock %}
+{% block message %}
+    {{
+        esc_html__(
+            'You are going to disable your two-factor authentication.
+            Please take note that you will not be asked for the code when logging in and your trusted devices will be removed.
+            If you want to turn on two-factor authentication again you will be able to do it without re-configuring.',
+            '2fas'
+        )
+    }}
+
+{% endblock %}
+

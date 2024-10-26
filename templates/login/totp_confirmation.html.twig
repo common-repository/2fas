@@ -1,0 +1,50 @@
+{{ login_header(esc_html__('Enter your token', '2fas'), '', error) }}
+
+<div class="twofas-login-form-container twofas-admin twofas-totp-confirmation-box">
+    <form method="post" action="{{ login_url }}" id="loginform" class="twofas-login-form">
+        <img src="{{ assets_url }}images/logo_dark_text.png" alt="2FAS Logo">
+
+        <label for="twofas-code">
+            {{ esc_html__('Enter your 2FAS token to confirm that you have a configured TOTP', '2fas') }}:
+        </label>
+
+        <input type="text"
+               name="twofas_code"
+               id="twofas-code"
+               class="twofas-token-input twofas-big twofas-white-bg twofas-text-placeholder"
+               minlength="6"
+               maxlength="6"
+               pattern="[0-9]{6}"
+               autocomplete="off"
+               autofocus="autofocus"
+               required="required"
+               placeholder="{{ esc_attr__('Enter the TOTP Token', '2fas') }}"/>
+
+        <div>
+            {% include "login/authentication_hidden_inputs.html.twig" %}
+
+            <input type="hidden" name="twofas_action" value="{{ actions['confirm_totp'] }}"/>
+        </div>
+
+        <input type="submit" name="wp-submit" id="wp-submit" class="twofas-btn twofas-action-btn" value="{{ esc_attr__('Confirm', '2fas') }}"/>
+    </form>
+
+    <div class="twofas-login-another-account">
+        <form action="{{ login_url }}" method="post" class="twofas-login-nav-form">
+            <div>
+                {% if interim_login %}
+                    <input type="hidden" name="interim-login" value="{{ interim_login }}" />
+                {% endif %}
+                <input type="hidden" name="twofas_action" value="{{ actions['stop_login_process'] }}" />
+            </div>
+            <input type="submit" class="button-link" value="{{ esc_attr__('Log in to another account', '2fas') }}" />
+        </form>
+    </div>
+
+    <a href="#" class="js-open-remove-config-modal">{{ esc_html__('Do you want to reset your 2FA configuration?', '2fas') }}</a>
+
+    {% include 'modals/error-modal.html.twig' %}
+    {% include 'modals/confirmation/remove-config-modal.html.twig' %}
+</div>
+
+{{ login_footer() }}

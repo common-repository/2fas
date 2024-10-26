@@ -1,0 +1,441 @@
+@import 'variables';
+@import 'functions';
+
+.twofas-spinner-button {
+  height: 10px;
+  width: 70px;
+  text-align: center;
+  vertical-align: middle;
+
+  > span {
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    display: inline-block;
+    -webkit-animation: twofas-bounce-delay 1.4s infinite ease-in-out both;
+    animation: twofas-bounce-delay 1.4s infinite ease-in-out both;
+    vertical-align: top;
+  }
+
+  .twofas-spinner-button-bounce-1 {
+    -webkit-animation-delay: -0.32s;
+    animation-delay: -0.32s;
+  }
+
+  .twofas-spinner-button-bounce-2 {
+    -webkit-animation-delay: -0.16s;
+    animation-delay: -0.16s;
+  }
+
+  @at-root {
+    @-webkit-keyframes twofas-bounce-delay {
+      0%, 80%, 100% {
+        -webkit-transform: scale(0);
+      }
+
+      40% {
+        -webkit-transform: scale(1.0);
+      }
+    }
+
+    @keyframes twofas-bounce-delay {
+      0%, 80%, 100% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+      }
+
+      40% {
+        -webkit-transform: scale(1.0);
+        transform: scale(1.0);
+      }
+    }
+  }
+}
+
+.twofas-spinner-circle {
+  width: 40px;
+  height: 40px;
+  position: relative;
+
+  .tf-dot {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    &::before {
+      content: '';
+      display: block;
+      margin: 0 auto;
+      width: 15%;
+      height: 15%;
+      background-color: $TF_Admin_Highlight_Color;
+      border-radius: 100%;
+      -webkit-border-radius: 100%;
+      -webkit-animation: tf-dot-fade-delay 1.2s infinite ease-in-out both;
+      animation: tf-dot-fade-delay 1.2s infinite ease-in-out both;
+    }
+
+    &.tf-dot-2 {
+      -webkit-transform: rotate(30deg);
+      -ms-transform: rotate(30deg);
+      transform: rotate(30deg);
+
+      &::before {
+        -webkit-animation-delay: -1.1s;
+        animation-delay: -1.1s;
+      }
+    }
+
+    &.tf-dot-3 {
+      -webkit-transform: rotate(60deg);
+      -ms-transform: rotate(60deg);
+      transform: rotate(60deg);
+
+      &::before {
+        -webkit-animation-delay: -1s;
+        animation-delay: -1s;
+      }
+    }
+
+    &.tf-dot-4 {
+      -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      transform: rotate(90deg);
+
+      &::before {
+        -webkit-animation-delay: -0.9s;
+        animation-delay: -0.9s;
+      }
+    }
+
+    &.tf-dot-5 {
+      -webkit-transform: rotate(120deg);
+      -ms-transform: rotate(120deg);
+      transform: rotate(120deg);
+
+      &::before {
+        -webkit-animation-delay: -0.8s;
+        animation-delay: -0.8s;
+      }
+    }
+
+    &.tf-dot-6 {
+      -webkit-transform: rotate(150deg);
+      -ms-transform: rotate(150deg);
+      transform: rotate(150deg);
+
+      &::before {
+        -webkit-animation-delay: -0.7s;
+        animation-delay: -0.7s;
+      }
+    }
+
+    &.tf-dot-7 {
+      -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      transform: rotate(180deg);
+
+      &::before {
+        -webkit-animation-delay: -0.6s;
+        animation-delay: -0.6s;
+      }
+    }
+
+    &.tf-dot-8 {
+      -webkit-transform: rotate(210deg);
+      -ms-transform: rotate(210deg);
+      transform: rotate(210deg);
+
+      &::before {
+        -webkit-animation-delay: -0.5s;
+        animation-delay: -0.5s;
+      }
+    }
+
+    &.tf-dot-9 {
+      -webkit-transform: rotate(240deg);
+      -ms-transform: rotate(240deg);
+      transform: rotate(240deg);
+
+      &::before {
+        -webkit-animation-delay: -0.4s;
+        animation-delay: -0.4s;
+      }
+    }
+
+    &.tf-dot-10 {
+      -webkit-transform: rotate(270deg);
+      -ms-transform: rotate(270deg);
+      transform: rotate(270deg);
+
+      &::before {
+        -webkit-animation-delay: -0.3s;
+        animation-delay: -0.3s;
+      }
+    }
+
+    &.tf-dot-11 {
+      -webkit-transform: rotate(300deg);
+      -ms-transform: rotate(300deg);
+      transform: rotate(300deg);
+
+      &::before {
+        -webkit-animation-delay: -0.2s;
+        animation-delay: -0.2s;
+      }
+    }
+
+    &.tf-dot-12 {
+      -webkit-transform: rotate(330deg);
+      -ms-transform: rotate(330deg);
+      transform: rotate(330deg);
+
+      &::before {
+        -webkit-animation-delay: -0.1s;
+        animation-delay: -0.1s;
+      }
+    }
+  }
+
+  @at-root {
+    @-webkit-keyframes tf-dot-fade-delay {
+      0%, 39%, 100% {
+        opacity: 0;
+      }
+      40% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes tf-dot-fade-delay {
+      0%, 39%, 100% {
+        opacity: 0;
+      }
+      40% {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.twofas-spinner-container {
+  &.twofas-qr-refresh {
+    display: none;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+
+    @media all and (max-width: $screen-xs-max) {
+      left: auto;
+      padding-bottom: 20px;
+      position: static;
+      top: auto;
+      transform: none;
+      text-align: center;
+    }
+
+    .twofas-spinner-circle {
+      height: 100px;
+      width: 100px;
+
+      @media all and (max-width: $screen-xs-max) {
+        display: inline-block;
+        height: 150px;
+        width: 150px;
+      }
+    }
+  }
+
+  &.twofas-visible {
+    display: block;
+  }
+}
+
+.twofas-token-loading {
+  .twofas-loading-dot {
+    opacity: .3;
+    animation: twofas-token-loading-animation $TF_Dot_Animation_Base_Time_In_Seconds ease-in-out normal infinite !important;
+    -webkit-animation: twofas-token-loading-animation $TF_Dot_Animation_Base_Time_In_Seconds ease-in-out normal infinite !important;
+  }
+}
+
+.twofas-token-setup {
+  .twofas-loading-dot {
+    animation: twofas-token-loading-setup 1.2s ease-in normal 1 both;
+    -webkit-animation: twofas-token-loading-setup 1.2s ease-in normal 1 both;
+  }
+}
+
+.twofas-token-error {
+  .twofas-error-dot {
+    animation: twofas-token-loading-setup 1.2s ease-in normal 1 both;
+    -webkit-animation: twofas-token-loading-setup 1.2s ease-in normal 1 both;
+  }
+}
+.twofas-sockets-error {
+  display: none;
+  position: relative;
+}
+.twofas-token-loading,
+.twofas-token-setup,
+.twofas-token-error {
+  display: none;
+
+  &.twofas-play {
+    display: inline-block;
+  }
+
+  .twofas-loading-dot {
+    display: block;
+    float: left;
+    margin-right: 7px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: $TF_Dot_Far_Background_Color;
+    opacity: 0;
+    will-change: background-color, opacity;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+
+    &:nth-of-type(2) {
+      animation-delay: timeToSeconds(getAnimationOffset(1)) !important;
+      -webkit-animation-delay: timeToSeconds(getAnimationOffset(1)) !important;
+    }
+
+    &:nth-of-type(3) {
+      animation-delay: timeToSeconds(getAnimationOffset(2)) !important;
+      -webkit-animation-delay: timeToSeconds(getAnimationOffset(2)) !important;
+    }
+
+    &:nth-of-type(4) {
+      animation-delay: timeToSeconds(getAnimationOffset(3)) !important;
+      -webkit-animation-delay: timeToSeconds(getAnimationOffset(3)) !important;
+    }
+
+    &:nth-of-type(5) {
+      animation-delay: timeToSeconds(getAnimationOffset(4)) !important;
+      -webkit-animation-delay: timeToSeconds(getAnimationOffset(4)) !important;
+    }
+
+    &:nth-of-type(6) {
+      animation-delay: timeToSeconds(getAnimationOffset(5)) !important;
+      -webkit-animation-delay: timeToSeconds(getAnimationOffset(5)) !important;
+    }
+  }
+
+  .twofas-error-dot {
+    display: block;
+    float: left;
+    margin-right: 7px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: $TF_Dot_Error_Background_Color;
+    opacity: 0;
+    will-change: background-color, opacity;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+
+    &:nth-of-type(2) {
+      animation-delay: timeToSeconds(getAnimationOffset(1)) !important;
+      -webkit-animation-delay: timeToSeconds(getAnimationOffset(1)) !important;
+    }
+
+    &:nth-of-type(3) {
+      animation-delay: timeToSeconds(getAnimationOffset(2)) !important;
+      -webkit-animation-delay: timeToSeconds(getAnimationOffset(2)) !important;
+    }
+
+    &:nth-of-type(4) {
+      animation-delay: timeToSeconds(getAnimationOffset(3)) !important;
+      -webkit-animation-delay: timeToSeconds(getAnimationOffset(3)) !important;
+    }
+
+    &:nth-of-type(5) {
+      animation-delay: timeToSeconds(getAnimationOffset(4)) !important;
+      -webkit-animation-delay: timeToSeconds(getAnimationOffset(4)) !important;
+    }
+
+    &:nth-of-type(6) {
+      animation-delay: timeToSeconds(getAnimationOffset(5)) !important;
+      -webkit-animation-delay: timeToSeconds(getAnimationOffset(5)) !important;
+    }
+  }
+
+  @at-root {
+    @keyframes twofas-token-loading-setup {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: .3;
+      }
+    }
+
+    @-webkit-keyframes twofas-token-loading-setup {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: .3;
+      }
+    }
+
+    @keyframes twofas-token-loading-animation {
+      0%, 100% {
+        opacity: .3;
+        background-color: $TF_Dot_Far_Background_Color;
+      }
+
+      16.67%, 83.33% {
+        opacity: .5;
+        background-color: $TF_Dot_Far_Background_Color;
+      }
+
+      33.33%, 66.67% {
+        opacity: .8;
+        background-color: $TF_Dot_Near_Background_Color;
+      }
+
+      50% {
+        opacity: 1;
+        background-color: $TF_Dot_Active_Background_Color;
+      }
+    }
+
+    @-webkit-keyframes twofas-token-loading-animation {
+      0%, 100% {
+        opacity: .3;
+        background-color: $TF_Dot_Far_Background_Color;
+      }
+
+      16.67%, 83.33% {
+        opacity: .5;
+        background-color: $TF_Dot_Far_Background_Color;
+      }
+
+      33.33%, 66.67% {
+        opacity: .8;
+        background-color: $TF_Dot_Near_Background_Color;
+      }
+
+      50% {
+        opacity: 1;
+        background-color: $TF_Dot_Active_Background_Color;
+      }
+    }
+  }
+}

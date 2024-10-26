@@ -1,0 +1,284 @@
+@import '../../includes/variables';
+
+&-plans-wrapper {
+  margin: 50px -15px 0 -15px;
+
+  @media all and (max-width: $screen-sm-max) {
+    margin-top: 30px;
+  }
+
+  .twofas-plans {
+    background: $TF_Admin_Box_Background_Color;
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+
+      &.twofas-active-free {
+        tbody {
+          tr {
+            td {
+              &:nth-of-type(2) {
+                background: $TF_Admin_Table_Active_Column_Background_Color;
+              }
+            }
+          }
+        }
+      }
+
+      &.twofas-active-premium {
+        tbody {
+          tr {
+            td {
+              &:nth-of-type(3) {
+                background: $TF_Admin_Table_Active_Column_Background_Color;
+              }
+            }
+          }
+        }
+      }
+
+      thead {
+        th {
+          height: 50px;
+          line-height: 50px;
+          font-size: 18px;
+          font-weight: 700;
+          text-align: center;
+          text-transform: uppercase;
+
+          &:first-of-type {
+            text-align: left;
+          }
+
+          &.twofas-basic {
+            background: $TF_Admin_Table_Basic_Background_Color;
+            color: $TF_Admin_Table_Basic_Color;
+            border-right: 0;
+            width: 15%;
+          }
+
+          &.twofas-premium {
+            background: $TF_Admin_Table_Premium_Background_Color;
+            color: $TF_Admin_Table_Premium_Color;
+            border-left: 0;
+            width: 15%;
+          }
+        }
+      }
+
+      tbody {
+        .twofas-premium {
+          display: none;
+        }
+
+        td {
+          height: 80px;
+          line-height: 80px;
+          text-align: center;
+          min-width: 235px;
+
+          @media all and (max-width: $screen-md-max) {
+            min-width: 195px;
+          }
+
+          &:first-of-type {
+            text-align: left;
+          }
+
+          .twofas-cell-icon {
+            display: block;
+            float: left;
+            width: 7%;
+            text-align: center;
+
+            @media all and (max-width: 1400px) {
+              width: 14%;
+            }
+
+            @media all and (max-width: $screen-sm-max) {
+              width: 10%;
+            }
+
+            @media all and (max-width: 480px) {
+              width: 20%;
+            }
+
+            i {
+              vertical-align: middle;
+            }
+          }
+
+          .twofas-cell-content {
+            display: inline-block;
+            width: 93%;
+            vertical-align: middle;
+            padding-right: 20px !important;
+
+            @media all and (max-width: 1400px) {
+              width: 86%;
+            }
+
+            @media all and (max-width: $screen-sm-max) {
+              width: 90%;
+            }
+
+            @media all and (max-width: 480px) {
+              width: 80%;
+            }
+
+            h6 {
+              font-size: 16px;
+              font-weight: 700;
+              margin: 0;
+              padding: 0;
+            }
+
+            p {
+              font-size: 12px;
+              font-weight: 400;
+              margin: 0;
+              padding: 0;
+            }
+          }
+
+          .twofas-tick-content {
+            display: inline-block;
+            vertical-align: middle;
+
+            i,
+            p {
+              display: block;
+              margin: 0 auto;
+              text-align: center;
+            }
+
+            p {
+              margin-top: 10px;
+              font-size: 11px;
+              font-weight: 700;
+
+              a {
+                text-decoration: underline;
+              }
+            }
+
+            h5 {
+              font-size: 18px;
+              font-weight: 700;
+            }
+          }
+        }
+      }
+
+      th,
+      td {
+        padding: 0 20px;
+        border: 1px solid $TF_Admin_Box_Border_Color;
+      }
+
+      .twofas-icon {
+        vertical-align: middle;
+      }
+    }
+
+    @media all and (max-width: $screen-sm-max) {
+      table,
+      thead,
+      tbody,
+      th,
+      td,
+      tr {
+        display: block;
+      }
+
+      thead {
+        th {
+          &:not(:first-of-type) {
+            display: none;
+          }
+        }
+      }
+
+      tbody {
+        .twofas-premium {
+          display: block !important;
+        }
+
+        .twofas-downgrade {
+          td {
+            padding: 10px 0;
+            text-align: center !important;
+          }
+        }
+
+        tr {
+          &:first-of-type {
+            td {
+              &:before {
+                content: "BASIC";
+                background: $TF_Admin_Table_Basic_Background_Color;
+                color: $TF_Admin_Table_Basic_Color;
+              }
+            }
+          }
+
+          &:nth-of-type(4) {
+            td {
+              &:before {
+                content: "PREMIUM";
+                background: $TF_Admin_Table_Premium_Background_Color;
+                color: $TF_Admin_Table_Premium_Color;
+              }
+            }
+          }
+
+          &:last-of-type {
+            td {
+              padding: 10px 0;
+
+              &:not(:last-of-type) {
+                display: none;
+              }
+            }
+          }
+
+          td {
+            height: auto;
+            line-height: 1;
+            padding: 0;
+            border-top: 0;
+            clear: both;
+
+            &:before {
+              display: block;
+              width: 100%;
+              height: 50px;
+              line-height: 50px;
+              padding: 0 20px;
+              font-size: 18px;
+              font-weight: 700;
+              text-transform: uppercase;
+            }
+
+            .twofas-cell-icon,
+            .twofas-cell-content {
+              padding: 20px 0;
+            }
+          }
+        }
+      }
+
+      tr {
+        &:not(:last-of-type) {
+          td {
+            &:nth-of-type(2),
+            &:nth-of-type(3) {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

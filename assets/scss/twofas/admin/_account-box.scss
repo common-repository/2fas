@@ -1,0 +1,72 @@
+@import '../../includes/variables';
+
+.twofas-account-box-wrapper {
+  text-align: center;
+
+  .twofas-account-box {
+    display: inline-block;
+    background: $TF_Admin_Box_Background_Color;
+    border: 1px solid $TF_Admin_Box_Border_Color;
+    max-width: 350px;
+    width: 100%;
+    height: auto;
+
+    &-header {
+      height: 35px;
+      text-align: center;
+      background: $TF_Account_Box_Header_Background_Color;
+
+      h3 {
+        color: $TF_Account_Box_Header_Color;
+        line-height: 35px;
+        font-size: 16px;
+        font-weight: 700;
+        padding: 0;
+        margin: 0;
+      }
+    }
+
+    &-content {
+      padding: 15px;
+      text-align: left;
+      width: 100%;
+
+      .twofas-submit-container {
+        text-align: right;
+      }
+
+      label {
+        font-weight: 700;
+      }
+
+      input[type="email"],
+      input[type="password"] {
+        width: 100%;
+        margin: 10px 0;
+      }
+
+      hr {
+        margin-bottom: 15px;
+      }
+
+      a {
+        display: block;
+        line-height: 20px;
+
+        &:focus {
+          -webkit-box-shadow: none;
+          box-shadow: none;
+          outline: 0;
+        }
+      }
+    }
+
+    .twofas-privacy-policy-label {
+      font-weight: normal;
+
+      a {
+        text-decoration: underline;
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{{ login_header(esc_html__('Enter your one-time backup code', '2fas'), '', error) }}
+
+<div class="twofas-login-form-container">
+    <form method="post" action="{{ login_url }}" id="loginform" class="twofas-login-form">
+        <label for="twofas-code">{{ esc_html__('Enter your one-time backup code', '2fas') }}:</label>
+        <input type="text" name="twofas_code" id="twofas-code"
+               minlength="12" maxlength="14"
+               autocomplete="off" autofocus="autofocus" required="required" />
+        <div>
+            {% include "login/authentication_hidden_inputs.html.twig" %}
+            <input type="hidden" name="twofas_action" value="{{ actions['verify_backup_code'] }}" />
+        </div>
+
+        <p class="twofas-submit">
+            <input type="submit" name="wp-submit" id="wp-submit" class="button button-primary button-large" value="{{ esc_attr__('Log In', '2fas') }}" />
+        </p>
+    </form>
+    <div class="twofas-login-nav">
+        <div class="twofas-login-nav-wrapper">
+            <div class="twofas-table-wrapper">
+                <div class="twofas-login-nav-message">
+                    <form action="{{ login_url }}" method="post" class="twofas-login-nav-form">
+                        {% if interim_login %}
+                            <input type="hidden" name="interim-login" value="{{ interim_login }}" />
+                        {% endif %}
+                        <input type="hidden" name="twofas_action" value="{{ actions['log_in_with_totp_code'] }}" />
+                        <input type="submit" class="button-link" value="{{ esc_attr__('Back to previous page', '2fas') }}" />
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{{ login_footer() }}

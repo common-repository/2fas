@@ -1,0 +1,29 @@
+{% extends 'modals/confirmation/confirmation-base.html.twig' %}
+
+{% block modal_name %}twofas-migrate-users-confirmation-modal{% endblock %}
+{% block modal_extra_classes %}twofas-info-text{% endblock %}
+{% block confirmation_content %}
+    <div class="twofas-text-content">
+        <p>
+            You are going to migrate your data from 2FAS Classic to 2FAS Prime.<br />
+            Remember that only 2FAS Classic settings and tokens (secret/service keys) will be migrated. <br />
+            <strong>Trusted devices and backup codes will not be transferred.</strong><br />
+            Are you sure you want to proceed?
+        </p>
+    </div>
+    <div class="twofas-buttons">
+        <a href="#" class="twofas-btn twofas-cancel-btn js-close-modal">{{ esc_html__('Cancel', '2fas')|upper }}</a>
+        <a href="#" class="twofas-btn twofas-action-btn js-twofas-migrate-users">
+            <span>{{ esc_html__('Confirm', '2fas') }}</span>
+
+            <span class="twofas-spinner-button">
+                    <span class="twofas-spinner-button-bounce-1"></span>
+                    <span class="twofas-spinner-button-bounce-2"></span>
+                    <span class="twofas-spinner-button-bounce-3"></span>
+                </span>
+        </a>
+        <form id="twofas-migration-users-form" action="{{ create_url(constant('TwoFAS\\TwoFAS\\Http\\Action_Index::SUBMENU_DASHBOARD'), constant('TwoFAS\\TwoFAS\\Http\\Action_Index::ACTION_MIGRATE_USERS')) }}" method="post">
+            {{ create_form_nonce(constant('TwoFAS\\TwoFAS\\Http\\Action_Index::ACTION_MIGRATE_USERS')) | raw }}
+        </form>
+    </div>
+{% endblock %}

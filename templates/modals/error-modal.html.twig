@@ -1,0 +1,10 @@
+{% extends 'modals/modal-base.html.twig' %}
+
+{% block modal_classes %}twofas-anim-off twofas-error-modal{% endblock %}
+{% block modal_title %}{{ esc_html__('Error', '2fas') }}{% endblock %}
+{% block modal_content %}
+    <p id="error-modal-message">{{ esc_html__('Server error occurred. Please try to refresh this page.', '2fas') }}</p>
+    <div class="twofas-buttons">
+        <a href="#" class="twofas-btn twofas-action-btn js-close-modal">OK</a>
+    </div>
+{% endblock %}

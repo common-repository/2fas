@@ -1,0 +1,91 @@
+@import '../../includes/variables';
+@import '../../includes/mixins';
+
+&-video-wrapper {
+  margin: 0 -15px 0 0;
+
+  @media all and (max-width: $screen-sm-max) {
+    margin: 0px -15px 0 -15px;
+  }
+
+  h2 {
+    height: 31px !important;
+  }
+
+  .twofas-video {
+    background: $TF_Admin_Box_Background_Color;
+    border: 1px solid $TF_Admin_Box_Border_Color;
+    height: 365px;
+    padding: 15px;
+
+    @media all and (max-width: 640px) {
+      height: 225px;
+    }
+
+    &-player {
+      @include aspect-ratio(16, 9);
+      top: 50%;
+      transform: translateY(-50%);
+      text-align: center;
+      max-height: 100%;
+
+      img {
+        display: inline-block;
+        height: 100%;
+        width: auto;
+      }
+
+      &-content {
+        > div {
+          max-width: 100%;
+          max-height: 100%;
+        }
+
+        video {
+          display: none;
+        }
+
+        .video-js {
+          display: none !important;
+
+          &.my-player-dimensions {
+            display: block !important;
+
+            video {
+              display: block;
+            }
+          }
+        }
+
+        .vjs-poster {
+          background-size: cover;
+        }
+
+        .vjs-big-play-button {
+          border: 2px solid $TF_Video_Play_Button_Border;
+          border-radius: 50%;
+          width: 75px;
+          height: 75px;
+          line-height: 75px;
+          left: 50%;
+          top: 50%;
+          margin: -37.5px 0 0 -37.5px;
+
+          .vjs-icon-placeholder {
+            font-size: 48px;
+          }
+        }
+
+        .vjs-control-bar {
+          background: $TF_Video_Control_Bar_Background_Color;
+        }
+
+        .vjs-play-progress {
+          &::before {
+            color: $TF_Admin_Highlight_Color;
+          }
+        }
+      }
+    }
+  }
+}

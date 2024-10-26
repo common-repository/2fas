@@ -1,0 +1,1542 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: 2FAS Classic\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/twofas-wp-plugin\n"
+"POT-Creation-Date: 2021-05-18T09:05:43+00:00\n"
+"PO-Revision-Date: 2021-06-16 12:23+0200\n"
+"Last-Translator: 2FAS\n"
+"Language-Team: Spanish (Spain)\n"
+"Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 2.3\n"
+"X-Loco-Source-Locale: en-US\n"
+"X-Loco-Project-Id: 109744\n"
+"X-Loco-Lookup: id\n"
+"X-Loco-Api-Version: 1.0.25 20210428-1\n"
+
+#: 00/00321475904e2e37ad1e73856f6eb6e37707fb5e0ac54a691ffb1f6f843f2c46.php:56
+msgid "Your 2FAS.com account has been created."
+msgstr "Tu cuentea 2FAS.com ha sido creada."
+
+#: 00/00321475904e2e37ad1e73856f6eb6e37707fb5e0ac54a691ffb1f6f843f2c46.php:66
+msgid ""
+"Your two-factor authentication is inactive. In order to activate it, please "
+"click Continue to configure 2FAS Tokens or click Cancel to skip."
+msgstr ""
+"Tu autenticación en dos pasos está desactivada. Para activarla, haz click en "
+"Continuar para configurar los 2FAS Tokens o haz click en Cancelar para "
+"saltar."
+
+#: 00/00321475904e2e37ad1e73856f6eb6e37707fb5e0ac54a691ffb1f6f843f2c46.php:72
+#: 6c/6cb79f5a78a8d309d114405584330d2379079e59ee9a8b8d3178aca4fb7dfce3.php:67
+#: 26/262b2fdf0eb0a2990f5a20ffe22c0147a8eafe04ba46172dd5b6d000d355e87b.php:98
+#: 46/468bab3ee79247219b4cdbda2988596ab8cb6a5bf91f94927ade5040097cbc30.php:80
+#: 70/70516e13d8c2d0597abb0b839b9f2d40b2324a56f2495471d7eb1406690a2877.php:67
+#: cb/cbcf75f445798f69c39fee77f5e6c2ebcac2c497bfb6812e8139919c8594739c.php:74
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: 00/00321475904e2e37ad1e73856f6eb6e37707fb5e0ac54a691ffb1f6f843f2c46.php:78
+msgid "Continue"
+msgstr "Continuar"
+
+#: 01/01886afd5272941676b141dfc0dec4f28398481cfb9796432c65e852285fe35f.php:39
+msgid "This site is secured by 2FAS Classic"
+msgstr "Este sitio está protegido por 2FAS Classic"
+
+#. Plugin Name of the plugin
+#: 05/0549470879dd6bc51a31afa7e77d94b2a448cd51077d986e3c1faac03e7cb6c6.php:57
+#: 46/46dbdc9b067b04b51efc87a6c84b31621969f7229d4e069542e2d0fc2d405e4a.php:81
+msgid "2FAS Classic — Two Factor Authentication"
+msgstr "2FAS Classic — Autenticación en Dos Pasos"
+
+#: 09/09f555a30aa13ee4df8b131d19dc7a35c5f286c156c286cff4a7ffd9e2486f57.php:50
+#: 99/9987b13591c2fe3cfe2ba3155aa21f535d9bd5638f77418fb3861e19062d9989.php:102
+#: e1/e16de84a3cefce49e9cf7b461029132e5f16b42865339ed7f06e547b37ad3c1e.php:124
+#: f1/f1f722a8aa0c7f9129d59e83a01dc527ce6b0fd5fdbb4b80b286df36b995f8b2.php:125
+msgid "Learn more"
+msgstr "Aprender más"
+
+#: 09/09f555a30aa13ee4df8b131d19dc7a35c5f286c156c286cff4a7ffd9e2486f57.php:61
+msgid ""
+"The following list contains all of your trusted devices. When you are using "
+"a trusted device you don’t need to enter a verification code each time you "
+"log in. Ensure that this list is up to date and remove unnecessary devices."
+msgstr ""
+"La siguiente lista contiene tus dispositivos de confianza. Al utilizar uno "
+"de ellos, no está necesario introducir el código de verificación cada vez "
+"que inicies la sesión. Asegúrate de que la lista esté actualizada y elimina "
+"los dispositivos innecesarios."
+
+#: 09/09f555a30aa13ee4df8b131d19dc7a35c5f286c156c286cff4a7ffd9e2486f57.php:71
+msgid "No trusted devices"
+msgstr "No hay dispositivos de confianza"
+
+#: 09/09f555a30aa13ee4df8b131d19dc7a35c5f286c156c286cff4a7ffd9e2486f57.php:81
+msgid "Browser and device"
+msgstr "Navegador y dispositivo"
+
+#: 09/09f555a30aa13ee4df8b131d19dc7a35c5f286c156c286cff4a7ffd9e2486f57.php:85
+msgid "Added"
+msgstr "Agregado"
+
+#: 09/09f555a30aa13ee4df8b131d19dc7a35c5f286c156c286cff4a7ffd9e2486f57.php:89
+msgid "Last logged in"
+msgstr "Ultima sesión"
+
+#: 09/09f555a30aa13ee4df8b131d19dc7a35c5f286c156c286cff4a7ffd9e2486f57.php:93
+msgid "IP Address"
+msgstr "Dirección IP"
+
+#: 09/09f555a30aa13ee4df8b131d19dc7a35c5f286c156c286cff4a7ffd9e2486f57.php:97
+msgid "Action"
+msgstr "Acción"
+
+#: 09/09f555a30aa13ee4df8b131d19dc7a35c5f286c156c286cff4a7ffd9e2486f57.php:133
+#: 09/09f555a30aa13ee4df8b131d19dc7a35c5f286c156c286cff4a7ffd9e2486f57.php:137
+msgid "No information"
+msgstr "No hay información"
+
+#: 09/09f555a30aa13ee4df8b131d19dc7a35c5f286c156c286cff4a7ffd9e2486f57.php:173
+msgid "Remove"
+msgstr "Eliminar"
+
+#: 09/09f555a30aa13ee4df8b131d19dc7a35c5f286c156c286cff4a7ffd9e2486f57.php:213
+msgid "Add this device"
+msgstr "Agregar un dispositivo"
+
+#: 1b/1b08d476a4f29359f1a1cf684031784e2fdc54834c1d0ad9a61660fd6f824eca.php:49
+msgid "QR Code"
+msgstr "Código QR"
+
+#: 1b/1b08d476a4f29359f1a1cf684031784e2fdc54834c1d0ad9a61660fd6f824eca.php:67
+msgid "Close"
+msgstr "Cerrar"
+
+#: 3b/3b36728465144479304fc198c4f3d019bff911a012a8b26b8723a2d04567d920.php:50
+msgid ""
+"You are going to disable your two-factor authentication through SMS/VMS "
+"message. Are you sure to proceed?"
+msgstr ""
+"Vas a desactivar tu configuración de autenticación en dos pasos por mensajes "
+"SMS/VMS. ¿Estás seguro de proceder?"
+
+#: 4c/4c6a910e8b758f0948434dc127ded69a00eb31ae792c38c8fbc9bc575f59e24b.php:47
+#: 4c/4c6a910e8b758f0948434dc127ded69a00eb31ae792c38c8fbc9bc575f59e24b.php:84
+#: 4d/4db488da38f1c538e172157a26e3c7a503d625422ac2cfa1ea0438e5adc5db42.php:114
+#: 7a/7a1b4a714c412cbd60da953c5d12b1dd25f991c7c8f0a7d57e5437946949305a.php:147
+#: 36/3630862c6a54a74d047f8de7f50c28d1c1a9b97497414968287cd42ab072ee82.php:58
+msgid "Log In"
+msgstr "Iniciar sesión"
+
+#: 4c/4c6a910e8b758f0948434dc127ded69a00eb31ae792c38c8fbc9bc575f59e24b.php:61
+#: fc/fc1e08dfc92c0d18b1080dfbda2cff0238b48c36b22b4215104cbd486c752244.php:61
+msgid "Your 2FAS e-mail"
+msgstr "Tu correo 2FAS"
+
+#: 4c/4c6a910e8b758f0948434dc127ded69a00eb31ae792c38c8fbc9bc575f59e24b.php:73
+msgid "Your 2FAS password"
+msgstr "Tu contraseña 2FAS"
+
+#: 4c/4c6a910e8b758f0948434dc127ded69a00eb31ae792c38c8fbc9bc575f59e24b.php:94
+msgid "Reset your password"
+msgstr "Recupera tu contraseña"
+
+#: 4c/4c6a910e8b758f0948434dc127ded69a00eb31ae792c38c8fbc9bc575f59e24b.php:102
+#: fc/fc1e08dfc92c0d18b1080dfbda2cff0238b48c36b22b4215104cbd486c752244.php:88
+msgid "Create an account"
+msgstr "Crear una cuenta"
+
+#: 4d/4db488da38f1c538e172157a26e3c7a503d625422ac2cfa1ea0438e5adc5db42.php:36
+#: 4d/4db488da38f1c538e172157a26e3c7a503d625422ac2cfa1ea0438e5adc5db42.php:86
+msgid "Enter your code"
+msgstr "Introduce tu código"
+
+#: 6b/6bce0b842c09dee0da4d84f926c0f9224efdd714c50981335627777557be8869.php:46
+#: e1/e16de84a3cefce49e9cf7b461029132e5f16b42865339ed7f06e547b37ad3c1e.php:218
+msgid "Code has been sent"
+msgstr "El código ha sido enviado"
+
+#: 6b/6bce0b842c09dee0da4d84f926c0f9224efdd714c50981335627777557be8869.php:58
+msgid "Your code has been sent to"
+msgstr "Tu código ha sido enviado a"
+
+#: 6b/6bce0b842c09dee0da4d84f926c0f9224efdd714c50981335627777557be8869.php:65
+msgid "Resend my code"
+msgstr "Reenviar mi código"
+
+#: 6b/6bce0b842c09dee0da4d84f926c0f9224efdd714c50981335627777557be8869.php:98
+#: 36/3630862c6a54a74d047f8de7f50c28d1c1a9b97497414968287cd42ab072ee82.php:85
+#: c8/c8907c352e4e73ed972988af910e3c87da21a35374d5ebfc7fe0af04d4a2e4e7.php:95
+msgid "Back to previous page"
+msgstr "Vuelve a la página anterior"
+
+#: 6b/6bce0b842c09dee0da4d84f926c0f9224efdd714c50981335627777557be8869.php:124
+#: 7a/7a1b4a714c412cbd60da953c5d12b1dd25f991c7c8f0a7d57e5437946949305a.php:270
+#: 19/19da99faef46c4c17b50d3c94107276a17ea5f4604ea721a97ee2e6572f05753.php:105
+#: 81/817187eb58a87737df72ded057adc995bf5ab26af07a4aef8fa71a7b2b19b249.php:132
+msgid "Log in to another account"
+msgstr "Iniciar otra sesión"
+
+#: 6c/6cb79f5a78a8d309d114405584330d2379079e59ee9a8b8d3178aca4fb7dfce3.php:60
+msgid ""
+"You are going to migrate your data from 2FAS Classic to 2FAS Prime. Remember "
+"that only 2FA settings will be migrated. Trusted devices and backup codes "
+"will not be transferred. Are you sure you want to proceed?"
+msgstr ""
+"Va a migrar sus datos de 2FAS Classic a 2FAS Prime. Recuerde que solo se "
+"migrarán las configuraciones 2FA. Los dispositivos confiables y los códigos "
+"de respaldo no se transferirán. ¿Estás seguro de continuar?"
+
+#: 6c/6cb79f5a78a8d309d114405584330d2379079e59ee9a8b8d3178aca4fb7dfce3.php:72
+#: 19/19da99faef46c4c17b50d3c94107276a17ea5f4604ea721a97ee2e6572f05753.php:79
+#: 46/468bab3ee79247219b4cdbda2988596ab8cb6a5bf91f94927ade5040097cbc30.php:85
+#: 70/70516e13d8c2d0597abb0b839b9f2d40b2324a56f2495471d7eb1406690a2877.php:84
+#: 81/817187eb58a87737df72ded057adc995bf5ab26af07a4aef8fa71a7b2b19b249.php:105
+#: cb/cbcf75f445798f69c39fee77f5e6c2ebcac2c497bfb6812e8139919c8594739c.php:89
+msgid "Confirm"
+msgstr "Confirmar"
+
+#: 7a/7a1b4a714c412cbd60da953c5d12b1dd25f991c7c8f0a7d57e5437946949305a.php:30
+#: 19/19da99faef46c4c17b50d3c94107276a17ea5f4604ea721a97ee2e6572f05753.php:30
+msgid "Enter your token"
+msgstr "Intorduce tu token"
+
+#: 7a/7a1b4a714c412cbd60da953c5d12b1dd25f991c7c8f0a7d57e5437946949305a.php:41
+msgid "Enter your 2FAS token"
+msgstr "Introduce tu token 2FAS"
+
+#: 7a/7a1b4a714c412cbd60da953c5d12b1dd25f991c7c8f0a7d57e5437946949305a.php:72
+msgid "Next time don't ask me for the token%son this device."
+msgstr "No me preguntes más por el token%sen este dispositivo."
+
+#: 7a/7a1b4a714c412cbd60da953c5d12b1dd25f991c7c8f0a7d57e5437946949305a.php:158
+msgid "Can't use your 2FAS token?"
+msgstr "Problemas con tu token 2FAS?"
+
+#: 7a/7a1b4a714c412cbd60da953c5d12b1dd25f991c7c8f0a7d57e5437946949305a.php:189
+msgid "Insert your one-time backup code"
+msgstr "Inserta tu código de respaldo"
+
+#: 7a/7a1b4a714c412cbd60da953c5d12b1dd25f991c7c8f0a7d57e5437946949305a.php:218
+msgid "Request backup code via SMS"
+msgstr "Solicita tu código de respaldo por SMS"
+
+#: 7a/7a1b4a714c412cbd60da953c5d12b1dd25f991c7c8f0a7d57e5437946949305a.php:240
+msgid "Request backup code via CALL"
+msgstr "Solicita tu código de respaldo por llamada"
+
+#: 9e/9eb4473b9c0ff547d495605dbd83381be947ba3e33d94bb4d9499160f4d89811.php:50
+msgid ""
+"You are going to downgrade your plan. There are users with enabled SMS "
+"backup method. If you downgrade plan, they lose ability to log in with this "
+"method."
+msgstr ""
+"Vas a degradar tu plan. Hay usuarios con el método de backup por SMS "
+"habilitado. Si degradas el plan, ellos perderán la capacidad de iniciar "
+"sesión con este método."
+
+#: 19/19da99faef46c4c17b50d3c94107276a17ea5f4604ea721a97ee2e6572f05753.php:46
+msgid "Enter your 2FAS token to confirm that you have a configured TOTP"
+msgstr "Introduce tu token 2FAS para confirmar que tienes TOTP configurado"
+
+#: 19/19da99faef46c4c17b50d3c94107276a17ea5f4604ea721a97ee2e6572f05753.php:62
+msgid "Enter the TOTP Token"
+msgstr "Introduce el Token TOTP"
+
+#: 19/19da99faef46c4c17b50d3c94107276a17ea5f4604ea721a97ee2e6572f05753.php:112
+msgid "Do you want to reset your 2FA configuration?"
+msgstr "¿Quieres restablecer tu configuración de 2FA?"
+
+#: 20/2000a2ee1ed823309422825a63fff7765314c8490cd19dd67a6ec7547a5a3bd9.php:45
+msgid "Account"
+msgstr "Cuenta"
+
+#: 20/2000a2ee1ed823309422825a63fff7765314c8490cd19dd67a6ec7547a5a3bd9.php:54
+msgid "This 2FAS account is managed by:"
+msgstr "Esta cuenta de 2FAS está administrada por:"
+
+#: 20/2000a2ee1ed823309422825a63fff7765314c8490cd19dd67a6ec7547a5a3bd9.php:66
+msgid "Current plan"
+msgstr "Plan actual"
+
+#: 20/2000a2ee1ed823309422825a63fff7765314c8490cd19dd67a6ec7547a5a3bd9.php:73
+#: 20/2000a2ee1ed823309422825a63fff7765314c8490cd19dd67a6ec7547a5a3bd9.php:313
+msgid "Premium"
+msgstr "Premium"
+
+#: 20/2000a2ee1ed823309422825a63fff7765314c8490cd19dd67a6ec7547a5a3bd9.php:79
+#: 20/2000a2ee1ed823309422825a63fff7765314c8490cd19dd67a6ec7547a5a3bd9.php:309
+msgid "Basic"
+msgstr "Básico"
+
+#: 20/2000a2ee1ed823309422825a63fff7765314c8490cd19dd67a6ec7547a5a3bd9.php:94
+#: 20/2000a2ee1ed823309422825a63fff7765314c8490cd19dd67a6ec7547a5a3bd9.php:111
+msgid "Credit Card"
+msgstr "Tarjeta de crédito"
+
+#: 20/2000a2ee1ed823309422825a63fff7765314c8490cd19dd67a6ec7547a5a3bd9.php:103
+msgid "Change / Remove Card"
+msgstr "Cambiar/Eliminar la tarjeta"
+
+#: 20/2000a2ee1ed823309422825a63fff7765314c8490cd19dd67a6ec7547a5a3bd9.php:115
+msgid "None"
+msgstr "Ninguna"
+
+#: 20/2000a2ee1ed823309422825a63fff7765314c8490cd19dd67a6ec7547a5a3bd9.php:120
+msgid "Add Credit Card"
+msgstr "Agregar tarjeta de crédito"
+
+#: 20/2000a2ee1ed823309422825a63fff7765314c8490cd19dd67a6ec7547a5a3bd9.php:147
+msgid "Disable 2FAS"
+msgstr "Desactivar el 2FAS"
+
+#: 20/2000a2ee1ed823309422825a63fff7765314c8490cd19dd67a6ec7547a5a3bd9.php:172
+msgid "Enable 2FAS"
+msgstr "Activar el 2FAS"
+
+#: 20/2000a2ee1ed823309422825a63fff7765314c8490cd19dd67a6ec7547a5a3bd9.php:195
+msgid "Users of this 2FAS Classic plugin"
+msgstr "Usuarios de ese plugin de 2FAS Classic"
+
+#: 20/2000a2ee1ed823309422825a63fff7765314c8490cd19dd67a6ec7547a5a3bd9.php:208
+msgid "Migrate users"
+msgstr "Migrar usuarios"
+
+#: 20/2000a2ee1ed823309422825a63fff7765314c8490cd19dd67a6ec7547a5a3bd9.php:220
+msgid "Learn how 2FAS works"
+msgstr "Aprende como funciona 2FAS"
+
+#: 20/2000a2ee1ed823309422825a63fff7765314c8490cd19dd67a6ec7547a5a3bd9.php:289
+msgid "Manage authentication plans"
+msgstr "Administrar los planos de autenticación"
+
+#: 20/2000a2ee1ed823309422825a63fff7765314c8490cd19dd67a6ec7547a5a3bd9.php:305
+msgid "Authentication factors"
+msgstr "Pasos de autenticación"
+
+#: 20/2000a2ee1ed823309422825a63fff7765314c8490cd19dd67a6ec7547a5a3bd9.php:327
+#: 20/2000a2ee1ed823309422825a63fff7765314c8490cd19dd67a6ec7547a5a3bd9.php:419
+msgid ""
+"Installation of the 2FAS Authenticator mobile application or Google\n"
+"                                            Authenticator enables you to log "
+"in to a WordPress account using TOTP\n"
+"                                            tokens, which increases the "
+"protection level of your website."
+msgstr ""
+"Instalación de la aplicación 2FAS Authenticator o Google\n"
+"                                            Authenticator te permite acceder "
+"a una cuenta de WordPress usando los tokens TOTP,\n"
+"                                             lo que aumenta el nivel de "
+"protección de tu página web."
+
+#: 20/2000a2ee1ed823309422825a63fff7765314c8490cd19dd67a6ec7547a5a3bd9.php:349
+#: 20/2000a2ee1ed823309422825a63fff7765314c8490cd19dd67a6ec7547a5a3bd9.php:441
+#: 46/46dbdc9b067b04b51efc87a6c84b31621969f7229d4e069542e2d0fc2d405e4a.php:50
+msgid "Offline codes"
+msgstr "Códigos offline"
+
+#: 20/2000a2ee1ed823309422825a63fff7765314c8490cd19dd67a6ec7547a5a3bd9.php:353
+#: 20/2000a2ee1ed823309422825a63fff7765314c8490cd19dd67a6ec7547a5a3bd9.php:445
+msgid ""
+"If you lose your smartphone or delete an app, you can log in to your "
+"account\n"
+"                                            using offline codes. Anytime you "
+"will generate 5 codes in the \"Backup codes\"\n"
+"                                            bookmark."
+msgstr ""
+"Si pierdes tu móvil o eliminas la aplicación, puedes acceder a tu cuenta\n"
+"                                            usando los códigos offline. En "
+"cualquier momento podrás generar 5 códigos en el marcador „Códigos de "
+"Respaldo”\n"
+"                                            ."
+
+#: 20/2000a2ee1ed823309422825a63fff7765314c8490cd19dd67a6ec7547a5a3bd9.php:391
+#: 20/2000a2ee1ed823309422825a63fff7765314c8490cd19dd67a6ec7547a5a3bd9.php:549
+msgid "Downgrade to basic"
+msgstr "Degradar para el básico"
+
+#: 20/2000a2ee1ed823309422825a63fff7765314c8490cd19dd67a6ec7547a5a3bd9.php:396
+#: 20/2000a2ee1ed823309422825a63fff7765314c8490cd19dd67a6ec7547a5a3bd9.php:402
+#: 20/2000a2ee1ed823309422825a63fff7765314c8490cd19dd67a6ec7547a5a3bd9.php:554
+#: 20/2000a2ee1ed823309422825a63fff7765314c8490cd19dd67a6ec7547a5a3bd9.php:560
+msgid "Free"
+msgstr "Gratuito"
+
+#: 20/2000a2ee1ed823309422825a63fff7765314c8490cd19dd67a6ec7547a5a3bd9.php:467
+msgid "Text message (SMS) or Voice Call (VMS)"
+msgstr "Mensaje de texto (SMS) o llamada de voz (VMS)"
+
+#: 20/2000a2ee1ed823309422825a63fff7765314c8490cd19dd67a6ec7547a5a3bd9.php:471
+msgid ""
+"You cannot access a mobile app but you don't want to print or save your\n"
+"                                            backup codes? Leave your phone "
+"number and we will send you a generated TOTP\n"
+"                                            token via text or VMS (voice "
+"message service)."
+msgstr ""
+"No puedes acceder a la aplicación pero no quieres imprimir o guardar tus\n"
+"                                            códigos de respaldo? Deja tu "
+"número de teléfono y te enviaremos un token TOTP\n"
+"                                            generado via SMS or VMS "
+"(servicio de llamada de voz)."
+
+#: 20/2000a2ee1ed823309422825a63fff7765314c8490cd19dd67a6ec7547a5a3bd9.php:486
+msgid "Check price list"
+msgstr "Lista de precios"
+
+#: 20/2000a2ee1ed823309422825a63fff7765314c8490cd19dd67a6ec7547a5a3bd9.php:500
+msgid "Support"
+msgstr "Soporte"
+
+#: 20/2000a2ee1ed823309422825a63fff7765314c8490cd19dd67a6ec7547a5a3bd9.php:504
+msgid ""
+"In case of queries or technical issues, you can rely on our support. We are\n"
+"                                            always available at our e-mail "
+"address."
+msgstr ""
+"En caso de cualquier duda o consulta técnica, puedes siempre confiar con "
+"nuestro soporte. Estamos\n"
+"                                            disponibles a través del correo "
+"electrónico."
+
+#: 20/2000a2ee1ed823309422825a63fff7765314c8490cd19dd67a6ec7547a5a3bd9.php:518
+msgid "Contact us"
+msgstr "Contáctanos"
+
+#: 20/2000a2ee1ed823309422825a63fff7765314c8490cd19dd67a6ec7547a5a3bd9.php:574
+msgid "Active Plan"
+msgstr "Activar el plan"
+
+#: 20/2000a2ee1ed823309422825a63fff7765314c8490cd19dd67a6ec7547a5a3bd9.php:596
+msgid "Upgrade now"
+msgstr "Haz un upgrade ahora"
+
+#: 20/2000a2ee1ed823309422825a63fff7765314c8490cd19dd67a6ec7547a5a3bd9.php:617
+msgid "If you want to log out,"
+msgstr "Si quieres cerrar sesión,"
+
+#: 20/2000a2ee1ed823309422825a63fff7765314c8490cd19dd67a6ec7547a5a3bd9.php:630
+msgid "Click here"
+msgstr "Pulsa aquí"
+
+#: 26/262b2fdf0eb0a2990f5a20ffe22c0147a8eafe04ba46172dd5b6d000d355e87b.php:79
+msgid "After clicking %1$scontinue%2$s button you will be redirected to"
+msgstr ""
+"Después de hacer click en el botón %1$sCONTINUAR%2$s estarás redirigido para"
+
+#: 26/262b2fdf0eb0a2990f5a20ffe22c0147a8eafe04ba46172dd5b6d000d355e87b.php:86
+msgid "2FAS website to change your credit card data."
+msgstr "la página de 2FAS para cambiar los datos de tu tarjeta de crédito."
+
+#: 26/262b2fdf0eb0a2990f5a20ffe22c0147a8eafe04ba46172dd5b6d000d355e87b.php:102
+msgid "continue to 2fas.com"
+msgstr "continuar con 2fas.com"
+
+#: 26/262b2fdf0eb0a2990f5a20ffe22c0147a8eafe04ba46172dd5b6d000d355e87b.php:115
+msgid "Click OK button when you complete changing credit card data"
+msgstr ""
+"Al terminar de cambiar los datos de la tarjeta de crédito, haz clic en el "
+"botón OK"
+
+#: 27/274f870d7b60c633202502d3afe9b5fac74442ed31cabac98fe3e593604607b1.php:57
+msgid "First Factor"
+msgstr "Primer Paso"
+
+#: 27/274f870d7b60c633202502d3afe9b5fac74442ed31cabac98fe3e593604607b1.php:61
+msgid "Your login & password"
+msgstr "Tu login & contraseña"
+
+#: 27/274f870d7b60c633202502d3afe9b5fac74442ed31cabac98fe3e593604607b1.php:76
+msgid "Second Factor"
+msgstr "Segundo Paso"
+
+#: 27/274f870d7b60c633202502d3afe9b5fac74442ed31cabac98fe3e593604607b1.php:80
+msgid "Additional layer of security"
+msgstr "Capa de seguridad adicional"
+
+#: 27/274f870d7b60c633202502d3afe9b5fac74442ed31cabac98fe3e593604607b1.php:138
+msgid "On"
+msgstr "On"
+
+#: 27/274f870d7b60c633202502d3afe9b5fac74442ed31cabac98fe3e593604607b1.php:142
+msgid "Off"
+msgstr "Off"
+
+#: 27/274f870d7b60c633202502d3afe9b5fac74442ed31cabac98fe3e593604607b1.php:152
+msgid "Insert the 6-digit token generated in your 2FAS app"
+msgstr "Inserta el token de 6 dígitos generado en tu aplicación 2FAS"
+
+#: 27/274f870d7b60c633202502d3afe9b5fac74442ed31cabac98fe3e593604607b1.php:159
+#: 27/274f870d7b60c633202502d3afe9b5fac74442ed31cabac98fe3e593604607b1.php:265
+msgid "2FAS Tokens"
+msgstr "Tokens de 2FAS"
+
+#: 27/274f870d7b60c633202502d3afe9b5fac74442ed31cabac98fe3e593604607b1.php:182
+#: 27/274f870d7b60c633202502d3afe9b5fac74442ed31cabac98fe3e593604607b1.php:292
+#: 27/274f870d7b60c633202502d3afe9b5fac74442ed31cabac98fe3e593604607b1.php:329
+msgid "Backup codes"
+msgstr "Códigos de respaldo"
+
+#: 27/274f870d7b60c633202502d3afe9b5fac74442ed31cabac98fe3e593604607b1.php:207
+#: 27/274f870d7b60c633202502d3afe9b5fac74442ed31cabac98fe3e593604607b1.php:366
+#: a6/a6b03ca165eb13d8e338c462e14d23a2b6d01f7f2f2c2b63477832681535e959.php:126
+msgid "Trusted devices"
+msgstr "Dispositivo de confianza"
+
+#: 27/274f870d7b60c633202502d3afe9b5fac74442ed31cabac98fe3e593604607b1.php:231
+#: 27/274f870d7b60c633202502d3afe9b5fac74442ed31cabac98fe3e593604607b1.php:242
+msgid "Admin Panel"
+msgstr "Panel de administración"
+
+#: 27/274f870d7b60c633202502d3afe9b5fac74442ed31cabac98fe3e593604607b1.php:235
+msgid "Area that you want to secure"
+msgstr "Área que quieres proteger"
+
+#: 36/3630862c6a54a74d047f8de7f50c28d1c1a9b97497414968287cd42ab072ee82.php:30
+#: 36/3630862c6a54a74d047f8de7f50c28d1c1a9b97497414968287cd42ab072ee82.php:40
+msgid "Enter your one-time backup code"
+msgstr "Introduce tu código de respaldo"
+
+#: 38/383ca06f2ec7705244900f96ad9defa129ba8818371a1a74848a3c7d735aae0b.php:49
+#: f0/f019a91799cddb90507ed51c4a34996cc678b735c6d22264192146f491db4f77.php:50
+msgid "Error"
+msgstr "Error"
+
+#: 38/383ca06f2ec7705244900f96ad9defa129ba8818371a1a74848a3c7d735aae0b.php:57
+msgid "Server error occurred. Please try to refresh this page."
+msgstr ""
+"Ha ocurrido un error de servidor. Por favor intenta actualizar esta página."
+
+#: 46/468bab3ee79247219b4cdbda2988596ab8cb6a5bf91f94927ade5040097cbc30.php:57
+msgid "Confirmation"
+msgstr "Confirmación"
+
+#: 52/527bbba0b1c93fcec972a0c8a0678510d8953a0644b2cb5928eb9c835bb75b7b.php:50
+msgid ""
+"You are going to remove your two-factor authentication configuration.\n"
+"        Please take note that if you want to re-enable two-factor "
+"authentication you will have to configure it again."
+msgstr ""
+"Vas a eliminar tu configuración de autenticación en dos pasos.\n"
+"        Si quieres volver a activar la autenticación en dos pasos, tendrás "
+"que configurarla de nuevo."
+
+#: 70/70516e13d8c2d0597abb0b839b9f2d40b2324a56f2495471d7eb1406690a2877.php:60
+msgid ""
+"You are going to reset your two-factor authentication configuration. Are you "
+"sure to proceed?"
+msgstr ""
+"Vas a restablecer tu configuración de autenticación en dos pasos. ¿Estás "
+"seguro de proceder?"
+
+#: 81/817187eb58a87737df72ded057adc995bf5ab26af07a4aef8fa71a7b2b19b249.php:30
+msgid "Configure two-factor authentication"
+msgstr "Configura la autenticación en dos pasos"
+
+#: 81/817187eb58a87737df72ded057adc995bf5ab26af07a4aef8fa71a7b2b19b249.php:41
+msgid ""
+"Get 2FAS Authenticator mobile app to scan %1$sQR code%2$s and configure two-"
+"factor authentication for your WordPress account."
+msgstr ""
+"Obtiene la aplicación móvil 2FAS Authenticator para escanear %1$sQR código"
+"%2$s y configurar la autenticación en dos pasos para tu cuenta WordPress."
+
+#: 81/817187eb58a87737df72ded057adc995bf5ab26af07a4aef8fa71a7b2b19b249.php:62
+msgid "Config with App"
+msgstr "Configurar con aplicación"
+
+#: 81/817187eb58a87737df72ded057adc995bf5ab26af07a4aef8fa71a7b2b19b249.php:73
+msgid ""
+"Instead of using the QR code you can %1$senter your private key manually%2$s"
+msgstr ""
+"En vez de usar el código QR puedes %1$sintroducir tu clave privada "
+"manualmente%2$s"
+
+#: 96/9608ad5a194d5860691bbe94cdf4ed40fe83ddd5382fa28f9bb706c50c7865f9.php:38
+msgid "We are sorry that you are leaving!"
+msgstr "¡Lamentamos que te vayas!"
+
+#: 96/9608ad5a194d5860691bbe94cdf4ed40fe83ddd5382fa28f9bb706c50c7865f9.php:45
+msgid "Please tell us why:"
+msgstr "Por favor, dinos por qué:"
+
+#: 96/9608ad5a194d5860691bbe94cdf4ed40fe83ddd5382fa28f9bb706c50c7865f9.php:54
+msgid "It's not working for me."
+msgstr "No funciona para mi."
+
+#: 96/9608ad5a194d5860691bbe94cdf4ed40fe83ddd5382fa28f9bb706c50c7865f9.php:58
+msgid "I don't know how it works."
+msgstr "No entiendo como funciona."
+
+#: 96/9608ad5a194d5860691bbe94cdf4ed40fe83ddd5382fa28f9bb706c50c7865f9.php:62
+msgid "It's too much complicated."
+msgstr "Está demasiado complicado."
+
+#: 96/9608ad5a194d5860691bbe94cdf4ed40fe83ddd5382fa28f9bb706c50c7865f9.php:66
+msgid "I'm looking for something else."
+msgstr "Estoy buscando otra cosa."
+
+#: 96/9608ad5a194d5860691bbe94cdf4ed40fe83ddd5382fa28f9bb706c50c7865f9.php:70
+msgid "Other, please describe below:"
+msgstr "Otro, por favor describe debajo:"
+
+#: 96/9608ad5a194d5860691bbe94cdf4ed40fe83ddd5382fa28f9bb706c50c7865f9.php:74
+msgid "I deactivate this plugin because..."
+msgstr "He desactivado ese plugin porque…"
+
+#: 96/9608ad5a194d5860691bbe94cdf4ed40fe83ddd5382fa28f9bb706c50c7865f9.php:80
+msgid "Skip"
+msgstr "Saltar"
+
+#: 96/9608ad5a194d5860691bbe94cdf4ed40fe83ddd5382fa28f9bb706c50c7865f9.php:84
+msgid "Send"
+msgstr "Enviar"
+
+#: 99/9987b13591c2fe3cfe2ba3155aa21f535d9bd5638f77418fb3861e19062d9989.php:66
+#: a6/a6b03ca165eb13d8e338c462e14d23a2b6d01f7f2f2c2b63477832681535e959.php:217
+#: e1/e16de84a3cefce49e9cf7b461029132e5f16b42865339ed7f06e547b37ad3c1e.php:69
+#: f1/f1f722a8aa0c7f9129d59e83a01dc527ce6b0fd5fdbb4b80b286df36b995f8b2.php:70
+msgid "Enabled"
+msgstr "Activado"
+
+#: 99/9987b13591c2fe3cfe2ba3155aa21f535d9bd5638f77418fb3861e19062d9989.php:87
+#: a6/a6b03ca165eb13d8e338c462e14d23a2b6d01f7f2f2c2b63477832681535e959.php:245
+#: e1/e16de84a3cefce49e9cf7b461029132e5f16b42865339ed7f06e547b37ad3c1e.php:89
+#: f1/f1f722a8aa0c7f9129d59e83a01dc527ce6b0fd5fdbb4b80b286df36b995f8b2.php:91
+msgid "Disabled"
+msgstr "Desactivado"
+
+#: 99/9987b13591c2fe3cfe2ba3155aa21f535d9bd5638f77418fb3861e19062d9989.php:114
+msgid ""
+"Backup codes will allow you to authenticate to your WordPress account when "
+"you can't use tokens generated by 2FAS Authenticator.\n"
+"                    Generate codes and keep them in a safe place."
+msgstr ""
+"Los códigos de respaldo te permiten autenticar tu cuenta WordPress si no "
+"puedes usar los tokens generados por 2FAS Authenticator.\n"
+"                    Genera los códigos y mantiénelos en un lugar seguro."
+
+#: 99/9987b13591c2fe3cfe2ba3155aa21f535d9bd5638f77418fb3861e19062d9989.php:132
+msgid "%1$s %2$s %3$s %4$s Active %5$s Code %6$s"
+msgid_plural "%1$s %2$s %3$s %4$s Active %5$s Codes %6$s"
+msgstr[0] "%1$s %2$s %3$s %4$s Código %5$s Activo %6$s"
+msgstr[1] "%1$s %2$s %3$s %4$s Códigos %5$s Activos %6$s"
+
+#: 99/9987b13591c2fe3cfe2ba3155aa21f535d9bd5638f77418fb3861e19062d9989.php:146
+msgid "Out of"
+msgstr "Fuera de"
+
+#: 99/9987b13591c2fe3cfe2ba3155aa21f535d9bd5638f77418fb3861e19062d9989.php:157
+msgid "%1$s Generated %2$s Codes %3$s"
+msgstr "%1$s Códigos %2$s Generados %3$s"
+
+#: 99/9987b13591c2fe3cfe2ba3155aa21f535d9bd5638f77418fb3861e19062d9989.php:167
+msgid "Regenerate backup codes"
+msgstr "Regenerar los códigos de respaldo"
+
+#: 99/9987b13591c2fe3cfe2ba3155aa21f535d9bd5638f77418fb3861e19062d9989.php:173
+msgid "No offline codes"
+msgstr "No hay códigos offline"
+
+#: 99/9987b13591c2fe3cfe2ba3155aa21f535d9bd5638f77418fb3861e19062d9989.php:178
+msgid "Generate backup codes"
+msgstr "Generar códigos"
+
+#: 99/9987b13591c2fe3cfe2ba3155aa21f535d9bd5638f77418fb3861e19062d9989.php:218
+msgid "Download"
+msgstr "Descargar"
+
+#: 99/9987b13591c2fe3cfe2ba3155aa21f535d9bd5638f77418fb3861e19062d9989.php:236
+msgid "Print"
+msgstr "Imprimir"
+
+#: 99/9987b13591c2fe3cfe2ba3155aa21f535d9bd5638f77418fb3861e19062d9989.php:251
+msgid "Last generated:"
+msgstr "El último generado:"
+
+#: a6/a6b03ca165eb13d8e338c462e14d23a2b6d01f7f2f2c2b63477832681535e959.php:46
+msgid "Admin Configuration"
+msgstr "Configuración de administrador"
+
+#: a6/a6b03ca165eb13d8e338c462e14d23a2b6d01f7f2f2c2b63477832681535e959.php:53
+msgid "Select which roles need to obligatorily use 2FA to log in:"
+msgstr ""
+"Selecciona los roles que necesitan obligatoriamente usar el 2FA para entrar:"
+
+#: a6/a6b03ca165eb13d8e338c462e14d23a2b6d01f7f2f2c2b63477832681535e959.php:69
+msgid "Users with the selected roles will not be able to log in without 2FA."
+msgstr "Los usuarios con roles seleccionados no podrán entrar sin 2FAS."
+
+#: a6/a6b03ca165eb13d8e338c462e14d23a2b6d01f7f2f2c2b63477832681535e959.php:116
+#: a6/a6b03ca165eb13d8e338c462e14d23a2b6d01f7f2f2c2b63477832681535e959.php:168
+#: a6/a6b03ca165eb13d8e338c462e14d23a2b6d01f7f2f2c2b63477832681535e959.php:259
+msgid "Save"
+msgstr "Guardar"
+
+#: a6/a6b03ca165eb13d8e338c462e14d23a2b6d01f7f2f2c2b63477832681535e959.php:141
+msgid "Allow remembering trusted devices."
+msgstr "Permitir recordar dispositivos de confianza."
+
+#: a6/a6b03ca165eb13d8e338c462e14d23a2b6d01f7f2f2c2b63477832681535e959.php:160
+msgid ""
+"Users can remember their device, they will not be asked for the code on "
+"trusted device."
+msgstr ""
+"Los usuarios pueden recordar su dispositivo, no se les pedirá el código en "
+"el dispositivo de confianza."
+
+#: a6/a6b03ca165eb13d8e338c462e14d23a2b6d01f7f2f2c2b63477832681535e959.php:178
+msgid "Enable logging for troubleshooting:"
+msgstr "Habilitar acceso para la solución de problemas:"
+
+#: a6/a6b03ca165eb13d8e338c462e14d23a2b6d01f7f2f2c2b63477832681535e959.php:194
+msgid ""
+"For diagnostic purposes, 2FAS contains an option that turns on logging for "
+"certain features.\n"
+"                    These logs can be helpful for support staff who is "
+"troubleshooting problems."
+msgstr ""
+"Con fines de diagnóstico, el 2FAS contiene una opción que activa el registro "
+"de ciertas características.\n"
+"                    Estos registros pueden ser útiles para el personal de "
+"soporte técnico para resolver problemas."
+
+#: a6/a6b03ca165eb13d8e338c462e14d23a2b6d01f7f2f2c2b63477832681535e959.php:221
+msgid ""
+"I agree to send activity logs to 2FAS for diagnostic purposes and "
+"troubleshooting problems."
+msgstr ""
+"Estoy de acuerdo con enviar los registros de actividad a 2FAS con fines de "
+"diagnóstico y solución de problemas."
+
+#: a6/a6b03ca165eb13d8e338c462e14d23a2b6d01f7f2f2c2b63477832681535e959.php:249
+msgid "I don't want to send any activity logs to 2FAS."
+msgstr "No quiero enviar ningún registro de actividad a 2FAS."
+
+#: aa/aaf0617495246030b97c681dd570c5c558e110054c3202b1eb6affabc9c7a07e.php:50
+msgid ""
+"You are going to disable your two-factor authentication.\n"
+"            Please take note that you will not be asked for the code when "
+"logging in and your trusted devices will be removed.\n"
+"            If you want to turn on two-factor authentication again you will "
+"be able to do it without re-configuring."
+msgstr ""
+"Vas a desactivar tu autenticación en dos pasos.\n"
+"            Ten en cuenta que no se te pedirá un código al iniciar la sesión "
+"y que tus dispositivos de confianza estarán retirados.\n"
+"            Si quieres volver a activar la autenticación en dos pasos, "
+"podrás hacerlo sin necesidad de reconfigurarlo."
+
+#: b0/b07e2b8a5f90b44f796fd42e4f1ae712cc89f21a1b01ad1c5c0f6ca34d958b51.php:45
+msgid ""
+"\n"
+"        2FAS Classic plugin is installed but not configured by the "
+"administrator.\n"
+"        Please ask your administrator to configure 2FAS Classic plugin in "
+"order to\n"
+"        enable two-factor authentication for your account."
+msgstr ""
+"\n"
+"        El plugin 2FAS está instalado pero no está configurado por el "
+"administrador.\n"
+"        Por favor, pide a tu administrador que configure el plugin 2FAS "
+"para\n"
+"        Activar la autenticación en dos pasos para tu cuenta."
+
+#: bd/bdf3150138ff9467c5498540671de4d15e6f9272f3eace263d5467c9c78ee2b8.php:43
+msgid "Not found"
+msgstr "No encontrado"
+
+#: c0/c02e763ea74fd9acf3475acc3aabd99820119baa55cf75f5e4117150a5dd9ebf.php:48
+msgid "Please confirm to proceed."
+msgstr "Por favor, confirma para continuar."
+
+#: c8/c8d4e4cbdf83dcc9527d27753be42c9c206eff8441fceac43c45caf920b86e78.php:43
+msgid "Forbidden"
+msgstr "Prohibido"
+
+#: c8/c8907c352e4e73ed972988af910e3c87da21a35374d5ebfc7fe0af04d4a2e4e7.php:46
+msgid "Call with a code is being made"
+msgstr "Una llamada con el código se está realizando"
+
+#: c8/c8907c352e4e73ed972988af910e3c87da21a35374d5ebfc7fe0af04d4a2e4e7.php:58
+msgid "Please wait for our call with your code at"
+msgstr "Por favor, espera la llamada con tu código"
+
+#: c8/c8907c352e4e73ed972988af910e3c87da21a35374d5ebfc7fe0af04d4a2e4e7.php:65
+msgid "Call me again"
+msgstr "Llamar otra vez"
+
+#: cb/cbcf75f445798f69c39fee77f5e6c2ebcac2c497bfb6812e8139919c8594739c.php:60
+msgid ""
+"You are going to refresh QR code. Please take note that if you configure "
+"2FAS Tokens with this new code, you lose access via devices which were "
+"paired with the old one."
+msgstr ""
+"Vas a actualizar tu código QR. Ten en cuenta que si configuras los Tokens "
+"2FAS con este nuevo código, perderás un acceso a través de los dispositivos "
+"que fueron emparejados con el antiguo."
+
+#: cb/cbcf75f445798f69c39fee77f5e6c2ebcac2c497bfb6812e8139919c8594739c.php:68
+msgid "Don't show me this again."
+msgstr "No me lo enseñes otra vez."
+
+#: df/df5e2da14edd907dbadd020ec20bb8a2e0767ec196bf445629c80a7649684d98.php:43
+msgid "Not allowed"
+msgstr "No está permitido"
+
+#: df/df6edd4b21910aa5e7f11bd1334e8d10f48a8996fd8378b75b66db5cb292fb4c.php:47
+#: df/df6edd4b21910aa5e7f11bd1334e8d10f48a8996fd8378b75b66db5cb292fb4c.php:97
+msgid "Sign Up"
+msgstr "Inscribirse"
+
+#: df/df6edd4b21910aa5e7f11bd1334e8d10f48a8996fd8378b75b66db5cb292fb4c.php:61
+msgid "Your e-mail"
+msgstr "Tu correo"
+
+#: df/df6edd4b21910aa5e7f11bd1334e8d10f48a8996fd8378b75b66db5cb292fb4c.php:73
+msgid "Your password"
+msgstr "Tu contraseña"
+
+#: df/df6edd4b21910aa5e7f11bd1334e8d10f48a8996fd8378b75b66db5cb292fb4c.php:83
+msgid "Confirm password"
+msgstr "Confirmar contraseña"
+
+#: df/df6edd4b21910aa5e7f11bd1334e8d10f48a8996fd8378b75b66db5cb292fb4c.php:90
+msgid "By creating an account you agree to the our %1$s%2$s%3$s."
+msgstr "Al crear una cuenta, usted acepta nuestro %1$s%2$s%3$s."
+
+#: df/df6edd4b21910aa5e7f11bd1334e8d10f48a8996fd8378b75b66db5cb292fb4c.php:90
+msgid "privacy policy"
+msgstr "política de privacidad"
+
+#: df/df6edd4b21910aa5e7f11bd1334e8d10f48a8996fd8378b75b66db5cb292fb4c.php:107
+msgid "Log in to the existing account"
+msgstr "Iniciar sesión con la cuenta existente"
+
+#: e1/e16de84a3cefce49e9cf7b461029132e5f16b42865339ed7f06e547b37ad3c1e.php:107
+#: f1/f1f722a8aa0c7f9129d59e83a01dc527ce6b0fd5fdbb4b80b286df36b995f8b2.php:109
+msgid "Remove configuration"
+msgstr "Retirar la configuración"
+
+#: e1/e16de84a3cefce49e9cf7b461029132e5f16b42865339ed7f06e547b37ad3c1e.php:135
+msgid ""
+"Text Message (SMS) and Voice Call backup will allow you to authenticate to "
+"your WordPress account when you can't use tokens generated by 2FAS "
+"Authenticator."
+msgstr ""
+"Mensajes (SMS) y llamadas permiten autorizar tu cuenta de WordPress en el "
+"caso de no poder utilizar un token generados por 2FAS."
+
+#: e1/e16de84a3cefce49e9cf7b461029132e5f16b42865339ed7f06e547b37ad3c1e.php:145
+msgid "Backup codes - SMS/VMS are already configured."
+msgstr "Códigos de respaldo - SMS/VMS están configurados."
+
+#: e1/e16de84a3cefce49e9cf7b461029132e5f16b42865339ed7f06e547b37ad3c1e.php:149
+msgid "Phone number"
+msgstr "Número de teléfono"
+
+#: e1/e16de84a3cefce49e9cf7b461029132e5f16b42865339ed7f06e547b37ad3c1e.php:155
+msgid "If you want to change phone number, click button below."
+msgstr "Para cambiar el numero de teléfono, haz clic en el botón debajo."
+
+#: e1/e16de84a3cefce49e9cf7b461029132e5f16b42865339ed7f06e547b37ad3c1e.php:159
+msgid "Configure Backup codes - SMS/VMS"
+msgstr "Configura los códigos de respaldo - SMS/VMS"
+
+#: e1/e16de84a3cefce49e9cf7b461029132e5f16b42865339ed7f06e547b37ad3c1e.php:174
+#: f1/f1f722a8aa0c7f9129d59e83a01dc527ce6b0fd5fdbb4b80b286df36b995f8b2.php:175
+msgid "Step 1"
+msgstr "Paso 1"
+
+#: e1/e16de84a3cefce49e9cf7b461029132e5f16b42865339ed7f06e547b37ad3c1e.php:178
+msgid "Add phone number"
+msgstr "Añadir el numero de teléfono"
+
+#: e1/e16de84a3cefce49e9cf7b461029132e5f16b42865339ed7f06e547b37ad3c1e.php:187
+msgid "Enter your phone number."
+msgstr "Introduce tu numero de teléfono."
+
+#: e1/e16de84a3cefce49e9cf7b461029132e5f16b42865339ed7f06e547b37ad3c1e.php:214
+msgid "Send token via sms"
+msgstr "Envie el token por SMS"
+
+#: e1/e16de84a3cefce49e9cf7b461029132e5f16b42865339ed7f06e547b37ad3c1e.php:243
+#: f1/f1f722a8aa0c7f9129d59e83a01dc527ce6b0fd5fdbb4b80b286df36b995f8b2.php:234
+msgid "Step 2"
+msgstr "Paso 2"
+
+#: e1/e16de84a3cefce49e9cf7b461029132e5f16b42865339ed7f06e547b37ad3c1e.php:247
+#: f1/f1f722a8aa0c7f9129d59e83a01dc527ce6b0fd5fdbb4b80b286df36b995f8b2.php:343
+msgid "Enter token"
+msgstr "Introducir el token"
+
+#: e1/e16de84a3cefce49e9cf7b461029132e5f16b42865339ed7f06e547b37ad3c1e.php:256
+msgid ""
+"Select backup services and enter the 6-digit token you received in the SMS."
+msgstr ""
+"Selecciona los servicios de respaldo e introduce un token de 6 dígitos que "
+"has recibido por SMS."
+
+#: e1/e16de84a3cefce49e9cf7b461029132e5f16b42865339ed7f06e547b37ad3c1e.php:311
+#: f1/f1f722a8aa0c7f9129d59e83a01dc527ce6b0fd5fdbb4b80b286df36b995f8b2.php:379
+msgid "Enable"
+msgstr "Activar"
+
+#: e3/e3501a221bafd6b4b61afb724720a1090f06f50c3aa7ecf7f665a7fdf07a5974.php:56
+msgid "Info"
+msgstr "Información"
+
+#: e3/e3501a221bafd6b4b61afb724720a1090f06f50c3aa7ecf7f665a7fdf07a5974.php:66
+msgid ""
+"In order to upgrade plan credit card must be added. Please add credit card "
+"by clicking the button at the top of this page."
+msgstr ""
+"Para poder actualizar el plan, se debe agregar una tarjeta de crédito. Por "
+"favor, agrega la tarjeta de crédito haciendo click en el botón de la parte "
+"superior de esta página."
+
+#: e5/e5dd1d7144c03927a00ef63e7aee0b05284ea1d6e6c02f8506132cebd2f409be.php:50
+msgid "If you log out, you lose plugin configuration. It can't be undone."
+msgstr ""
+"Al cerrar la sesión, se pierde la configuración del plugin. No se puede "
+"deshacer."
+
+#: f1/f1f722a8aa0c7f9129d59e83a01dc527ce6b0fd5fdbb4b80b286df36b995f8b2.php:136
+msgid ""
+"To correctly configure the plugin and log in by means of two-factor "
+"authentication, download 2FAS\n"
+"                    Authenticator app or another application that generates "
+"TOTP tokens (e.g. Google Authenticator), and\n"
+"                    follow the steps below. Remember that 2FAS Authenticator "
+"app largely speeds up the verification\n"
+"                    process and makes it much more convenient, as it enables "
+"you to log in by one click on your mobile,\n"
+"                    without the need of retyping the code."
+msgstr ""
+"Para configurar correctamente el plugin e iniciar sesión mediante la "
+"autenticación en dos pasos, descarga la aplicación\n"
+"                    2FAS Authenticator u otra aplicación que genere los "
+"tokens TOTP (p.ej. Google Authenticator), y\n"
+"                    sigue los pasos debajo. Recuerda que la aplicación 2FAS "
+"Authenticator acelera considerablemente la verificación\n"
+"                    y la hace mucho más cómoda, ya que te permite iniciar "
+"sesión con un solo clic de tu móvil,\n"
+"                    sin necesidad de volver a introducir el código."
+
+#: f1/f1f722a8aa0c7f9129d59e83a01dc527ce6b0fd5fdbb4b80b286df36b995f8b2.php:151
+msgid "2FAS Tokens are already configured."
+msgstr "Los Tokens 2FAS ya están configurados."
+
+#: f1/f1f722a8aa0c7f9129d59e83a01dc527ce6b0fd5fdbb4b80b286df36b995f8b2.php:155
+msgid "If you want to configure another app/device, click button below."
+msgstr ""
+"Si quieres configurar otra aplicación/dispositivo, pulsa el botón debajo."
+
+#: f1/f1f722a8aa0c7f9129d59e83a01dc527ce6b0fd5fdbb4b80b286df36b995f8b2.php:160
+msgid "Configure 2FAS Tokens"
+msgstr "Configura los Tokens 2FAS"
+
+#: f1/f1f722a8aa0c7f9129d59e83a01dc527ce6b0fd5fdbb4b80b286df36b995f8b2.php:179
+msgid "Get the App"
+msgstr "Descargar la aplicación"
+
+#: f1/f1f722a8aa0c7f9129d59e83a01dc527ce6b0fd5fdbb4b80b286df36b995f8b2.php:188
+msgid ""
+"Download 2FAS Authenticator app to your smartphone to start using tokens."
+msgstr ""
+"Descarga la aplicación 2FAS Authenticator a tu móvil para empezar a usar los "
+"tokens."
+
+#: f1/f1f722a8aa0c7f9129d59e83a01dc527ce6b0fd5fdbb4b80b286df36b995f8b2.php:238
+msgid "Scan QR code"
+msgstr "Escanear el código QR"
+
+#: f1/f1f722a8aa0c7f9129d59e83a01dc527ce6b0fd5fdbb4b80b286df36b995f8b2.php:269
+msgid "Click to configure with 2fas app"
+msgstr "Haz click para configurar con 2FAS"
+
+#: f1/f1f722a8aa0c7f9129d59e83a01dc527ce6b0fd5fdbb4b80b286df36b995f8b2.php:273
+msgid "Please, scan the following QR code with your app."
+msgstr "Por favor, escanea el siguiente código QR con tu aplicación."
+
+#: f1/f1f722a8aa0c7f9129d59e83a01dc527ce6b0fd5fdbb4b80b286df36b995f8b2.php:277
+msgid "Instead of using the QR code you can "
+msgstr "En ver de utilizar el código QR, puedes "
+
+#: f1/f1f722a8aa0c7f9129d59e83a01dc527ce6b0fd5fdbb4b80b286df36b995f8b2.php:279
+msgid "Enter your private key manually"
+msgstr "Introduce tu clave privada manualmente"
+
+#: f1/f1f722a8aa0c7f9129d59e83a01dc527ce6b0fd5fdbb4b80b286df36b995f8b2.php:291
+msgid "Show qr code"
+msgstr "Mostar el código QR"
+
+#: f1/f1f722a8aa0c7f9129d59e83a01dc527ce6b0fd5fdbb4b80b286df36b995f8b2.php:320
+msgid "Refresh"
+msgstr "Actualizar"
+
+#: f1/f1f722a8aa0c7f9129d59e83a01dc527ce6b0fd5fdbb4b80b286df36b995f8b2.php:352
+msgid ""
+"Enter the 6-digit token generated by the app and enable TOTP protection."
+msgstr ""
+"Introduce el token de 6 dígitos generado por la aplicación y activa la "
+"protección TOTP."
+
+#: fc/fc1e08dfc92c0d18b1080dfbda2cff0238b48c36b22b4215104cbd486c752244.php:47
+#: fc/fc1e08dfc92c0d18b1080dfbda2cff0238b48c36b22b4215104cbd486c752244.php:70
+msgid "Reset Password"
+msgstr "Recuperar contraseña"
+
+#: fc/fc1e08dfc92c0d18b1080dfbda2cff0238b48c36b22b4215104cbd486c752244.php:80
+msgid "I have a 2FAS account"
+msgstr "Ya tengo una cuenta 2FAS"
+
+#. Plugin URI of the plugin
+msgid "https://wordpress.org/plugins/2fas/"
+msgstr "https://wordpress.org/plugins/2fas/"
+
+#. Description of the plugin
+msgid ""
+"2FAS strengthens WordPress admin security by requiring an additional "
+"verification code on untrusted devices."
+msgstr ""
+"2FAS fortalece la seguridad del administrador de WordPress al requerir un "
+"código de verificación adicional en dispositivos no confiables."
+
+#. Author of the plugin
+msgid "Two Factor Authentication Service Inc."
+msgstr "Two Factor Authentication Service Inc."
+
+#. Author URI of the plugin
+msgid "https://2fas.com"
+msgstr "https://2fas.com"
+
+#: src/Hooks/Add_Custom_Column.php:49
+msgid "Edit your 2FAS settings"
+msgstr "Editar la configuración de 2FAS"
+
+#: src/Hooks/Add_Custom_Column.php:81
+msgid "Active"
+msgstr "Activar el plan"
+
+#: src/Hooks/Add_Custom_Column.php:81
+msgid "Inactive"
+msgstr "Inactivo"
+
+#: src/Hooks/Admin_Menu_Action.php:37
+msgid "Dashboard"
+msgstr "Tablero"
+
+#: src/Hooks/Admin_Menu_Action.php:46
+msgid "Admin settings"
+msgstr "Configuraciones de administrador"
+
+#: src/Hooks/Admin_Menu_Action.php:55
+msgid "Personal settings"
+msgstr "Configuraciones personales"
+
+#: src/Hooks/Enqueue_Scripts_Action.php:233
+msgid "January"
+msgstr "Enero"
+
+#: src/Hooks/Enqueue_Scripts_Action.php:234
+msgid "February"
+msgstr "Febrero"
+
+#: src/Hooks/Enqueue_Scripts_Action.php:235
+msgid "March"
+msgstr "Marzo"
+
+#: src/Hooks/Enqueue_Scripts_Action.php:236
+msgid "April"
+msgstr "Abril"
+
+#: src/Hooks/Enqueue_Scripts_Action.php:237
+msgid "May"
+msgstr "Mayo"
+
+#: src/Hooks/Enqueue_Scripts_Action.php:238
+msgid "June"
+msgstr "Junio"
+
+#: src/Hooks/Enqueue_Scripts_Action.php:239
+msgid "July"
+msgstr "Julio"
+
+#: src/Hooks/Enqueue_Scripts_Action.php:240
+msgid "August"
+msgstr "Agosto"
+
+#: src/Hooks/Enqueue_Scripts_Action.php:241
+msgid "September"
+msgstr "Septiembre"
+
+#: src/Hooks/Enqueue_Scripts_Action.php:242
+msgid "October"
+msgstr "Octubre"
+
+#: src/Hooks/Enqueue_Scripts_Action.php:243
+msgid "November"
+msgstr "Noviembre"
+
+#: src/Hooks/Enqueue_Scripts_Action.php:244
+msgid "December"
+msgstr "Diciembre"
+
+#: src/Hooks/Enqueue_Scripts_Action.php:254
+msgid "Active Users"
+msgstr "Usuarios activos"
+
+#: src/Hooks/Enqueue_Scripts_Action.php:255
+msgid "Inactive Users"
+msgstr "Usuarios inactivos"
+
+#: src/Hooks/Enqueue_Scripts_Action.php:256
+msgid "Migrated users"
+msgstr "Usuarios migrados"
+
+#: src/Hooks/Enqueue_Scripts_Action.php:257
+msgid "Migration users in progress"
+msgstr "Usuarios de migración en curso"
+
+#: src/Hooks/Enqueue_Scripts_Action.php:258
+msgid "Migration users completed"
+msgstr "Usuarios de migración completados"
+
+#: src/Http/Controllers/Admin/Dashboard_Controller.php:162
+msgid "User migration has already been done"
+msgstr "La migración de usuarios ya se ha realizado"
+
+#: src/Notifications/Notification.php:33 src/Notifications/Notification.php:34
+msgid "here"
+msgstr "aquí"
+
+#. translators: %1$s: Link to create account page %2$s Html tag 3%$s Html tag
+#: src/Notifications/Notification.php:40
+msgid "Please click %1$s to go to the %2$s2FAS Admin%3$s"
+msgstr "Haz click %1$s para ir a %2$sAdministrador 2FAS%3$s"
+
+#: src/Notifications/Notification.php:45
+msgid "You have been logged in to your 2FAS account."
+msgstr "Has iniciado sesión en tu cuenta 2FAS."
+
+#: src/Notifications/Notification.php:46
+msgid "You have been logged out from 2FAS account."
+msgstr "Has cerrado sesión de tu cuenta 2FAS."
+
+#: src/Notifications/Notification.php:47
+msgid "2FAS Classic plugin has been enabled."
+msgstr "El plugin 2FAS Classic ha sido activado."
+
+#: src/Notifications/Notification.php:48
+msgid "2FAS Classic plugin has been disabled."
+msgstr "El plugin 2FAS Classic ha sido desactivado."
+
+#: src/Notifications/Notification.php:49
+msgid "CSRF token is invalid."
+msgstr "El token CSRF no está valido."
+
+#: src/Notifications/Notification.php:50
+msgid "Invalid AJAX request."
+msgstr "Solicitud AJAX inválida."
+
+#: src/Notifications/Notification.php:51
+msgid "Plan has been changed."
+msgstr "El plan ha cambiado."
+
+#: src/Notifications/Notification.php:52
+msgid "Credit card required to do this action."
+msgstr "Se requiere una tarjeta de crédito para realizar esta acción."
+
+#: src/Notifications/Notification.php:53
+msgid "Plan has been automatically downgraded because there is no credit card."
+msgstr ""
+"El plan se ha degradado automáticamente por falta de tarjeta de crédito."
+
+#: src/Notifications/Notification.php:54
+msgid ""
+"Plugin has been disabled by administrator. Configuration can be changed but "
+"it will be applied when administrator enables plugin."
+msgstr ""
+"El plugin ha sido desactivado por el administrador. La configuración puede "
+"cambiar, pero se aplicará cuando el administrador habilite el plugin."
+
+#: src/Notifications/Notification.php:55
+msgid "Account already exists."
+msgstr "Cuenta ya existe."
+
+#: src/Notifications/Notification.php:56
+msgid "This action is available only in premium plan."
+msgstr "Esta acción está disponible solamente en el plan premium."
+
+#: src/Notifications/Notification.php:57
+msgid "Plugin data is inconsistent."
+msgstr "Los datos del plugin son inconsistentes."
+
+#: src/Notifications/Notification.php:58
+msgid "Session tables does not exists."
+msgstr "Sesión no existe."
+
+#: src/Notifications/Notification.php:59
+msgid "Users with the selected roles have been obligated to use 2FA."
+msgstr "Los usuarios con roles seleccionados han sido obligados a usar 2FAS."
+
+#: src/Notifications/Notification.php:60
+msgid "Error logging has been enabled."
+msgstr "Se ha activado el registro de errores."
+
+#: src/Notifications/Notification.php:61
+msgid "Error logging has been disabled."
+msgstr "Se ha desactivado el registro de errores."
+
+#: src/Notifications/Notification.php:62
+msgid "Cannot perform this action because second factor is disabled."
+msgstr ""
+"No se puede realizar esta acción porque el segundo factor está desactivado."
+
+#. translators: %1$s: Html tag %2$s Html tag
+#: src/Notifications/Notification.php:65
+msgid ""
+"Starting from next major version (2.6.0) the 2FAS plugin will not work with "
+"your version of PHP. %1$sClick here to learn more about updating PHP%2$s."
+msgstr ""
+"A partir de la próxima versión principal (2.6.0) el plugin 2FAS plugin no "
+"funcionará con tu versión de PHP. %1$sHaz clic aquí para aprender más sobre "
+"la actualización de PHP%2$s."
+
+#: src/Notifications/Notification.php:69
+msgid ""
+"Before starting to use 2FAS plugin, you have to create 2FAS account or log "
+"in to the existing one."
+msgstr ""
+"Antes de empezar a usar el plugin 2FAS, tienes que crear la cuenta 2FAS o "
+"conectar a la ya existente."
+
+#: src/Notifications/Notification.php:70
+msgid ""
+"If you entered a valid e-mail, you will receive the instructions to reset "
+"your password. Please check your inbox."
+msgstr ""
+"Si has introducido un correo electrónico válido, recibirás las instrucciones "
+"para restablecer tu contraseña. Por favor, comprueba tu bandeja de entrada."
+
+#: src/Notifications/Notification.php:73
+msgid "Please enter your e-mail."
+msgstr "Por favor, introduce tu correo electrónico."
+
+#: src/Notifications/Notification.php:74
+msgid "E-mail is invalid."
+msgstr "El correo no es válido."
+
+#. translators: %1$s Html tag %2$s: Link to reset password page %3$s Html tag
+#: src/Notifications/Notification.php:77
+msgid "E-mail already exists, click %1$s%2$s%3$s to reset your password."
+msgstr ""
+"El correo ya existe. Haz click %1$s%2$s%3$s para restablecer tu contraseña."
+
+#: src/Notifications/Notification.php:82
+msgid "Please enter your password."
+msgstr "Por favor, introduce tu contraseña."
+
+#: src/Notifications/Notification.php:83
+msgid "Password confirmation does not match password."
+msgstr "Las contraseñas no coinciden."
+
+#: src/Notifications/Notification.php:84
+msgid "Password should have at least 6 characters."
+msgstr "La contraseña debe tener al menos 6 caracteres."
+
+#: src/Notifications/Notification.php:85
+msgid "Invalid credentials entered."
+msgstr "Se ha introducido credenciales inválidas."
+
+#: src/Notifications/Notification.php:86
+msgid "Wrong token format, please check entered token."
+msgstr "Formato de token incorrecto, por favor verifica el token introducido."
+
+#: src/Notifications/Notification.php:87
+msgid "Token cannot be empty."
+msgstr "Token no puede estar vacío."
+
+#: src/Notifications/Notification.php:88
+msgid "TOTP secret is empty."
+msgstr "TOTP secreto está vacío."
+
+#: src/Notifications/Notification.php:89
+msgid "Invalid TOTP secret format."
+msgstr "El formato de TOTP secreto no está válido."
+
+#: src/Notifications/Notification.php:90
+msgid "Wrong token entered, please enter the token again."
+msgstr "El token está incorrecto, por favor introduce el token otra vez."
+
+#: src/Notifications/Notification.php:91
+msgid "Wrong code entered, please try again."
+msgstr "El token está incorrecto, por favor inténtalo de nuevo."
+
+#: src/Notifications/Notification.php:92
+msgid "Code cannot be empty."
+msgstr "El código no puede estar vacío."
+
+#: src/Notifications/Notification.php:93
+msgid "Code is not in a valid format or there is no valid authentication."
+msgstr ""
+"El código no tiene un formato válido o no hay una autenticación válida."
+
+#: src/Notifications/Notification.php:96
+msgid "Please provide your phone number before you enter the code."
+msgstr ""
+"Por favor, introduce tu número de teléfono antes de introducir el código."
+
+#: src/Notifications/Notification.php:100
+msgid "Your browser has been added to the trusted devices list."
+msgstr "Tu navegador te ha añadido a la lista de dispositivos de confianza."
+
+#: src/Notifications/Notification.php:101
+msgid "Your browser is already in the trusted devices list."
+msgstr "Tu navegador ya está en la lista de dispositivos de confianza."
+
+#: src/Notifications/Notification.php:102
+msgid "Trusted device has been removed."
+msgstr "Dispositivo de confianza ha sido retirado."
+
+#: src/Notifications/Notification.php:103
+msgid "Trusted devices has been enabled."
+msgstr "Dispositivo de confianza ha sido retirado."
+
+#: src/Notifications/Notification.php:104
+msgid "Trusted devices has been disabled."
+msgstr "Se ha desactivado el registro de errores."
+
+#: src/Notifications/Notification.php:107
+msgid "Two-factor authentication has been enabled."
+msgstr "La autenticación en dos pasos ha sido activada."
+
+#: src/Notifications/Notification.php:108
+msgid "Two-factor authentication has been disabled."
+msgstr "La autenticación en dos pasos ha sido desactivada."
+
+#: src/Notifications/Notification.php:109
+msgid ""
+"Two-factor authentication cannot be enabled because it is not configured."
+msgstr ""
+"La autenticación en dos pasos no puede ser activada porque no está "
+"configurada."
+
+#: src/Notifications/Notification.php:110
+msgid "Backup codes - SMS/VMS have been enabled."
+msgstr "Códigos de respaldo - SMS/VMS han sido activados."
+
+#: src/Notifications/Notification.php:111
+msgid "Backup codes - SMS/VMS have been disabled."
+msgstr "Códigos de respaldo - SMS/VMS han sido desactivados."
+
+#: src/Notifications/Notification.php:112
+msgid ""
+"Two-factor authentication via SMS/VMS has been disabled. In order to use two-"
+"factor authentication 2FAS Tokens method must be enabled."
+msgstr ""
+"La autenticación en dos pasos a través de SMS/VMS ha sido desactivada. Para "
+"usar la autenticación en dos pasos, el método de 2FAS Tokens debe estar "
+"activado."
+
+#: src/Notifications/Notification.php:113
+msgid "Backup codes - offline have been enabled."
+msgstr "Códigos de respaldo - offline han sido activados."
+
+#: src/Notifications/Notification.php:114
+msgid "Backup codes - offline have been disabled."
+msgstr "Códigos de respaldo - offline han sido desactivados."
+
+#: src/Notifications/Notification.php:115
+msgid "Configuration has been removed successfully."
+msgstr "La configuración eliminada con éxito."
+
+#: src/Notifications/Notification.php:116
+msgid "Error occurred during configuration removing."
+msgstr "Ha ocurrido un error durante la eliminación de la configuración."
+
+#: src/Notifications/Notification.php:117
+msgid "Two-factor authentication has been configured and enabled."
+msgstr "La configuración en dos pasa ha sido configurada y activada."
+
+#: src/Notifications/Notification.php:118
+msgid "Backup codes - SMS/VMS have been configured and enabled."
+msgstr "Código de respaldo - SMS/VMS han sido configurados y activados."
+
+#: src/Notifications/Notification.php:119
+msgid "You cannot disable two-factor authentication because 2FA is obligatory."
+msgstr ""
+"2FAS es obligatoria. No puedes desactivar la autenticación en dos pasos."
+
+#: src/Notifications/Notification.php:120
+msgid "You cannot remove configuration because 2FA is obligatory."
+msgstr "2FAS es obligatoria. No puedes retirar la autenticación en dos pasos."
+
+#: src/Notifications/Notification.php:121
+msgid "Please enable two-factor authentication because it is obligatory."
+msgstr "Por favor, activa la autenticación en dos pasos porque es obligatoria."
+
+#: src/Notifications/Notification.php:122
+msgid "Please enable 2FAS tokens in order to disable legacy mode."
+msgstr "Por favor, activa los tokens 2FAS para desactivar el modo de legado."
+
+#: src/Notifications/Notification.php:123
+msgid "Please enable 2FAS tokens because they are obligatory."
+msgstr "Por favor, habilita los tokens 2FAS porque son obligatorios."
+
+#: src/Notifications/Notification.php:124
+msgid "Please configure two-factor authentication because it is obligatory."
+msgstr ""
+"Por favor, configura la autenticación en dos pasos porque es obligatoria."
+
+#: src/Notifications/Notification.php:125
+msgid "Please configure 2FAS tokens in order to disable legacy mode."
+msgstr ""
+"Por favor, configura los tokens 2FAS para desactivar el modo de legado."
+
+#: src/Notifications/Notification.php:126
+msgid "Please configure 2FAS tokens because they are obligatory."
+msgstr "Por favor, configura los tokens 2FAS porque son obligatorios."
+
+#: src/Notifications/Notification.php:129
+msgid "Something went wrong. Please try again."
+msgstr "Ha ocurrido un problema. Por favor, intenta de nuevo."
+
+#: src/Notifications/Notification.php:130
+msgid "Something went wrong with database."
+msgstr "Ha ocurrido un problema con la base de datos."
+
+#: src/Notifications/Notification.php:131
+msgid "Could not get client data."
+msgstr "No se podía obtener los datos del cliente."
+
+#: src/Notifications/Notification.php:132
+msgid "Could not get integration data."
+msgstr "No se podía obtener los datos de integración."
+
+#: src/Notifications/Notification.php:133
+msgid "Private key cannot be empty."
+msgstr "La clave privada no puede estar vacía."
+
+#: src/Notifications/Notification.php:134
+msgid "User has not been found."
+msgstr "El usuario no ha sido encontrado."
+
+#: src/Notifications/Notification.php:135
+msgid "Could not get integration user."
+msgstr "No se podía obtener el usuario de integración."
+
+#: src/Notifications/Notification.php:136
+msgid "OAuth token not found."
+msgstr "El token OAuth no encontrado."
+
+#: src/Notifications/Notification.php:137
+msgid "Could not get data."
+msgstr "No se podía obtener los datos."
+
+#: src/Notifications/Notification.php:138
+msgid "2FAS plugin could not find a template."
+msgstr "El plugin 2FAS no pudo encontrar una plantilla."
+
+#: src/Notifications/Notification.php:139
+msgid "Error occurred in 2FAS plugin during template compilation."
+msgstr ""
+"Ha ocurrido un error en plugin 2FAS durante la compilación de la plantilla."
+
+#: src/Notifications/Notification.php:140
+msgid "Error occurred in 2FAS plugin during template rendering."
+msgstr ""
+"Ha ocurrido un error en plugin 2FAS durante el renderizado de la plantilla."
+
+#: src/Notifications/Notification.php:141
+msgid "Your authentication session has expired. Please log in again."
+msgstr ""
+"Tu sesión de autenticación ha expirado. Por favor, vuelve a iniciar sesión."
+
+#: src/Notifications/Notification.php:142
+msgid "Attempt limit exceeded. Your account has been blocked for 5 minutes."
+msgstr "Límite de intentos excedido. Tu cuenta está bloqueada por 5 minutos."
+
+#: src/Notifications/Notification.php:143
+msgid ""
+"You cannot log in with offline code because this method is disabled or you "
+"don't have any codes."
+msgstr ""
+"No puedes iniciar sesión con códigos offline porque este método está "
+"desactivado o no tienes ningún código. "
+
+#. translators: %s: Required extension
+#: src/Requirements/Extensions/Extension.php:17
+msgid "2FAS plugin requires %s extension to work properly."
+msgstr "El plugin 2FAS requiere la extensión %s para funcionar correctamente."
+
+#. translators: %s: Minimum PHP version
+#: src/Requirements/Versions/PHP_Version.php:28
+msgid ""
+"2FAS plugin does not support your PHP version. Minimum required version is "
+"%s."
+msgstr ""
+"El plugin 2FAS no está compatible con tu versión de PHP. La versión mínima "
+"requerida es %s."
+
+#. translators: %s: Minimum WordPress version
+#: src/Requirements/Versions/WP_Version.php:28
+msgid ""
+"2FAS plugin does not support your WordPress version. Minimum required "
+"version is %s."
+msgstr ""
+"El plugin 2FAS no está compatible con tu versión de WordPress. La versión "
+"mínima requerida es %s."
+
+#: start.php:44
+msgid ""
+"Migrate all users from 2FAS Classic to 2FAS Prime plugin! You can do that in "
+"2FAS Classic dashboard, by clicking green 'Migrate' button."
+msgstr ""
+"¡Migre a todos los usuarios del complemento 2FAS Classic a 2FAS Prime! Puede "
+"hacerlo en el panel de control de 2FAS Classic, haciendo clic en el botón "
+"verde 'Migrar'."
+
+#~ msgid "This site is secured by 2FAS"
+#~ msgstr "Este sitio está protegido por 2FAS"
+
+#~ msgid "2FAS — Two Factor Authentication"
+#~ msgstr "2FAS - Autenticación en Dos Pasos"
+
+#~ msgid "Users of this 2FAS plugin"
+#~ msgstr "Usuarios de ese plugin de 2FAS"
+
+#~ msgid ""
+#~ "\n"
+#~ "        2FAS plugin is installed but not configured by the "
+#~ "administrator.\n"
+#~ "        Please ask your administrator to configure 2FAS plugin in order "
+#~ "to\n"
+#~ "        enable two-factor authentication for your account."
+#~ msgstr ""
+#~ "\n"
+#~ "        El plugin 2FAS está instalado pero no está configurado por el "
+#~ "administrador.\n"
+#~ "        Por favor, pide a tu administrador que configure el plugin 2FAS "
+#~ "para\n"
+#~ "        Activar la autenticación en dos pasos para tu cuenta."
+
+#~ msgid "2FAS plugin has been enabled."
+#~ msgstr "El plugin 2FAS ha sido activado."
+
+#~ msgid "2FAS plugin has been disabled."
+#~ msgstr "El plugin 2FAS ha sido desactivado."
+
+#~ msgid ""
+#~ "2FAS Prime plugin has been found as active, you can migrate users from "
+#~ "2FAS Classic to 2FAS Prime plugin in dashboard."
+#~ msgstr ""
+#~ "Se ha encontrado que el complemento 2FAS Prime está activo, puede migrar "
+#~ "usuarios del complemento 2FAS Classic al complemento 2FAS Prime en el "
+#~ "panel de control."

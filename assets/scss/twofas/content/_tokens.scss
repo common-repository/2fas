@@ -1,0 +1,63 @@
+@import '../../includes/variables';
+
+.twofas-stores-download {
+  height: auto;
+  overflow: hidden;
+  margin-top: 25px;
+
+  @media all and (max-width: $screen-xs-max) {
+    display: inline-block;
+    margin-top: 15px;
+  }
+
+  a {
+    display: block;
+    float: left;
+    margin-right: 20px;
+
+    @media all and (max-width: 400px) {
+      display: inline-block;
+      float: none;
+      margin: 10px 0 0 0;
+
+      &:first-of-type {
+        margin-top: 0;
+      }
+    }
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+}
+
+.twofas-content-item {
+  &-qr {
+    position: relative;
+    height: 100%;
+
+    &:before {
+      content: '';
+      display: block;
+      padding-top: 100%;
+    }
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      bottom: 0;
+      right: 0;
+      display: inline-block;
+      border: 1px solid #e5e5e6;
+      padding: 6px;
+      transform: translateX(-50%);
+      max-height: 100%;
+      image-rendering: pixelated;
+    }
+  }
+
+  .twofas-buttons-bottom {
+    display: inline-block;
+  }
+}

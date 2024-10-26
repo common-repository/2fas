@@ -1,0 +1,12 @@
+{% extends 'modals/confirmation/confirmation-base.html.twig' %}
+
+{% block modal_name %}twofas-delete-totp-modal{% endblock %}
+{% block message %}
+    {{ esc_html__(
+        'You are going to remove your two-factor authentication configuration.
+        Please take note that if you want to re-enable two-factor authentication you will have to configure it again.',
+        '2fas'
+    )
+    }}
+
+{% endblock %}

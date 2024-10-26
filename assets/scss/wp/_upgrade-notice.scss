@@ -1,0 +1,16 @@
+@import '../includes/variables';
+
+.update-message {
+  .twofas-upgrade-notice {
+    & + p {
+      display: none;
+    }
+
+    p {
+      &::before {
+        content: '';
+        margin-right: 0;
+      }
+    }
+  }
+}

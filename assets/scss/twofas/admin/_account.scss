@@ -1,0 +1,60 @@
+@import '../../includes/variables';
+
+&-account-wrapper {
+  .twofas-account {
+    background: $TF_Admin_Action_Bar_Background_Color;
+    color: $TF_Admin_Action_Bar_Color;
+    font-size: 0;
+    padding: 20px 15px;
+    margin-bottom: 30px;
+
+    &-col {
+      display: inline-block;
+
+      @media all and (max-width: 600px) {
+        display: block;
+        text-align: center;
+      }
+
+      &.twofas-disable-container {
+        margin-top: 9px;
+
+        @media all and (max-width: 600px) {
+          float: none !important;
+          margin-top: 15px;
+        }
+      }
+
+      .twofas-email,
+      .twofas-plan {
+        @media all and (max-width: 380px) {
+          display: block;
+        }
+      }
+
+      .twofas-plan-modal {
+        @media all and (max-width: 480px) {
+          display: block;
+        }
+      }
+
+      p {
+        display: inline-block;
+        font-size: 14px;
+        line-height: 24px;
+      }
+
+      form {
+        display: inline-block;
+      }
+    }
+
+    &-row {
+      @media all and (max-width: 380px) {
+        &:not(:first-of-type) {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}

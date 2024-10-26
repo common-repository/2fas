@@ -1,0 +1,42 @@
+@import 'variables.scss';
+
+ul {
+  &.twofas-list-inline {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    &.twofas-list-spacer {
+      li {
+        padding: 0 30px;
+        border-right: 1px solid $TF_List_Inline_Spacer_Border;
+
+        &:first-of-type {
+          padding-left: 0;
+        }
+
+        &:last-of-type {
+          border-right: 0;
+        }
+
+        .twofas-learn-more {
+          font-size: 10px;
+        }
+      }
+    }
+
+    li {
+      display: block;
+      float: left;
+      margin: 0;
+      padding: 0;
+
+      a {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}

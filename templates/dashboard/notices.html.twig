@@ -1,0 +1,11 @@
+{% for error in flash.get_messages('error') %}
+    <div class="notice notice-error error is-dismissible">
+        <p>{{ error | raw}}</p>
+    </div>
+{% endfor %}
+
+{% for message in flash.get_messages('success') %}
+    <div class="notice notice-success updated is-dismissible">
+        <p>{{ message | raw }}</p>
+    </div>
+{% endfor %}

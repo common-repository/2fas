@@ -1,0 +1,370 @@
+{% extends "dashboard/admin/admin-base.html.twig" %}
+
+{% block page %}
+    <div class="twofas-admin-account-wrapper">
+        <h2>{{ esc_html__('Account', '2fas') }}</h2>
+
+        <div class="twofas-account">
+            <div class="twofas-account-col">
+                <div class="twofas-account-row">
+                    <p>
+                        <strong>{{ esc_html__('This 2FAS account is managed by:', '2fas') }}</strong>
+                        <span class="twofas-email">{{ twofas_email }}</span>
+                    </p>
+                </div>
+                <div class="twofas-account-row">
+                    <p class="twofas-plan">
+                        <strong>{{ esc_html__('Current plan', '2fas') }}:</strong>
+                        {% if is_plan_premium %}
+                            <span>{{ esc_html__('Premium', '2fas')|upper }}</span>
+                        {% else %}
+                            <span>{{ esc_html__('Basic', '2fas')|upper }}</span>
+                        {% endif %}
+                    </p>
+                </div>
+                <div class="twofas-account-row">
+                    {% if has_client_card %}
+                        <p class="twofas-credit-card">
+                            <strong>{{ esc_html__('Credit Card', '2fas') }}: </strong>
+                            <span>{{ credit_card }}</span>
+                        </p>
+                        {% set card_button = esc_html__('Change / Remove Card', '2fas') %}
+                    {% else %}
+                        <p class="twofas-credit-card">
+                            <strong>{{ esc_html__('Credit Card', '2fas') }}: </strong>
+                            <span>{{ esc_html__('None', '2fas') }}</span>
+                        </p>
+                        {% set card_button = esc_html__('Add Credit Card', '2fas') %}
+                    {% endif %}
+                    <button class="twofas-btn twofas-upgrade-btn js-open-plan-modal">{{ card_button }}</button>
+                </div>
+            </div>
+            <div class="twofas-account-col twofas-pull-right twofas-disable-container">
+                {% if true == is_plugin_enabled %}
+                    <form action="{{ create_url(constant('TwoFAS\\TwoFAS\\Http\\Action_Index::SUBMENU_DASHBOARD'), constant('TwoFAS\\TwoFAS\\Http\\Action_Index::ACTION_DISABLE_PLUGIN')) }}"
+                          method="post" class="js-waiting-button">
+                        {{ create_form_nonce(constant('TwoFAS\\TwoFAS\\Http\\Action_Index::ACTION_DISABLE_PLUGIN')) | raw }}
+                        <button type="submit" class="twofas-btn twofas-disable-btn">
+                            <i class="twofas-icon twofas-icon-turn-on-off"></i>
+                            <span>{{ esc_html__('Disable 2FAS', '2fas') }}</span>
+
+                            <span class="twofas-spinner-button">
+                                <span class="twofas-spinner-button-bounce-1"></span>
+                                <span class="twofas-spinner-button-bounce-2"></span>
+                                <span class="twofas-spinner-button-bounce-3"></span>
+                            </span>
+                        </button>
+                    </form>
+                {% else %}
+                    <form action="{{ create_url(constant('TwoFAS\\TwoFAS\\Http\\Action_Index::SUBMENU_DASHBOARD'), constant('TwoFAS\\TwoFAS\\Http\\Action_Index::ACTION_ENABLE_PLUGIN')) }}"
+                          method="post" class="js-waiting-button">
+                        {{ create_form_nonce(constant('TwoFAS\\TwoFAS\\Http\\Action_Index::ACTION_ENABLE_PLUGIN')) | raw }}
+                        <button type="submit" class="twofas-btn twofas-enable-btn">
+                            <i class="twofas-icon twofas-icon-turn-on-off"></i>
+                            <span>{{ esc_html__('Enable 2FAS', '2fas') }}</span>
+
+                            <span class="twofas-spinner-button">
+                                <span class="twofas-spinner-button-bounce-1"></span>
+                                <span class="twofas-spinner-button-bounce-2"></span>
+                                <span class="twofas-spinner-button-bounce-3"></span>
+                            </span>
+                        </button>
+                    </form>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="twofas-admin-users-wrapper">
+                    <h2>{{ esc_html__('Users of this 2FAS Classic plugin', '2fas') }}</h2>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="twofas-admin-users-wrapper">
+                {% if can_migrate_user and statistics['active_users_count'] > 0 %}
+                    <div class="twofas-migrate-users-box">
+                        <button type="button" class="twofas-btn twofas-enable-btn js-open-migrate-users-modal">{{ esc_html__('Migrate users', '2fas') }}</button>
+                    </div>
+                {% endif %}
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="twofas-admin-video-wrapper">
+                    <h2>{{ esc_html__('Learn how 2FAS works', '2fas') }}</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="twofas-admin-users-wrapper">
+                    <div class="twofas-users twofas-anim-off">
+                        <div id="js-legend"></div>
+                        <div class="twofas-chart-container">
+                            <canvas id="myChart"></canvas>
+                        </div>
+                    </div>
+
+                    <div class="twofas-stats-data">
+                        <input type="hidden" class="js-active-users-count"
+                               value="{{ statistics['active_users_count'] }}">
+                        <input type="hidden" class="js-inactive-users-count"
+                               value="{{ statistics['inactive_users_count'] }}">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="twofas-admin-video-wrapper">
+                    <div class="twofas-video">
+                        <div class="twofas-video-player">
+                            <div class="twofas-video-player-content content">
+                                <video
+                                        id="my-player"
+                                        class="video-js"
+                                        controls
+                                        preload="auto"
+                                        poster="{{ assets_url }}images/player_background.png"
+                                        data-setup='{}'>
+                                    <source src="https://2fas.com/video/twofas-video-white.mp4"
+                                            type="video/mp4"></source>
+                                    <source src="https://2fas.com/video/twofas-video-white.webm"
+                                            type="video/webm"></source>
+                                    <source src="https://2fas.com/video/twofas-video-white.ogv"
+                                            type="video/ogg"></source>
+                                    <p class="vjs-no-js">
+                                        To view this video please enable JavaScript, and consider upgrading to a
+                                        web browser that
+                                        <a href="http://videojs.com/html5-video-support/" target="_blank" rel="noreferrer noopener">
+                                            supports HTML5 video
+                                        </a>
+                                    </p>
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="twofas-admin-plans-wrapper">
+                    <h2>{{ esc_html__('Manage authentication plans', '2fas') }}</h2>
+
+                    <div class="twofas-plans">
+                        <table{% if is_plan_premium %} class="twofas-active-premium"{% else %} class="twofas-active-free"{% endif %}>
+                            <thead>
+                            <tr>
+                                <th>{{ esc_html__('Authentication factors', '2fas')|upper }}</th>
+                                <th class="twofas-basic">{{ esc_html__('Basic', '2fas')|upper }}</th>
+                                <th class="twofas-premium">{{ esc_html__('Premium', '2fas')|upper }}</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>
+                                    <div class="twofas-cell-icon">
+                                        <i class="twofas-icon twofas-icon-twofas-auth"></i>
+                                    </div>
+                                    <div class="twofas-cell-content">
+                                        <h6>2FAS Authenticator</h6>
+                                        <p>{{ esc_html__('Installation of the 2FAS Authenticator mobile application or Google
+                                            Authenticator enables you to log in to a WordPress account using TOTP
+                                            tokens, which increases the protection level of your website.', '2fas') }}</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <i class="twofas-icon twofas-icon-tick-admin"></i>
+                                </td>
+                                <td>
+                                    <i class="twofas-icon twofas-icon-tick-admin"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="twofas-cell-icon">
+                                        <i class="twofas-icon twofas-icon-offline-codes"></i>
+                                    </div>
+                                    <div class="twofas-cell-content">
+                                        <h6>{{ esc_html__('Offline codes', '2fas') }}</h6>
+                                        <p>{{ esc_html__('If you lose your smartphone or delete an app, you can log in to your account
+                                            using offline codes. Anytime you will generate 5 codes in the "Backup codes"
+                                            bookmark.', '2fas')|raw }}</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <i class="twofas-icon twofas-icon-tick-admin"></i>
+                                </td>
+                                <td>
+                                    <i class="twofas-icon twofas-icon-tick-admin"></i>
+                                </td>
+                            </tr>
+                            <tr class="twofas-premium twofas-downgrade">
+                                <td>
+                                    <div class="twofas-tick-content">
+                                        {% if is_plan_premium %}
+                                            <form action="{{ create_url(constant('TwoFAS\\TwoFAS\\Http\\Action_Index::SUBMENU_DASHBOARD'), constant('TwoFAS\\TwoFAS\\Http\\Action_Index::ACTION_DOWNGRADE_PLAN')) }}"
+                                                  method="post"
+                                                  {% if number_of_users_with_enabled_sms_backup > 0 %}class="js-open-downgrade-modal"{% endif %}>
+                                                {{ create_form_nonce(constant('TwoFAS\\TwoFAS\\Http\\Action_Index::ACTION_DOWNGRADE_PLAN')) | raw }}
+                                                <input type="submit" class="twofas-btn twofas-admin-table-btn"
+                                                       value="{{ esc_attr__('Downgrade to basic', '2fas')|upper }}"/>
+                                            </form>
+                                            <p>{{ esc_html__('Free', '2fas')|upper }}</p>
+                                        {% else %}
+                                            <h5>{{ esc_html__('Free', '2fas')|upper }}</h5>
+                                        {% endif %}
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="twofas-premium">
+                                <td>
+                                    <div class="twofas-cell-icon">
+                                        <i class="twofas-icon twofas-icon-twofas-auth"></i>
+                                    </div>
+                                    <div class="twofas-cell-content">
+                                        <h6>2FAS Authenticator</h6>
+                                        <p>{{ esc_html__('Installation of the 2FAS Authenticator mobile application or Google
+                                            Authenticator enables you to log in to a WordPress account using TOTP
+                                            tokens, which increases the protection level of your website.', '2fas') }}</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <i class="twofas-icon twofas-icon-tick-admin"></i>
+                                </td>
+                                <td>
+                                    <i class="twofas-icon twofas-icon-tick-admin"></i>
+                                </td>
+                            </tr>
+                            <tr class="twofas-premium">
+                                <td>
+                                    <div class="twofas-cell-icon">
+                                        <i class="twofas-icon twofas-icon-offline-codes"></i>
+                                    </div>
+                                    <div class="twofas-cell-content">
+                                        <h6>{{ esc_html__('Offline codes', '2fas') }}</h6>
+                                        <p>{{ esc_html__('If you lose your smartphone or delete an app, you can log in to your account
+                                            using offline codes. Anytime you will generate 5 codes in the "Backup codes"
+                                            bookmark.', '2fas') }}</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <i class="twofas-icon twofas-icon-tick-admin"></i>
+                                </td>
+                                <td>
+                                    <i class="twofas-icon twofas-icon-tick-admin"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="twofas-cell-icon">
+                                        <i class="twofas-icon twofas-icon-vms"></i>
+                                    </div>
+                                    <div class="twofas-cell-content">
+                                        <h6>{{ esc_html__('Text message (SMS) or Voice Call (VMS)', '2fas') }}</h6>
+                                        <p>{{ esc_html__("You cannot access a mobile app but you don't want to print or save your
+                                            backup codes? Leave your phone number and we will send you a generated TOTP
+                                            token via text or VMS (voice message service).", '2fas')|raw }}</p>
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td>
+                                    <div class="twofas-tick-content">
+                                        <i class="twofas-icon twofas-icon-tick-admin"></i>
+                                        <p>
+                                            <a href="https://2fas.com/premium"
+                                               target="_blank" rel="noreferrer noopener">{{ esc_html__('Check price list', '2fas') }}</a>
+                                        </p>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="twofas-cell-icon">
+                                        <i class="twofas-icon twofas-icon-support"></i>
+                                    </div>
+                                    <div class="twofas-cell-content">
+                                        <h6>{{ esc_html__('Support', '2fas') }}</h6>
+                                        <p>{{ esc_html__('In case of queries or technical issues, you can rely on our support. We are
+                                            always available at our e-mail address.', '2fas') }}</p>
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td>
+                                    <div class="twofas-tick-content">
+                                        <i class="twofas-icon twofas-icon-tick-admin"></i>
+                                        <p>
+                                            <a href="https://2fas.com/contact"
+                                               target="_blank" rel="noreferrer noopener">{{ esc_html__('Contact us', '2fas') }}</a>
+                                        </p>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <div class="twofas-tick-content">
+                                        {% if is_plan_premium %}
+                                            <form action="{{ create_url(constant('TwoFAS\\TwoFAS\\Http\\Action_Index::SUBMENU_DASHBOARD'), constant('TwoFAS\\TwoFAS\\Http\\Action_Index::ACTION_DOWNGRADE_PLAN')) }}"
+                                                  method="post"
+                                                  {% if number_of_users_with_enabled_sms_backup > 0 %}class="js-open-downgrade-modal"{% endif %}>
+                                                {{ create_form_nonce(constant('TwoFAS\\TwoFAS\\Http\\Action_Index::ACTION_DOWNGRADE_PLAN')) | raw }}
+                                                <input type="submit" class="twofas-btn twofas-admin-table-btn"
+                                                       value="{{ esc_attr__('Downgrade to basic', '2fas')|upper }}"/>
+                                            </form>
+                                            <p>{{ esc_html__('Free', '2fas')|upper }}</p>
+                                        {% else %}
+                                            <h5>{{ esc_html__('Free', '2fas')|upper }}</h5>
+                                        {% endif %}
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="twofas-tick-content">
+                                        {% if is_plan_premium %}
+                                            <h5>{{ esc_html__('Active Plan', '2fas') }}</h5>
+                                        {% else %}
+                                            <form action="{{ create_url(constant('TwoFAS\\TwoFAS\\Http\\Action_Index::SUBMENU_DASHBOARD'), constant('TwoFAS\\TwoFAS\\Http\\Action_Index::ACTION_UPGRADE_PLAN')) }}"
+                                                  method="post"
+                                                  {% if not has_client_card %}class="js-open-credit-card-modal"{% endif %}>
+                                                {{ create_form_nonce(constant('TwoFAS\\TwoFAS\\Http\\Action_Index::ACTION_UPGRADE_PLAN')) | raw }}
+                                                <input type="submit" class="twofas-btn twofas-admin-table-btn"
+                                                       value="{{ esc_attr__('Upgrade now', '2fas')|upper }}"/>
+                                            </form>
+                                        {% endif %}
+                                    </div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="twofas-admin-delete-bar-wrapper">
+                    <div class="twofas-delete-bar">
+                        <span>{{ esc_html__('If you want to log out,', '2fas') }} </span>
+                        <form action="{{ create_url(constant('TwoFAS\\TwoFAS\\Http\\Action_Index::SUBMENU_DASHBOARD'), constant('TwoFAS\\TwoFAS\\Http\\Action_Index::ACTION_LOGOUT')) }}"
+                              method="post" class="js-open-logout-modal twofas-form-inline">
+                            {{ create_form_nonce(constant('TwoFAS\\TwoFAS\\Http\\Action_Index::ACTION_LOGOUT')) | raw }}
+                            <input type="submit" value="{{ esc_attr__('Click here', '2fas')|lower }}" class="twofas-btn-as-link"/>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% include 'modals/confirmation/logout-modal.html.twig' %}
+    {% include 'modals/confirmation/downgrade-modal.html.twig' %}
+    {% include 'modals/confirmation/migrate-users-modal.html.twig' %}
+    {% include 'modals/success-modal.html.twig' %}
+    {% include 'modals/plan-modal.html.twig' %}
+    {% include 'modals/credit-card-modal.html.twig' %}
+
+    {% if true == show_wizard_modal %}
+        {% include 'modals/wizard-modal.html.twig' %}
+    {% endif %}
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends 'modals/confirmation/confirmation-base.html.twig' %}
+
+{% block modal_name %}twofas-reload-warning-modal{% endblock %}
+{% block modal_extra_classes %}twofas-info-text{% endblock %}
+{% block confirmation_content %}
+    <div class="twofas-text-content">
+        <p>
+            {{ esc_html__('You are going to refresh QR code. Please take note that if you configure 2FAS Tokens with this new code, you lose access via devices which were paired with the old one.', '2fas') }}
+        </p>
+    </div>
+    <div class="twofas-text-content twofas-remember-me">
+        <input type="checkbox" id="reload-modal-check" name="reload-modal-check" />
+        <label for="reload-modal-check">{{ esc_html__("Don't show me this again.", '2fas')|raw }}</label>
+    </div>
+    <div class="twofas-buttons">
+        <a href="#" class="twofas-btn twofas-cancel-btn js-close-modal">{{ esc_html__('Cancel', '2fas')|upper }}</a>
+
+        <form action="{{ create_url(constant('TwoFAS\\TwoFAS\\Http\\Action_Index::SUBMENU_CHANNEL'), constant('TwoFAS\\TwoFAS\\Http\\Action_Index::ACTION_DISABLE_RELOAD_MODAL')) }}" method="post" class="twofas-buttons-bottom js-reload-qr-code-and-set-modal-status twofas-form-inline">
+            {{ create_form_nonce(constant('TwoFAS\\TwoFAS\\Http\\Action_Index::ACTION_DISABLE_RELOAD_MODAL')) | raw }}
+
+            <button class="twofas-btn twofas-action-btn">
+                <span>{{ esc_html__('Confirm', '2fas')|upper }}</span>
+            </button>
+        </form>
+    </div>
+{% endblock %}
